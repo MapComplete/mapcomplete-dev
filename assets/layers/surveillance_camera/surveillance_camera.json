@@ -52,7 +52,7 @@
         {
           "if": "surveillance:type=camera",
           "then": {
-            "en": "This is a normal camera"
+            "en": "This is a camera without number plate recognition."
           }
         },
         {
