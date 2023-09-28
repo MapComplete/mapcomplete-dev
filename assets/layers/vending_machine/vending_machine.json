@@ -286,7 +286,7 @@
             "en": "Public transport tickets are sold",
             "nl": "Openbaar vervoerkaartjes worden verkocht",
             "de": "Fahrscheine werden verkauft",
-            "ca": "Es venen productes carnis"
+            "ca": "Es venen bitllets de transport públic"
           },
           "icon": "./assets/themes/stations/public_transport_tickets.svg"
         },
