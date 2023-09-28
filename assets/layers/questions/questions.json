@@ -130,7 +130,7 @@
       "id": "reviews",
       "description": "Shows the reviews module (including the possibility to leave a review)",
       "render": {
-        "*": "{reviews()}"
+        "*": "{create_review()}{list_reviews()}"
       }
     },
     {
@@ -1625,6 +1625,7 @@
       "id": "multilevels",
       "builtin": "single_level",
       "override": {
+        "=labels": [],
         "question": {
           "en": "What levels does this elevator go to?",
           "de": "Auf welchen Geschossen hält dieser Aufzug?",
