@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1.0, user-scalable=no" name="viewport">
-    <!-- CSP // disabled -->
+    <meta http-equiv ="Report-To" content='{"group":"csp-endpoint", "max_age": 86400,"endpoints": [{"url": "https://report.mapcomplete.org/csp"}], "include_subdomains": true}'>
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://gc.zgo.at/count.js 'sha256-bxvNMLkJxivKwf2oc9SVruAwZV95z1xUMASzaqv3UZo='; img-src * data:; connect-src 'self' *.wikipedia.org https://127.0.0.1:8111 https://api.flickr.com https://api.imgur.com https://api.mangrove.reviews https://api.maptiler.com https://api.openstreetmap.org https://commons.wikimedia.org https://graph.mapillary.com https://mapillary.com https://maproulette.org https://my-api.plantnet.org https://nominatim.openstreetmap.org https://overpass-api.de https://overpass.kumi.systems https://overpass.openstreetmap.ru https://pietervdvn.goatcounter.com https://query.wikidata.org https://raw.githubusercontent.com https://upload.wikimedia.org https://wikidata.org https://www.mapillary.com https://www.openstreetmap.org https://www.wikidata.org https://zelonewolf.github.io; report-to https://report.mapcomplete.org/csp; worker-src 'self' blob:; style-src 'self' 'unsafe-inline'">
     <link href="./css/mobile.css" rel="stylesheet"/>
     <link href="./css/openinghourstable.css" rel="stylesheet"/>
     <link href="./css/tagrendering.css" rel="stylesheet"/>
@@ -28,26 +29,27 @@
 
 <link rel="icon" href="./assets/entrance-54acca95.svg" sizes="any" type="image/svg+xml">
 
-  <script type="module" crossorigin src="./assets/indoors-c6a4eae8.js"></script>
+  <script type="module" crossorigin src="./assets/indoors-de29766e.js"></script>
   <link rel="modulepreload" crossorigin href="./assets/Utils-aa3ce114.js">
   <link rel="modulepreload" crossorigin href="./assets/Svg-51a6426a.js">
   <link rel="modulepreload" crossorigin href="./assets/LocalStorageSource-f5e9c544.js">
   <link rel="modulepreload" crossorigin href="./assets/Tr-ad9978df.js">
   <link rel="modulepreload" crossorigin href="./assets/_commonjsHelpers-87174ba5.js">
-  <link rel="modulepreload" crossorigin href="./assets/package-7e47cb1c.js">
-  <link rel="modulepreload" crossorigin href="./assets/FixImages-0a8252a0.js">
+  <link rel="modulepreload" crossorigin href="./assets/Constants-3f3e87f2.js">
+  <link rel="modulepreload" crossorigin href="./assets/FixImages-9559b5a5.js">
   <link rel="modulepreload" crossorigin href="./assets/tw-merge-79e96412.js">
   <link rel="modulepreload" crossorigin href="./assets/ToSvelte-85d2ebb5.js">
   <link rel="modulepreload" crossorigin href="./assets/Loading-40a18ee6.js">
-  <link rel="modulepreload" crossorigin href="./assets/OsmConnection-c5bec198.js">
-  <link rel="modulepreload" crossorigin href="./assets/LanguagePicker-33643cc3.js">
-  <link rel="modulepreload" crossorigin href="./assets/Checkbox-8c399f7f.js">
+  <link rel="modulepreload" crossorigin href="./assets/store.legacy-2a1c0432.js">
+  <link rel="modulepreload" crossorigin href="./assets/LanguagePicker-8486a330.js">
+  <link rel="modulepreload" crossorigin href="./assets/Checkbox-1de75486.js">
   <link rel="modulepreload" crossorigin href="./assets/BackButton-11bcb09a.js">
   <link rel="modulepreload" crossorigin href="./assets/defineProperty-ef1b11c3.js">
-  <link rel="modulepreload" crossorigin href="./assets/ExtraFunctions-5dec2420.js">
-  <link rel="modulepreload" crossorigin href="./assets/Filterview-113ee375.js">
-  <link rel="modulepreload" crossorigin href="./assets/FeatureSwitchState-b5662363.js">
-  <link rel="modulepreload" crossorigin href="./assets/ThemeViewGUI-a2d22cec.js">
+  <link rel="modulepreload" crossorigin href="./assets/ExtraFunctions-a5cb2ddf.js">
+  <link rel="modulepreload" crossorigin href="./assets/Filterview-c9ac7e4f.js">
+  <link rel="modulepreload" crossorigin href="./assets/OsmConnection-f3afbf4a.js">
+  <link rel="modulepreload" crossorigin href="./assets/FeatureSwitchState-e0af0a26.js">
+  <link rel="modulepreload" crossorigin href="./assets/ThemeViewGUI-d008b5f5.js">
   <link rel="stylesheet" href="./assets/ThemeViewGUI-faf7c2a9.css">
   <link rel="stylesheet" href="./assets/ExtraFunctions-61aeedfe.css">
 </head>
@@ -60,32 +62,32 @@
             <div class="w-full h-full flex flex-col items-center">
 
                 <div id="default-title">
-                    <h1 lang='ca'>Carregant Indoors…</h1>
-<h1 lang='cs'>Načítání Indoors…</h1>
-<h1 lang='da'>Indlæser Indoors...</h1>
-<h1 lang='de'>Lade Indoors…</h1>
-<h1 lang='en'>Loading Indoors…</h1>
-<h1 lang='es'>Cargando Indoors…</h1>
-<h1 lang='fr'>Chargement de Indoors…</h1>
-<h1 lang='hu'>Indoors betöltése…</h1>
-<h1 lang='it'>Scaricamento Indoors…</h1>
-<h1 lang='nb_NO'>Laster inn Indoors…</h1>
-<h1 lang='nl'>Indoors wordt geladen…</h1>
-<h1 lang='pl'>Wczytywanie Indoors…</h1>
-<h1 lang='pt'>A carregar Indoors…</h1>
-<h1 lang='zh_Hant'>載入 Indoors…</h1>
+                    <h1 lang="ca">Carregant Interiors…</h1>
+<h1 lang="cs">Načítání Vnitřní prostory…</h1>
+<h1 lang="da">Indlæser Indendørs...</h1>
+<h1 lang="de">Lade Innenräume…</h1>
+<h1 lang="en">Loading Indoors…</h1>
+<h1 lang="es">Cargando En interiores…</h1>
+<h1 lang="fr">Chargement de Intérieurs…</h1>
+<h1 lang="hu">Indoors betöltése…</h1>
+<h1 lang="it">Scaricamento Indoors…</h1>
+<h1 lang="nb_NO">Laster inn Innendørs…</h1>
+<h1 lang="nl">Binnenruimtes wordt geladen…</h1>
+<h1 lang="pl">Wczytywanie Wewnątrz…</h1>
+<h1 lang="pt">A carregar Indoors…</h1>
+<h1 lang="zh_Hant">載入 Indoors…</h1>
                 </div>
 
                 <p class="text-xl" id="descriptions-while-loading">
-                    <span lang='en'>On this map, publicly accessible indoor places are shown</span>
-<span lang='de'>Diese Karte zeigt öffentlich zugängliche Innenräume</span>
-<span lang='fr'>Sur cette carte, les lieux intérieurs accessibles au public sont montrés</span>
-<span lang='da'>På dette kort er offentligt tilgængelige indendørs steder vist</span>
-<span lang='nl'>Op deze kaart worden publiek toegankelijke binnenruimtes getoond</span>
-<span lang='cs'>Na této mapě jsou zobrazeny veřejně přístupné vnitřní prostory</span>
-<span lang='nb_NO'>Viser offentlig tilgjenglige innendørssteder</span>
-<span lang='es'>En este mapa se muestran los lugares cubiertos de acceso público</span>
-<span lang='ca'>En aquest mapa es mostren els llocs interiors accessibles al públic</span>
+                    <span lang="en">On this map, publicly accessible indoor places are shown</span>
+<span lang="de">Diese Karte zeigt öffentlich zugängliche Innenräume</span>
+<span lang="fr">Sur cette carte, les lieux intérieurs accessibles au public sont montrés</span>
+<span lang="da">På dette kort er offentligt tilgængelige indendørs steder vist</span>
+<span lang="nl">Op deze kaart worden publiek toegankelijke binnenruimtes getoond</span>
+<span lang="cs">Na této mapě jsou zobrazeny veřejně přístupné vnitřní prostory</span>
+<span lang="nb_NO">Viser offentlig tilgjenglige innendørssteder</span>
+<span lang="es">En este mapa se muestran los lugares cubiertos de acceso público</span>
+<span lang="ca">En aquest mapa es mostren els llocs interiors accessibles al públic</span>
                 </p>
                 <p>
                     Powered by OpenStreetMap
@@ -97,57 +99,43 @@
     </div>
 </div>
 <div id="belowmap" class="absolute top-0 left-0 -z-10">Below</div>
+<script>let lang = (
+(navigator.languages && navigator.languages[0]) ||
+navigator.language ||
+navigator["userLanguage"] ||
+"en"
+).substr(0, 2)
 
-<script>
+function filterLangs(maindiv) {
+let foundLangs = 0
+for (const child of Array.from(maindiv.children)) {
+if (child.attributes.getNamedItem("lang")?.value === lang) {
+foundLangs++
+}
+}
+if (foundLangs === 0) {
+lang = "en"
+}
+for (const child of Array.from(maindiv.children)) {
+const childLang = child.attributes.getNamedItem("lang")
+if (childLang === undefined) {
+continue
+}
+if (childLang.value === lang) {
+continue
+}
+child.parentElement.removeChild(child)
+}
+}
 
-    let lang = ((navigator.languages && navigator.languages[0]) || navigator.language || navigator.userLanguage || 'en').substr(0, 2);
-
-    function filterLangs(maindiv) {
-        let foundLangs = 0
-        for (const child of Array.from(maindiv.children)) {
-            if (child.attributes.lang?.value === lang) {
-                foundLangs++
-            }
-        }
-        if (foundLangs === 0) {
-            lang = "en"
-        }
-        for (const child of Array.from(maindiv.children)) {
-            const childLang = child.attributes.lang
-            if (childLang === undefined) {
-                continue
-            }
-            if (childLang.value === lang) {
-                continue
-            }
-            child.parentElement.removeChild(child)
-        }
-    }
-
-    filterLangs(document.getElementById("descriptions-while-loading"))
-    filterLangs(document.getElementById("default-title"))
+filterLangs(document.getElementById("descriptions-while-loading"))
+filterLangs(document.getElementById("default-title"))
 </script>
 
 
+<script async data-goatcounter="https://pietervdvn.goatcounter.com/count" src="https://gc.zgo.at/count.js" crossorigin="anonymous" integrity="sha384-gtO6vSydQeOAGGK19NHrlVLNtaDSJjN4aGMWschK+dwAZOdPQWbjXgL+FM5XsgFJ"></script>
 
-<script async data-goatcounter="https://pietervdvn.goatcounter.com/count" src="//gc.zgo.at/count.js" crossorigin="anonymous" integrity="sha384-gtO6vSydQeOAGGK19NHrlVLNtaDSJjN4aGMWschK+dwAZOdPQWbjXgL+FM5XsgFJ"></script>
-
-<script>
-    window.addEventListener('load', () => {
-        if ('serviceWorker' in navigator) {
-            // register service worker
-            navigator.serviceWorker.register('/service-worker.js').then(
-                () => {
-                    console.log('Service worker registration successful');
-                },
-                err => {
-                    console.error('Service worker registration failed', err)
-                });
-        } else {
-            console.log("Service workers are not supported")
-        }
-    });
-</script>
+    
 
 </body>
 </html>
