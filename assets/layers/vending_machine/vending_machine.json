@@ -898,14 +898,16 @@
         {
           "question": {
             "en": "Sale of fruit",
-            "nl": "Verkoop van fruit"
+            "nl": "Verkoop van fruit",
+            "ca": "Venda d'aparcament"
           },
           "osmTags": "vending~i~.*fruit.*"
         },
         {
           "question": {
             "en": "Sale of strawberries",
-            "nl": "Verkoop van aardbeien"
+            "nl": "Verkoop van aardbeien",
+            "ca": "Venda de monedes premsades"
           },
           "osmTags": "vending~i~.*strawberries.*"
         },
