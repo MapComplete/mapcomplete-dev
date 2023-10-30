@@ -8448,6 +8448,19 @@
                     "render": "This is a {shop}"
                 }
             },
+            "key_cutter": {
+                "mappings": {
+                    "0": {
+                        "then": "This shop is also specialized in key cutting"
+                    },
+                    "1": {
+                        "then": "This shop offers key cutting as a service"
+                    },
+                    "2": {
+                        "then": "This shops does not offer key cutting as a service"
+                    }
+                }
+            },
             "organic": {
                 "mappings": {
                     "0": {
