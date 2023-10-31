@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Small tests</title>
+    <link href="index.css" rel="stylesheet"/>
+    <link href="./index.css" rel="stylesheet"/>
+    <link href="./css/tabbedComponent.css" rel="stylesheet"/>
+    <link href="./css/mobile.css" rel="stylesheet"/>
+    <link href="./css/openinghourstable.css" rel="stylesheet"/>
+    <link href="./css/tagrendering.css" rel="stylesheet"/>
+    <link href="./css/index-tailwind-output.css" rel="stylesheet"/>
+    <link href="./css/wikipedia.css" rel="stylesheet"/>
+    <link href="css/ReviewElement.css" rel="stylesheet"/>
+    <meta content="website" property="og:type">
+    <meta content="width=device-width, initial-scale=1.0, user-scalable=no" name="viewport">
+
+  <script type="module" crossorigin src="./assets/test-b3fae871.js"></script>
+  <link rel="modulepreload" crossorigin href="./assets/Utils-48ded42e.js">
+  <link rel="modulepreload" crossorigin href="./assets/Svg-8b70b5dd.js">
+  <link rel="modulepreload" crossorigin href="./assets/LocalStorageSource-5c82bae4.js">
+  <link rel="modulepreload" crossorigin href="./assets/Translation-948f2d07.js">
+  <link rel="modulepreload" crossorigin href="./assets/_commonjsHelpers-87174ba5.js">
+  <link rel="modulepreload" crossorigin href="./assets/PointRenderingConfig-f15314e4.js">
+  <link rel="modulepreload" crossorigin href="./assets/Marker-7cebe84c.js">
+</head>
+<body>
+
+<div id="maindiv" class="w-full">'maindiv' not attached</div>
+<div id="extradiv">'extradiv' not attached</div>
+
+
+
+<script>
+    window.addEventListener('load', () => {
+        if ('serviceWorker' in navigator) {
+            // register service worker
+            navigator.serviceWorker.register('/service-worker.js').then(
+                () => {
+                    console.log('SW registration successful');
+                },
+                err => {
+                    console.error('SW registration failed', err)
+                });
+        } else {
+            console.error("Service workers are not supported")
+        }
+    });
+</script>
+</body>
+</html>
