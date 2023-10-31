@@ -8523,7 +8523,8 @@
                     "2": {
                         "then": "This shops does not offer key cutting as a service"
                     }
-                }
+                },
+                "question": "Does this shop offer key cutting?"
             },
             "organic": {
                 "mappings": {
