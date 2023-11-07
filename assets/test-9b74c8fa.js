@@ -1,2 +1,0 @@
-import"./Utils-cf50a89b.js";import{k as o}from"./Svg-6f679479.js";import{P as t}from"./PointRenderingConfig-d9012ac8.js";import{U as i}from"./LocalStorageSource-9618259f.js";import{M as e}from"./Marker-15613ee1.js";import"./Translation-a8cf26e8.js";import"./_commonjsHelpers-87174ba5.js";const n=new i({id:"node/13",amenity:"public_bookcase"}),r=new t({location:["point"],iconSize:"20,20",marker:[{icon:"circle",color:"orange"},{icon:"./assets/layers/atm.atm.svg"}]},"test");new o(e,{config:r,tags:n}).AttachTo("maindiv");
-//# sourceMappingURL=test-9b74c8fa.js.map
