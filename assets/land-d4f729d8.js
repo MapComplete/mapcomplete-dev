@@ -1,0 +1,1 @@
+import"./Utils-7a46a2dc.js";import{O as i}from"./OsmConnection-e8909d4e.js";import"./Constants-0e7745a2.js";import"./LocalStorageSource-202ae912.js";console.log("Authorizing...");new i().finishLogin(o=>{const n=window.location.protocol+"//"+window.location.host+"/index.html";o??(o=n),o.indexOf("/land")>0&&(o=n),console.log("Redirecting to",o),window.location.href=o});
