@@ -43078,6 +43078,16 @@
               "nl": [
                 "(basis|lagere |middelbare |secondaire| secundaire)?school"
               ],
+              "en": [
+                "east",
+                "north",
+                "northeast",
+                "northwest",
+                "south",
+                "southeast",
+                "southwest",
+                "west"
+              ],
               "fr": [
                 "allée (des |de la |de l'|de |du |d')?",
                 "autoroute (des |de la |de l'|de |du |d')?",
@@ -43159,11 +43169,22 @@
               "en": [
                 "avenue",
                 "boulevard",
+                "circle",
                 "church",
+                "drive",
+                "expressway",
+                "freeway",
+                "highway",
+                "lane",
+                "parkway",
                 "path",
                 "plaza",
+                "road",
                 "square",
-                "street"
+                "street",
+                "terrace",
+                "trail",
+                "turnpike"
               ]
             }
           }
@@ -58453,6 +58474,174 @@
         }
       ]
     },
-    "icons.defaults"
+    {
+      "id": "wikipedialink",
+      "labels": [
+        "defaults",
+        "in_favourite"
+      ],
+      "render": "<a href='https://wikipedia.org/wiki/{wikipedia}' target='_blank' rel='noopener'><img src='./assets/svg/wikipedia.svg' textmode='📖' alt='Wikipedia'/></a>",
+      "condition": {
+        "or": [
+          "wikipedia~*",
+          "wikidata~*"
+        ]
+      },
+      "mappings": [
+        {
+          "#": "ignore-image-in-then",
+          "if": "wikipedia=",
+          "then": "<a class='h-8' href='https://www.wikidata.org/wiki/{wikidata}' target='_blank' rel='noopener'><img src='./assets/svg/wikidata.svg' alt='WD'/></a>"
+        }
+      ]
+    },
+    {
+      "id": "open_until",
+      "labels": [
+        "defaults",
+        "in_favourite"
+      ],
+      "#": "Titleicon showing 'open until 17:00'",
+      "icon": {
+        "class": "w-20 mx-1 flex items-center"
+      },
+      "render": "{opening_hours_state()}"
+    },
+    {
+      "id": "phonelink",
+      "labels": [
+        "defaults",
+        "in_favourite"
+      ],
+      "render": "<a href='tel:{phone}'><img textmode='📞' alt='phone' src='./assets/layers/questions/phone.svg'/></a>",
+      "mappings": [
+        {
+          "#": "ignore-image-in-then",
+          "if": "contact:phone~*",
+          "then": "<a href='tel:{contact:phone}'><img textmode='📞' alt='phone' src='./assets/layers/questions/phone.svg'/></a>"
+        }
+      ],
+      "condition": {
+        "or": [
+          "phone~*",
+          "contact:phone~*"
+        ]
+      }
+    },
+    {
+      "id": "emaillink",
+      "labels": [
+        "defaults",
+        "in_favourite"
+      ],
+      "render": "<a href='mailto:{email}'><img textmode='✉️' alt='email' src='./assets/layers/questions/send_email.svg'/></a>",
+      "mappings": [
+        {
+          "#": "ignore-image-in-then",
+          "if": "contact:email~*",
+          "then": "<a href='mailto:{contact:email}'><img textmode='✉️' alt='email' src='./assets/layers/questions/send_email.svg'/></a>"
+        }
+      ],
+      "condition": {
+        "or": [
+          "email~*",
+          "contact:email~*"
+        ]
+      }
+    },
+    {
+      "id": "websitelink",
+      "labels": [
+        "defaults",
+        "in_favourite"
+      ],
+      "render": "<a href='{website}' target='_blank' rel='noopener'><img textmode='🌐' alt='website' src='./assets/layers/icons/website.svg'/></a>",
+      "condition": "website~*"
+    },
+    {
+      "id": "smokingicon",
+      "labels": [
+        "defaults",
+        "in_favourite"
+      ],
+      "mappings": [
+        {
+          "#": "ignore-image-in-then",
+          "if": "smoking=no",
+          "then": "<img textmode='🚭️' alt='no-smoking' src='./assets/layers/questions/no_smoking.svg'/>"
+        },
+        {
+          "#": "ignore-image-in-then",
+          "if": "smoking=yes",
+          "then": "<img textmode='🚬️' alt='smoking-allowed' src='./assets/layers/questions/smoking.svg'/>"
+        }
+      ]
+    },
+    {
+      "id": "sharelink",
+      "labels": [
+        "defaults"
+      ],
+      "render": "{share_link()}",
+      "metacondition": "_supports_sharing=yes"
+    },
+    {
+      "id": "favourite_title_icon",
+      "labels": [
+        "defaults"
+      ],
+      "render": {
+        "*": "{favourite_icon()}"
+      },
+      "metacondition": "_loggedIn=true"
+    },
+    {
+      "id": "osmlink",
+      "labels": [
+        "defaults"
+      ],
+      "render": "<a href='https://openstreetmap.org/{id}' target='_blank' rel='noopener'><img alt='on osm' textmode='🗺️' src='./assets/svg/osm-logo-us.svg'/></a>",
+      "mappings": [
+        {
+          "if": "id~.*/-.*",
+          "then": ""
+        },
+        {
+          "#": "ignore-image-in-then",
+          "if": "_backend~*",
+          "then": "<a href='{_backend}/{id}' target='_blank' rel='noopener'><img src='./assets/svg/osm-logo-us.svg'/></a>"
+        }
+      ],
+      "condition": "id~(node|way|relation)/[0-9]*"
+    },
+    {
+      "id": "dogicon",
+      "labels": [
+        "defaults",
+        "in_favourite"
+      ],
+      "mappings": [
+        {
+          "if": "dog=no",
+          "#": "ignore-image-in-then",
+          "then": "<img textmode='🐕 ⃠' alt='no_dogs' src='./assets/layers/questions/no_dogs.svg'>"
+        },
+        {
+          "if": "dog=leashed",
+          "#": "ignore-image-in-then",
+          "then": "<img textmode='🐕' alt='dogs are allowed but leashed' src='./assets/layers/questions/dogs_leashed.svg'>"
+        },
+        {
+          "if": {
+            "or": [
+              "dog=yes",
+              "dog=unleashed"
+            ]
+          },
+          "#": "ignore-image-in-then",
+          "then": "<img textmode='🐕' alt='dogs are allowed' src='./assets/layers/questions/dogs_allowed.svg'>"
+        }
+      ]
+    }
   ]
 }
