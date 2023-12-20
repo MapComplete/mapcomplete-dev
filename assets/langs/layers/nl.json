@@ -5946,6 +5946,12 @@
                     },
                     "7": {
                         "then": "De ondergrond is <b>verhard</b>"
+                    },
+                    "8": {
+                        "then": "De ondergrond bestaat uit Tartan - een synthetisch, elastisch en poreus materiaal dat je ook vindt op atletiekpistes"
+                    },
+                    "9": {
+                        "then": "De ondergrond bestaat uit rubber, zoals rubberen tegels, rubber snippers of een groot rubberen oppervlak"
                     }
                 },
                 "question": "Wat is de ondergrond van deze speeltuin?",
@@ -6332,6 +6338,7 @@
                 "question": "Zijn honden toegelaten in deze zaak?"
             },
             "email": {
+                "editButtonAriaLabel": "Pas emailadres aan",
                 "question": "Wat is het e-mailadres van {title()}?"
             },
             "induction-loop": {
@@ -6476,6 +6483,7 @@
                 }
             },
             "phone": {
+                "editButtonAriaLabel": "Pas telefoonnummer aan",
                 "question": "Wat is het telefoonnummer van {title()}?"
             },
             "repeated": {
@@ -6534,6 +6542,7 @@
                 "question": "Is roken toegestaan bij {title()}?"
             },
             "website": {
+                "editButtonAriaLabel": "Pas website aan",
                 "question": "Wat is de website van {title()}?"
             },
             "wheelchair-access": {
@@ -7351,6 +7360,9 @@
                     },
                     "5": {
                         "then": "De ondergrond bestaat uit <b>grind</b>"
+                    },
+                    "6": {
+                        "then": "De ondergrond is Tartan, een synthetisch, licht verende en poreuze ondergrond"
                     }
                 },
                 "question": "Wat is de ondergrond van dit sportveld?",
