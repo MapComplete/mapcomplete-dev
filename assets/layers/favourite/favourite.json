@@ -76596,7 +76596,7 @@
       },
       "freeform": {
         "key": "min_age",
-        "type": "pnat",
+        "type": "nat",
         "inline": true
       },
       "id": "playground-min_age",
@@ -82896,6 +82896,14 @@
           "then": "<img textmode='🐕' alt='dogs are allowed' src='./assets/layers/questions/dogs_allowed.svg'>"
         }
       ]
+    },
+    {
+      "id": "direction",
+      "labels": [
+        "defaults",
+        "in_favourite"
+      ],
+      "render": "{direction_indicator()}"
     }
   ]
 }
