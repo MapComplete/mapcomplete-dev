@@ -6486,6 +6486,11 @@
                 "editButtonAriaLabel": "Pas telefoonnummer aan",
                 "question": "Wat is het telefoonnummer van {title()}?"
             },
+            "qr_code": {
+                "render": {
+                    "after": "Scan deze code om deze locatie op een ander apparaat te zien"
+                }
+            },
             "repeated": {
                 "render": "Er zijn verschillende, identieke objecten op verdiepingen {repeat_on}."
             },
@@ -6505,6 +6510,13 @@
                     }
                 },
                 "question": "Zijn er stekkers beschikbaar voor klanten die binnen zitten?"
+            },
+            "share": {
+                "render": {
+                    "special": {
+                        "text": "Deel deze locatie"
+                    }
+                }
             },
             "single_level": {
                 "mappings": {

@@ -7356,6 +7356,11 @@
                 "editButtonAriaLabel": "Edit phone number",
                 "question": "What is the phone number of {title()}?"
             },
+            "qr_code": {
+                "render": {
+                    "after": "Scan this code to open this location on another device"
+                }
+            },
             "repeated": {
                 "render": "Multiple, identical objects can be found on floors {repeat_on}."
             },
@@ -7375,6 +7380,13 @@
                     }
                 },
                 "question": "Does this amenity have electrical outlets, available to customers when they are inside?"
+            },
+            "share": {
+                "render": {
+                    "special": {
+                        "text": "Share this location"
+                    }
+                }
             },
             "single_level": {
                 "mappings": {
