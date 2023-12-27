@@ -6115,6 +6115,11 @@
                 }
             },
             "render": "Note"
+        },
+        "titleIcons": {
+            "0": {
+                "ariaLabel": "See on OpenStreetMap.org"
+            }
         }
     },
     "observation_tower": {

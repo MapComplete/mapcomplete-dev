@@ -5363,6 +5363,11 @@
                 }
             },
             "render": "Note"
+        },
+        "titleIcons": {
+            "0": {
+                "ariaLabel": "Bekijk op OpenStreetMap.org"
+            }
         }
     },
     "observation_tower": {
