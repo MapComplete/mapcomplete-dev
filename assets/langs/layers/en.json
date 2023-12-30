@@ -8043,7 +8043,7 @@
         "name": "Shop",
         "presets": {
             "0": {
-                "description": "Add a new shop",
+                "description": "You can specify later on what this shop sells.",
                 "title": "a shop"
             }
         },
@@ -9796,7 +9796,7 @@
                     "1": {
                         "then": {
                             "special": {
-                                "text": "<b class='alert'>You have {_unreadMessages}</b><br/>Open your inbox"
+                                "text": "<b class='alert'>You have {_unreadMessages} messages</b><br/>Open your inbox"
                             }
                         }
                     }
@@ -9805,7 +9805,7 @@
             "language_picker": {
                 "mappings": {
                     "0": {
-                        "then": "The language was set via an URL-parameter and cannot be set by the user.²"
+                        "then": "The language was set via an URL-parameter and cannot be set by the user."
                     }
                 }
             },

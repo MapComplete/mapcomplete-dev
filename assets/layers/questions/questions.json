@@ -254,7 +254,7 @@
         "ja": "{title()}のEメールアドレスは何ですか？",
         "sl": "Kakšen naslov elektronske pošte ima {title()}?",
         "fil": "Ano ang email address ng {title()}?",
-        "es": "¿Cual es la direccióm de correo electrónico de {title()}?",
+        "es": "¿Cuál es la dirección de correo electrónico de {title()}?",
         "zh_Hans": "{title()} 的电子邮箱地址为何？",
         "da": "Hvad er mailadressen på {title()}?",
         "cs": "Jaká je e-mailová adresa {title()}?"
