@@ -27416,6 +27416,45 @@
       }
     },
     {
+      "id": "stairs_incline",
+      "render": {
+        "en": "These stairs have an incline of {incline}"
+      },
+      "freeform": {
+        "key": "incline",
+        "type": "slope",
+        "inline": true
+      },
+      "question": {
+        "en": "What is the incline of these stairs?"
+      },
+      "mappings": [
+        {
+          "if": "incline=up",
+          "then": {
+            "en": "The upward direction is {direction_absolute()}"
+          },
+          "hideInAnswer": true
+        },
+        {
+          "if": "incline=down",
+          "then": {
+            "en": "The downward direction is {direction_absolute()}"
+          },
+          "hideInAnswer": true
+        }
+      ],
+      "condition": {
+        "and": [
+          {
+            "and": [
+              "highway=steps"
+            ]
+          }
+        ]
+      }
+    },
+    {
       "render": {
         "en": "The name of this bookcase is {name}",
         "nl": "De naam van dit boekenruilkastje is {name}",
