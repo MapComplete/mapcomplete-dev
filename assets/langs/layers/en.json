@@ -5056,10 +5056,14 @@
                             "2": "woodworking workshop"
                         },
                         "6": {
+                            "1": "a ceramics workshop",
+                            "2": "ceramics workshop"
+                        },
+                        "7": {
                             "1": "a metal workshop",
                             "2": "meta workshop"
                         },
-                        "7": {
+                        "8": {
                             "1": "a bicycle repair workshop",
                             "2": "bicycle repair workshop"
                         }

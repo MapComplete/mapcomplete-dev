@@ -332,6 +332,16 @@
             "./assets/layers/hackerspace/woodworking.svg"
           ],
           [
+            "workshop:ceramics",
+            {
+              "en": "a ceramics workshop"
+            },
+            {
+              "en": "ceramics workshop"
+            },
+            "./assets/layers/hackerspace/ceramics.svg"
+          ],
+          [
             "workshop:metal",
             {
               "en": "a metal workshop"

@@ -70458,6 +70458,46 @@
     },
     {
       "question": {
+        "en": "Is a ceramics workshop available at this hackerspace?",
+        "nl": "Is er a ceramics workshop beschikbaar in deze hackerspace?",
+        "de": "Gibt es a ceramics workshop in diesem Hackerspace?",
+        "ca": "Hi ha a ceramics workshop disponible a aquest espai hacker?",
+        "cs": "Je a ceramics workshop dostupné v tomto hackerspace?"
+      },
+      "#iconsize": "large",
+      "mappings": [
+        {
+          "if": "service:workshop:ceramics=yes",
+          "icon": "./assets/layers/hackerspace/ceramics.svg",
+          "then": {
+            "en": "There is a ceramics workshop available at this hackerspace",
+            "nl": "Er is a ceramics workshop beschikbaar in deze hackerspace",
+            "de": "In diesem Hackerspace gibt es a ceramics workshop",
+            "ca": "Hi ha a ceramics workshop disponible a aquest espai hacker",
+            "cs": "V tomto prostoru hackerů je k dispozici a ceramics workshop"
+          }
+        },
+        {
+          "if": "service:workshop:ceramics=no",
+          "then": {
+            "en": "There is no ceramics workshop available at this hackerspace",
+            "nl": "Er is geen ceramics workshop beschikbaar in deze hackerspace",
+            "de": "In diesem Hackerspace gibt es kein ceramics workshop",
+            "ca": "No hi ha ceramics workshop disponible a aquest espai hacker",
+            "cs": "V tomto prostoru hackerů není k dispozici žádný ceramics workshop"
+          }
+        }
+      ],
+      "id": "hackerspaces-service-workshop:ceramics",
+      "condition": {
+        "or": [
+          "leisure=hackerspace",
+          "leisure=hackerspace"
+        ]
+      }
+    },
+    {
+      "question": {
         "en": "Is a metal workshop available at this hackerspace?",
         "nl": "Is er a metal workshop beschikbaar in deze hackerspace?",
         "de": "Gibt es a metal workshop in diesem Hackerspace?",
