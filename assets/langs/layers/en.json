@@ -5024,6 +5024,9 @@
                             },
                             "1": {
                                 "then": "There is no {negative-name} available at this hackerspace"
+                            },
+                            "2": {
+                                "then": "There is a limited {negative-name} available at this hackerspace"
                             }
                         },
                         "question": "Is {device-name} available at this hackerspace?"
