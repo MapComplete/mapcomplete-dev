@@ -35,7 +35,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 var _this = this;
-var version = "0.0.8-f2f041f9d0bfb557588ccd90b1d710498aa8edc0";
+var version = "0.0.8-53524532efbf8eba57da4f5846ba028fc9086e3f";
 function install() {
     return __awaiter(this, void 0, void 0, function () {
         return __generator(this, function (_a) {
@@ -103,6 +103,7 @@ self.addEventListener("fetch", function (e) { return __awaiter(_this, void 0, vo
                 shouldBeCached = origin_1.host === requestUrl.host &&
                     origin_1.hostname !== "127.0.0.1" &&
                     origin_1.hostname !== "localhost" &&
+                    !origin_1.hostname.endsWith(".local") &&
                     !origin_1.host.endsWith(".gitpod.io");
                 if (!shouldBeCached) {
                     console.log("Not intercepting ", requestUrl.toString(), origin_1.host, requestUrl.host);
