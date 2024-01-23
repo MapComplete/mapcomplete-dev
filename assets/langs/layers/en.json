@@ -5663,6 +5663,25 @@
             }
         }
     },
+    "love_hotel": {
+        "description": "A love hotel is a type of short-stay hotel found around the world operated primarily for the purpose of allowing guests privacy for sexual activities",
+        "name": "Love hotels",
+        "presets": {
+            "0": {
+                "description": "A love hotel is a type of short-stay hotel found around the world operated primarily for the purpose of allowing guests privacy for sexual activities.",
+                "title": "a love hotel"
+            }
+        },
+        "tagRenderings": {
+            "name": {
+                "question": "What is the name of this love hotel?",
+                "render": "This love hotel is named <b>{name}</b>"
+            }
+        },
+        "title": {
+            "render": "Love Hotel <i>{name}</i>"
+        }
+    },
     "map": {
         "description": "A map, meant for tourists which is permanently installed in the public space",
         "name": "Maps",
