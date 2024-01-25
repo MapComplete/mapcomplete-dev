@@ -530,8 +530,8 @@
                 "render": {
                     "special": {
                         "question": "In which languages does this ATM have speech output?",
-                        "render_list_item": "This ATM has speech output in {language():font-bold}",
-                        "render_single_language": "This ATM has speech output in {language():font-bold}"
+                        "render_list_item": "This ATM has speech output in {language()}",
+                        "render_single_language": "This ATM has speech output in {language()}"
                     }
                 }
             }
@@ -3897,8 +3897,8 @@
                 "render": {
                     "special": {
                         "question": "In which languages does this elevator have speech output?",
-                        "render_list_item": "This elevator has speech output in {language():font-bold}",
-                        "render_single_language": "This elevator has speech output in {language():font-bold}"
+                        "render_list_item": "This elevator has speech output in {language()}",
+                        "render_single_language": "This elevator has speech output in {language()}"
                     }
                 }
             },
@@ -3929,8 +3929,8 @@
                 "render": {
                     "special": {
                         "question": "In which languages does this elevator have tactile writing (braille)?",
-                        "render_list_item": "This elevator has tactile writing in {language():font-bold}",
-                        "render_single_language": "This elevator has tactile writing in {language():font-bold}"
+                        "render_list_item": "This elevator has tactile writing in {language()}",
+                        "render_single_language": "This elevator has tactile writing in {language()}"
                     }
                 }
             }
@@ -8009,7 +8009,7 @@
                         "no_known_languages": "The main language of this school is unknown",
                         "question": "What is the main language of this school?<div class='subtle'>What language is spoken with the students in non-language related courses and with the administration?</div>",
                         "render_all": "The following languages are used in this school:{list()}",
-                        "render_single_language": "{language():font-bold} is the main language of this school"
+                        "render_single_language": "{language()} is the main language of this school"
                     }
                 }
             },
@@ -8680,8 +8680,8 @@
                 "render": {
                     "special": {
                         "question": "In which languages is there tactile writing (braille) for navigation? <img src='./assets/layers/stairs/Braille_stairs.jpg' style='height: 300px; width: auto; display: block;' />",
-                        "render_list_item": "These stairs have tactile writing in {language():font-bold}",
-                        "render_single_language": "These stairs have tactile writing in {language():font-bold}"
+                        "render_list_item": "These stairs have tactile writing in {language()}",
+                        "render_single_language": "These stairs have tactile writing in {language()}"
                     }
                 }
             }

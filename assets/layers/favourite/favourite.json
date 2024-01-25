@@ -4949,7 +4949,6 @@
         "then": {
           "en": "Charging station for cars",
           "nl": "Oplaadpunt voor elektrische auto's",
-          "ca": "Estació de càrrega per a cotxes",
           "de": "Ladestation für Autos"
         }
       },
@@ -5017,7 +5016,6 @@
         "then": {
           "en": "Charging station for cars",
           "nl": "Oplaadpunt voor elektrische auto's",
-          "ca": "Estació de càrrega per a cotxes",
           "de": "Ladestation für Autos"
         }
       },
@@ -5085,7 +5083,6 @@
         "then": {
           "en": "Charging station for cars",
           "nl": "Oplaadpunt voor elektrische auto's",
-          "ca": "Estació de càrrega per a cotxes",
           "de": "Ladestation für Autos"
         }
       },
@@ -17141,15 +17138,15 @@
         ]
       },
       "render": {
-        "ca": "{language_chooser(speech_output,En quins idiomes té sortida de veu aquest caixer?,Aquest caixer té sortida de veu en &LBRACElanguage&LPARENS&RPARENS:font-bold&RBRACE,Aquest caixer té sortida de veu en &LBRACElanguage&LPARENS&RPARENS:font-bold&RBRACE,,,)}",
-        "cs": "{language_chooser(speech_output,V jakých jazycích má tento bankomat řečový výstup?,Tento bankomat má řečový výstup v &LBRACElanguage&LPARENS&RPARENS:font-bold&RBRACE,Tento bankomat má řečový výstup v &LBRACElanguage&LPARENS&RPARENS:font-bold&RBRACE,,,)}",
-        "de": "{language_chooser(speech_output,In welchen Sprachen hat dieser Geldautomat eine Sprachausgabe?,Dieser Geldautomat hat eine Sprachausgabe in &LBRACElanguage&LPARENS&RPARENS:font-bold&RBRACE,Dieser Geldautomat hat eine Sprachausgabe in &LBRACElanguage&LPARENS&RPARENS:font-bold&RBRACE,,,)}",
-        "en": "{language_chooser(speech_output,In which languages does this ATM have speech output?,This ATM has speech output in &LBRACElanguage&LPARENS&RPARENS:font-bold&RBRACE,This ATM has speech output in &LBRACElanguage&LPARENS&RPARENS:font-bold&RBRACE,,,)}",
-        "es": "{language_chooser(speech_output,¿En qué idiomas tiene salida de voz este cajero automático?,Este cajero automático tiene salida de voz en &LBRACElanguage&LPARENS&RPARENS:font-bold&RBRACE,Este cajero automático tiene salida de voz en &LBRACElanguage&LPARENS&RPARENS:font-bold&RBRACE,,,)}",
-        "he": "{language_chooser(speech_output,באילו שפות יש לכספומט הזה פלט דיבור?,לכספומט הזה יש פלט דיבור ב &LBRACElanguage&LPARENS&RPARENS:font-bold&RBRACE,לכספומט הזה יש פלט דיבור ב &LBRACElanguage&LPARENS&RPARENS:font-bold&RBRACE,,,)}",
-        "nl": "{language_chooser(speech_output,In welke taal is de spraak van deze geldautomaat?,Deze geldautomaat heeft spraak in &LBRACElanguage&LPARENS&RPARENS:font-bold&RBRACE,Deze automaat heeft spraak in &LBRACElanguage&LPARENS&RPARENS:font-bold&RBRACE,,,)}",
-        "pt": "{language_chooser(speech_output,Em que línguas este multibanco tem saída de fala?,Este multibanco tem saída de fala em &LBRACElanguage&LPARENS&RPARENS:font-bold&RBRACE,This ATM has speech output in &LBRACElanguage&LPARENS&RPARENS:font-bold&RBRACE,,,)}",
-        "pt_BR": "{language_chooser(speech_output,Em quais línguas esse caixa eletrônico tem saída de fala?,Este caixa eletrônico tem saída de fala em &LBRACElanguage&LPARENS&RPARENS:font-bold&RBRACE,Este caixa eletrônico tem saída de fala em &LBRACElanguage&LPARENS&RPARENS:font-bold&RBRACE,,,)}"
+        "ca": "{language_chooser(speech_output,En quins idiomes té sortida de veu aquest caixer?,Aquest caixer té sortida de veu en &LBRACElanguage&LPARENS&RPARENS&RBRACE,Aquest caixer té sortida de veu en &LBRACElanguage&LPARENS&RPARENS&RBRACE,,)}",
+        "cs": "{language_chooser(speech_output,V jakých jazycích má tento bankomat řečový výstup?,Tento bankomat má řečový výstup v &LBRACElanguage&LPARENS&RPARENS&RBRACE,Tento bankomat má řečový výstup v &LBRACElanguage&LPARENS&RPARENS&RBRACE,,)}",
+        "de": "{language_chooser(speech_output,In welchen Sprachen hat dieser Geldautomat eine Sprachausgabe?,Dieser Geldautomat hat eine Sprachausgabe in &LBRACElanguage&LPARENS&RPARENS&RBRACE,Dieser Geldautomat hat eine Sprachausgabe in &LBRACElanguage&LPARENS&RPARENS&RBRACE,,)}",
+        "en": "{language_chooser(speech_output,In which languages does this ATM have speech output?,This ATM has speech output in &LBRACElanguage&LPARENS&RPARENS&RBRACE,This ATM has speech output in &LBRACElanguage&LPARENS&RPARENS&RBRACE,,)}",
+        "es": "{language_chooser(speech_output,¿En qué idiomas tiene salida de voz este cajero automático?,Este cajero automático tiene salida de voz en &LBRACElanguage&LPARENS&RPARENS&RBRACE,Este cajero automático tiene salida de voz en &LBRACElanguage&LPARENS&RPARENS&RBRACE,,)}",
+        "he": "{language_chooser(speech_output,באילו שפות יש לכספומט הזה פלט דיבור?,לכספומט הזה יש פלט דיבור ב &LBRACElanguage&LPARENS&RPARENS&RBRACE,לכספומט הזה יש פלט דיבור ב &LBRACElanguage&LPARENS&RPARENS&RBRACE,,)}",
+        "nl": "{language_chooser(speech_output,In welke taal is de spraak van deze geldautomaat?,Deze geldautomaat heeft spraak in &LBRACElanguage&LPARENS&RPARENS&RBRACE,Deze automaat heeft spraak in &LBRACElanguage&LPARENS&RPARENS&RBRACE,,)}",
+        "pt": "{language_chooser(speech_output,Em que línguas este multibanco tem saída de fala?,Este multibanco tem saída de fala em &LBRACElanguage&LPARENS&RPARENS&RBRACE,This ATM has speech output in &LBRACElanguage&LPARENS&RPARENS&RBRACE,,)}",
+        "pt_BR": "{language_chooser(speech_output,Em quais línguas esse caixa eletrônico tem saída de fala?,Este caixa eletrônico tem saída de fala em &LBRACElanguage&LPARENS&RPARENS&RBRACE,Este caixa eletrônico tem saída de fala em &LBRACElanguage&LPARENS&RPARENS&RBRACE,,)}"
       }
     },
     {
@@ -26973,11 +26970,11 @@
         ]
       },
       "render": {
-        "ca": "{language_chooser(tactile_writing:braille,Aquest ascensor en quins idiomes té l'escriptura tàctil &LPARENSbraille&RPARENS?,Aquest ascensor té l'escriptura tàctil en &LBRACElanguage&LPARENS&RPARENS:font-bold&RBRACE,Aquest ascensor té l'escriptura tàctil en &LBRACElanguage&LPARENS&RPARENS:font-bold&RBRACE,,,)}",
-        "cs": "{language_chooser(tactile_writing:braille,Ve kterých jazycích má tento výtah hmatové písmo &LPARENSbraillovo písmo&RPARENS?,Tento výtah má hmatové písmo v &LBRACElanguage&LPARENS&RPARENS:font-bold&RBRACE,Tento výtah má hmatové písmo v &LBRACElanguage&LPARENS&RPARENS:font-bold&RBRACE,,,)}",
-        "de": "{language_chooser(tactile_writing:braille,In welchen Sprachen hat der Aufzug taktile Schrift &LPARENSBraille&RPARENS?,Der Aufzug hat taktile Schrift in &LBRACElanguage&LPARENS&RPARENS:font-bold&RBRACE,Der Aufzug hat taktile Schrift in &LBRACElanguage&LPARENS&RPARENS:font-bold&RBRACE,,,)}",
-        "en": "{language_chooser(tactile_writing:braille,In which languages does this elevator have tactile writing &LPARENSbraille&RPARENS?,This elevator has tactile writing in &LBRACElanguage&LPARENS&RPARENS:font-bold&RBRACE,This elevator has tactile writing in &LBRACElanguage&LPARENS&RPARENS:font-bold&RBRACE,,,)}",
-        "nl": "{language_chooser(tactile_writing:braille,In welke talen heeft deze lift voelbaar schrift &LPARENSbraille&RPARENS?,Deze lift heeft voelbaar schrift in het &LBRACElanguage&LPARENS&RPARENS:font-bold&RBRACE,Deze lift heeft voelbaar schrift in het &LBRACElanguage&LPARENS&RPARENS:font-bold&RBRACE,,,)}"
+        "ca": "{language_chooser(tactile_writing:braille,Aquest ascensor en quins idiomes té l'escriptura tàctil &LPARENSbraille&RPARENS?,Aquest ascensor té l'escriptura tàctil en &LBRACElanguage&LPARENS&RPARENS&RBRACE,Aquest ascensor té l'escriptura tàctil en &LBRACElanguage&LPARENS&RPARENS&RBRACE,,)}",
+        "cs": "{language_chooser(tactile_writing:braille,Ve kterých jazycích má tento výtah hmatové písmo &LPARENSbraillovo písmo&RPARENS?,Tento výtah má hmatové písmo v &LBRACElanguage&LPARENS&RPARENS&RBRACE,Tento výtah má hmatové písmo v &LBRACElanguage&LPARENS&RPARENS&RBRACE,,)}",
+        "de": "{language_chooser(tactile_writing:braille,In welchen Sprachen hat der Aufzug taktile Schrift &LPARENSBraille&RPARENS?,Der Aufzug hat taktile Schrift in &LBRACElanguage&LPARENS&RPARENS&RBRACE,Der Aufzug hat taktile Schrift in &LBRACElanguage&LPARENS&RPARENS&RBRACE,,)}",
+        "en": "{language_chooser(tactile_writing:braille,In which languages does this elevator have tactile writing &LPARENSbraille&RPARENS?,This elevator has tactile writing in &LBRACElanguage&LPARENS&RPARENS&RBRACE,This elevator has tactile writing in &LBRACElanguage&LPARENS&RPARENS&RBRACE,,)}",
+        "nl": "{language_chooser(tactile_writing:braille,In welke talen heeft deze lift voelbaar schrift &LPARENSbraille&RPARENS?,Deze lift heeft voelbaar schrift in het &LBRACElanguage&LPARENS&RPARENS&RBRACE,Deze lift heeft voelbaar schrift in het &LBRACElanguage&LPARENS&RPARENS&RBRACE,,)}"
       }
     },
     {
@@ -27033,11 +27030,11 @@
         ]
       },
       "render": {
-        "ca": "{language_chooser(speech_output,Aquest ascensor en quins idiomes té sortida de veu?,Aquest ascensor té sortida de veu en &LBRACElanguage&LPARENS&RPARENS:font-bold&RBRACE,Aquest ascensor té sortida de veu en &LBRACElanguage&LPARENS&RPARENS:font-bold&RBRACE,,,)}",
-        "cs": "{language_chooser(speech_output,Ve kterých jazycích má tento výtah hlasový výstup?,Tento výtah má hlasový výstup v &LBRACElanguage&LPARENS&RPARENS:font-bold&RBRACE,Tento výtah má hlasový výstup v &LBRACElanguage&LPARENS&RPARENS:font-bold&RBRACE,,,)}",
-        "de": "{language_chooser(speech_output,In welchen Sprachen verfügt der Aufzug über eine Sprachausgabe?,Der Aufzug hat eine Sprachausgabe in &LBRACElanguage&LPARENS&RPARENS:font-bold&RBRACE,Der Aufzug hat eine Sprachausgabe in &LBRACElanguage&LPARENS&RPARENS:font-bold&RBRACE,,,)}",
-        "en": "{language_chooser(speech_output,In which languages does this elevator have speech output?,This elevator has speech output in &LBRACElanguage&LPARENS&RPARENS:font-bold&RBRACE,This elevator has speech output in &LBRACElanguage&LPARENS&RPARENS:font-bold&RBRACE,,,)}",
-        "nl": "{language_chooser(speech_output,In welke talen heeft deze lift gesproken tekst?,Deze lift heeft gesproken tekst in het &LBRACElanguage&LPARENS&RPARENS:font-bold&RBRACE,Deze lift heeft gesproken tekst in het &LBRACElanguage&LPARENS&RPARENS:font-bold&RBRACE,,,)}"
+        "ca": "{language_chooser(speech_output,Aquest ascensor en quins idiomes té sortida de veu?,Aquest ascensor té sortida de veu en &LBRACElanguage&LPARENS&RPARENS&RBRACE,Aquest ascensor té sortida de veu en &LBRACElanguage&LPARENS&RPARENS&RBRACE,,)}",
+        "cs": "{language_chooser(speech_output,Ve kterých jazycích má tento výtah hlasový výstup?,Tento výtah má hlasový výstup v &LBRACElanguage&LPARENS&RPARENS&RBRACE,Tento výtah má hlasový výstup v &LBRACElanguage&LPARENS&RPARENS&RBRACE,,)}",
+        "de": "{language_chooser(speech_output,In welchen Sprachen verfügt der Aufzug über eine Sprachausgabe?,Der Aufzug hat eine Sprachausgabe in &LBRACElanguage&LPARENS&RPARENS&RBRACE,Der Aufzug hat eine Sprachausgabe in &LBRACElanguage&LPARENS&RPARENS&RBRACE,,)}",
+        "en": "{language_chooser(speech_output,In which languages does this elevator have speech output?,This elevator has speech output in &LBRACElanguage&LPARENS&RPARENS&RBRACE,This elevator has speech output in &LBRACElanguage&LPARENS&RPARENS&RBRACE,,)}",
+        "nl": "{language_chooser(speech_output,In welke talen heeft deze lift gesproken tekst?,Deze lift heeft gesproken tekst in het &LBRACElanguage&LPARENS&RPARENS&RBRACE,Deze lift heeft gesproken tekst in het &LBRACElanguage&LPARENS&RPARENS&RBRACE,,)}"
       }
     },
     {
@@ -27370,11 +27367,11 @@
         ]
       },
       "render": {
-        "ca": "{language_chooser(tactile_writing:braille,En quins idiomes hi ha escriptura tàctil &LPARENSbraille&RPARENS per a la navegació? <img src='./assets/layers/stairs/Braille_stairs.jpg' style='height: 300px; width: auto; display: block;' />,Aquestes escales tenen escriptura tàctil en &LBRACElanguage&LPARENS&RPARENS:font-bold&RBRACE,Aquestes escales tenen escriptura tàctil en &LBRACElanguage&LPARENS&RPARENS:font-bold&RBRACE,,,)}",
-        "cs": "{language_chooser(tactile_writing:braille,Ve kterých jazycích existuje hmatové písmo &LPARENSbraillské písmo&RPARENS pro navigaci? <img src='./assets/layers/stairs/Braille_stairs.jpg' style='height: 300px; width: auto; display: block;' />,Tyto schody mají hmatové písmo v &LBRACElanguage&LPARENS&RPARENS:font-bold&RBRACE,Tyto schody mají hmatové písmo v &LBRACElanguage&LPARENS&RPARENS:font-bold&RBRACE,,,)}",
-        "de": "{language_chooser(tactile_writing:braille,In welchen Sprachen gibt es taktile Schrift &LPARENSBraille&RPARENS für die Navigation? <img src='./assets/layers/stairs/Braille_stairs.jpg' style='height: 300px; width: auto; display: block;' />,Die Treppe hat taktile Schrift in &LBRACElanguage&LPARENS&RPARENS:font-bold&RBRACE,Die Treppe hat taktile Schrift in &LBRACElanguage&LPARENS&RPARENS:font-bold&RBRACE,,,)}",
-        "en": "{language_chooser(tactile_writing:braille,In which languages is there tactile writing &LPARENSbraille&RPARENS for navigation? <img src='./assets/layers/stairs/Braille_stairs.jpg' style='height: 300px; width: auto; display: block;' />,These stairs have tactile writing in &LBRACElanguage&LPARENS&RPARENS:font-bold&RBRACE,These stairs have tactile writing in &LBRACElanguage&LPARENS&RPARENS:font-bold&RBRACE,,,)}",
-        "nl": "{language_chooser(tactile_writing:braille,In welke talen is er voelbaar schrift &LPARENSbraille&RPARENS voor navigatie? <img src='./assets/layers/stairs/Braille_stairs.jpg' style='height: 300px; width: auto; display: block;' />,Deze trap heeft voelbaar schrijft in &LBRACElanguage&LPARENS&RPARENS:font-bold&RBRACE,Deze trap heeft voelbaar schrijft in &LBRACElanguage&LPARENS&RPARENS:font-bold&RBRACE,,,)}"
+        "ca": "{language_chooser(tactile_writing:braille,En quins idiomes hi ha escriptura tàctil &LPARENSbraille&RPARENS per a la navegació? <img src='./assets/layers/stairs/Braille_stairs.jpg' style='height: 300px; width: auto; display: block;' />,Aquestes escales tenen escriptura tàctil en &LBRACElanguage&LPARENS&RPARENS&RBRACE,Aquestes escales tenen escriptura tàctil en &LBRACElanguage&LPARENS&RPARENS&RBRACE,,)}",
+        "cs": "{language_chooser(tactile_writing:braille,Ve kterých jazycích existuje hmatové písmo &LPARENSbraillské písmo&RPARENS pro navigaci? <img src='./assets/layers/stairs/Braille_stairs.jpg' style='height: 300px; width: auto; display: block;' />,Tyto schody mají hmatové písmo v &LBRACElanguage&LPARENS&RPARENS&RBRACE,Tyto schody mají hmatové písmo v &LBRACElanguage&LPARENS&RPARENS&RBRACE,,)}",
+        "de": "{language_chooser(tactile_writing:braille,In welchen Sprachen gibt es taktile Schrift &LPARENSBraille&RPARENS für die Navigation? <img src='./assets/layers/stairs/Braille_stairs.jpg' style='height: 300px; width: auto; display: block;' />,Die Treppe hat taktile Schrift in &LBRACElanguage&LPARENS&RPARENS&RBRACE,Die Treppe hat taktile Schrift in &LBRACElanguage&LPARENS&RPARENS&RBRACE,,)}",
+        "en": "{language_chooser(tactile_writing:braille,In which languages is there tactile writing &LPARENSbraille&RPARENS for navigation? <img src='./assets/layers/stairs/Braille_stairs.jpg' style='height: 300px; width: auto; display: block;' />,These stairs have tactile writing in &LBRACElanguage&LPARENS&RPARENS&RBRACE,These stairs have tactile writing in &LBRACElanguage&LPARENS&RPARENS&RBRACE,,)}",
+        "nl": "{language_chooser(tactile_writing:braille,In welke talen is er voelbaar schrift &LPARENSbraille&RPARENS voor navigatie? <img src='./assets/layers/stairs/Braille_stairs.jpg' style='height: 300px; width: auto; display: block;' />,Deze trap heeft voelbaar schrijft in &LBRACElanguage&LPARENS&RPARENS&RBRACE,Deze trap heeft voelbaar schrijft in &LBRACElanguage&LPARENS&RPARENS&RBRACE,,)}"
       }
     },
     {
@@ -67384,13 +67381,13 @@
     {
       "id": "school-language",
       "render": {
-        "ca": "{language_chooser(language,Quina és la llengua principal d'aquesta escola?<div class='subtle'>Quina llengua es parla amb els estudiants en classes no relacionades amb la llengua i l'administració?</div>,,&LBRACElanguage&LPARENS&RPARENS:font-bold&RBRACE és la llengua principal d'aquesta escola,En aquesta escola s'utilitzen els idiomes següents:&LBRACElist&LPARENS&RPARENS&RBRACE,La llengua principal d'aquesta escola és desconeguda,)}",
-        "cs": "{language_chooser(language,Jaký je hlavní jazyk této školy?<div class='subtle'>Jakým jazykem se mluví se studenty v nejazykových kurzech a administrativou?</div>,,&LBRACElanguage&LPARENS&RPARENS:font-bold&RBRACE je hlavním jazykem této školy,V této škole se používají následující jazyky:&LBRACElist&LPARENS&RPARENS&RBRACE,Hlavní jazyk této školy není znám,)}",
-        "de": "{language_chooser(language,Was ist die Hauptsprache dieser Schule?<div class='subtle'>Welche Sprache wird mit den Schülern in den nicht sprachbezogenen Kursen und mit der Verwaltung gesprochen?</div>,,&LBRACElanguage&LPARENS&RPARENS:font-bold&RBRACE ist die Hauptsprache der Schule,Folgende Sprachen werden in der Schule verwendet:&LBRACElist&LPARENS&RPARENS&RBRACE,Die Unterrichtssprache der Schule ist unbekannt,)}",
-        "en": "{language_chooser(language,What is the main language of this school?<div class='subtle'>What language is spoken with the students in non-language related courses and with the administration?</div>,,&LBRACElanguage&LPARENS&RPARENS:font-bold&RBRACE is the main language of this school,The following languages are used in this school:&LBRACElist&LPARENS&RPARENS&RBRACE,The main language of this school is unknown,)}",
-        "fr": "{language_chooser(language,Quelle est la langue principale de cette école ?<div class='subtle'>Quelle langue est parlée avec les élèves des cours non linguistiques et avec l'administration ?</div>,,&LBRACElanguage&LPARENS&RPARENS:font-bold&RBRACE est la langue principale dans cette école,Ces langues sont utilisées dans cette école :&LBRACElist&LPARENS&RPARENS&RBRACE,La langue principale de cette école est inconnue,)}",
-        "nl": "{language_chooser(language,Wat is de voertaal van deze school?<div class='subtle'>Welke taal wordt met de studenten gesproken in niet-taal-gerelateerde vakken en met de administratie?</div>,,&LBRACElanguage&LPARENS&RPARENS:font-bold&RBRACE is the main language of this school,The following languages are used in this school:&LBRACElist&LPARENS&RPARENS&RBRACE,De voertaal van deze school is niet gekend,)}",
-        "pl": "{language_chooser(language,What is the main language of this school?<div class='subtle'>What language is spoken with the students in non-language related courses and with the administration?</div>,,Język &LBRACElanguage&LPARENS&RPARENS:font-bold&RBRACE jest głównym językiem używanym w tej szkole,Następujące języki są używane w tej szkole:&LBRACElist&LPARENS&RPARENS&RBRACE,The main language of this school is unknown,)}"
+        "ca": "{language_chooser(language,Quina és la llengua principal d'aquesta escola?<div class='subtle'>Quina llengua es parla amb els estudiants en classes no relacionades amb la llengua i l'administració?</div>,,&LBRACElanguage&LPARENS&RPARENS&RBRACE és la llengua principal d'aquesta escola,En aquesta escola s'utilitzen els idiomes següents:&LBRACElist&LPARENS&RPARENS&RBRACE,La llengua principal d'aquesta escola és desconeguda)}",
+        "cs": "{language_chooser(language,Jaký je hlavní jazyk této školy?<div class='subtle'>Jakým jazykem se mluví se studenty v nejazykových kurzech a administrativou?</div>,,&LBRACElanguage&LPARENS&RPARENS&RBRACE je hlavním jazykem této školy,V této škole se používají následující jazyky:&LBRACElist&LPARENS&RPARENS&RBRACE,Hlavní jazyk této školy není znám)}",
+        "de": "{language_chooser(language,Was ist die Hauptsprache dieser Schule?<div class='subtle'>Welche Sprache wird mit den Schülern in den nicht sprachbezogenen Kursen und mit der Verwaltung gesprochen?</div>,,&LBRACElanguage&LPARENS&RPARENS&RBRACE ist die Hauptsprache der Schule,Folgende Sprachen werden in der Schule verwendet:&LBRACElist&LPARENS&RPARENS&RBRACE,Die Unterrichtssprache der Schule ist unbekannt)}",
+        "en": "{language_chooser(language,What is the main language of this school?<div class='subtle'>What language is spoken with the students in non-language related courses and with the administration?</div>,,&LBRACElanguage&LPARENS&RPARENS&RBRACE is the main language of this school,The following languages are used in this school:&LBRACElist&LPARENS&RPARENS&RBRACE,The main language of this school is unknown)}",
+        "fr": "{language_chooser(language,Quelle est la langue principale de cette école ?<div class='subtle'>Quelle langue est parlée avec les élèves des cours non linguistiques et avec l'administration ?</div>,,&LBRACElanguage&LPARENS&RPARENS&RBRACE est la langue principale dans cette école,Ces langues sont utilisées dans cette école :&LBRACElist&LPARENS&RPARENS&RBRACE,La langue principale de cette école est inconnue)}",
+        "nl": "{language_chooser(language,Wat is de voertaal van deze school?<div class='subtle'>Welke taal wordt met de studenten gesproken in niet-taal-gerelateerde vakken en met de administratie?</div>,,&LBRACElanguage&LPARENS&RPARENS&RBRACE is the main language of this school,The following languages are used in this school:&LBRACElist&LPARENS&RPARENS&RBRACE,De voertaal van deze school is niet gekend)}",
+        "pl": "{language_chooser(language,What is the main language of this school?<div class='subtle'>What language is spoken with the students in non-language related courses and with the administration?</div>,,Język &LBRACElanguage&LPARENS&RPARENS&RBRACE jest głównym językiem używanym w tej szkole,Następujące języki są używane w tej szkole:&LBRACElist&LPARENS&RPARENS&RBRACE,The main language of this school is unknown)}"
       },
       "condition": {
         "or": [
