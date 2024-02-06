@@ -246,8 +246,17 @@
             }
         },
         "tagRenderings": {
+            "duration": {
+                "question": "How long takes a single journey with this elevator?",
+                "questionHint": "This excludes the waiting time.",
+                "render": "A single journey takes {duration} minutes"
+            },
             "length": {
                 "render": "This aerialway is {_length:km} kilometer long"
+            },
+            "occupancy": {
+                "question": "How many people fit a single carriage?",
+                "render": "{aerialway:occupancy} people fit a single carriage"
             },
             "type": {
                 "mappings": {
