@@ -7426,6 +7426,14 @@
         }
       },
       {
+        "if": "information=guidepost",
+        "then": {
+          "en": "Guideposts",
+          "cs": "Rozcestník",
+          "de": "Wegweiser"
+        }
+      },
+      {
         "if": {
           "and": [
             {
@@ -11355,70 +11363,9 @@
           "highway=pedestrian",
           "highway=street_lamp",
           "highway=bus_stop",
-          "indoor=room",
-          "indoor=area",
-          "indoor=wall",
-          "indoor=door",
-          "indoor=level",
-          "indoor=door",
-          "indoor=room",
-          "indoor=area",
-          "indoor=wall",
-          "indoor=door",
-          "indoor=level",
-          "indoor=door",
-          "information=guidepost",
           "information=map",
-          "information=map",
-          "information=guidepost",
-          "isced:level:2011=early_childhood",
-          "leisure=picnic_table",
-          "leisure=hackerspace",
-          "leisure=bird_hide",
-          "leisure=nature_reserve",
-          "leisure=picnic_table",
-          "leisure=bird_hide",
-          "leisure=dog_park",
+          "information=board",
           "leisure=sports_centre",
-          "memorial=ghost_bike",
-          "ngo=cycling",
-          "ngo=bicycle",
-          "ngo=cycling",
-          "ngo=bicycle",
-          "planned:amenity=charging_station",
-          "planned:amenity=charging_station",
-          "planned:amenity=charging_station",
-          "post_office=post_partner",
-          "service:bicycle:cleaning=yes",
-          "service:bicycle:cleaning=diy",
-          "service:bicycle:cleaning=yes",
-          "service:bicycle:cleaning=diy",
-          "service:bicycle:rental=yes",
-          "service:bicycle:rental=yes",
-          "service:bicycle:rental=yes",
-          "shop=bicycle",
-          "sport=cycling",
-          "theme=bicycle",
-          "theme=cycling",
-          "tourism=artwork",
-          {
-            "and": [
-              "bicycle=designated",
-              "highway=path"
-            ]
-          },
-          {
-            "and": [
-              "sport=climbing",
-              {
-                "or": [
-                  "club~.+",
-                  "office~.+"
-                ]
-              }
-            ]
-          },
-          "information=guidepost",
           {
             "and": [
               "amenity=school",
@@ -11430,32 +11377,32 @@
               }
             ]
           },
-          "tourism=hotel",
-          {
-            "and": [
-              "bicycle=designated",
-              "highway=path"
-            ]
-          },
-          "tourism=map",
-          {
-            "and": [
-              "boundary=protected_area",
-              "protect_class!=98"
-            ]
-          },
-          "information=board",
-          "tourism=map",
-          "tower:type=observation",
-          {
-            "and": [
-              "bicycle=designated",
-              "highway=path"
-            ]
-          },
-          "office=government",
-          "tourism=hotel",
-          "tourism=artwork",
+          "highway=bus_stop",
+          "highway=crossing",
+          "highway=cycleway",
+          "highway=residential",
+          "highway=tertiary",
+          "highway=unclassified",
+          "highway=primary",
+          "highway=secondary",
+          "highway=tertiary_link",
+          "highway=secondary_link",
+          "highway=footway",
+          "highway=living_street",
+          "information=guidepost",
+          "leisure=bird_hide",
+          "leisure=dog_park",
+          "leisure=dog_park",
+          "leisure=picnic_table",
+          "natural=tree",
+          "ngo=cycling",
+          "ngo=bicycle",
+          "planned:amenity=charging_station",
+          "post_office=post_partner",
+          "service:bicycle:cleaning=yes",
+          "service:bicycle:cleaning=diy",
+          "service:bicycle:rental=yes",
+          "shop=bicycle",
           {
             "and": [
               "shop=sports",
@@ -11471,6 +11418,7 @@
             ]
           },
           "sport=cycling",
+          "surface:colour=rainbow",
           "theme=bicycle",
           "theme=cycling",
           {
@@ -11525,6 +11473,18 @@
           "highway=crossing",
           "highway=speed_camera",
           "highway=speed_display",
+          "indoor=room",
+          "indoor=area",
+          "indoor=wall",
+          "indoor=door",
+          "indoor=level",
+          "indoor=door",
+          "indoor=room",
+          "indoor=area",
+          "indoor=wall",
+          "indoor=door",
+          "indoor=level",
+          "indoor=door",
           "indoor=door",
           "indoor=room",
           "indoor=area",
@@ -11532,9 +11492,19 @@
           "indoor=door",
           "indoor=level",
           "information=guidepost",
+          "information=map",
+          "information=map",
+          "information=guidepost",
+          "information=guidepost",
           "information=board",
           "information=map",
           "isced:level:2011=early_childhood",
+          "isced:level:2011=early_childhood",
+          "leisure=picnic_table",
+          "leisure=hackerspace",
+          "leisure=bird_hide",
+          "leisure=nature_reserve",
+          "leisure=picnic_table",
           "leisure=fitness_centre",
           "leisure=fitness_station",
           "leisure=hackerspace",
@@ -11542,10 +11512,80 @@
           "leisure=picnic_table",
           "leisure=pitch",
           "memorial=ghost_bike",
+          "memorial=ghost_bike",
+          "ngo=cycling",
+          "ngo=bicycle",
           "office=government",
+          "planned:amenity=charging_station",
+          "planned:amenity=charging_station",
+          "post_office=post_partner",
+          "service:bicycle:cleaning=yes",
+          "service:bicycle:cleaning=diy",
+          "service:bicycle:rental=yes",
+          "service:bicycle:rental=yes",
+          "sport=cycling",
           "surface:colour=rainbow",
+          "theme=bicycle",
+          "theme=cycling",
+          "toilets=yes",
+          "tourism=artwork",
+          {
+            "and": [
+              "bicycle=designated",
+              "highway=path"
+            ]
+          },
+          {
+            "and": [
+              "sport=climbing",
+              {
+                "or": [
+                  "club~.+",
+                  "office~.+"
+                ]
+              }
+            ]
+          },
+          "information=guidepost",
+          {
+            "and": [
+              "amenity=school",
+              {
+                "or": [
+                  "isced:2011:level~.*bachelor.*",
+                  "isced:2011:level~.*master.*"
+                ]
+              }
+            ]
+          },
+          "tourism=hotel",
+          {
+            "and": [
+              "bicycle=designated",
+              "highway=path"
+            ]
+          },
+          "tourism=map",
+          {
+            "and": [
+              "boundary=protected_area",
+              "protect_class!=98"
+            ]
+          },
+          "information=board",
+          "tourism=map",
           "tourism=hotel",
           "tourism=map",
+          "tower:type=observation",
+          {
+            "and": [
+              "bicycle=designated",
+              "highway=path"
+            ]
+          },
+          "office=government",
+          "tourism=hotel",
+          "tourism=artwork",
           {
             "and": [
               "boundary=protected_area",
@@ -11566,43 +11606,6 @@
               "highway=footway"
             ]
           },
-          {
-            "and": [
-              "amenity=school",
-              {
-                "or": [
-                  "isced:2011:level~.*bachelor.*",
-                  "isced:2011:level~.*master.*"
-                ]
-              }
-            ]
-          },
-          "highway=bus_stop",
-          "highway=crossing",
-          "highway=cycleway",
-          "highway=residential",
-          "highway=tertiary",
-          "highway=unclassified",
-          "highway=primary",
-          "highway=secondary",
-          "highway=tertiary_link",
-          "highway=secondary_link",
-          "highway=footway",
-          "highway=living_street",
-          "information=map",
-          "information=board",
-          "leisure=dog_park",
-          "leisure=picnic_table",
-          "leisure=pitch",
-          "leisure=fitness_centre",
-          "leisure=fitness_station",
-          "leisure=sports_centre",
-          "natural=tree",
-          "natural=tree",
-          "post_office=post_partner",
-          "surface:colour=rainbow",
-          "toilets=yes",
-          "toilets=yes",
           "tourism=viewpoint",
           {
             "and": [
@@ -11629,6 +11632,12 @@
             ]
           },
           "leisure=pitch",
+          "leisure=pitch",
+          "leisure=fitness_centre",
+          "leisure=fitness_station",
+          "leisure=sports_centre",
+          "natural=tree",
+          "toilets=yes",
           "tourism=map",
           "tourism=viewpoint",
           {
@@ -12348,70 +12357,9 @@
           "highway=pedestrian",
           "highway=street_lamp",
           "highway=bus_stop",
-          "indoor=room",
-          "indoor=area",
-          "indoor=wall",
-          "indoor=door",
-          "indoor=level",
-          "indoor=door",
-          "indoor=room",
-          "indoor=area",
-          "indoor=wall",
-          "indoor=door",
-          "indoor=level",
-          "indoor=door",
-          "information=guidepost",
           "information=map",
-          "information=map",
-          "information=guidepost",
-          "isced:level:2011=early_childhood",
-          "leisure=picnic_table",
-          "leisure=hackerspace",
-          "leisure=bird_hide",
-          "leisure=nature_reserve",
-          "leisure=picnic_table",
-          "leisure=bird_hide",
-          "leisure=dog_park",
+          "information=board",
           "leisure=sports_centre",
-          "memorial=ghost_bike",
-          "ngo=cycling",
-          "ngo=bicycle",
-          "ngo=cycling",
-          "ngo=bicycle",
-          "planned:amenity=charging_station",
-          "planned:amenity=charging_station",
-          "planned:amenity=charging_station",
-          "post_office=post_partner",
-          "service:bicycle:cleaning=yes",
-          "service:bicycle:cleaning=diy",
-          "service:bicycle:cleaning=yes",
-          "service:bicycle:cleaning=diy",
-          "service:bicycle:rental=yes",
-          "service:bicycle:rental=yes",
-          "service:bicycle:rental=yes",
-          "shop=bicycle",
-          "sport=cycling",
-          "theme=bicycle",
-          "theme=cycling",
-          "tourism=artwork",
-          {
-            "and": [
-              "bicycle=designated",
-              "highway=path"
-            ]
-          },
-          {
-            "and": [
-              "sport=climbing",
-              {
-                "or": [
-                  "club~.+",
-                  "office~.+"
-                ]
-              }
-            ]
-          },
-          "information=guidepost",
           {
             "and": [
               "amenity=school",
@@ -12423,32 +12371,32 @@
               }
             ]
           },
-          "tourism=hotel",
-          {
-            "and": [
-              "bicycle=designated",
-              "highway=path"
-            ]
-          },
-          "tourism=map",
-          {
-            "and": [
-              "boundary=protected_area",
-              "protect_class!=98"
-            ]
-          },
-          "information=board",
-          "tourism=map",
-          "tower:type=observation",
-          {
-            "and": [
-              "bicycle=designated",
-              "highway=path"
-            ]
-          },
-          "office=government",
-          "tourism=hotel",
-          "tourism=artwork",
+          "highway=bus_stop",
+          "highway=crossing",
+          "highway=cycleway",
+          "highway=residential",
+          "highway=tertiary",
+          "highway=unclassified",
+          "highway=primary",
+          "highway=secondary",
+          "highway=tertiary_link",
+          "highway=secondary_link",
+          "highway=footway",
+          "highway=living_street",
+          "information=guidepost",
+          "leisure=bird_hide",
+          "leisure=dog_park",
+          "leisure=dog_park",
+          "leisure=picnic_table",
+          "natural=tree",
+          "ngo=cycling",
+          "ngo=bicycle",
+          "planned:amenity=charging_station",
+          "post_office=post_partner",
+          "service:bicycle:cleaning=yes",
+          "service:bicycle:cleaning=diy",
+          "service:bicycle:rental=yes",
+          "shop=bicycle",
           {
             "and": [
               "shop=sports",
@@ -12464,6 +12412,7 @@
             ]
           },
           "sport=cycling",
+          "surface:colour=rainbow",
           "theme=bicycle",
           "theme=cycling",
           {
@@ -12518,6 +12467,18 @@
           "highway=crossing",
           "highway=speed_camera",
           "highway=speed_display",
+          "indoor=room",
+          "indoor=area",
+          "indoor=wall",
+          "indoor=door",
+          "indoor=level",
+          "indoor=door",
+          "indoor=room",
+          "indoor=area",
+          "indoor=wall",
+          "indoor=door",
+          "indoor=level",
+          "indoor=door",
           "indoor=door",
           "indoor=room",
           "indoor=area",
@@ -12525,9 +12486,19 @@
           "indoor=door",
           "indoor=level",
           "information=guidepost",
+          "information=map",
+          "information=map",
+          "information=guidepost",
+          "information=guidepost",
           "information=board",
           "information=map",
           "isced:level:2011=early_childhood",
+          "isced:level:2011=early_childhood",
+          "leisure=picnic_table",
+          "leisure=hackerspace",
+          "leisure=bird_hide",
+          "leisure=nature_reserve",
+          "leisure=picnic_table",
           "leisure=fitness_centre",
           "leisure=fitness_station",
           "leisure=hackerspace",
@@ -12535,10 +12506,80 @@
           "leisure=picnic_table",
           "leisure=pitch",
           "memorial=ghost_bike",
+          "memorial=ghost_bike",
+          "ngo=cycling",
+          "ngo=bicycle",
           "office=government",
+          "planned:amenity=charging_station",
+          "planned:amenity=charging_station",
+          "post_office=post_partner",
+          "service:bicycle:cleaning=yes",
+          "service:bicycle:cleaning=diy",
+          "service:bicycle:rental=yes",
+          "service:bicycle:rental=yes",
+          "sport=cycling",
           "surface:colour=rainbow",
+          "theme=bicycle",
+          "theme=cycling",
+          "toilets=yes",
+          "tourism=artwork",
+          {
+            "and": [
+              "bicycle=designated",
+              "highway=path"
+            ]
+          },
+          {
+            "and": [
+              "sport=climbing",
+              {
+                "or": [
+                  "club~.+",
+                  "office~.+"
+                ]
+              }
+            ]
+          },
+          "information=guidepost",
+          {
+            "and": [
+              "amenity=school",
+              {
+                "or": [
+                  "isced:2011:level~.*bachelor.*",
+                  "isced:2011:level~.*master.*"
+                ]
+              }
+            ]
+          },
+          "tourism=hotel",
+          {
+            "and": [
+              "bicycle=designated",
+              "highway=path"
+            ]
+          },
+          "tourism=map",
+          {
+            "and": [
+              "boundary=protected_area",
+              "protect_class!=98"
+            ]
+          },
+          "information=board",
+          "tourism=map",
           "tourism=hotel",
           "tourism=map",
+          "tower:type=observation",
+          {
+            "and": [
+              "bicycle=designated",
+              "highway=path"
+            ]
+          },
+          "office=government",
+          "tourism=hotel",
+          "tourism=artwork",
           {
             "and": [
               "boundary=protected_area",
@@ -12559,43 +12600,6 @@
               "highway=footway"
             ]
           },
-          {
-            "and": [
-              "amenity=school",
-              {
-                "or": [
-                  "isced:2011:level~.*bachelor.*",
-                  "isced:2011:level~.*master.*"
-                ]
-              }
-            ]
-          },
-          "highway=bus_stop",
-          "highway=crossing",
-          "highway=cycleway",
-          "highway=residential",
-          "highway=tertiary",
-          "highway=unclassified",
-          "highway=primary",
-          "highway=secondary",
-          "highway=tertiary_link",
-          "highway=secondary_link",
-          "highway=footway",
-          "highway=living_street",
-          "information=map",
-          "information=board",
-          "leisure=dog_park",
-          "leisure=picnic_table",
-          "leisure=pitch",
-          "leisure=fitness_centre",
-          "leisure=fitness_station",
-          "leisure=sports_centre",
-          "natural=tree",
-          "natural=tree",
-          "post_office=post_partner",
-          "surface:colour=rainbow",
-          "toilets=yes",
-          "toilets=yes",
           "tourism=viewpoint",
           {
             "and": [
@@ -12622,6 +12626,12 @@
             ]
           },
           "leisure=pitch",
+          "leisure=pitch",
+          "leisure=fitness_centre",
+          "leisure=fitness_station",
+          "leisure=sports_centre",
+          "natural=tree",
+          "toilets=yes",
           "tourism=map",
           "tourism=viewpoint",
           {
