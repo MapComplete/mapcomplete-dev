@@ -9081,8 +9081,7 @@
       {
         "if": "emergency=assembly_point",
         "then": {
-          "en": "Emergency assembly points",
-          "it": "Punti di raccolta per emergenze"
+          "en": "Assembly point during emergencies"
         }
       },
       {
@@ -9095,8 +9094,7 @@
       {
         "if": "emergency=assembly_point",
         "then": {
-          "en": "Emergency assembly points",
-          "it": "Punti di raccolta per emergenze"
+          "en": "Assembly point during emergencies"
         }
       },
       {
