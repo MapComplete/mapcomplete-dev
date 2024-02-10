@@ -5712,6 +5712,37 @@
       {
         "if": {
           "and": [
+            {
+              "or": [
+                "amenity=hospital",
+                "amenity=clinic"
+              ]
+            },
+            "name~.+"
+          ]
+        },
+        "then": "{name}"
+      },
+      {
+        "if": {
+          "or": [
+            "amenity=hospital",
+            "amenity=clinic"
+          ]
+        },
+        "then": {
+          "en": "Hospital",
+          "de": "Krankenhaus",
+          "nl": "Ziekenhuis",
+          "pa_PK": "ہسپتال",
+          "ru": "Больница",
+          "ca": "Hospital",
+          "cs": "Nemocnice"
+        }
+      },
+      {
+        "if": {
+          "and": [
             "amenity=atm",
             "brand~.+"
           ]
@@ -9045,6 +9076,34 @@
           "pa_PK": "بینچ",
           "he": "ספסל",
           "eu": "Bankua"
+        }
+      },
+      {
+        "if": "emergency=assembly_point",
+        "then": {
+          "en": "Emergency assembly points",
+          "it": "Punti di raccolta per emergenze"
+        }
+      },
+      {
+        "if": "emergency=disaster_response",
+        "then": {
+          "en": "Disaster response organization",
+          "it": "Organizzazione per la risposta ai disastri"
+        }
+      },
+      {
+        "if": "emergency=assembly_point",
+        "then": {
+          "en": "Emergency assembly points",
+          "it": "Punti di raccolta per emergenze"
+        }
+      },
+      {
+        "if": "emergency=disaster_response",
+        "then": {
+          "en": "Disaster response organization",
+          "it": "Organizzazione per la risposta ai disastri"
         }
       },
       {
@@ -11097,15 +11156,14 @@
           "amenity=charging_station",
           "amenity=toilets",
           "amenity=clock",
-          "amenity=bicycle_wash",
-          "amenity=bike_wash",
-          "amenity=bicycle_rental",
-          "amenity=bicycle_parking",
+          "amenity=bicycle_library",
+          "amenity=charging_station",
+          "amenity=hospital",
+          "amenity=clinic",
           "amenity=college",
           "amenity=university",
           "amenity=school",
           "amenity=childcare",
-          "amenity=kindergarten",
           "amenity=fast_food",
           "amenity=restaurant",
           "amenity=ice_cream",
@@ -11239,7 +11297,9 @@
           "emergency=fire_extinguisher",
           "emergency=ambulance_station",
           "emergency=ambulance_station",
+          "emergency=assembly_point",
           "emergency=defibrillator",
+          "emergency=disaster_response",
           "generator:source=wind",
           "generator:source=wind",
           "healthcare=physiotherapist",
@@ -11280,35 +11340,13 @@
               "highway=path"
             ]
           },
+          "amenity=bicycle_wash",
+          "amenity=bike_wash",
+          "amenity=bicycle_rental",
           "barrier=bollard",
           "barrier=cycle_barrier",
           "highway=traffic_signals",
           "highway=crossing",
-          "shop=bicycle",
-          {
-            "and": [
-              "shop=sports",
-              {
-                "or": [
-                  "sport=bicycle",
-                  "sport=cycling",
-                  "sport="
-                ]
-              },
-              "service:bicycle:retail!=no",
-              "service:bicycle:repair!=no"
-            ]
-          },
-          "amenity=bicycle_repair_station",
-          "amenity=bicycle_library",
-          "amenity=charging_station",
-          "association=cycling",
-          "association=bicycle",
-          "barrier=wall",
-          "club=bicycle",
-          "club=cycling",
-          "construction:amenity=charging_station",
-          "disused:amenity=charging_station",
           "highway=elevator",
           "highway=cycleway",
           "highway=residential",
@@ -11341,6 +11379,121 @@
           "highway=pedestrian",
           "highway=living_street",
           "highway=elevator",
+          "indoor=room",
+          "indoor=area",
+          "indoor=wall",
+          "indoor=door",
+          "indoor=level",
+          "indoor=door",
+          "indoor=room",
+          "indoor=area",
+          "indoor=wall",
+          "indoor=door",
+          "indoor=level",
+          "indoor=door",
+          "information=guidepost",
+          "information=map",
+          "information=map",
+          "information=guidepost",
+          "leisure=hackerspace",
+          "leisure=bird_hide",
+          "leisure=nature_reserve",
+          "leisure=picnic_table",
+          "memorial=ghost_bike",
+          "shop=bicycle",
+          {
+            "and": [
+              "shop=sports",
+              {
+                "or": [
+                  "sport=bicycle",
+                  "sport=cycling",
+                  "sport="
+                ]
+              },
+              "service:bicycle:retail!=no",
+              "service:bicycle:repair!=no"
+            ]
+          },
+          "amenity=bicycle_repair_station",
+          "amenity=bicycle_parking",
+          "amenity=kindergarten",
+          "association=cycling",
+          "association=bicycle",
+          "barrier=wall",
+          "club=bicycle",
+          "club=cycling",
+          "construction:amenity=charging_station",
+          "disused:amenity=charging_station",
+          "emergency=assembly_point",
+          "emergency=disaster_response",
+          "isced:level:2011=early_childhood",
+          "leisure=picnic_table",
+          "ngo=cycling",
+          "ngo=bicycle",
+          "planned:amenity=charging_station",
+          "planned:amenity=charging_station",
+          "post_office=post_partner",
+          "service:bicycle:cleaning=yes",
+          "service:bicycle:cleaning=diy",
+          "service:bicycle:rental=yes",
+          "service:bicycle:rental=yes",
+          "sport=cycling",
+          "theme=bicycle",
+          "theme=cycling",
+          "tourism=artwork",
+          {
+            "and": [
+              "bicycle=designated",
+              "highway=path"
+            ]
+          },
+          {
+            "and": [
+              "sport=climbing",
+              {
+                "or": [
+                  "club~.+",
+                  "office~.+"
+                ]
+              }
+            ]
+          },
+          "information=guidepost",
+          {
+            "and": [
+              "amenity=school",
+              {
+                "or": [
+                  "isced:2011:level~.*bachelor.*",
+                  "isced:2011:level~.*master.*"
+                ]
+              }
+            ]
+          },
+          "tourism=hotel",
+          {
+            "and": [
+              "bicycle=designated",
+              "highway=path"
+            ]
+          },
+          "tourism=map",
+          {
+            "and": [
+              "boundary=protected_area",
+              "protect_class!=98"
+            ]
+          },
+          "information=board",
+          "tourism=map",
+          "tower:type=observation",
+          {
+            "and": [
+              "bicycle=designated",
+              "highway=path"
+            ]
+          },
           "highway=traffic_signals",
           "highway=crossing",
           "highway=cycleway",
@@ -11390,7 +11543,6 @@
           "highway=footway",
           "highway=living_street",
           "information=guidepost",
-          "leisure=bird_hide",
           "leisure=dog_park",
           "leisure=dog_park",
           "leisure=picnic_table",
@@ -11417,6 +11569,7 @@
               "service:bicycle:repair!=no"
             ]
           },
+          "leisure=bird_hide",
           "sport=cycling",
           "surface:colour=rainbow",
           "theme=bicycle",
@@ -11473,38 +11626,16 @@
           "highway=crossing",
           "highway=speed_camera",
           "highway=speed_display",
-          "indoor=room",
-          "indoor=area",
-          "indoor=wall",
-          "indoor=door",
-          "indoor=level",
           "indoor=door",
           "indoor=room",
           "indoor=area",
           "indoor=wall",
           "indoor=door",
           "indoor=level",
-          "indoor=door",
-          "indoor=door",
-          "indoor=room",
-          "indoor=area",
-          "indoor=wall",
-          "indoor=door",
-          "indoor=level",
-          "information=guidepost",
-          "information=map",
-          "information=map",
-          "information=guidepost",
           "information=guidepost",
           "information=board",
           "information=map",
           "isced:level:2011=early_childhood",
-          "isced:level:2011=early_childhood",
-          "leisure=picnic_table",
-          "leisure=hackerspace",
-          "leisure=bird_hide",
-          "leisure=nature_reserve",
-          "leisure=picnic_table",
           "leisure=fitness_centre",
           "leisure=fitness_station",
           "leisure=hackerspace",
@@ -11512,80 +11643,14 @@
           "leisure=picnic_table",
           "leisure=pitch",
           "memorial=ghost_bike",
-          "memorial=ghost_bike",
-          "ngo=cycling",
-          "ngo=bicycle",
           "office=government",
-          "planned:amenity=charging_station",
-          "planned:amenity=charging_station",
-          "post_office=post_partner",
-          "service:bicycle:cleaning=yes",
-          "service:bicycle:cleaning=diy",
-          "service:bicycle:rental=yes",
-          "service:bicycle:rental=yes",
-          "sport=cycling",
+          "office=government",
           "surface:colour=rainbow",
-          "theme=bicycle",
-          "theme=cycling",
           "toilets=yes",
-          "tourism=artwork",
-          {
-            "and": [
-              "bicycle=designated",
-              "highway=path"
-            ]
-          },
-          {
-            "and": [
-              "sport=climbing",
-              {
-                "or": [
-                  "club~.+",
-                  "office~.+"
-                ]
-              }
-            ]
-          },
-          "information=guidepost",
-          {
-            "and": [
-              "amenity=school",
-              {
-                "or": [
-                  "isced:2011:level~.*bachelor.*",
-                  "isced:2011:level~.*master.*"
-                ]
-              }
-            ]
-          },
-          "tourism=hotel",
-          {
-            "and": [
-              "bicycle=designated",
-              "highway=path"
-            ]
-          },
-          "tourism=map",
-          {
-            "and": [
-              "boundary=protected_area",
-              "protect_class!=98"
-            ]
-          },
-          "information=board",
-          "tourism=map",
-          "tourism=hotel",
-          "tourism=map",
-          "tower:type=observation",
-          {
-            "and": [
-              "bicycle=designated",
-              "highway=path"
-            ]
-          },
-          "office=government",
           "tourism=hotel",
           "tourism=artwork",
+          "tourism=hotel",
+          "tourism=map",
           {
             "and": [
               "boundary=protected_area",
@@ -12091,15 +12156,14 @@
           "amenity=charging_station",
           "amenity=toilets",
           "amenity=clock",
-          "amenity=bicycle_wash",
-          "amenity=bike_wash",
-          "amenity=bicycle_rental",
-          "amenity=bicycle_parking",
+          "amenity=bicycle_library",
+          "amenity=charging_station",
+          "amenity=hospital",
+          "amenity=clinic",
           "amenity=college",
           "amenity=university",
           "amenity=school",
           "amenity=childcare",
-          "amenity=kindergarten",
           "amenity=fast_food",
           "amenity=restaurant",
           "amenity=ice_cream",
@@ -12233,7 +12297,9 @@
           "emergency=fire_extinguisher",
           "emergency=ambulance_station",
           "emergency=ambulance_station",
+          "emergency=assembly_point",
           "emergency=defibrillator",
+          "emergency=disaster_response",
           "generator:source=wind",
           "generator:source=wind",
           "healthcare=physiotherapist",
@@ -12274,35 +12340,13 @@
               "highway=path"
             ]
           },
+          "amenity=bicycle_wash",
+          "amenity=bike_wash",
+          "amenity=bicycle_rental",
           "barrier=bollard",
           "barrier=cycle_barrier",
           "highway=traffic_signals",
           "highway=crossing",
-          "shop=bicycle",
-          {
-            "and": [
-              "shop=sports",
-              {
-                "or": [
-                  "sport=bicycle",
-                  "sport=cycling",
-                  "sport="
-                ]
-              },
-              "service:bicycle:retail!=no",
-              "service:bicycle:repair!=no"
-            ]
-          },
-          "amenity=bicycle_repair_station",
-          "amenity=bicycle_library",
-          "amenity=charging_station",
-          "association=cycling",
-          "association=bicycle",
-          "barrier=wall",
-          "club=bicycle",
-          "club=cycling",
-          "construction:amenity=charging_station",
-          "disused:amenity=charging_station",
           "highway=elevator",
           "highway=cycleway",
           "highway=residential",
@@ -12335,6 +12379,121 @@
           "highway=pedestrian",
           "highway=living_street",
           "highway=elevator",
+          "indoor=room",
+          "indoor=area",
+          "indoor=wall",
+          "indoor=door",
+          "indoor=level",
+          "indoor=door",
+          "indoor=room",
+          "indoor=area",
+          "indoor=wall",
+          "indoor=door",
+          "indoor=level",
+          "indoor=door",
+          "information=guidepost",
+          "information=map",
+          "information=map",
+          "information=guidepost",
+          "leisure=hackerspace",
+          "leisure=bird_hide",
+          "leisure=nature_reserve",
+          "leisure=picnic_table",
+          "memorial=ghost_bike",
+          "shop=bicycle",
+          {
+            "and": [
+              "shop=sports",
+              {
+                "or": [
+                  "sport=bicycle",
+                  "sport=cycling",
+                  "sport="
+                ]
+              },
+              "service:bicycle:retail!=no",
+              "service:bicycle:repair!=no"
+            ]
+          },
+          "amenity=bicycle_repair_station",
+          "amenity=bicycle_parking",
+          "amenity=kindergarten",
+          "association=cycling",
+          "association=bicycle",
+          "barrier=wall",
+          "club=bicycle",
+          "club=cycling",
+          "construction:amenity=charging_station",
+          "disused:amenity=charging_station",
+          "emergency=assembly_point",
+          "emergency=disaster_response",
+          "isced:level:2011=early_childhood",
+          "leisure=picnic_table",
+          "ngo=cycling",
+          "ngo=bicycle",
+          "planned:amenity=charging_station",
+          "planned:amenity=charging_station",
+          "post_office=post_partner",
+          "service:bicycle:cleaning=yes",
+          "service:bicycle:cleaning=diy",
+          "service:bicycle:rental=yes",
+          "service:bicycle:rental=yes",
+          "sport=cycling",
+          "theme=bicycle",
+          "theme=cycling",
+          "tourism=artwork",
+          {
+            "and": [
+              "bicycle=designated",
+              "highway=path"
+            ]
+          },
+          {
+            "and": [
+              "sport=climbing",
+              {
+                "or": [
+                  "club~.+",
+                  "office~.+"
+                ]
+              }
+            ]
+          },
+          "information=guidepost",
+          {
+            "and": [
+              "amenity=school",
+              {
+                "or": [
+                  "isced:2011:level~.*bachelor.*",
+                  "isced:2011:level~.*master.*"
+                ]
+              }
+            ]
+          },
+          "tourism=hotel",
+          {
+            "and": [
+              "bicycle=designated",
+              "highway=path"
+            ]
+          },
+          "tourism=map",
+          {
+            "and": [
+              "boundary=protected_area",
+              "protect_class!=98"
+            ]
+          },
+          "information=board",
+          "tourism=map",
+          "tower:type=observation",
+          {
+            "and": [
+              "bicycle=designated",
+              "highway=path"
+            ]
+          },
           "highway=traffic_signals",
           "highway=crossing",
           "highway=cycleway",
@@ -12384,7 +12543,6 @@
           "highway=footway",
           "highway=living_street",
           "information=guidepost",
-          "leisure=bird_hide",
           "leisure=dog_park",
           "leisure=dog_park",
           "leisure=picnic_table",
@@ -12411,6 +12569,7 @@
               "service:bicycle:repair!=no"
             ]
           },
+          "leisure=bird_hide",
           "sport=cycling",
           "surface:colour=rainbow",
           "theme=bicycle",
@@ -12467,38 +12626,16 @@
           "highway=crossing",
           "highway=speed_camera",
           "highway=speed_display",
-          "indoor=room",
-          "indoor=area",
-          "indoor=wall",
-          "indoor=door",
-          "indoor=level",
           "indoor=door",
           "indoor=room",
           "indoor=area",
           "indoor=wall",
           "indoor=door",
           "indoor=level",
-          "indoor=door",
-          "indoor=door",
-          "indoor=room",
-          "indoor=area",
-          "indoor=wall",
-          "indoor=door",
-          "indoor=level",
-          "information=guidepost",
-          "information=map",
-          "information=map",
-          "information=guidepost",
           "information=guidepost",
           "information=board",
           "information=map",
           "isced:level:2011=early_childhood",
-          "isced:level:2011=early_childhood",
-          "leisure=picnic_table",
-          "leisure=hackerspace",
-          "leisure=bird_hide",
-          "leisure=nature_reserve",
-          "leisure=picnic_table",
           "leisure=fitness_centre",
           "leisure=fitness_station",
           "leisure=hackerspace",
@@ -12506,80 +12643,14 @@
           "leisure=picnic_table",
           "leisure=pitch",
           "memorial=ghost_bike",
-          "memorial=ghost_bike",
-          "ngo=cycling",
-          "ngo=bicycle",
           "office=government",
-          "planned:amenity=charging_station",
-          "planned:amenity=charging_station",
-          "post_office=post_partner",
-          "service:bicycle:cleaning=yes",
-          "service:bicycle:cleaning=diy",
-          "service:bicycle:rental=yes",
-          "service:bicycle:rental=yes",
-          "sport=cycling",
+          "office=government",
           "surface:colour=rainbow",
-          "theme=bicycle",
-          "theme=cycling",
           "toilets=yes",
-          "tourism=artwork",
-          {
-            "and": [
-              "bicycle=designated",
-              "highway=path"
-            ]
-          },
-          {
-            "and": [
-              "sport=climbing",
-              {
-                "or": [
-                  "club~.+",
-                  "office~.+"
-                ]
-              }
-            ]
-          },
-          "information=guidepost",
-          {
-            "and": [
-              "amenity=school",
-              {
-                "or": [
-                  "isced:2011:level~.*bachelor.*",
-                  "isced:2011:level~.*master.*"
-                ]
-              }
-            ]
-          },
-          "tourism=hotel",
-          {
-            "and": [
-              "bicycle=designated",
-              "highway=path"
-            ]
-          },
-          "tourism=map",
-          {
-            "and": [
-              "boundary=protected_area",
-              "protect_class!=98"
-            ]
-          },
-          "information=board",
-          "tourism=map",
-          "tourism=hotel",
-          "tourism=map",
-          "tower:type=observation",
-          {
-            "and": [
-              "bicycle=designated",
-              "highway=path"
-            ]
-          },
-          "office=government",
           "tourism=hotel",
           "tourism=artwork",
+          "tourism=hotel",
+          "tourism=map",
           {
             "and": [
               "boundary=protected_area",
@@ -19410,6 +19481,8 @@
           "amenity=nightclub",
           "amenity=bicycle_rental",
           "amenity=bicycle_library",
+          "amenity=hospital",
+          "amenity=clinic",
           "amenity=college",
           "amenity=university",
           "amenity=school",
@@ -19445,7 +19518,7 @@
           "club=climbing",
           "club=bicycle",
           "club=cycling",
-          "isced:level:2011=early_childhood",
+          "emergency=disaster_response",
           "ngo=cycling",
           "service:bicycle:rental=yes",
           {
@@ -19491,9 +19564,11 @@
             ]
           },
           "healthcare=physiotherapist",
+          "isced:level:2011=early_childhood",
           "leisure=hackerspace",
           "leisure=nature_reserve",
-          "shop=bicycle",
+          "office=government",
+          "service:bicycle:rental=yes",
           "tourism=hotel",
           {
             "and": [
@@ -19501,8 +19576,7 @@
               "protect_class!=98"
             ]
           },
-          "office=government",
-          "service:bicycle:rental=yes",
+          "shop=bicycle",
           "tourism=hotel",
           "tower:type=observation",
           {
@@ -19539,10 +19613,10 @@
           "club=bicycle",
           "club=cycling",
           "club=climbing",
+          "emergency=disaster_response",
           "isced:level:2011=early_childhood",
           "leisure=fitness_centre",
           "leisure=hackerspace",
-          "leisure=nature_reserve",
           "ngo=cycling",
           "ngo=bicycle",
           "office=government",
@@ -19560,7 +19634,7 @@
               }
             ]
           },
-          "tourism=hotel",
+          "leisure=nature_reserve",
           {
             "and": [
               "boundary=protected_area",
@@ -19583,6 +19657,7 @@
           "leisure=sports_centre",
           "leisure=fitness_centre",
           "leisure=sports_centre",
+          "tourism=hotel",
           "tower:type=observation",
           {
             "and": [
@@ -19795,6 +19870,8 @@
           "amenity=nightclub",
           "amenity=bicycle_rental",
           "amenity=bicycle_library",
+          "amenity=hospital",
+          "amenity=clinic",
           "amenity=college",
           "amenity=university",
           "amenity=school",
@@ -19808,17 +19885,73 @@
           "amenity=doctors",
           "amenity=dentist",
           "amenity=hospital",
-          "amenity=clinic",
           "amenity=pharmacy",
           "amenity=love_hotel",
           "amenity=bar",
+          "amenity=pub",
           "amenity=cafe",
-          "amenity=biergarten",
           "amenity=nightclub",
+          "amenity=fast_food",
           "amenity=restaurant",
-          "amenity=pharmacy",
           "amenity=doctors",
+          "amenity=hospital",
           "amenity=clinic",
+          "association=cycling",
+          "association=bicycle",
+          "club=climbing",
+          "club=bicycle",
+          "club=cycling",
+          "healthcare=physiotherapist",
+          "leisure=hackerspace",
+          "ngo=cycling",
+          "service:bicycle:rental=yes",
+          {
+            "and": [
+              "sport=climbing",
+              {
+                "or": [
+                  "club~.+",
+                  "office~.+"
+                ]
+              }
+            ]
+          },
+          "shop=bicycle",
+          {
+            "and": [
+              "shop=sports",
+              {
+                "or": [
+                  "sport=bicycle",
+                  "sport=cycling",
+                  "sport="
+                ]
+              },
+              "service:bicycle:retail!=no",
+              "service:bicycle:repair!=no"
+            ]
+          },
+          "amenity=clinic",
+          "isced:level:2011=early_childhood",
+          "ngo=bicycle",
+          "service:bicycle:rental=yes",
+          "sport=cycling",
+          "theme=bicycle",
+          "theme=cycling",
+          {
+            "and": [
+              "amenity=school",
+              {
+                "or": [
+                  "isced:2011:level~.*bachelor.*",
+                  "isced:2011:level~.*master.*"
+                ]
+              }
+            ]
+          },
+          "amenity=ice_cream",
+          "amenity=biergarten",
+          "amenity=pharmacy",
           "amenity=bicycle_library",
           "amenity=bicycle_rental",
           "amenity=bar",
@@ -19848,75 +19981,25 @@
           "amenity=restaurant",
           "association=cycling",
           "association=bicycle",
-          "association=cycling",
-          "association=bicycle",
-          "club=climbing",
-          "club=bicycle",
-          "club=cycling",
           "club=bicycle",
           "club=cycling",
           "club=climbing",
           "healthcare=physiotherapist",
           "isced:level:2011=early_childhood",
-          "isced:level:2011=early_childhood",
-          "leisure=hackerspace",
           "leisure=fitness_centre",
           "leisure=hackerspace",
           "leisure=sports_centre",
           "leisure=fitness_centre",
           "leisure=sports_centre",
           "ngo=cycling",
-          "ngo=cycling",
-          "office=government",
-          "service:bicycle:rental=yes",
-          {
-            "and": [
-              "sport=climbing",
-              {
-                "or": [
-                  "club~.+",
-                  "office~.+"
-                ]
-              }
-            ]
-          },
-          "service:bicycle:rental=yes",
-          "shop=bicycle",
-          {
-            "and": [
-              "shop=sports",
-              {
-                "or": [
-                  "sport=bicycle",
-                  "sport=cycling",
-                  "sport="
-                ]
-              },
-              "service:bicycle:retail!=no",
-              "service:bicycle:repair!=no"
-            ]
-          },
           "ngo=bicycle",
+          "office=government",
+          "office=government",
           "service:bicycle:rental=yes",
           "shop=bicycle",
           "sport=cycling",
           "theme=bicycle",
           "theme=cycling",
-          {
-            "and": [
-              "amenity=school",
-              {
-                "or": [
-                  "isced:2011:level~.*bachelor.*",
-                  "isced:2011:level~.*master.*"
-                ]
-              }
-            ]
-          },
-          "amenity=ice_cream",
-          "amenity=pub",
-          "amenity=fast_food",
-          "amenity=hospital",
           "tourism=hotel",
           "tourism=hotel",
           {
@@ -19933,10 +20016,6 @@
               "service:bicycle:repair!=no"
             ]
           },
-          "ngo=bicycle",
-          "sport=cycling",
-          "theme=bicycle",
-          "theme=cycling",
           {
             "and": [
               "sport=climbing",
@@ -19948,8 +20027,6 @@
               }
             ]
           },
-          "healthcare=physiotherapist",
-          "office=government",
           "tourism=hotel",
           {
             "and": [
@@ -20120,30 +20197,10 @@
           "amenity=nightclub",
           "amenity=bicycle_rental",
           "amenity=bicycle_library",
-          "amenity=college",
-          "amenity=university",
-          "amenity=school",
-          "amenity=childcare",
-          "amenity=kindergarten",
-          "amenity=fast_food",
-          "amenity=restaurant",
-          "amenity=ice_cream",
-          "amenity=fast_food",
-          "amenity=restaurant",
-          "amenity=doctors",
-          "amenity=dentist",
           "amenity=hospital",
           "amenity=clinic",
-          "amenity=pharmacy",
-          "amenity=love_hotel",
-          "amenity=bar",
-          "amenity=cafe",
-          "amenity=biergarten",
-          "amenity=nightclub",
-          "amenity=restaurant",
-          "amenity=pharmacy",
-          "amenity=doctors",
-          "amenity=clinic",
+          "amenity=college",
+          "amenity=university",
           "amenity=bicycle_library",
           "amenity=bicycle_rental",
           "amenity=bar",
@@ -20169,47 +20226,29 @@
           "amenity=veterinary",
           "amenity=fast_food",
           "amenity=restaurant",
+          "amenity=pharmacy",
           "amenity=ice_cream",
+          "amenity=fast_food",
           "amenity=restaurant",
           "association=cycling",
           "association=bicycle",
-          "club=bicycle",
-          "club=cycling",
-          "club=climbing",
-          "isced:level:2011=early_childhood",
-          "leisure=fitness_centre",
-          "leisure=hackerspace",
-          "leisure=sports_centre",
-          "ngo=bicycle",
-          "service:bicycle:rental=yes",
-          "shop=bicycle",
-          {
-            "and": [
-              "shop=sports",
-              {
-                "or": [
-                  "sport=bicycle",
-                  "sport=cycling",
-                  "sport="
-                ]
-              },
-              "service:bicycle:retail!=no",
-              "service:bicycle:repair!=no"
-            ]
-          },
-          "amenity=pharmacy",
-          "amenity=fast_food",
           "association=cycling",
           "association=bicycle",
           "club=climbing",
           "club=bicycle",
           "club=cycling",
+          "club=bicycle",
+          "club=cycling",
+          "club=climbing",
           "healthcare=physiotherapist",
           "isced:level:2011=early_childhood",
+          "leisure=fitness_centre",
           "leisure=hackerspace",
           "leisure=sports_centre",
+          "leisure=fitness_centre",
           "ngo=cycling",
           "ngo=cycling",
+          "office=government",
           "service:bicycle:rental=yes",
           {
             "and": [
@@ -20222,6 +20261,7 @@
               }
             ]
           },
+          "service:bicycle:rental=yes",
           "shop=bicycle",
           {
             "and": [
@@ -20238,9 +20278,8 @@
             ]
           },
           "ngo=bicycle",
-          "office=government",
           "service:bicycle:rental=yes",
-          "sport=cycling",
+          "shop=bicycle",
           "sport=cycling",
           "theme=bicycle",
           "theme=cycling",
@@ -20255,14 +20294,55 @@
               }
             ]
           },
-          "amenity=ice_cream",
-          "amenity=pub",
+          "amenity=school",
+          "amenity=childcare",
+          "amenity=kindergarten",
           "amenity=fast_food",
+          "amenity=restaurant",
+          "amenity=ice_cream",
+          "amenity=fast_food",
+          "amenity=restaurant",
+          "amenity=doctors",
+          "amenity=dentist",
           "amenity=hospital",
+          "amenity=clinic",
+          "amenity=pharmacy",
+          "amenity=love_hotel",
+          "amenity=ice_cream",
+          "amenity=bar",
+          "amenity=pub",
+          "amenity=cafe",
+          "amenity=biergarten",
+          "amenity=nightclub",
+          "amenity=fast_food",
+          "amenity=restaurant",
+          "amenity=pharmacy",
+          "amenity=doctors",
+          "amenity=hospital",
+          "amenity=clinic",
+          "healthcare=physiotherapist",
+          "isced:level:2011=early_childhood",
+          "leisure=hackerspace",
+          "tourism=hotel",
+          "tourism=hotel",
+          {
+            "and": [
+              "shop=sports",
+              {
+                "or": [
+                  "sport=bicycle",
+                  "sport=cycling",
+                  "sport="
+                ]
+              },
+              "service:bicycle:retail!=no",
+              "service:bicycle:repair!=no"
+            ]
+          },
+          "ngo=bicycle",
+          "sport=cycling",
           "theme=bicycle",
           "theme=cycling",
-          "tourism=hotel",
-          "tourism=hotel",
           {
             "and": [
               "sport=climbing",
@@ -20274,7 +20354,6 @@
               }
             ]
           },
-          "healthcare=physiotherapist",
           "office=government",
           "tourism=hotel",
           {
@@ -20288,7 +20367,7 @@
               }
             ]
           },
-          "leisure=fitness_centre",
+          "leisure=sports_centre",
           {
             "and": [
               {
@@ -67451,6 +67530,256 @@
       "id": "Cargo bike capacity?"
     },
     {
+      "id": "hospital_name",
+      "render": {
+        "en": "This hospital is called {name}",
+        "ca": "Aquest hospital s'anomena {name}",
+        "de": "Der Name des Krankenhauses lautet {name}",
+        "nl": "Dit ziekenhuis heet {name}",
+        "ru": "Эта больница называется {name}",
+        "cs": "Tato nemocnice se jmenuje {name}"
+      },
+      "question": {
+        "en": "What is the name of this hospital?",
+        "de": "Wie lautet der Name des Krankenhauses?",
+        "nl": "Wat is de naam van dit ziekenhuis?",
+        "ca": "Quin és el nom d'aquest hospital?",
+        "ru": "Как называется эта больница?",
+        "cs": "Jak se jmenuje tato nemocnice?"
+      },
+      "freeform": {
+        "key": "name",
+        "inline": true
+      },
+      "condition": {
+        "and": [
+          {
+            "and": [
+              {
+                "or": [
+                  "amenity=hospital",
+                  "amenity=clinic"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "inpatient",
+      "question": {
+        "en": "Does this facility admit inpatients?",
+        "de": "Nimmt die Einrichtung stationäre Patienten auf?",
+        "ca": "Aquesta instal·lació admet hospitalitzacions?",
+        "cs": "Přijímá toto zařízení pacienty na lůžko?"
+      },
+      "mappings": [
+        {
+          "if": "amenity=clinic",
+          "then": {
+            "en": "This is a clinic - patients can not stay overnight",
+            "de": "Dies ist ein Medizinisches Versorgungszentrum - Patienten können nicht über Nacht bleiben",
+            "ca": "Açò és una clínica: els pacients no poden passar la nit",
+            "cs": "Toto je klinika - pacienti nemohou zůstat přes noc"
+          }
+        },
+        {
+          "if": "amenity=hospital",
+          "then": {
+            "en": "This is a hospital - patients can be admitted here for multiple days",
+            "de": "Dies ist ein Krankenhaus - Patienten können hier für mehrere Tage aufgenommen werden",
+            "ca": "Es tracta d'un hospital: els pacients poden estar ingressats aquí durant diversos dies",
+            "cs": "Jedná se o nemocnici – pacienti zde mohou být přijímáni na více dní"
+          }
+        }
+      ],
+      "questionHint": {
+        "en": "An inpatient is a patient which stays for multiple days in the facility",
+        "de": "Ein stationärer Patient ist ein Patient, der mehrere Tage in der Einrichtung bleibt",
+        "ca": "Un pacient hospitalitzat és un pacient que roman diversos dies a la instal·lació",
+        "cs": "Hospitalizovaný pacient je pacient, který v zařízení pobývá více dní"
+      },
+      "condition": {
+        "or": [
+          "amenity=hospital",
+          "amenity=clinic",
+          "amenity=hospital",
+          "amenity=clinic",
+          "amenity=hospital",
+          "amenity=clinic",
+          "amenity=hospital",
+          "amenity=clinic"
+        ]
+      }
+    },
+    {
+      "id": "oh-visitor",
+      "question": {
+        "en": "When are visitors allowed to visit?",
+        "de": "Wann ist der Besuch für Besucher gestattet?",
+        "ca": "Quan poden anar els visitants?",
+        "cs": "Kdy je povolena návštěva?"
+      },
+      "questionHint": {
+        "en": "These are the regular visitor hours. Some wands have different visitor hours or might allow visitors in emergencies",
+        "de": "Dies sind die regulären Besuchszeiten. Einige Stationen haben andere Besuchszeiten oder erlauben Besucher in Notfällen",
+        "ca": "Aquests són els horaris habituals dels visitants. Algunes plantes tenen diferents horaris de visita o poden permetre els visitants en cas d'emergència",
+        "cs": "Jedná se o pravidelné návštěvní hodiny. Některé oddělení mají jiné návštěvní hodiny nebo mohou povolit návštěvy v naléhavých případech"
+      },
+      "freeform": {
+        "key": "opening_hours:visitors",
+        "type": "opening_hours",
+        "inline": false
+      },
+      "render": {
+        "en": "<h3>Opening hours for visitors</h3>Regular visitors are allowed at the following moments: {opening_hours_table(opening_hours:visitors)}<p class='subtle'>Some wands might have different opening hours. Many hospitals allow visits during emergencies too.</p>",
+        "de": "<h3>Öffnungszeiten für Besucher</h3>Regelmäßige Besucher sind zu den folgenden Zeiten zugelassen: {opening_hours_table(opening_hours:visitors)}<p class='subtle'>Einige Krankenhäuser haben möglicherweise andere Öffnungszeiten. Viele Krankenhäuser erlauben Besuche auch in Notfällen.</p>",
+        "ca": "<h3>Horari d'obertura per a visitants</h3>S'admeten visitants habituals en els moments següents: {opening_hours_table(opening_hours:visitors)}<p class='subtle'>Algunes palntes poden tenir un horari d'obertura diferent. Molts hospitals també permeten visites en cas d'emergència.</p>",
+        "cs": "<h3>Otevírací doba pro návštěvníky</h3>Běžným návštěvníkům je vstup povolen v následujících časech: {opening_hours_table(opening_hours:visitors)}<p class='subtle'>Některá oddělení mohou mít jinou otevírací dobu. Mnohé nemocnice povolují návštěvy i v době pohotovosti.</p>"
+      },
+      "condition": {
+        "or": [
+          "amenity=hospital",
+          "amenity=clinic",
+          "amenity=hospital",
+          "amenity=clinic",
+          "amenity=hospital",
+          "amenity=clinic",
+          "amenity=hospital",
+          "amenity=clinic"
+        ]
+      }
+    },
+    {
+      "id": "assembly_point_name",
+      "freeform": {
+        "key": "name",
+        "inline": true
+      },
+      "question": {
+        "en": "What is the name of this assembly point?",
+        "it": "Qual è il nome di questo punto di raccolta?"
+      },
+      "render": {
+        "en": "This assembly point is named <b>{name}</b>",
+        "it": "Questo punto di raccolta si chiama <b>{name}</b>"
+      },
+      "condition": {
+        "or": [
+          "emergency=assembly_point",
+          "emergency=assembly_point"
+        ]
+      }
+    },
+    {
+      "id": "assembly_point_operator",
+      "render": {
+        "en": "This assembly point is operated by <b>{operator}</b>",
+        "it": "Questo punto di raccolta è gestita da <b>{operator}</b>"
+      },
+      "question": {
+        "en": "What organization operates this assembly point?",
+        "it": "Quale organizzazione gestisce questo punto di raccolta?"
+      },
+      "freeform": {
+        "key": "operator",
+        "type": "string",
+        "inline": true
+      },
+      "condition": {
+        "or": [
+          "emergency=assembly_point",
+          "emergency=assembly_point"
+        ]
+      }
+    },
+    {
+      "id": "disaster_type",
+      "question": {
+        "en": "For which disaster type is this assembly point meant?",
+        "it": "Per quali tipi di disastro è pensato questo punto di raccolta?"
+      },
+      "multiAnswer": true,
+      "mappings": [
+        {
+          "if": "assembly_point:earthquake=yes",
+          "ifnot": "assembly_point:earthquake=",
+          "then": {
+            "en": "Earthquake",
+            "it": "Terremoto"
+          },
+          "icon": {
+            "path": "./assets/layers/assembly_point/earthquake.svg",
+            "class": "medium"
+          }
+        },
+        {
+          "if": "assembly_point:flood=yes",
+          "ifnot": "assembly_point:flood=",
+          "then": {
+            "en": "Flood",
+            "it": "Alluvione"
+          },
+          "icon": {
+            "path": "./assets/layers/assembly_point/flood.svg",
+            "class": "medium"
+          }
+        },
+        {
+          "if": "assembly_point:fire=yes",
+          "ifnot": "assembly_point:fire=",
+          "then": {
+            "en": "Fire",
+            "it": "Incendio"
+          },
+          "icon": {
+            "path": "./assets/layers/assembly_point/fire.svg",
+            "class": "medium"
+          }
+        },
+        {
+          "if": "assembly_point:landslide=yes",
+          "ifnot": "assembly_point:landslide=",
+          "then": {
+            "en": "Landslide",
+            "it": "Frana"
+          },
+          "icon": {
+            "path": "./assets/layers/assembly_point/landslide.svg",
+            "class": "medium"
+          }
+        }
+      ],
+      "condition": {
+        "or": [
+          "emergency=assembly_point",
+          "emergency=assembly_point"
+        ]
+      }
+    },
+    {
+      "id": "disaster_response_name",
+      "freeform": {
+        "key": "name",
+        "inline": true
+      },
+      "question": {
+        "en": "What is the name of this organization?",
+        "it": "Qual è il nome di questa organizzazione?"
+      },
+      "render": {
+        "en": "This organization is named <b>{name}</b>",
+        "it": "Questa organizzazione si chiama <b>{name}</b>"
+      },
+      "condition": {
+        "or": [
+          "emergency=disaster_response",
+          "emergency=disaster_response"
+        ]
+      }
+    },
+    {
       "id": "institution-kind",
       "question": {
         "en": "What kind of institution is this?",
@@ -73120,124 +73449,6 @@
               "amenity=dentist"
             ]
           }
-        ]
-      }
-    },
-    {
-      "id": "hospital_name",
-      "render": {
-        "en": "This hospital is called {name}",
-        "ca": "Aquest hospital s'anomena {name}",
-        "de": "Der Name des Krankenhauses lautet {name}",
-        "nl": "Dit ziekenhuis heet {name}",
-        "ru": "Эта больница называется {name}",
-        "cs": "Tato nemocnice se jmenuje {name}"
-      },
-      "question": {
-        "en": "What is the name of this hospital?",
-        "de": "Wie lautet der Name des Krankenhauses?",
-        "nl": "Wat is de naam van dit ziekenhuis?",
-        "ca": "Quin és el nom d'aquest hospital?",
-        "ru": "Как называется эта больница?",
-        "cs": "Jak se jmenuje tato nemocnice?"
-      },
-      "freeform": {
-        "key": "name",
-        "inline": true
-      },
-      "condition": {
-        "and": [
-          {
-            "and": [
-              {
-                "or": [
-                  "amenity=hospital",
-                  "amenity=clinic"
-                ]
-              }
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "inpatient",
-      "question": {
-        "en": "Does this facility admit inpatients?",
-        "de": "Nimmt die Einrichtung stationäre Patienten auf?",
-        "ca": "Aquesta instal·lació admet hospitalitzacions?",
-        "cs": "Přijímá toto zařízení pacienty na lůžko?"
-      },
-      "mappings": [
-        {
-          "if": "amenity=clinic",
-          "then": {
-            "en": "This is a clinic - patients can not stay overnight",
-            "de": "Dies ist ein Medizinisches Versorgungszentrum - Patienten können nicht über Nacht bleiben",
-            "ca": "Açò és una clínica: els pacients no poden passar la nit",
-            "cs": "Toto je klinika - pacienti nemohou zůstat přes noc"
-          }
-        },
-        {
-          "if": "amenity=hospital",
-          "then": {
-            "en": "This is a hospital - patients can be admitted here for multiple days",
-            "de": "Dies ist ein Krankenhaus - Patienten können hier für mehrere Tage aufgenommen werden",
-            "ca": "Es tracta d'un hospital: els pacients poden estar ingressats aquí durant diversos dies",
-            "cs": "Jedná se o nemocnici – pacienti zde mohou být přijímáni na více dní"
-          }
-        }
-      ],
-      "questionHint": {
-        "en": "An inpatient is a patient which stays for multiple days in the facility",
-        "de": "Ein stationärer Patient ist ein Patient, der mehrere Tage in der Einrichtung bleibt",
-        "ca": "Un pacient hospitalitzat és un pacient que roman diversos dies a la instal·lació",
-        "cs": "Hospitalizovaný pacient je pacient, který v zařízení pobývá více dní"
-      },
-      "condition": {
-        "or": [
-          "amenity=hospital",
-          "amenity=clinic",
-          "amenity=hospital",
-          "amenity=clinic",
-          "amenity=hospital",
-          "amenity=clinic"
-        ]
-      }
-    },
-    {
-      "id": "oh-visitor",
-      "question": {
-        "en": "When are visitors allowed to visit?",
-        "de": "Wann ist der Besuch für Besucher gestattet?",
-        "ca": "Quan poden anar els visitants?",
-        "cs": "Kdy je povolena návštěva?"
-      },
-      "questionHint": {
-        "en": "These are the regular visitor hours. Some wands have different visitor hours or might allow visitors in emergencies",
-        "de": "Dies sind die regulären Besuchszeiten. Einige Stationen haben andere Besuchszeiten oder erlauben Besucher in Notfällen",
-        "ca": "Aquests són els horaris habituals dels visitants. Algunes plantes tenen diferents horaris de visita o poden permetre els visitants en cas d'emergència",
-        "cs": "Jedná se o pravidelné návštěvní hodiny. Některé oddělení mají jiné návštěvní hodiny nebo mohou povolit návštěvy v naléhavých případech"
-      },
-      "freeform": {
-        "key": "opening_hours:visitors",
-        "type": "opening_hours",
-        "inline": false
-      },
-      "render": {
-        "en": "<h3>Opening hours for visitors</h3>Regular visitors are allowed at the following moments: {opening_hours_table(opening_hours:visitors)}<p class='subtle'>Some wands might have different opening hours. Many hospitals allow visits during emergencies too.</p>",
-        "de": "<h3>Öffnungszeiten für Besucher</h3>Regelmäßige Besucher sind zu den folgenden Zeiten zugelassen: {opening_hours_table(opening_hours:visitors)}<p class='subtle'>Einige Krankenhäuser haben möglicherweise andere Öffnungszeiten. Viele Krankenhäuser erlauben Besuche auch in Notfällen.</p>",
-        "ca": "<h3>Horari d'obertura per a visitants</h3>S'admeten visitants habituals en els moments següents: {opening_hours_table(opening_hours:visitors)}<p class='subtle'>Algunes palntes poden tenir un horari d'obertura diferent. Molts hospitals també permeten visites en cas d'emergència.</p>",
-        "cs": "<h3>Otevírací doba pro návštěvníky</h3>Běžným návštěvníkům je vstup povolen v následujících časech: {opening_hours_table(opening_hours:visitors)}<p class='subtle'>Některá oddělení mohou mít jinou otevírací dobu. Mnohé nemocnice povolují návštěvy i v době pohotovosti.</p>"
-      },
-      "condition": {
-        "or": [
-          "amenity=hospital",
-          "amenity=clinic",
-          "amenity=hospital",
-          "amenity=clinic",
-          "amenity=hospital",
-          "amenity=clinic"
         ]
       }
     },
