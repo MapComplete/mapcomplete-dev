@@ -6108,6 +6108,18 @@
             "render": "Memorial plaque"
         }
     },
+    "mountain_rescue": {
+        "description": "A building where first aid responders store material and might be on watch",
+        "name": "Mountain rescue stations",
+        "presets": {
+            "0": {
+                "title": "a mountain rescue station"
+            }
+        },
+        "title": {
+            "render": "Mountain rescue station"
+        }
+    },
     "nature_reserve": {
         "description": "A nature reserve is an area where nature can take its course",
         "filter": {

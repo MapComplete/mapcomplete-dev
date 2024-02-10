@@ -9105,6 +9105,18 @@
         }
       },
       {
+        "if": "emergency=mountain_rescue",
+        "then": {
+          "en": "Mountain rescue station"
+        }
+      },
+      {
+        "if": "emergency=mountain_rescue",
+        "then": {
+          "en": "Mountain rescue station"
+        }
+      },
+      {
         "if": {
           "and": [
             "highway=bus_stop",
@@ -11298,6 +11310,7 @@
           "emergency=assembly_point",
           "emergency=defibrillator",
           "emergency=disaster_response",
+          "emergency=mountain_rescue",
           "generator:source=wind",
           "generator:source=wind",
           "healthcare=physiotherapist",
@@ -11509,13 +11522,15 @@
           "highway=living_street",
           "highway=steps",
           "highway=street_lamp",
-          "highway=primary_link",
-          "highway=service",
-          "highway=pedestrian",
-          "highway=street_lamp",
-          "highway=bus_stop",
-          "information=map",
-          "information=board",
+          "highway=crossing",
+          "highway=cycleway",
+          "highway=residential",
+          "highway=tertiary",
+          "highway=unclassified",
+          "highway=primary",
+          "highway=tertiary_link",
+          "highway=secondary_link",
+          "leisure=pitch",
           "leisure=sports_centre",
           {
             "and": [
@@ -11529,18 +11544,15 @@
             ]
           },
           "highway=bus_stop",
-          "highway=crossing",
-          "highway=cycleway",
-          "highway=residential",
-          "highway=tertiary",
-          "highway=unclassified",
-          "highway=primary",
           "highway=secondary",
-          "highway=tertiary_link",
-          "highway=secondary_link",
+          "highway=primary_link",
+          "highway=service",
           "highway=footway",
+          "highway=pedestrian",
           "highway=living_street",
           "information=guidepost",
+          "information=map",
+          "information=board",
           "leisure=dog_park",
           "leisure=dog_park",
           "leisure=picnic_table",
@@ -11619,6 +11631,7 @@
           "barrier=kerb",
           "emergency=fire_extinguisher",
           "emergency=fire_hydrant",
+          "emergency=mountain_rescue",
           "healthcare=physiotherapist",
           "highway=elevator",
           "highway=crossing",
@@ -11639,7 +11652,6 @@
           "leisure=hackerspace",
           "leisure=nature_reserve",
           "leisure=picnic_table",
-          "leisure=pitch",
           "memorial=ghost_bike",
           "office=government",
           "office=government",
@@ -11694,6 +11706,8 @@
               "highway=path"
             ]
           },
+          "highway=street_lamp",
+          "highway=bus_stop",
           "leisure=pitch",
           "leisure=pitch",
           "leisure=fitness_centre",
@@ -12298,6 +12312,7 @@
           "emergency=assembly_point",
           "emergency=defibrillator",
           "emergency=disaster_response",
+          "emergency=mountain_rescue",
           "generator:source=wind",
           "generator:source=wind",
           "healthcare=physiotherapist",
@@ -12509,13 +12524,15 @@
           "highway=living_street",
           "highway=steps",
           "highway=street_lamp",
-          "highway=primary_link",
-          "highway=service",
-          "highway=pedestrian",
-          "highway=street_lamp",
-          "highway=bus_stop",
-          "information=map",
-          "information=board",
+          "highway=crossing",
+          "highway=cycleway",
+          "highway=residential",
+          "highway=tertiary",
+          "highway=unclassified",
+          "highway=primary",
+          "highway=tertiary_link",
+          "highway=secondary_link",
+          "leisure=pitch",
           "leisure=sports_centre",
           {
             "and": [
@@ -12529,18 +12546,15 @@
             ]
           },
           "highway=bus_stop",
-          "highway=crossing",
-          "highway=cycleway",
-          "highway=residential",
-          "highway=tertiary",
-          "highway=unclassified",
-          "highway=primary",
           "highway=secondary",
-          "highway=tertiary_link",
-          "highway=secondary_link",
+          "highway=primary_link",
+          "highway=service",
           "highway=footway",
+          "highway=pedestrian",
           "highway=living_street",
           "information=guidepost",
+          "information=map",
+          "information=board",
           "leisure=dog_park",
           "leisure=dog_park",
           "leisure=picnic_table",
@@ -12619,6 +12633,7 @@
           "barrier=kerb",
           "emergency=fire_extinguisher",
           "emergency=fire_hydrant",
+          "emergency=mountain_rescue",
           "healthcare=physiotherapist",
           "highway=elevator",
           "highway=crossing",
@@ -12639,7 +12654,6 @@
           "leisure=hackerspace",
           "leisure=nature_reserve",
           "leisure=picnic_table",
-          "leisure=pitch",
           "memorial=ghost_bike",
           "office=government",
           "office=government",
@@ -12694,6 +12708,8 @@
               "highway=path"
             ]
           },
+          "highway=street_lamp",
+          "highway=bus_stop",
           "leisure=pitch",
           "leisure=pitch",
           "leisure=fitness_centre",
