@@ -6697,6 +6697,9 @@
             "mappings": {
                 "0": {
                     "then": "Disabled Parking Space"
+                },
+                "1": {
+                    "then": "Electric Vehicle Charging Parking Space"
                 }
             },
             "render": "Parking Space"
@@ -9935,6 +9938,78 @@
         "title": {
             "render": "Tree"
         }
+    },
+    "trolley_bay": {
+        "description": "Find trolley bays for shopping trolleys.",
+        "name": "Trolley Bays",
+        "presets": {
+            "0": {
+                "description": "A trolley bay for parking shopping carts.",
+                "title": "a trolley bay"
+            }
+        },
+        "tagRenderings": {
+            "cart_types": {
+                "mappings": {
+                    "0": {
+                        "then": "Trolleys with a magnifier are available"
+                    },
+                    "1": {
+                        "then": "Trolleys for wheelchair users are available"
+                    },
+                    "2": {
+                        "then": "Trolleys for children are available"
+                    },
+                    "3": {
+                        "then": "Trolleys with seats for children are available"
+                    },
+                    "4": {
+                        "then": "Trolleys with a flatbed are available"
+                    },
+                    "5": {
+                        "then": "Vertical trolleys for sheet-like goods are available"
+                    }
+                },
+                "question": "What kind of special trolleys are available?"
+            },
+            "covered": {
+                "mappings": {
+                    "0": {
+                        "then": "This trolley bay is covered"
+                    },
+                    "1": {
+                        "then": "This trolley bay is not covered"
+                    }
+                },
+                "question": "Is this trolley bay covered?"
+            },
+            "denominations": {
+                "mappings": {
+                    "0": {
+                        "then": "50 cent coins are accepted"
+                    },
+                    "1": {
+                        "then": "1 euro coins are accepted"
+                    },
+                    "2": {
+                        "then": "2 euro coins are accepted"
+                    }
+                },
+                "question": "What coins are accepted for the deposit?"
+            },
+            "deposit": {
+                "mappings": {
+                    "0": {
+                        "then": "A deposit is required for the trolleys"
+                    },
+                    "1": {
+                        "then": "No deposit is required for the trolleys"
+                    }
+                },
+                "question": "Is a deposit (e.g. a coin) required for the trolleys?"
+            }
+        },
+        "title": "Trolley Bay"
     },
     "unit": {
         "description": "Library layer with all common units.  Units can _only_ be imported from this file.",
