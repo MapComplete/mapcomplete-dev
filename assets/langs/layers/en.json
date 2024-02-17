@@ -5112,6 +5112,11 @@
             "ghost_bike-start_date": {
                 "question": "When was this Ghost bike installed?",
                 "render": "Placed on {start_date}"
+            },
+            "wikidata": {
+                "render": {
+                    "before": "<h3>Wikipedia page about the deceased person</h3>"
+                }
             }
         },
         "title": {
