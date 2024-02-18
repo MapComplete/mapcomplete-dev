@@ -62184,7 +62184,9 @@
           "amenity=toilets",
           "amenity=toilets",
           "amenity=toilets",
-          "amenity=toilets"
+          "amenity=toilets",
+          "toilets=yes",
+          "toilets=yes"
         ]
       }
     },
@@ -62196,11 +62198,22 @@
       },
       "condition": {
         "and": [
-          "amenity=toilets",
           {
             "or": [
               "toilets:menstrual_products=limited",
               "toilets:menstrual_products:location~.+"
+            ]
+          },
+          {
+            "or": [
+              "amenity=toilets",
+              "amenity=toilets",
+              "amenity=toilets",
+              "amenity=toilets",
+              "toilets=yes",
+              "amenity=toilets",
+              "amenity=toilets",
+              "toilets=yes"
             ]
           }
         ]
