@@ -5658,6 +5658,12 @@
             "render": "Information board"
         }
     },
+    "item_with_image": {
+        "name": "Items with at least one image",
+        "title": {
+            "render": "POI with image"
+        }
+    },
     "kerbs": {
         "description": "A layer showing kerbs.",
         "filter": {
