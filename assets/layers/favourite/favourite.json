@@ -76889,7 +76889,32 @@
       ]
     },
     {
-      "id": "memorial_wikidata",
+      "id": "memorial-wikidata",
+      "freeform": {
+        "key": "wikidata",
+        "type": "wikidata",
+        "inline": false
+      },
+      "question": {
+        "en": "What is the Wikipedia page about this memorial?"
+      },
+      "questionHint": {
+        "en": "This is a about the memorial itself, not about the person or event that the memorial remembers. If this memorial does not have a Wikipedia page or Wikidata entity, skip this question."
+      },
+      "render": {
+        "en": "<h3>Wikipedia page about the memorial</h3>{wikipedia(wikidata)}"
+      },
+      "condition": {
+        "or": [
+          "historic=memorial",
+          "historic=memorial",
+          "memorial~.+",
+          "memorial~.+"
+        ]
+      }
+    },
+    {
+      "id": "subject-wikidata",
       "freeform": {
         "key": "subject:wikidata",
         "type": "wikidata",
@@ -76908,17 +76933,11 @@
         "en": "<h3>Wikipedia page about the remembered event or person</h3>{wikipedia(subject:wikidata)}"
       },
       "condition": {
-        "and": [
-          {
-            "and": [
-              {
-                "or": [
-                  "memorial~*",
-                  "historic=memorial"
-                ]
-              }
-            ]
-          }
+        "or": [
+          "historic=memorial",
+          "historic=memorial",
+          "memorial~.+",
+          "memorial~.+"
         ]
       }
     },

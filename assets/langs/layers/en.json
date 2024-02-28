@@ -6153,11 +6153,18 @@
                 },
                 "question": "What type of memorial is this?"
             },
+            "memorial-wikidata": {
+                "question": "What is the Wikipedia page about this memorial?",
+                "questionHint": "This is a about the memorial itself, not about the person or event that the memorial remembers. If this memorial does not have a Wikipedia page or Wikidata entity, skip this question.",
+                "render": {
+                    "before": "<h3>Wikipedia page about the memorial</h3>"
+                }
+            },
             "start_date": {
                 "question": "When was this memorial installed?",
                 "render": "Placed on {start_date}"
             },
-            "wikidata": {
+            "subject-wikidata": {
                 "question": "What is the Wikipedia page about the person or event that is remembered here?",
                 "questionHint": "If the person or event does not have a Wikipedia page or Wikidata entity, skip this question.",
                 "render": {
