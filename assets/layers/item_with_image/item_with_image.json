@@ -1,7 +1,10 @@
 {
   "id": "item_with_image",
+  "name": {
+    "en": "Items with at least one image",
+    "de": "Element mit mindestens einem Bild"
+  },
   "description": "All items with an image. All alone, not a layer which is relevant for any MapComplete theme, as it is a random collection of items. However, when put into the databank, this allows to quickly fetch (the URL of) pictures nearby a different object, to quickly link this",
-  "minzoom": 14,
   "source": {
     "osmTags": {
       "or": [
@@ -15,12 +18,11 @@
       ]
     }
   },
-  "tagRenderings": [
-    "images"
-  ],
+  "minzoom": 14,
   "title": {
     "render": {
-      "en": "POI with image"
+      "en": "POI with image",
+      "de": "POI mit Bild"
     },
     "mappings": [
       {
@@ -31,10 +33,6 @@
       }
     ]
   },
-  "name": {
-    "en": "Items with at least one image"
-  },
-  "lineRendering": [],
   "pointRendering": [
     {
       "marker": [
@@ -47,5 +45,9 @@
         "point"
       ]
     }
+  ],
+  "lineRendering": [],
+  "tagRenderings": [
+    "images"
   ]
 }
