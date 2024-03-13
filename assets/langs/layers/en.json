@@ -1411,7 +1411,8 @@
                 "render": "This is a bicycle parking of the type: {bicycle_parking}"
             },
             "Capacity": {
-                "question": "How many bicycles fit in this bicycle parking (including possible cargo bicycles)?",
+                "question": "How many bicycles fit in this bicycle parking?",
+                "questionHint": "This includes regular bicycles, cargo bikes, ebikes, ...",
                 "render": "Place for {capacity} bikes"
             },
             "Cargo bike capacity?": {
