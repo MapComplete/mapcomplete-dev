@@ -29073,7 +29073,7 @@
       }
     },
     {
-      "id": "elevator-diameger",
+      "id": "elevator-diameter",
       "condition": {
         "and": [
           "highway=elevator",
@@ -29081,7 +29081,7 @@
         ]
       },
       "render": {
-        "en": "This elevator has a diameger of {canonical(diameter)}"
+        "en": "This elevator has a diameter of {canonical(diameter)}"
       },
       "question": {
         "en": "What is the diameter of this elevator?"
