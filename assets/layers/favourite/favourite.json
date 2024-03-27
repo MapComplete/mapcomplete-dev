@@ -31627,10 +31627,12 @@
           "amenity=nightclub",
           "amenity=fast_food",
           "amenity=restaurant",
+          "amenity=ice_cream",
           "amenity=fast_food",
           "amenity=restaurant",
           "amenity=pharmacy",
           "amenity=love_hotel",
+          "amenity=ice_cream",
           "amenity=bar",
           "amenity=pub",
           "amenity=cafe",
@@ -31646,6 +31648,7 @@
           "amenity=nightclub",
           "amenity=fast_food",
           "amenity=restaurant",
+          "amenity=ice_cream",
           "amenity=love_hotel",
           "amenity=pharmacy",
           "amenity=veterinary",
@@ -31653,13 +31656,13 @@
           "amenity=fast_food",
           "amenity=restaurant",
           "amenity=pharmacy",
+          "amenity=ice_cream",
           "amenity=fast_food",
           "amenity=restaurant",
           "leisure=hackerspace",
           "leisure=dog_park",
           "leisure=fitness_centre",
           "leisure=hackerspace",
-          "leisure=dog_park",
           "leisure=fitness_centre",
           "tourism=hotel",
           "tourism=hotel",
@@ -31669,6 +31672,7 @@
               "leisure=park"
             ]
           },
+          "leisure=dog_park",
           "tourism=hotel",
           {
             "and": [
