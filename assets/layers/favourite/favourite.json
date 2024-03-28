@@ -31033,6 +31033,8 @@
           "amenity=restaurant",
           "amenity=fast_food",
           "amenity=restaurant",
+          "leisure=hackerspace",
+          "leisure=hackerspace",
           "tourism=hotel",
           "tourism=hotel",
           "tourism=hotel",
@@ -31185,6 +31187,7 @@
                   "amenity=restaurant"
                 ]
               },
+              "leisure=hackerspace",
               {
                 "and": [
                   {
@@ -31247,6 +31250,7 @@
                   "amenity=restaurant"
                 ]
               },
+              "leisure=hackerspace",
               "tourism=hotel",
               {
                 "and": [
@@ -31429,6 +31433,7 @@
                   "amenity=restaurant"
                 ]
               },
+              "leisure=hackerspace",
               {
                 "and": [
                   {
@@ -31491,6 +31496,7 @@
                   "amenity=restaurant"
                 ]
               },
+              "leisure=hackerspace",
               "tourism=hotel",
               {
                 "and": [
