@@ -604,8 +604,8 @@
         "key": "artist:wikidata",
         "type": "wikidata",
         "helperArgs": [
+          "artist_name",
           {
-            "key": "artist_name",
             "instanceOf": [
               "Q5"
             ]
