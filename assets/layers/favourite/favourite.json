@@ -31636,16 +31636,74 @@
       "#condition": "Based on https://en.wikipedia.org/wiki/List_of_smoking_bans",
       "condition": {
         "and": [
+          "_country!~al|be",
           {
             "or": [
-              "amenity=bar",
-              "amenity=pub",
-              "amenity=cafe",
-              "amenity=biergarten",
-              "amenity=nightclub"
+              {
+                "or": [
+                  "amenity=bar",
+                  "amenity=pub",
+                  "amenity=cafe",
+                  "amenity=biergarten",
+                  "amenity=nightclub"
+                ]
+              },
+              {
+                "or": [
+                  "amenity=fast_food",
+                  "amenity=restaurant"
+                ]
+              },
+              {
+                "or": [
+                  "amenity=fast_food",
+                  "amenity=restaurant"
+                ]
+              },
+              {
+                "or": [
+                  "amenity=bar",
+                  "amenity=pub",
+                  "amenity=cafe",
+                  "amenity=biergarten",
+                  "amenity=nightclub"
+                ]
+              },
+              {
+                "or": [
+                  "amenity=fast_food",
+                  "amenity=restaurant"
+                ]
+              },
+              {
+                "or": [
+                  "amenity=bar",
+                  "amenity=pub",
+                  "amenity=cafe",
+                  "amenity=biergarten",
+                  "amenity=nightclub"
+                ]
+              },
+              {
+                "or": [
+                  "amenity=fast_food",
+                  "amenity=restaurant"
+                ]
+              },
+              {
+                "or": [
+                  "amenity=fast_food",
+                  "amenity=restaurant"
+                ]
+              },
+              {
+                "or": [
+                  "amenity=fast_food",
+                  "amenity=restaurant"
+                ]
+              }
             ]
-          },
-          "_country!~al|be"
+          }
         ]
       },
       "mappings": [
