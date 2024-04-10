@@ -1375,6 +1375,9 @@
                     },
                     "2": {
                         "then": "Der Parkplatz darf nur von Mitgliedern einer Schule, Firma oder Organisation genutzt werden"
+                    },
+                    "3": {
+                        "then": "Der Parkplatz darf nur von Mitgliedern einer Schule, Firma oder Organisation genutzt werden"
                     }
                 },
                 "question": "Wer darf den Parkplatz nutzen?",
