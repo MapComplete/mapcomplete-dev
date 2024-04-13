@@ -1428,6 +1428,11 @@
                 "render": "Place for {capacity} bikes"
             },
             "Cargo bike capacity?": {
+                "mappings": {
+                    "0": {
+                        "then": "There are no dedicated spaces for cargo bikes here or parking cargo bikes here is not allowed"
+                    }
+                },
                 "question": "How many cargo bicycles fit in this bicycle parking?",
                 "render": "This parking fits {capacity:cargo_bike} cargo bikes"
             },

@@ -22127,7 +22127,12 @@
       "condition": {
         "and": [
           "amenity=bicycle_parking",
-          "cargo_bike~designated|yes"
+          {
+            "or": [
+              "capacity:cargo_bike~.+",
+              "cargo_bike~designated|yes"
+            ]
+          }
         ]
       },
       "freeform": {
@@ -22135,6 +22140,19 @@
         "type": "nat",
         "inline": true
       },
+      "mappings": [
+        {
+          "if": "cargo_bike=no",
+          "then": {
+            "en": "There are no dedicated spaces for cargo bikes here or parking cargo bikes here is not allowed",
+            "nl": "Hier zijn geen plaatsen voor bakfietsen voorzien of bakfietsen stallen is niet toegestaan "
+          },
+          "hideInAnswer": "capacity:cargo_bike=",
+          "addExtraTags": [
+            "capacity:cargo_bike="
+          ]
+        }
+      ],
       "id": "Cargo bike capacity?"
     },
     {
