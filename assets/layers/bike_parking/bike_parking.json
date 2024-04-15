@@ -917,6 +917,37 @@
         }
       ],
       "id": "Cargo bike capacity?"
+    },
+    {
+      "id": "maxstay",
+      "question": {
+        "en": "What is the maximum allowed parking duration?",
+        "nl": "Wat is de toegestane, maximale parkeerduur?"
+      },
+      "questionHint": {
+        "en": "If the bicycle is parked for a longer amount, it might be removed by the operator",
+        "nl": "Indien een fiets langer geparkeerd staat, kan deze verwijderd worden door de beheerder"
+      },
+      "freeform": {
+        "key": "maxstay",
+        "type": "pnat"
+      },
+      "render": {
+        "en": "A bike can be parked here for at most {canonical(maxstay)}",
+        "nl": "Een fiets mag hier maximaal {canonical(maxstay)} parkeren"
+      }
+    }
+  ],
+  "units": [
+    {
+      "maxstay": {
+        "quantity": "duration",
+        "denominations": [
+          "days",
+          "weeks",
+          "months"
+        ]
+      }
     }
   ],
   "deletion": {

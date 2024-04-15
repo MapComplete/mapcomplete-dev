@@ -1222,6 +1222,11 @@
                 },
                 "question": "Is deze fietsenstalling gratis te gebruiken?"
             },
+            "maxstay": {
+                "question": "Wat is de toegestane, maximale parkeerduur?",
+                "questionHint": "Indien een fiets langer geparkeerd staat, kan deze verwijderd worden door de beheerder",
+                "render": "Een fiets mag hier maximaal {canonical(maxstay)} parkeren"
+            },
             "operator": {
                 "question": "Wie beheert deze fietsenstalling?",
                 "render": "Deze fietsenstalling wordt beheerd door {operator}"
@@ -8692,6 +8697,14 @@
                     "2": {
                         "human": "{quantity} day",
                         "humanSingular": "één dag"
+                    },
+                    "3": {
+                        "human": "{quantity} weken",
+                        "humanSingular": "één week"
+                    },
+                    "4": {
+                        "human": "{quantity} maanden",
+                        "humanSingular": "één maand"
                     }
                 }
             }

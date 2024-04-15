@@ -22159,6 +22159,34 @@
       "id": "Cargo bike capacity?"
     },
     {
+      "id": "maxstay",
+      "question": {
+        "en": "What is the maximum allowed parking duration?",
+        "nl": "Wat is de toegestane, maximale parkeerduur?"
+      },
+      "questionHint": {
+        "en": "If the bicycle is parked for a longer amount, it might be removed by the operator",
+        "nl": "Indien een fiets langer geparkeerd staat, kan deze verwijderd worden door de beheerder"
+      },
+      "freeform": {
+        "key": "maxstay",
+        "type": "pnat",
+        "inline": false
+      },
+      "render": {
+        "en": "A bike can be parked here for at most {canonical(maxstay)}",
+        "nl": "Een fiets mag hier maximaal {canonical(maxstay)} parkeren"
+      },
+      "condition": {
+        "or": [
+          "amenity=bicycle_parking",
+          "amenity=bicycle_parking",
+          "amenity=bicycle_parking",
+          "amenity=bicycle_parking"
+        ]
+      }
+    },
+    {
       "id": "bicycle_rental_type",
       "question": {
         "en": "What kind of bicycle rental is this?",
@@ -37787,7 +37815,7 @@
       }
     },
     {
-      "id": "maxstay",
+      "id": "charging_station_maxstay",
       "question": {
         "en": "What is the maximum amount of time one is allowed to stay here?",
         "nl": "Hoelang mag een voertuig hier blijven staan?",
@@ -37819,18 +37847,22 @@
         "and": [
           {
             "or": [
-              "bus=yes",
-              "hgv=yes",
+              "maxstay~*",
               "motorcar=yes",
-              "maxstay~.+"
+              "hgv=yes",
+              "bus=yes"
             ]
           },
           {
-            "or": [
-              "amenity=charging_station",
-              "construction:amenity=charging_station",
-              "disused:amenity=charging_station",
-              "planned:amenity=charging_station"
+            "and": [
+              {
+                "or": [
+                  "amenity=charging_station",
+                  "disused:amenity=charging_station",
+                  "planned:amenity=charging_station",
+                  "construction:amenity=charging_station"
+                ]
+              }
             ]
           }
         ]

@@ -1489,6 +1489,11 @@
                 },
                 "question": "Are these bicycle parkings free to use?"
             },
+            "maxstay": {
+                "question": "What is the maximum allowed parking duration?",
+                "questionHint": "If the bicycle is parked for a longer amount, it might be removed by the operator",
+                "render": "A bike can be parked here for at most {canonical(maxstay)}"
+            },
             "operator": {
                 "question": "Who maintains this bicycle parking?",
                 "render": "This bicycle parking is maintained by {operator}"
@@ -10532,6 +10537,14 @@
                     "2": {
                         "human": "{quantity} days",
                         "humanSingular": "one day"
+                    },
+                    "3": {
+                        "human": "{quantity} weeks",
+                        "humanSingular": "one week"
+                    },
+                    "4": {
+                        "human": "{quantity} months",
+                        "humanSingular": "one month"
                     }
                 }
             }
