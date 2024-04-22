@@ -8956,6 +8956,10 @@
             }
         },
         "tagRenderings": {
+            "camera_direction": {
+                "question": "In welche Himmelsrichtung filmt diese Kamera?",
+                "render": "filmt in Himmelsrichtung {direction}"
+            },
             "maxspeed": {
                 "freeform": {
                     "placeholder": "Zulässige Höchstgeschwindigkeit"

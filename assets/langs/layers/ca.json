@@ -7129,6 +7129,10 @@
             }
         },
         "tagRenderings": {
+            "camera_direction": {
+                "question": "En quina direcció geogràfica apunta aquesta càmera?",
+                "render": "Grava en direcció {direction}"
+            },
             "maxspeed": {
                 "freeform": {
                     "placeholder": "Velocitat màxima permesa"

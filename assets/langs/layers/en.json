@@ -8964,6 +8964,10 @@
             }
         },
         "tagRenderings": {
+            "camera_direction": {
+                "question": "In which geographical direction does this camera film?",
+                "render": "Films to a compass heading of {direction}"
+            },
             "maxspeed": {
                 "freeform": {
                     "placeholder": "Maximum speed allowed"

@@ -7349,6 +7349,10 @@
             }
         },
         "tagRenderings": {
+            "camera_direction": {
+                "question": "In welke geografische richting filmt deze camera?",
+                "render": "Filmt in kompasrichting {direction}"
+            },
             "maxspeed": {
                 "freeform": {
                     "placeholder": "Maximum toegestane snelheid"
