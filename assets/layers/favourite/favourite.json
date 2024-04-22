@@ -72683,21 +72683,31 @@
                 ]
               },
               {
-                "or": [
-                  "indoor=room",
-                  "indoor=area",
-                  "indoor=wall",
-                  "indoor=door",
-                  "indoor=level"
+                "and": [
+                  {
+                    "or": [
+                      "indoor=room",
+                      "indoor=area",
+                      "indoor=wall",
+                      "indoor=door",
+                      "indoor=level"
+                    ]
+                  },
+                  "name~.+"
                 ]
               },
               {
-                "or": [
-                  "indoor=room",
-                  "indoor=area",
-                  "indoor=wall",
-                  "indoor=door",
-                  "indoor=level"
+                "and": [
+                  {
+                    "or": [
+                      "indoor=room",
+                      "indoor=area",
+                      "indoor=wall",
+                      "indoor=door",
+                      "indoor=level"
+                    ]
+                  },
+                  "name~.+"
                 ]
               },
               {
@@ -72707,12 +72717,17 @@
                 ]
               },
               {
-                "or": [
-                  "indoor=room",
-                  "indoor=area",
-                  "indoor=wall",
-                  "indoor=door",
-                  "indoor=level"
+                "and": [
+                  {
+                    "or": [
+                      "indoor=room",
+                      "indoor=area",
+                      "indoor=wall",
+                      "indoor=door",
+                      "indoor=level"
+                    ]
+                  },
+                  "name~.+"
                 ]
               }
             ]
