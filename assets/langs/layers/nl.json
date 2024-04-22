@@ -1231,6 +1231,9 @@
                 "question": "Wie beheert deze fietsenstalling?",
                 "render": "Deze fietsenstalling wordt beheerd door {operator}"
             },
+            "operator_email": {
+                "question": "Wat is het emailadres van de beheerder van deze parking?"
+            },
             "operator_phone": {
                 "question": "Wat is het telefoonnummer van de operator van deze fietsenstalling?",
                 "questionHint": "Men kan dit nummer bellen om bv. fietswrakken of defecten te melden"

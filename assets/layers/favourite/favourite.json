@@ -22022,6 +22022,27 @@
       }
     },
     {
+      "id": "operator_email",
+      "question": {
+        "en": "What is the email address of the operator of this bicycle parking?",
+        "nl": "Wat is het emailadres van de beheerder van deze parking?"
+      },
+      "icon": "./assets/svg/envelope.svg",
+      "freeform": {
+        "key": "operator:email",
+        "type": "email"
+      },
+      "render": "<a href='mailto:{operator:email}' target='_blank' rel='noopener'>{operator:email}</a>",
+      "condition": {
+        "or": [
+          "amenity=bicycle_parking",
+          "amenity=bicycle_parking",
+          "amenity=bicycle_parking",
+          "amenity=bicycle_parking"
+        ]
+      }
+    },
+    {
       "question": {
         "en": "Does this bicycle parking have spots for cargo bikes?",
         "nl": "Heeft deze fietsparking plaats voor bakfietsen?",
@@ -22789,6 +22810,12 @@
           "if": "contact:email~*",
           "icon": "./assets/svg/envelope.svg",
           "then": "<a href='mailto:{contact:email}' target='_blank' rel='noopener'>{contact:email}</a>",
+          "hideInAnswer": true
+        },
+        {
+          "if": "operator:email~*",
+          "icon": "./assets/svg/envelope.svg",
+          "then": "<a href='mailto:{operator:email}' target='_blank' rel='noopener'>{operator:email}</a>",
           "hideInAnswer": true
         }
       ],
@@ -77023,31 +77050,6 @@
       }
     },
     {
-      "id": "sotm-events",
-      "render": {
-        "*": "{giggity(https://sotm.osmz.ru/sotmeu2023.xml)}"
-      },
-      "condition": {
-        "or": [
-          "indoor=room",
-          "indoor=area",
-          "indoor=wall",
-          "indoor=door",
-          "indoor=level",
-          "indoor=room",
-          "indoor=area",
-          "indoor=wall",
-          "indoor=door",
-          "indoor=level",
-          "indoor=room",
-          "indoor=area",
-          "indoor=wall",
-          "indoor=door",
-          "indoor=level"
-        ]
-      }
-    },
-    {
       "id": "indoors_ref",
       "question": {
         "en": "What is the reference number of this room?",
@@ -90044,12 +90046,18 @@
           "#": "ignore-image-in-then",
           "if": "contact:email~*",
           "then": "<a href='mailto:{contact:email}'><img textmode='✉️' alt='email' src='./assets/layers/questions/send_email.svg'/></a>"
+        },
+        {
+          "#": "ignore-image-in-then",
+          "if": "operator:email~*",
+          "then": "<a href='mailto:{operator:email}'><img textmode='✉️' alt='email' src='./assets/layers/questions/send_email.svg'/></a>"
         }
       ],
       "condition": {
         "or": [
           "email~*",
-          "contact:email~*"
+          "contact:email~*",
+          "operator:email~*"
         ]
       }
     },

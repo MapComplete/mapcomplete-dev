@@ -1498,6 +1498,9 @@
                 "question": "Who maintains this bicycle parking?",
                 "render": "This bicycle parking is maintained by {operator}"
             },
+            "operator_email": {
+                "question": "What is the email address of the operator of this bicycle parking?"
+            },
             "operator_phone": {
                 "question": "What is the phone number of the operator of this bicycle parking?",
                 "questionHint": "One might be able to call this number in case of problems, e.g. to remove unmaintained bicycles"
