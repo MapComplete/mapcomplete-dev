@@ -2168,6 +2168,9 @@
                     },
                     "16": {
                         "question": "Has a <div style='display: inline-block'><b><b>Bosch Active Connect with 5 pins</b> and cable</b> <img style='width:1rem; display: inline-block' src='./assets/layers/charging_station/bosch-5pin.svg'/></div> connector"
+                    },
+                    "17": {
+                        "question": "Has a <div style='display: inline-block'><b><b>BS1363</b> (Type G)</b> <img style='width:1rem; display: inline-block' src='./assets/layers/charging_station/bs1363.svg'/></div> connector"
                     }
                 }
             }
@@ -2312,6 +2315,12 @@
                     },
                     "31": {
                         "then": "<b>Bosch Active Connect with 5 pins</b> and cable"
+                    },
+                    "32": {
+                        "then": "<b>BS1363</b> (Type G)"
+                    },
+                    "33": {
+                        "then": "<b>BS1363</b> (Type G)"
                     }
                 },
                 "question": "Which charging connections are available here?"
@@ -2546,6 +2555,9 @@
                         },
                         "15": {
                             "2": "<b>Bosch Active Connect with 5 pins</b> and cable"
+                        },
+                        "16": {
+                            "2": "<b>BS1363</b> (Type G)"
                         }
                     }
                 }
@@ -5120,6 +5132,22 @@
             "render": "Restaurant"
         }
     },
+    "food_courts": {
+        "description": "Food courts with a variety of food options.",
+        "name": "Food Courts",
+        "tagRenderings": {
+            "name": {
+                "freeform": {
+                    "placeholder": "Name of the food court"
+                },
+                "question": "What is the name of this food court?",
+                "render": "This food court is called <b>{name}</b>."
+            }
+        },
+        "title": {
+            "render": "Food Court"
+        }
+    },
     "ghost_bike": {
         "description": "A layer showing memorials for cyclists, killed in road accidents",
         "name": "Ghost bikes",
@@ -6630,6 +6658,74 @@
         "name": "OSM Community Index",
         "title": {
             "render": "OSM Community Index"
+        }
+    },
+    "outdoor_seating": {
+        "description": "Outdoor seating areas, usually located near cafes and restaurants.",
+        "name": "Outdoor Seating",
+        "tagRenderings": {
+            "access": {
+                "mappings": {
+                    "0": {
+                        "then": "Anyone can use this outdoor seating area."
+                    },
+                    "1": {
+                        "then": "Only customers can use this outdoor seating area."
+                    },
+                    "2": {
+                        "then": "This outdoor seating area is private."
+                    }
+                },
+                "question": "Who can use this outdoor seating area?"
+            },
+            "covered": {
+                "mappings": {
+                    "0": {
+                        "then": "This outdoor seating area is covered."
+                    },
+                    "1": {
+                        "then": "This outdoor seating area is not covered."
+                    }
+                },
+                "question": "Is this outdoor seating area covered?"
+            },
+            "heating": {
+                "mappings": {
+                    "0": {
+                        "then": "This outdoor seating area is heated."
+                    },
+                    "1": {
+                        "then": "This outdoor seating area is not heated."
+                    }
+                },
+                "question": "Is this outdoor seating area heated?"
+            },
+            "seasonal": {
+                "mappings": {
+                    "0": {
+                        "then": "This outdoor seating area is available all year round."
+                    },
+                    "1": {
+                        "then": "This outdoor seating area is available in spring."
+                    },
+                    "2": {
+                        "then": "This outdoor seating area is available in summer."
+                    },
+                    "3": {
+                        "then": "This outdoor seating area is available in autumn."
+                    },
+                    "4": {
+                        "then": "This outdoor seating area is available in winter."
+                    },
+                    "5": {
+                        "then": "This outdoor seating area is available in the dry season."
+                    }
+                },
+                "question": "Is this outdoor seating area seasonal?"
+            }
+        },
+        "title": {
+            "render": "Outdoor Seating area"
         }
     },
     "parcel_lockers": {
