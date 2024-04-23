@@ -1,0 +1,2 @@
+import"./Utils-28f00dfc.js";import{O as i}from"./OsmConnection-e9b59b03.js";import"./Constants-27d20e94.js";import"./LocalStorageSource-b19c6f4f.js";console.log("Authorizing...");new i().finishLogin(o=>{const n=window.location.protocol+"//"+window.location.host+"/index.html";o??(o=n),o.indexOf("/land")>0&&(o=n),console.log("Redirecting to",o),window.location.href=o});
+//# sourceMappingURL=land-cd42364d.js.map
