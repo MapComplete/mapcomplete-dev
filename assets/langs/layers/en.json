@@ -394,9 +394,26 @@
                 },
                 "question": "What is the purpose of the animal shelter?"
             },
-            "7": {
-                "question": "When is this animal shelter opened?",
-                "render": "{opening_hours_table()}"
+            "boarded_animals": {
+                "mappings": {
+                    "0": {
+                        "then": "Dogs are kept here"
+                    },
+                    "1": {
+                        "then": "Cats are kept here"
+                    },
+                    "2": {
+                        "then": "Horses are kept here"
+                    },
+                    "3": {
+                        "then": "Birds are kept here"
+                    },
+                    "4": {
+                        "then": "Wild animals are kept here"
+                    }
+                },
+                "question": "Which animals are accepted here?",
+                "render": "{animal_shelter} is kept here"
             }
         },
         "title": {

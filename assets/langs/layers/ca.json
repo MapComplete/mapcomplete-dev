@@ -308,10 +308,6 @@
                     }
                 },
                 "question": "Quina és la finalitat del refugi d'animals?"
-            },
-            "7": {
-                "question": "Quan està obert aquest refugi d'animals?",
-                "render": "{opening_hours_table()}"
             }
         },
         "title": {

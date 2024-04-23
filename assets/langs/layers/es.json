@@ -310,10 +310,6 @@
                     }
                 },
                 "question": "¿Cuál es la finalidad del refugio de animales?"
-            },
-            "7": {
-                "question": "¿Cuándo se abre este refugio de animales?",
-                "render": "{opening_hours_table()}"
             }
         },
         "title": {
