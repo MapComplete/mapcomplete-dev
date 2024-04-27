@@ -21993,6 +21993,32 @@
       }
     },
     {
+      "id": "charge",
+      "condition": {
+        "and": [
+          "amenity=bicycle_parking",
+          "fee=yes"
+        ]
+      },
+      "question": {
+        "en": "How much does it cost to park your bike here?",
+        "nl": "Hoeveel kost het om een fiets te stallen?"
+      },
+      "questionHint": {
+        "en": "This is the amount which is charged for a single bike",
+        "nl": "Dit is de kostprijs voor een enkele fiets"
+      },
+      "render": {
+        "en": "Parking your bike costs {charge}",
+        "nl": "Je fiets hier parkeren kost {charge}"
+      },
+      "freeform": {
+        "key": "charge",
+        "type": "currency",
+        "inline": true
+      }
+    },
+    {
       "id": "bike_parking_opening_hours_24_7",
       "question": {
         "en": "What are the opening hours of {title()}?",
@@ -38484,7 +38510,7 @@
       }
     },
     {
-      "id": "charge",
+      "id": "charging_station_charge",
       "question": {
         "en": "How much does one have to pay to use this charging station?",
         "nl": "Hoeveel moet men betalen om dit oplaadpunt te gebruiken?",
@@ -38505,11 +38531,15 @@
         "and": [
           "fee=yes",
           {
-            "or": [
-              "amenity=charging_station",
-              "construction:amenity=charging_station",
-              "disused:amenity=charging_station",
-              "planned:amenity=charging_station"
+            "and": [
+              {
+                "or": [
+                  "amenity=charging_station",
+                  "disused:amenity=charging_station",
+                  "planned:amenity=charging_station",
+                  "construction:amenity=charging_station"
+                ]
+              }
             ]
           }
         ]
