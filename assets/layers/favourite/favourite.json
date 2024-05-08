@@ -3309,7 +3309,29 @@
         }
       },
       {
-        "if": "shop=sports",
+        "if": {
+          "and": [
+            "shop=sports",
+            {
+              "or": [
+                "shop=bicycle",
+                {
+                  "and": [
+                    {
+                      "or": [
+                        "sport=bicycle",
+                        "sport=cycling",
+                        "sport="
+                      ]
+                    },
+                    "service:bicycle:retail!=no",
+                    "service:bicycle:repair!=no"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
         "then": {
           "en": "Sports gear shop <i>{name}</i>",
           "nl": "Sportwinkel <i>{name}</i>",
@@ -3326,7 +3348,29 @@
         }
       },
       {
-        "if": "shop=sports",
+        "if": {
+          "and": [
+            "shop=sports",
+            {
+              "or": [
+                "shop=bicycle",
+                {
+                  "and": [
+                    {
+                      "or": [
+                        "sport=bicycle",
+                        "sport=cycling",
+                        "sport="
+                      ]
+                    },
+                    "service:bicycle:retail!=no",
+                    "service:bicycle:repair!=no"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
         "then": {
           "en": "Sports gear shop <i>{name}</i>",
           "nl": "Sportwinkel <i>{name}</i>",
@@ -16725,6 +16769,7 @@
       "mappings": [
         {
           "if": "opening_hours=24/7",
+          "icon": "./assets/layers/questions/open24_7.svg",
           "then": {
             "en": "24/7 opened (including holidays)",
             "de": "durchgehend geöffnet (auch an Feiertagen)",
@@ -19197,6 +19242,7 @@
       "mappings": [
         {
           "if": "opening_hours=24/7",
+          "icon": "./assets/layers/questions/open24_7.svg",
           "then": {
             "en": "24/7 opened (including holidays)",
             "de": "durchgehend geöffnet (auch an Feiertagen)",
@@ -19760,13 +19806,6 @@
         "ca": "Aquesta botiga és un col·laborador postal?",
         "cs": "Jedná se o partnerskou poštu?"
       },
-      "condition": {
-        "or": [
-          "post_office=post_partner",
-          "post_office=post_partner",
-          "post_office=post_partner"
-        ]
-      },
       "mappings": [
         {
           "if": "post_office=post_partner",
@@ -19789,7 +19828,17 @@
             "was:post_office=post_partner"
           ]
         }
-      ]
+      ],
+      "condition": {
+        "or": [
+          "amenity=post_office",
+          "amenity=post_office",
+          "amenity=post_office",
+          "post_office=post_partner",
+          "post_office=post_partner",
+          "post_office=post_partner"
+        ]
+      }
     },
     {
       "id": "partner-brand",
@@ -22019,7 +22068,7 @@
       }
     },
     {
-      "id": "bike_parking_opening_hours_24_7",
+      "id": "opening_hours_24_7_default",
       "question": {
         "en": "What are the opening hours of {title()}?",
         "fr": "Quelles sont les horaires d'ouverture de {title()} ?",
@@ -22078,6 +22127,7 @@
       "mappings": [
         {
           "if": "opening_hours=24/7",
+          "icon": "./assets/layers/questions/open24_7.svg",
           "then": {
             "en": "24/7 opened (including holidays)",
             "de": "durchgehend geöffnet (auch an Feiertagen)",
@@ -22092,6 +22142,7 @@
             "ca": "Obert 24/7 (incloent-hi festius)",
             "pl": "Otwarte 24/7 (również w święta)"
           },
+          "#": "The first mapping is 'opening_hours=24/7', we amend this to also show if no info is known",
           "alsoShowIf": "opening_hours="
         },
         {
@@ -22106,12 +22157,11 @@
         }
       ],
       "condition": {
-        "and": [
-          {
-            "and": [
-              "amenity=bicycle_parking"
-            ]
-          }
+        "or": [
+          "amenity=bicycle_parking",
+          "amenity=bicycle_parking",
+          "amenity=bicycle_parking",
+          "amenity=bicycle_parking"
         ]
       }
     },
@@ -24490,17 +24540,17 @@
       },
       "condition": {
         "and": [
-          {
-            "or": [
-              "amenity=bicycle_rental",
-              "service:bicycle:rental=yes",
-              "bicycle_rental~.+",
-              "rental~.*bicycle.*"
-            ]
-          },
           "rental~.*city_bike.*",
           {
             "or": [
+              {
+                "or": [
+                  "amenity=bicycle_rental",
+                  "service:bicycle:rental=yes",
+                  "bicycle_rental~.+",
+                  "rental~.*bicycle.*"
+                ]
+              },
               {
                 "and": [
                   "service:bicycle:rental=yes",
@@ -24523,6 +24573,22 @@
                       }
                     ]
                   }
+                ]
+              },
+              {
+                "or": [
+                  "amenity=bicycle_rental",
+                  "service:bicycle:rental=yes",
+                  "bicycle_rental~.+",
+                  "rental~.*bicycle.*"
+                ]
+              },
+              {
+                "or": [
+                  "amenity=bicycle_rental",
+                  "service:bicycle:rental=yes",
+                  "bicycle_rental~.+",
+                  "rental~.*bicycle.*"
                 ]
               },
               {
@@ -24588,17 +24654,17 @@
       },
       "condition": {
         "and": [
-          {
-            "or": [
-              "amenity=bicycle_rental",
-              "service:bicycle:rental=yes",
-              "bicycle_rental~.+",
-              "rental~.*bicycle.*"
-            ]
-          },
           "rental~.*ebike.*",
           {
             "or": [
+              {
+                "or": [
+                  "amenity=bicycle_rental",
+                  "service:bicycle:rental=yes",
+                  "bicycle_rental~.+",
+                  "rental~.*bicycle.*"
+                ]
+              },
               {
                 "and": [
                   "service:bicycle:rental=yes",
@@ -24621,6 +24687,22 @@
                       }
                     ]
                   }
+                ]
+              },
+              {
+                "or": [
+                  "amenity=bicycle_rental",
+                  "service:bicycle:rental=yes",
+                  "bicycle_rental~.+",
+                  "rental~.*bicycle.*"
+                ]
+              },
+              {
+                "or": [
+                  "amenity=bicycle_rental",
+                  "service:bicycle:rental=yes",
+                  "bicycle_rental~.+",
+                  "rental~.*bicycle.*"
                 ]
               },
               {
@@ -24686,17 +24768,17 @@
       },
       "condition": {
         "and": [
-          {
-            "or": [
-              "amenity=bicycle_rental",
-              "service:bicycle:rental=yes",
-              "bicycle_rental~.+",
-              "rental~.*bicycle.*"
-            ]
-          },
           "rental~.*kid_bike.*",
           {
             "or": [
+              {
+                "or": [
+                  "amenity=bicycle_rental",
+                  "service:bicycle:rental=yes",
+                  "bicycle_rental~.+",
+                  "rental~.*bicycle.*"
+                ]
+              },
               {
                 "and": [
                   "service:bicycle:rental=yes",
@@ -24719,6 +24801,22 @@
                       }
                     ]
                   }
+                ]
+              },
+              {
+                "or": [
+                  "amenity=bicycle_rental",
+                  "service:bicycle:rental=yes",
+                  "bicycle_rental~.+",
+                  "rental~.*bicycle.*"
+                ]
+              },
+              {
+                "or": [
+                  "amenity=bicycle_rental",
+                  "service:bicycle:rental=yes",
+                  "bicycle_rental~.+",
+                  "rental~.*bicycle.*"
                 ]
               },
               {
@@ -24784,17 +24882,17 @@
       },
       "condition": {
         "and": [
-          {
-            "or": [
-              "amenity=bicycle_rental",
-              "service:bicycle:rental=yes",
-              "bicycle_rental~.+",
-              "rental~.*bicycle.*"
-            ]
-          },
           "rental~.*bmx.*",
           {
             "or": [
+              {
+                "or": [
+                  "amenity=bicycle_rental",
+                  "service:bicycle:rental=yes",
+                  "bicycle_rental~.+",
+                  "rental~.*bicycle.*"
+                ]
+              },
               {
                 "and": [
                   "service:bicycle:rental=yes",
@@ -24817,6 +24915,22 @@
                       }
                     ]
                   }
+                ]
+              },
+              {
+                "or": [
+                  "amenity=bicycle_rental",
+                  "service:bicycle:rental=yes",
+                  "bicycle_rental~.+",
+                  "rental~.*bicycle.*"
+                ]
+              },
+              {
+                "or": [
+                  "amenity=bicycle_rental",
+                  "service:bicycle:rental=yes",
+                  "bicycle_rental~.+",
+                  "rental~.*bicycle.*"
                 ]
               },
               {
@@ -24882,17 +24996,17 @@
       },
       "condition": {
         "and": [
-          {
-            "or": [
-              "amenity=bicycle_rental",
-              "service:bicycle:rental=yes",
-              "bicycle_rental~.+",
-              "rental~.*bicycle.*"
-            ]
-          },
           "rental~.*mtb.*",
           {
             "or": [
+              {
+                "or": [
+                  "amenity=bicycle_rental",
+                  "service:bicycle:rental=yes",
+                  "bicycle_rental~.+",
+                  "rental~.*bicycle.*"
+                ]
+              },
               {
                 "and": [
                   "service:bicycle:rental=yes",
@@ -24915,6 +25029,22 @@
                       }
                     ]
                   }
+                ]
+              },
+              {
+                "or": [
+                  "amenity=bicycle_rental",
+                  "service:bicycle:rental=yes",
+                  "bicycle_rental~.+",
+                  "rental~.*bicycle.*"
+                ]
+              },
+              {
+                "or": [
+                  "amenity=bicycle_rental",
+                  "service:bicycle:rental=yes",
+                  "bicycle_rental~.+",
+                  "rental~.*bicycle.*"
                 ]
               },
               {
@@ -24980,17 +25110,17 @@
       },
       "condition": {
         "and": [
-          {
-            "or": [
-              "amenity=bicycle_rental",
-              "service:bicycle:rental=yes",
-              "bicycle_rental~.+",
-              "rental~.*bicycle.*"
-            ]
-          },
           "rental~.*bicycle_pannier.*",
           {
             "or": [
+              {
+                "or": [
+                  "amenity=bicycle_rental",
+                  "service:bicycle:rental=yes",
+                  "bicycle_rental~.+",
+                  "rental~.*bicycle.*"
+                ]
+              },
               {
                 "and": [
                   "service:bicycle:rental=yes",
@@ -25013,6 +25143,22 @@
                       }
                     ]
                   }
+                ]
+              },
+              {
+                "or": [
+                  "amenity=bicycle_rental",
+                  "service:bicycle:rental=yes",
+                  "bicycle_rental~.+",
+                  "rental~.*bicycle.*"
+                ]
+              },
+              {
+                "or": [
+                  "amenity=bicycle_rental",
+                  "service:bicycle:rental=yes",
+                  "bicycle_rental~.+",
+                  "rental~.*bicycle.*"
                 ]
               },
               {
@@ -25078,17 +25224,17 @@
       },
       "condition": {
         "and": [
-          {
-            "or": [
-              "amenity=bicycle_rental",
-              "service:bicycle:rental=yes",
-              "bicycle_rental~.+",
-              "rental~.*bicycle.*"
-            ]
-          },
           "rental~.*tandem_bicycle.*",
           {
             "or": [
+              {
+                "or": [
+                  "amenity=bicycle_rental",
+                  "service:bicycle:rental=yes",
+                  "bicycle_rental~.+",
+                  "rental~.*bicycle.*"
+                ]
+              },
               {
                 "and": [
                   "service:bicycle:rental=yes",
@@ -25111,6 +25257,22 @@
                       }
                     ]
                   }
+                ]
+              },
+              {
+                "or": [
+                  "amenity=bicycle_rental",
+                  "service:bicycle:rental=yes",
+                  "bicycle_rental~.+",
+                  "rental~.*bicycle.*"
+                ]
+              },
+              {
+                "or": [
+                  "amenity=bicycle_rental",
+                  "service:bicycle:rental=yes",
+                  "bicycle_rental~.+",
+                  "rental~.*bicycle.*"
                 ]
               },
               {
@@ -26249,144 +26411,24 @@
       },
       "condition": {
         "or": [
-          "cyclestreet=yes",
           "cycleway=shared_lane",
           "cycleway=lane",
           "cycleway=track",
-          "highway=cycleway",
-          "highway=residential",
-          "highway=tertiary",
-          "highway=unclassified",
-          "highway=primary",
-          "highway=secondary",
-          "highway=tertiary_link",
-          "highway=primary_link",
-          "highway=secondary_link",
-          "highway=service",
-          "highway=footway",
-          "highway=pedestrian",
-          "highway=living_street",
-          {
-            "and": [
-              "bicycle=designated",
-              "highway=path"
-            ]
-          },
-          "cyclestreet=yes",
           "cycleway=shared_lane",
           "cycleway=lane",
           "cycleway=track",
-          "highway=cycleway",
-          "highway=residential",
-          "highway=tertiary",
-          "highway=unclassified",
-          "highway=primary",
-          "highway=secondary",
-          "highway=tertiary_link",
-          "highway=primary_link",
-          "highway=secondary_link",
-          "highway=service",
-          "highway=footway",
-          "highway=pedestrian",
-          "highway=living_street",
-          {
-            "and": [
-              "bicycle=designated",
-              "highway=path"
-            ]
-          },
-          "cyclestreet=yes",
           "cycleway=shared_lane",
           "cycleway=lane",
           "cycleway=track",
-          "highway=cycleway",
-          "highway=residential",
-          "highway=tertiary",
-          "highway=unclassified",
-          "highway=primary",
-          "highway=secondary",
-          "highway=tertiary_link",
-          "highway=primary_link",
-          "highway=secondary_link",
-          "highway=service",
-          "highway=footway",
-          "highway=pedestrian",
-          "highway=living_street",
-          {
-            "and": [
-              "bicycle=designated",
-              "highway=path"
-            ]
-          },
-          "cyclestreet=yes",
           "cycleway=shared_lane",
           "cycleway=lane",
           "cycleway=track",
-          "highway=cycleway",
-          "highway=residential",
-          "highway=tertiary",
-          "highway=unclassified",
-          "highway=primary",
-          "highway=secondary",
-          "highway=tertiary_link",
-          "highway=primary_link",
-          "highway=secondary_link",
-          "highway=service",
-          "highway=footway",
-          "highway=pedestrian",
-          "highway=living_street",
-          {
-            "and": [
-              "bicycle=designated",
-              "highway=path"
-            ]
-          },
-          "cyclestreet=yes",
           "cycleway=shared_lane",
           "cycleway=lane",
           "cycleway=track",
-          "highway=cycleway",
-          "highway=residential",
-          "highway=tertiary",
-          "highway=unclassified",
-          "highway=primary",
-          "highway=secondary",
-          "highway=tertiary_link",
-          "highway=primary_link",
-          "highway=secondary_link",
-          "highway=service",
-          "highway=footway",
-          "highway=pedestrian",
-          "highway=living_street",
-          {
-            "and": [
-              "bicycle=designated",
-              "highway=path"
-            ]
-          },
-          "cyclestreet=yes",
           "cycleway=shared_lane",
           "cycleway=lane",
-          "cycleway=track",
-          "highway=cycleway",
-          "highway=residential",
-          "highway=tertiary",
-          "highway=unclassified",
-          "highway=primary",
-          "highway=secondary",
-          "highway=tertiary_link",
-          "highway=primary_link",
-          "highway=secondary_link",
-          "highway=service",
-          "highway=footway",
-          "highway=pedestrian",
-          "highway=living_street",
-          {
-            "and": [
-              "bicycle=designated",
-              "highway=path"
-            ]
-          }
+          "cycleway=track"
         ]
       },
       "mappings": [
@@ -26749,144 +26791,24 @@
       },
       "condition": {
         "or": [
-          "cyclestreet=yes",
           "cycleway=shared_lane",
           "cycleway=lane",
           "cycleway=track",
-          "highway=cycleway",
-          "highway=residential",
-          "highway=tertiary",
-          "highway=unclassified",
-          "highway=primary",
-          "highway=secondary",
-          "highway=tertiary_link",
-          "highway=primary_link",
-          "highway=secondary_link",
-          "highway=service",
-          "highway=footway",
-          "highway=pedestrian",
-          "highway=living_street",
-          {
-            "and": [
-              "bicycle=designated",
-              "highway=path"
-            ]
-          },
-          "cyclestreet=yes",
           "cycleway=shared_lane",
           "cycleway=lane",
           "cycleway=track",
-          "highway=cycleway",
-          "highway=residential",
-          "highway=tertiary",
-          "highway=unclassified",
-          "highway=primary",
-          "highway=secondary",
-          "highway=tertiary_link",
-          "highway=primary_link",
-          "highway=secondary_link",
-          "highway=service",
-          "highway=footway",
-          "highway=pedestrian",
-          "highway=living_street",
-          {
-            "and": [
-              "bicycle=designated",
-              "highway=path"
-            ]
-          },
-          "cyclestreet=yes",
           "cycleway=shared_lane",
           "cycleway=lane",
           "cycleway=track",
-          "highway=cycleway",
-          "highway=residential",
-          "highway=tertiary",
-          "highway=unclassified",
-          "highway=primary",
-          "highway=secondary",
-          "highway=tertiary_link",
-          "highway=primary_link",
-          "highway=secondary_link",
-          "highway=service",
-          "highway=footway",
-          "highway=pedestrian",
-          "highway=living_street",
-          {
-            "and": [
-              "bicycle=designated",
-              "highway=path"
-            ]
-          },
-          "cyclestreet=yes",
           "cycleway=shared_lane",
           "cycleway=lane",
           "cycleway=track",
-          "highway=cycleway",
-          "highway=residential",
-          "highway=tertiary",
-          "highway=unclassified",
-          "highway=primary",
-          "highway=secondary",
-          "highway=tertiary_link",
-          "highway=primary_link",
-          "highway=secondary_link",
-          "highway=service",
-          "highway=footway",
-          "highway=pedestrian",
-          "highway=living_street",
-          {
-            "and": [
-              "bicycle=designated",
-              "highway=path"
-            ]
-          },
-          "cyclestreet=yes",
           "cycleway=shared_lane",
           "cycleway=lane",
           "cycleway=track",
-          "highway=cycleway",
-          "highway=residential",
-          "highway=tertiary",
-          "highway=unclassified",
-          "highway=primary",
-          "highway=secondary",
-          "highway=tertiary_link",
-          "highway=primary_link",
-          "highway=secondary_link",
-          "highway=service",
-          "highway=footway",
-          "highway=pedestrian",
-          "highway=living_street",
-          {
-            "and": [
-              "bicycle=designated",
-              "highway=path"
-            ]
-          },
-          "cyclestreet=yes",
           "cycleway=shared_lane",
           "cycleway=lane",
-          "cycleway=track",
-          "highway=cycleway",
-          "highway=residential",
-          "highway=tertiary",
-          "highway=unclassified",
-          "highway=primary",
-          "highway=secondary",
-          "highway=tertiary_link",
-          "highway=primary_link",
-          "highway=secondary_link",
-          "highway=service",
-          "highway=footway",
-          "highway=pedestrian",
-          "highway=living_street",
-          {
-            "and": [
-              "bicycle=designated",
-              "highway=path"
-            ]
-          }
+          "cycleway=track"
         ]
       },
       "mappings": [
@@ -28224,144 +28146,18 @@
       },
       "condition": {
         "or": [
-          "cyclestreet=yes",
           "cycleway=track",
           "cycleway=lane",
-          "cycleway=shared_lane",
-          "highway=cycleway",
-          "highway=residential",
-          "highway=tertiary",
-          "highway=unclassified",
-          "highway=primary",
-          "highway=secondary",
-          "highway=tertiary_link",
-          "highway=primary_link",
-          "highway=secondary_link",
-          "highway=service",
-          "highway=footway",
-          "highway=pedestrian",
-          "highway=living_street",
-          {
-            "and": [
-              "bicycle=designated",
-              "highway=path"
-            ]
-          },
-          "cyclestreet=yes",
           "cycleway=track",
           "cycleway=lane",
-          "cycleway=shared_lane",
-          "highway=cycleway",
-          "highway=residential",
-          "highway=tertiary",
-          "highway=unclassified",
-          "highway=primary",
-          "highway=secondary",
-          "highway=tertiary_link",
-          "highway=primary_link",
-          "highway=secondary_link",
-          "highway=service",
-          "highway=footway",
-          "highway=pedestrian",
-          "highway=living_street",
-          {
-            "and": [
-              "bicycle=designated",
-              "highway=path"
-            ]
-          },
-          "cyclestreet=yes",
           "cycleway=track",
           "cycleway=lane",
-          "cycleway=shared_lane",
-          "highway=cycleway",
-          "highway=residential",
-          "highway=tertiary",
-          "highway=unclassified",
-          "highway=primary",
-          "highway=secondary",
-          "highway=tertiary_link",
-          "highway=primary_link",
-          "highway=secondary_link",
-          "highway=service",
-          "highway=footway",
-          "highway=pedestrian",
-          "highway=living_street",
-          {
-            "and": [
-              "bicycle=designated",
-              "highway=path"
-            ]
-          },
-          "cyclestreet=yes",
           "cycleway=track",
           "cycleway=lane",
-          "cycleway=shared_lane",
-          "highway=cycleway",
-          "highway=residential",
-          "highway=tertiary",
-          "highway=unclassified",
-          "highway=primary",
-          "highway=secondary",
-          "highway=tertiary_link",
-          "highway=primary_link",
-          "highway=secondary_link",
-          "highway=service",
-          "highway=footway",
-          "highway=pedestrian",
-          "highway=living_street",
-          {
-            "and": [
-              "bicycle=designated",
-              "highway=path"
-            ]
-          },
-          "cyclestreet=yes",
           "cycleway=track",
           "cycleway=lane",
-          "cycleway=shared_lane",
-          "highway=cycleway",
-          "highway=residential",
-          "highway=tertiary",
-          "highway=unclassified",
-          "highway=primary",
-          "highway=secondary",
-          "highway=tertiary_link",
-          "highway=primary_link",
-          "highway=secondary_link",
-          "highway=service",
-          "highway=footway",
-          "highway=pedestrian",
-          "highway=living_street",
-          {
-            "and": [
-              "bicycle=designated",
-              "highway=path"
-            ]
-          },
-          "cyclestreet=yes",
           "cycleway=track",
-          "cycleway=lane",
-          "cycleway=shared_lane",
-          "highway=cycleway",
-          "highway=residential",
-          "highway=tertiary",
-          "highway=unclassified",
-          "highway=primary",
-          "highway=secondary",
-          "highway=tertiary_link",
-          "highway=primary_link",
-          "highway=secondary_link",
-          "highway=service",
-          "highway=footway",
-          "highway=pedestrian",
-          "highway=living_street",
-          {
-            "and": [
-              "bicycle=designated",
-              "highway=path"
-            ]
-          }
+          "cycleway=lane"
         ]
       },
       "freeform": {
@@ -28389,144 +28185,18 @@
       },
       "condition": {
         "or": [
-          "cyclestreet=yes",
           "cycleway=track",
           "cycleway=lane",
-          "cycleway=shared_lane",
-          "highway=cycleway",
-          "highway=residential",
-          "highway=tertiary",
-          "highway=unclassified",
-          "highway=primary",
-          "highway=secondary",
-          "highway=tertiary_link",
-          "highway=primary_link",
-          "highway=secondary_link",
-          "highway=service",
-          "highway=footway",
-          "highway=pedestrian",
-          "highway=living_street",
-          {
-            "and": [
-              "bicycle=designated",
-              "highway=path"
-            ]
-          },
-          "cyclestreet=yes",
           "cycleway=track",
           "cycleway=lane",
-          "cycleway=shared_lane",
-          "highway=cycleway",
-          "highway=residential",
-          "highway=tertiary",
-          "highway=unclassified",
-          "highway=primary",
-          "highway=secondary",
-          "highway=tertiary_link",
-          "highway=primary_link",
-          "highway=secondary_link",
-          "highway=service",
-          "highway=footway",
-          "highway=pedestrian",
-          "highway=living_street",
-          {
-            "and": [
-              "bicycle=designated",
-              "highway=path"
-            ]
-          },
-          "cyclestreet=yes",
           "cycleway=track",
           "cycleway=lane",
-          "cycleway=shared_lane",
-          "highway=cycleway",
-          "highway=residential",
-          "highway=tertiary",
-          "highway=unclassified",
-          "highway=primary",
-          "highway=secondary",
-          "highway=tertiary_link",
-          "highway=primary_link",
-          "highway=secondary_link",
-          "highway=service",
-          "highway=footway",
-          "highway=pedestrian",
-          "highway=living_street",
-          {
-            "and": [
-              "bicycle=designated",
-              "highway=path"
-            ]
-          },
-          "cyclestreet=yes",
           "cycleway=track",
           "cycleway=lane",
-          "cycleway=shared_lane",
-          "highway=cycleway",
-          "highway=residential",
-          "highway=tertiary",
-          "highway=unclassified",
-          "highway=primary",
-          "highway=secondary",
-          "highway=tertiary_link",
-          "highway=primary_link",
-          "highway=secondary_link",
-          "highway=service",
-          "highway=footway",
-          "highway=pedestrian",
-          "highway=living_street",
-          {
-            "and": [
-              "bicycle=designated",
-              "highway=path"
-            ]
-          },
-          "cyclestreet=yes",
           "cycleway=track",
           "cycleway=lane",
-          "cycleway=shared_lane",
-          "highway=cycleway",
-          "highway=residential",
-          "highway=tertiary",
-          "highway=unclassified",
-          "highway=primary",
-          "highway=secondary",
-          "highway=tertiary_link",
-          "highway=primary_link",
-          "highway=secondary_link",
-          "highway=service",
-          "highway=footway",
-          "highway=pedestrian",
-          "highway=living_street",
-          {
-            "and": [
-              "bicycle=designated",
-              "highway=path"
-            ]
-          },
-          "cyclestreet=yes",
           "cycleway=track",
-          "cycleway=lane",
-          "cycleway=shared_lane",
-          "highway=cycleway",
-          "highway=residential",
-          "highway=tertiary",
-          "highway=unclassified",
-          "highway=primary",
-          "highway=secondary",
-          "highway=tertiary_link",
-          "highway=primary_link",
-          "highway=secondary_link",
-          "highway=service",
-          "highway=footway",
-          "highway=pedestrian",
-          "highway=living_street",
-          {
-            "and": [
-              "bicycle=designated",
-              "highway=path"
-            ]
-          }
+          "cycleway=lane"
         ]
       },
       "mappings": [
@@ -33642,6 +33312,7 @@
       "mappings": [
         {
           "if": "opening_hours=24/7",
+          "icon": "./assets/layers/questions/open24_7.svg",
           "then": {
             "en": "24/7 opened (including holidays)",
             "de": "durchgehend geöffnet (auch an Feiertagen)",
@@ -38361,6 +38032,7 @@
       "mappings": [
         {
           "if": "opening_hours=24/7",
+          "icon": "./assets/layers/questions/open24_7.svg",
           "then": {
             "en": "24/7 opened (including holidays)",
             "de": "durchgehend geöffnet (auch an Feiertagen)",
@@ -65800,6 +65472,7 @@
       "mappings": [
         {
           "if": "opening_hours=24/7",
+          "icon": "./assets/layers/questions/open24_7.svg",
           "then": {
             "en": "24/7 opened (including holidays)",
             "de": "durchgehend geöffnet (auch an Feiertagen)",
@@ -67008,6 +66681,7 @@
         },
         {
           "if": "opening_hours=24/7",
+          "icon": "./assets/layers/questions/open24_7.svg",
           "then": {
             "en": "24/7 opened (including holidays)",
             "de": "durchgehend geöffnet (auch an Feiertagen)",
@@ -69972,6 +69646,7 @@
       "mappings": [
         {
           "if": "opening_hours=24/7",
+          "icon": "./assets/layers/questions/open24_7.svg",
           "then": {
             "en": "24/7 opened (including holidays)",
             "de": "durchgehend geöffnet (auch an Feiertagen)",
@@ -71049,11 +70724,7 @@
           "amenity=bike_wash",
           "amenity=bicycle_wash",
           "amenity=bike_wash",
-          "amenity=bicycle_wash",
-          "service:bicycle:cleaning=yes",
-          "service:bicycle:cleaning=diy",
-          "service:bicycle:cleaning=yes",
-          "service:bicycle:cleaning=diy"
+          "amenity=bicycle_wash"
         ]
       },
       "freeform": {
@@ -72223,6 +71894,7 @@
       "mappings": [
         {
           "if": "opening_hours=24/7",
+          "icon": "./assets/layers/questions/open24_7.svg",
           "then": {
             "en": "24/7 opened (including holidays)",
             "de": "durchgehend geöffnet (auch an Feiertagen)",
@@ -73063,6 +72735,7 @@
       "mappings": [
         {
           "if": "opening_hours=24/7",
+          "icon": "./assets/layers/questions/open24_7.svg",
           "then": {
             "en": "24/7 opened (including holidays)",
             "de": "durchgehend geöffnet (auch an Feiertagen)",
@@ -73320,6 +72993,7 @@
       "mappings": [
         {
           "if": "opening_hours=24/7",
+          "icon": "./assets/layers/questions/open24_7.svg",
           "then": {
             "en": "24/7 opened (including holidays)",
             "de": "durchgehend geöffnet (auch an Feiertagen)",
@@ -75563,6 +75237,7 @@
       "mappings": [
         {
           "if": "opening_hours=24/7",
+          "icon": "./assets/layers/questions/open24_7.svg",
           "then": {
             "en": "24/7 opened (including holidays)",
             "de": "durchgehend geöffnet (auch an Feiertagen)",
@@ -78386,6 +78061,7 @@
       "mappings": [
         {
           "if": "opening_hours=24/7",
+          "icon": "./assets/layers/questions/open24_7.svg",
           "then": {
             "en": "24/7 opened (including holidays)",
             "de": "durchgehend geöffnet (auch an Feiertagen)",
@@ -83364,6 +83040,7 @@
       "mappings": [
         {
           "if": "opening_hours=24/7",
+          "icon": "./assets/layers/questions/open24_7.svg",
           "then": {
             "en": "24/7 opened (including holidays)",
             "de": "durchgehend geöffnet (auch an Feiertagen)",
@@ -83632,6 +83309,7 @@
       "mappings": [
         {
           "if": "opening_hours=24/7",
+          "icon": "./assets/layers/questions/open24_7.svg",
           "then": {
             "en": "24/7 opened (including holidays)",
             "de": "durchgehend geöffnet (auch an Feiertagen)",
@@ -85755,6 +85433,7 @@
       "mappings": [
         {
           "if": "opening_hours=24/7",
+          "icon": "./assets/layers/questions/open24_7.svg",
           "then": {
             "en": "24/7 opened (including holidays)",
             "de": "durchgehend geöffnet (auch an Feiertagen)",
@@ -90160,6 +89839,7 @@
       "mappings": [
         {
           "if": "opening_hours=24/7",
+          "icon": "./assets/layers/questions/open24_7.svg",
           "then": {
             "en": "24/7 opened (including holidays)",
             "de": "durchgehend geöffnet (auch an Feiertagen)",

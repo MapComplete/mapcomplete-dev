@@ -10799,6 +10799,25 @@
                     }
                 }
             },
+            "more_privacy": {
+                "mappings": {
+                    "0": {
+                        "then": "When making changes to OpenStreetMap, do not indicate how far away you were from the changed objects."
+                    },
+                    "1": {
+                        "then": "When making changes to OpenStreetMap, roughly indicate how far away you were from the changed objects. This helps other contributors to understand how you made the change"
+                    }
+                },
+                "question": "When making changes, should a rough indication be given how far away you were from the object?",
+                "questionHint": "If you make a change to one or more objects and you enabled your location, a rough indication of where you made will be saved: it is indicated if you were closer then 25m, 500m, 5km or further away then 5km. This helps mappers understand your context when making changes, but gives an indication of where you were at this time. "
+            },
+            "more_privacy_theme_override": {
+                "mappings": {
+                    "0": {
+                        "then": "This theme is sensitive. Making changes will not indicate if you were nearby explicitly."
+                    }
+                }
+            },
             "picture-license": {
                 "mappings": {
                     "0": {
