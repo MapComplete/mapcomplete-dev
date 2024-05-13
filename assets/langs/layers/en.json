@@ -7790,6 +7790,9 @@
                     },
                     "3": {
                         "then": "Dogs are allowed and can run around freely"
+                    },
+                    "4": {
+                        "then": "Dogs are allowed only outside"
                     }
                 },
                 "question": "Are dogs allowed in this business?"
