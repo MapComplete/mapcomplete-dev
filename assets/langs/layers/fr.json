@@ -5036,6 +5036,9 @@
                     },
                     "21": {
                         "question": "Recyclage des vélos"
+                    },
+                    "22": {
+                        "question": "Recyclage des vélos"
                     }
                 }
             },
@@ -5165,6 +5168,9 @@
                         "then": "Les autres déchets peuvent être déposés ici"
                     },
                     "24": {
+                        "then": "Les vélos peuvent être recyclés ici"
+                    },
+                    "25": {
                         "then": "Les vélos peuvent être recyclés ici"
                     }
                 },
@@ -6748,6 +6754,9 @@
                         "then": "Une poubelle pour plastiques"
                     },
                     "7": {
+                        "then": "Une poubelle pour papier"
+                    },
+                    "8": {
                         "then": "Une poubelle pour papier"
                     }
                 },

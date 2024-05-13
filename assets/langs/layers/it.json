@@ -2192,6 +2192,9 @@
                     },
                     "20": {
                         "question": "Riciclo di secco"
+                    },
+                    "21": {
+                        "question": "Riciclo di secco"
                     }
                 }
             },
@@ -2299,6 +2302,9 @@
                         "then": "Aghi e oggetti appuntiti"
                     },
                     "23": {
+                        "then": "Secco"
+                    },
+                    "24": {
                         "then": "Secco"
                     }
                 },
@@ -3004,6 +3010,9 @@
                         "then": "Un cestino rifiuti per la plastica"
                     },
                     "7": {
+                        "then": "Un cestino rifiuti per la carta"
+                    },
+                    "8": {
                         "then": "Un cestino rifiuti per la carta"
                     }
                 },

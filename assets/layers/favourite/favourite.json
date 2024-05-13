@@ -34800,6 +34800,252 @@
             "path": "./assets/layers/charging_station/bs1363.svg",
             "class": "medium"
           }
+        },
+        {
+          "if": "socket:nema5_15=1",
+          "ifnot": "socket:nema5_15=",
+          "then": {
+            "en": "<b>NEMA 5-15</b> (Type B)",
+            "nl": "<b>NEMA 5-15</b> (VS 3-pin)"
+          },
+          "icon": {
+            "path": "./assets/layers/charging_station/nema-5-15.svg",
+            "class": "medium"
+          },
+          "hideInAnswer": {
+            "and": [
+              "_country!=as",
+              "_country!=ai",
+              "_country!=ag",
+              "_country!=aw",
+              "_country!=bb",
+              "_country!=bz",
+              "_country!=bm",
+              "_country!=bo",
+              "_country!=vg",
+              "_country!=ky",
+              "_country!=co",
+              "_country!=cr",
+              "_country!=cu",
+              "_country!=do",
+              "_country!=ec",
+              "_country!=sv",
+              "_country!=pf",
+              "_country!=gu",
+              "_country!=gt",
+              "_country!=gy",
+              "_country!=ht",
+              "_country!=hn",
+              "_country!=jm",
+              "_country!=jp",
+              "_country!=jo",
+              "_country!=la",
+              "_country!=lb",
+              "_country!=lr",
+              "_country!=mx",
+              "_country!=fm",
+              "_country!=ms",
+              "_country!=ni",
+              "_country!=ne",
+              "_country!=pw",
+              "_country!=pa",
+              "_country!=py",
+              "_country!=pe",
+              "_country!=ph",
+              "_country!=pr",
+              "_country!=sr",
+              "_country!=th",
+              "_country!=tt",
+              "_country!=tm",
+              "_country!=ve",
+              "_country!=vn"
+            ]
+          }
+        },
+        {
+          "if": {
+            "and": [
+              "socket:nema5_15~*",
+              "socket:nema5_15!=1"
+            ]
+          },
+          "then": {
+            "en": "<b>NEMA 5-15</b> (Type B)",
+            "nl": "<b>NEMA 5-15</b> (VS 3-pin)"
+          },
+          "hideInAnswer": true,
+          "icon": {
+            "path": "./assets/layers/charging_station/nema-5-15.svg",
+            "class": "medium"
+          }
+        },
+        {
+          "if": "socket:sev1011_t23=1",
+          "ifnot": "socket:sev1011_t23=",
+          "then": {
+            "en": "<b>SEV 1011 T23</b> (Type J)",
+            "nl": "<b>SEV 1011 T23</b> (Zwitserse 3-pin)"
+          },
+          "icon": {
+            "path": "./assets/layers/charging_station/typej.svg",
+            "class": "medium"
+          },
+          "hideInAnswer": {
+            "and": [
+              "_country!=jo",
+              "_country!=li",
+              "_country!=mg",
+              "_country!=mv",
+              "_country!=rw",
+              "_country!=ch"
+            ]
+          }
+        },
+        {
+          "if": {
+            "and": [
+              "socket:sev1011_t23~*",
+              "socket:sev1011_t23!=1"
+            ]
+          },
+          "then": {
+            "en": "<b>SEV 1011 T23</b> (Type J)",
+            "nl": "<b>SEV 1011 T23</b> (Zwitserse 3-pin)"
+          },
+          "hideInAnswer": true,
+          "icon": {
+            "path": "./assets/layers/charging_station/typej.svg",
+            "class": "medium"
+          }
+        },
+        {
+          "if": "socket:as3112=1",
+          "ifnot": "socket:as3112=",
+          "then": {
+            "en": "<b>AS3112</b> (Type I)",
+            "nl": "<b>AS3112</b> (Australische 3-pin)"
+          },
+          "icon": {
+            "path": "./assets/layers/charging_station/as3112.svg",
+            "class": "medium"
+          },
+          "hideInAnswer": {
+            "and": [
+              "_country!=as",
+              "_country!=ar",
+              "_country!=au",
+              "_country!=cn",
+              "_country!=ck",
+              "_country!=fj",
+              "_country!=ki",
+              "_country!=nr",
+              "_country!=nz",
+              "_country!=nu",
+              "_country!=pg",
+              "_country!=sb",
+              "_country!=tj",
+              "_country!=to",
+              "_country!=tv",
+              "_country!=uy",
+              "_country!=uz",
+              "_country!=vu"
+            ]
+          }
+        },
+        {
+          "if": {
+            "and": [
+              "socket:as3112~*",
+              "socket:as3112!=1"
+            ]
+          },
+          "then": {
+            "en": "<b>AS3112</b> (Type I)",
+            "nl": "<b>AS3112</b> (Australische 3-pin)"
+          },
+          "hideInAnswer": true,
+          "icon": {
+            "path": "./assets/layers/charging_station/as3112.svg",
+            "class": "medium"
+          }
+        },
+        {
+          "if": "socket:nema_5_20=1",
+          "ifnot": "socket:nema_5_20=",
+          "then": {
+            "en": "<b>NEMA 5-20</b> (Type B)",
+            "nl": "<b>NEMA 5-20</b> (VS 3-pin)"
+          },
+          "icon": {
+            "path": "./assets/layers/charging_station/nema-5-20.svg",
+            "class": "medium"
+          },
+          "hideInAnswer": {
+            "and": [
+              "_country!=as",
+              "_country!=ai",
+              "_country!=ag",
+              "_country!=aw",
+              "_country!=bb",
+              "_country!=bz",
+              "_country!=bm",
+              "_country!=bo",
+              "_country!=vg",
+              "_country!=ky",
+              "_country!=co",
+              "_country!=cr",
+              "_country!=cu",
+              "_country!=do",
+              "_country!=ec",
+              "_country!=sv",
+              "_country!=pf",
+              "_country!=gu",
+              "_country!=gt",
+              "_country!=gy",
+              "_country!=ht",
+              "_country!=hn",
+              "_country!=jm",
+              "_country!=jp",
+              "_country!=jo",
+              "_country!=la",
+              "_country!=lb",
+              "_country!=lr",
+              "_country!=mx",
+              "_country!=fm",
+              "_country!=ms",
+              "_country!=ni",
+              "_country!=ne",
+              "_country!=pw",
+              "_country!=pa",
+              "_country!=py",
+              "_country!=pe",
+              "_country!=ph",
+              "_country!=pr",
+              "_country!=sr",
+              "_country!=th",
+              "_country!=tt",
+              "_country!=tm",
+              "_country!=ve",
+              "_country!=vn"
+            ]
+          }
+        },
+        {
+          "if": {
+            "and": [
+              "socket:nema_5_20~*",
+              "socket:nema_5_20!=1"
+            ]
+          },
+          "then": {
+            "en": "<b>NEMA 5-20</b> (Type B)",
+            "nl": "<b>NEMA 5-20</b> (VS 3-pin)"
+          },
+          "hideInAnswer": true,
+          "icon": {
+            "path": "./assets/layers/charging_station/nema-5-20.svg",
+            "class": "medium"
+          }
         }
       ],
       "condition": {
@@ -37977,6 +38223,698 @@
           },
           "socket:bs1363~.+",
           "socket:bs1363!=0"
+        ]
+      }
+    },
+    {
+      "id": "plugs-amount-socket:nema5_15",
+      "question": {
+        "en": "How much plugs of type <b>NEMA 5-15</b> (Type B) are available here?",
+        "nl": "Hoeveel stekkers van type <b>NEMA 5-15</b> (VS 3-pin) heeft dit oplaadpunt?",
+        "ca": "Quants connectors del tipus <b>NEMA 5-15</b> (Type B) hi han disponibles aquí?",
+        "cs": "Kolik zástrček typu <b>NEMA 5-15</b> (Type B) je k dispozici?",
+        "da": "Hvor mange stik af typen <b>NEMA 5-15</b> (Type B) er tilgængelige her?",
+        "de": "Wie viele Stecker vom Typ <b>NEMA 5-15</b> (Type B) sind hier vorhanden?"
+      },
+      "render": {
+        "en": "There are <b class='text-xl'>{socket:nema5_15}</b> plugs of type <b>NEMA 5-15</b> (Type B) available here",
+        "nl": "Hier zijn <b class='text-xl'>{socket:nema5_15}</b> stekkers van het type <b>NEMA 5-15</b> (VS 3-pin)",
+        "de": "Hier sind <b class='text-xl'>{socket:nema5_15}</b> Stecker vom Typ <b>NEMA 5-15</b> (Type B) verfügbar"
+      },
+      "icon": "./assets/layers/charging_station/nema-5-15.svg",
+      "freeform": {
+        "key": "socket:nema5_15",
+        "type": "pnat",
+        "inline": true
+      },
+      "condition": {
+        "and": [
+          {
+            "or": [
+              "amenity=charging_station",
+              "construction:amenity=charging_station",
+              "disused:amenity=charging_station",
+              "planned:amenity=charging_station"
+            ]
+          },
+          "socket:nema5_15~.+",
+          "socket:nema5_15!=0"
+        ]
+      }
+    },
+    {
+      "id": "voltage-socket:nema5_15",
+      "labels": [
+        "technical"
+      ],
+      "question": {
+        "en": "What voltage do the plugs with <b>NEMA 5-15</b> (Type B) offer?",
+        "nl": "Welke spanning levert de stekker van type <b>NEMA 5-15</b> (VS 3-pin)",
+        "cs": "Jaké napětí mají zástrčky s <b>NEMA 5-15</b> (Type B) ?",
+        "de": "Welche Spannung liefern die <b>NEMA 5-15</b> (Type B)?"
+      },
+      "render": {
+        "en": "<b>NEMA 5-15</b> (Type B) outputs {canonical(socket:nema5_15:voltage)}",
+        "nl": "<b>NEMA 5-15</b> (VS 3-pin) heeft een spanning van {canonical(socket:nema5_15:voltage)}",
+        "de": "<b>NEMA 5-15</b> (Type B) liefert {canonical(socket:nema5_15:voltage)}"
+      },
+      "freeform": {
+        "key": "socket:nema5_15:voltage",
+        "type": "pfloat",
+        "inline": false
+      },
+      "mappings": [
+        {
+          "if": "socket:nema5_15:voltage=120 V",
+          "then": {
+            "en": "<b>NEMA 5-15</b> (Type B) outputs 120 volt",
+            "nl": "<b>NEMA 5-15</b> (VS 3-pin) heeft een spanning van 120 volt",
+            "cs": "<b>NEMA 5-15</b> (Type B) výstup 120 voltů",
+            "de": "<b>NEMA 5-15</b> (Type B) liefert 120 Volt"
+          }
+        }
+      ],
+      "condition": {
+        "and": [
+          {
+            "or": [
+              "amenity=charging_station",
+              "construction:amenity=charging_station",
+              "disused:amenity=charging_station",
+              "planned:amenity=charging_station"
+            ]
+          },
+          "socket:nema5_15~.+",
+          "socket:nema5_15!=0"
+        ]
+      }
+    },
+    {
+      "id": "current-socket:nema5_15",
+      "labels": [
+        "technical"
+      ],
+      "question": {
+        "en": "What current do the plugs with <b>NEMA 5-15</b> (Type B) offer?",
+        "nl": "Welke stroom levert de stekker van type <b>NEMA 5-15</b> (VS 3-pin)?",
+        "de": "Welchen Strom bieten die Stecker mit <b>NEMA 5-15</b> (Type B)?"
+      },
+      "render": {
+        "en": "<b>NEMA 5-15</b> (Type B) outputs at most {canonical(socket:nema5_15:current)}",
+        "nl": "<b>NEMA 5-15</b> (VS 3-pin) levert een stroom van maximaal {canonical(socket:nema5_15:current)}",
+        "de": "<b>NEMA 5-15</b> (Type B) liefert maximal {canonical(socket:nema5_15:current)}"
+      },
+      "freeform": {
+        "key": "socket:nema5_15:current",
+        "type": "pfloat",
+        "inline": false
+      },
+      "mappings": [
+        {
+          "if": "socket:nema5_15:current=15 A",
+          "then": {
+            "en": "<b>NEMA 5-15</b> (Type B) outputs at most 15 A",
+            "nl": "<b>NEMA 5-15</b> (VS 3-pin) levert een stroom van maximaal 15 A",
+            "de": "<b>NEMA 5-15</b> (Type B) liefert maximal 15 A"
+          }
+        }
+      ],
+      "condition": {
+        "and": [
+          {
+            "or": [
+              "amenity=charging_station",
+              "construction:amenity=charging_station",
+              "disused:amenity=charging_station",
+              "planned:amenity=charging_station"
+            ]
+          },
+          "socket:nema5_15~.+",
+          "socket:nema5_15!=0"
+        ]
+      }
+    },
+    {
+      "id": "power-output-socket:nema5_15",
+      "labels": [
+        "technical"
+      ],
+      "question": {
+        "en": "What power output does a single plug of type <b>NEMA 5-15</b> (Type B) offer?",
+        "nl": "Welk vermogen levert een enkele stekker van type <b>NEMA 5-15</b> (VS 3-pin)?",
+        "de": "Welche Leistung liefert ein einzelner Stecker des Typs <b>NEMA 5-15</b> (Type B)?"
+      },
+      "render": {
+        "en": "<b>NEMA 5-15</b> (Type B) outputs at most {canonical(socket:nema5_15:output)}",
+        "nl": "<b>NEMA 5-15</b> (VS 3-pin) levert een vermogen van maximaal {canonical(socket:nema5_15:output)}",
+        "de": "<b>NEMA 5-15</b> (Type B) liefert maximal {canonical(socket:nema5_15:output)}"
+      },
+      "freeform": {
+        "key": "socket:nema5_15:output",
+        "type": "pfloat",
+        "inline": false
+      },
+      "mappings": [
+        {
+          "if": "socket:nema5_15:output=1.8 kW",
+          "then": {
+            "en": "<b>NEMA 5-15</b> (Type B) outputs at most 1.8 kW A",
+            "nl": "<b>NEMA 5-15</b> (VS 3-pin) levert een vermogen van maximaal 1.8 kW A",
+            "de": "<b>NEMA 5-15</b> (Type B) liefert maximal 1.8 kW A"
+          }
+        }
+      ],
+      "condition": {
+        "and": [
+          {
+            "or": [
+              "amenity=charging_station",
+              "construction:amenity=charging_station",
+              "disused:amenity=charging_station",
+              "planned:amenity=charging_station"
+            ]
+          },
+          "socket:nema5_15~.+",
+          "socket:nema5_15!=0"
+        ]
+      }
+    },
+    {
+      "id": "plugs-amount-socket:sev1011_t23",
+      "question": {
+        "en": "How much plugs of type <b>SEV 1011 T23</b> (Type J) are available here?",
+        "nl": "Hoeveel stekkers van type <b>SEV 1011 T23</b> (Zwitserse 3-pin) heeft dit oplaadpunt?",
+        "ca": "Quants connectors del tipus <b>SEV 1011 T23</b> (Type J) hi han disponibles aquí?",
+        "cs": "Kolik zástrček typu <b>SEV 1011 T23</b> (Type J) je k dispozici?",
+        "da": "Hvor mange stik af typen <b>SEV 1011 T23</b> (Type J) er tilgængelige her?",
+        "de": "Wie viele Stecker vom Typ <b>SEV 1011 T23</b> (Type J) sind hier vorhanden?"
+      },
+      "render": {
+        "en": "There are <b class='text-xl'>{socket:sev1011_t23}</b> plugs of type <b>SEV 1011 T23</b> (Type J) available here",
+        "nl": "Hier zijn <b class='text-xl'>{socket:sev1011_t23}</b> stekkers van het type <b>SEV 1011 T23</b> (Zwitserse 3-pin)",
+        "de": "Hier sind <b class='text-xl'>{socket:sev1011_t23}</b> Stecker vom Typ <b>SEV 1011 T23</b> (Type J) verfügbar"
+      },
+      "icon": "./assets/layers/charging_station/typej.svg",
+      "freeform": {
+        "key": "socket:sev1011_t23",
+        "type": "pnat",
+        "inline": true
+      },
+      "condition": {
+        "and": [
+          {
+            "or": [
+              "amenity=charging_station",
+              "construction:amenity=charging_station",
+              "disused:amenity=charging_station",
+              "planned:amenity=charging_station"
+            ]
+          },
+          "socket:sev1011_t23~.+",
+          "socket:sev1011_t23!=0"
+        ]
+      }
+    },
+    {
+      "id": "voltage-socket:sev1011_t23",
+      "labels": [
+        "technical"
+      ],
+      "question": {
+        "en": "What voltage do the plugs with <b>SEV 1011 T23</b> (Type J) offer?",
+        "nl": "Welke spanning levert de stekker van type <b>SEV 1011 T23</b> (Zwitserse 3-pin)",
+        "cs": "Jaké napětí mají zástrčky s <b>SEV 1011 T23</b> (Type J) ?",
+        "de": "Welche Spannung liefern die <b>SEV 1011 T23</b> (Type J)?"
+      },
+      "render": {
+        "en": "<b>SEV 1011 T23</b> (Type J) outputs {canonical(socket:sev1011_t23:voltage)}",
+        "nl": "<b>SEV 1011 T23</b> (Zwitserse 3-pin) heeft een spanning van {canonical(socket:sev1011_t23:voltage)}",
+        "de": "<b>SEV 1011 T23</b> (Type J) liefert {canonical(socket:sev1011_t23:voltage)}"
+      },
+      "freeform": {
+        "key": "socket:sev1011_t23:voltage",
+        "type": "pfloat",
+        "inline": false
+      },
+      "mappings": [
+        {
+          "if": "socket:sev1011_t23:voltage=230 V",
+          "then": {
+            "en": "<b>SEV 1011 T23</b> (Type J) outputs 230 volt",
+            "nl": "<b>SEV 1011 T23</b> (Zwitserse 3-pin) heeft een spanning van 230 volt",
+            "cs": "<b>SEV 1011 T23</b> (Type J) výstup 230 voltů",
+            "de": "<b>SEV 1011 T23</b> (Type J) liefert 230 Volt"
+          }
+        }
+      ],
+      "condition": {
+        "and": [
+          {
+            "or": [
+              "amenity=charging_station",
+              "construction:amenity=charging_station",
+              "disused:amenity=charging_station",
+              "planned:amenity=charging_station"
+            ]
+          },
+          "socket:sev1011_t23~.+",
+          "socket:sev1011_t23!=0"
+        ]
+      }
+    },
+    {
+      "id": "current-socket:sev1011_t23",
+      "labels": [
+        "technical"
+      ],
+      "question": {
+        "en": "What current do the plugs with <b>SEV 1011 T23</b> (Type J) offer?",
+        "nl": "Welke stroom levert de stekker van type <b>SEV 1011 T23</b> (Zwitserse 3-pin)?",
+        "de": "Welchen Strom bieten die Stecker mit <b>SEV 1011 T23</b> (Type J)?"
+      },
+      "render": {
+        "en": "<b>SEV 1011 T23</b> (Type J) outputs at most {canonical(socket:sev1011_t23:current)}",
+        "nl": "<b>SEV 1011 T23</b> (Zwitserse 3-pin) levert een stroom van maximaal {canonical(socket:sev1011_t23:current)}",
+        "de": "<b>SEV 1011 T23</b> (Type J) liefert maximal {canonical(socket:sev1011_t23:current)}"
+      },
+      "freeform": {
+        "key": "socket:sev1011_t23:current",
+        "type": "pfloat",
+        "inline": false
+      },
+      "mappings": [
+        {
+          "if": "socket:sev1011_t23:current=16 A",
+          "then": {
+            "en": "<b>SEV 1011 T23</b> (Type J) outputs at most 16 A",
+            "nl": "<b>SEV 1011 T23</b> (Zwitserse 3-pin) levert een stroom van maximaal 16 A",
+            "de": "<b>SEV 1011 T23</b> (Type J) liefert maximal 16 A"
+          }
+        }
+      ],
+      "condition": {
+        "and": [
+          {
+            "or": [
+              "amenity=charging_station",
+              "construction:amenity=charging_station",
+              "disused:amenity=charging_station",
+              "planned:amenity=charging_station"
+            ]
+          },
+          "socket:sev1011_t23~.+",
+          "socket:sev1011_t23!=0"
+        ]
+      }
+    },
+    {
+      "id": "power-output-socket:sev1011_t23",
+      "labels": [
+        "technical"
+      ],
+      "question": {
+        "en": "What power output does a single plug of type <b>SEV 1011 T23</b> (Type J) offer?",
+        "nl": "Welk vermogen levert een enkele stekker van type <b>SEV 1011 T23</b> (Zwitserse 3-pin)?",
+        "de": "Welche Leistung liefert ein einzelner Stecker des Typs <b>SEV 1011 T23</b> (Type J)?"
+      },
+      "render": {
+        "en": "<b>SEV 1011 T23</b> (Type J) outputs at most {canonical(socket:sev1011_t23:output)}",
+        "nl": "<b>SEV 1011 T23</b> (Zwitserse 3-pin) levert een vermogen van maximaal {canonical(socket:sev1011_t23:output)}",
+        "de": "<b>SEV 1011 T23</b> (Type J) liefert maximal {canonical(socket:sev1011_t23:output)}"
+      },
+      "freeform": {
+        "key": "socket:sev1011_t23:output",
+        "type": "pfloat",
+        "inline": false
+      },
+      "mappings": [
+        {
+          "if": "socket:sev1011_t23:output=3.7 kW",
+          "then": {
+            "en": "<b>SEV 1011 T23</b> (Type J) outputs at most 3.7 kW A",
+            "nl": "<b>SEV 1011 T23</b> (Zwitserse 3-pin) levert een vermogen van maximaal 3.7 kW A",
+            "de": "<b>SEV 1011 T23</b> (Type J) liefert maximal 3.7 kW A"
+          }
+        }
+      ],
+      "condition": {
+        "and": [
+          {
+            "or": [
+              "amenity=charging_station",
+              "construction:amenity=charging_station",
+              "disused:amenity=charging_station",
+              "planned:amenity=charging_station"
+            ]
+          },
+          "socket:sev1011_t23~.+",
+          "socket:sev1011_t23!=0"
+        ]
+      }
+    },
+    {
+      "id": "plugs-amount-socket:as3112",
+      "question": {
+        "en": "How much plugs of type <b>AS3112</b> (Type I) are available here?",
+        "nl": "Hoeveel stekkers van type <b>AS3112</b> (Australische 3-pin) heeft dit oplaadpunt?",
+        "ca": "Quants connectors del tipus <b>AS3112</b> (Type I) hi han disponibles aquí?",
+        "cs": "Kolik zástrček typu <b>AS3112</b> (Type I) je k dispozici?",
+        "da": "Hvor mange stik af typen <b>AS3112</b> (Type I) er tilgængelige her?",
+        "de": "Wie viele Stecker vom Typ <b>AS3112</b> (Type I) sind hier vorhanden?"
+      },
+      "render": {
+        "en": "There are <b class='text-xl'>{socket:as3112}</b> plugs of type <b>AS3112</b> (Type I) available here",
+        "nl": "Hier zijn <b class='text-xl'>{socket:as3112}</b> stekkers van het type <b>AS3112</b> (Australische 3-pin)",
+        "de": "Hier sind <b class='text-xl'>{socket:as3112}</b> Stecker vom Typ <b>AS3112</b> (Type I) verfügbar"
+      },
+      "icon": "./assets/layers/charging_station/as3112.svg",
+      "freeform": {
+        "key": "socket:as3112",
+        "type": "pnat",
+        "inline": true
+      },
+      "condition": {
+        "and": [
+          {
+            "or": [
+              "amenity=charging_station",
+              "construction:amenity=charging_station",
+              "disused:amenity=charging_station",
+              "planned:amenity=charging_station"
+            ]
+          },
+          "socket:as3112~.+",
+          "socket:as3112!=0"
+        ]
+      }
+    },
+    {
+      "id": "voltage-socket:as3112",
+      "labels": [
+        "technical"
+      ],
+      "question": {
+        "en": "What voltage do the plugs with <b>AS3112</b> (Type I) offer?",
+        "nl": "Welke spanning levert de stekker van type <b>AS3112</b> (Australische 3-pin)",
+        "cs": "Jaké napětí mají zástrčky s <b>AS3112</b> (Type I) ?",
+        "de": "Welche Spannung liefern die <b>AS3112</b> (Type I)?"
+      },
+      "render": {
+        "en": "<b>AS3112</b> (Type I) outputs {canonical(socket:as3112:voltage)}",
+        "nl": "<b>AS3112</b> (Australische 3-pin) heeft een spanning van {canonical(socket:as3112:voltage)}",
+        "de": "<b>AS3112</b> (Type I) liefert {canonical(socket:as3112:voltage)}"
+      },
+      "freeform": {
+        "key": "socket:as3112:voltage",
+        "type": "pfloat",
+        "inline": false
+      },
+      "mappings": [
+        {
+          "if": "socket:as3112:voltage=230 V",
+          "then": {
+            "en": "<b>AS3112</b> (Type I) outputs 230 volt",
+            "nl": "<b>AS3112</b> (Australische 3-pin) heeft een spanning van 230 volt",
+            "cs": "<b>AS3112</b> (Type I) výstup 230 voltů",
+            "de": "<b>AS3112</b> (Type I) liefert 230 Volt"
+          }
+        }
+      ],
+      "condition": {
+        "and": [
+          {
+            "or": [
+              "amenity=charging_station",
+              "construction:amenity=charging_station",
+              "disused:amenity=charging_station",
+              "planned:amenity=charging_station"
+            ]
+          },
+          "socket:as3112~.+",
+          "socket:as3112!=0"
+        ]
+      }
+    },
+    {
+      "id": "current-socket:as3112",
+      "labels": [
+        "technical"
+      ],
+      "question": {
+        "en": "What current do the plugs with <b>AS3112</b> (Type I) offer?",
+        "nl": "Welke stroom levert de stekker van type <b>AS3112</b> (Australische 3-pin)?",
+        "de": "Welchen Strom bieten die Stecker mit <b>AS3112</b> (Type I)?"
+      },
+      "render": {
+        "en": "<b>AS3112</b> (Type I) outputs at most {canonical(socket:as3112:current)}",
+        "nl": "<b>AS3112</b> (Australische 3-pin) levert een stroom van maximaal {canonical(socket:as3112:current)}",
+        "de": "<b>AS3112</b> (Type I) liefert maximal {canonical(socket:as3112:current)}"
+      },
+      "freeform": {
+        "key": "socket:as3112:current",
+        "type": "pfloat",
+        "inline": false
+      },
+      "mappings": [
+        {
+          "if": "socket:as3112:current=10 A",
+          "then": {
+            "en": "<b>AS3112</b> (Type I) outputs at most 10 A",
+            "nl": "<b>AS3112</b> (Australische 3-pin) levert een stroom van maximaal 10 A",
+            "de": "<b>AS3112</b> (Type I) liefert maximal 10 A"
+          }
+        }
+      ],
+      "condition": {
+        "and": [
+          {
+            "or": [
+              "amenity=charging_station",
+              "construction:amenity=charging_station",
+              "disused:amenity=charging_station",
+              "planned:amenity=charging_station"
+            ]
+          },
+          "socket:as3112~.+",
+          "socket:as3112!=0"
+        ]
+      }
+    },
+    {
+      "id": "power-output-socket:as3112",
+      "labels": [
+        "technical"
+      ],
+      "question": {
+        "en": "What power output does a single plug of type <b>AS3112</b> (Type I) offer?",
+        "nl": "Welk vermogen levert een enkele stekker van type <b>AS3112</b> (Australische 3-pin)?",
+        "de": "Welche Leistung liefert ein einzelner Stecker des Typs <b>AS3112</b> (Type I)?"
+      },
+      "render": {
+        "en": "<b>AS3112</b> (Type I) outputs at most {canonical(socket:as3112:output)}",
+        "nl": "<b>AS3112</b> (Australische 3-pin) levert een vermogen van maximaal {canonical(socket:as3112:output)}",
+        "de": "<b>AS3112</b> (Type I) liefert maximal {canonical(socket:as3112:output)}"
+      },
+      "freeform": {
+        "key": "socket:as3112:output",
+        "type": "pfloat",
+        "inline": false
+      },
+      "mappings": [
+        {
+          "if": "socket:as3112:output=2.3 kW",
+          "then": {
+            "en": "<b>AS3112</b> (Type I) outputs at most 2.3 kW A",
+            "nl": "<b>AS3112</b> (Australische 3-pin) levert een vermogen van maximaal 2.3 kW A",
+            "de": "<b>AS3112</b> (Type I) liefert maximal 2.3 kW A"
+          }
+        }
+      ],
+      "condition": {
+        "and": [
+          {
+            "or": [
+              "amenity=charging_station",
+              "construction:amenity=charging_station",
+              "disused:amenity=charging_station",
+              "planned:amenity=charging_station"
+            ]
+          },
+          "socket:as3112~.+",
+          "socket:as3112!=0"
+        ]
+      }
+    },
+    {
+      "id": "plugs-amount-socket:nema_5_20",
+      "question": {
+        "en": "How much plugs of type <b>NEMA 5-20</b> (Type B) are available here?",
+        "nl": "Hoeveel stekkers van type <b>NEMA 5-20</b> (VS 3-pin) heeft dit oplaadpunt?",
+        "ca": "Quants connectors del tipus <b>NEMA 5-20</b> (Type B) hi han disponibles aquí?",
+        "cs": "Kolik zástrček typu <b>NEMA 5-20</b> (Type B) je k dispozici?",
+        "da": "Hvor mange stik af typen <b>NEMA 5-20</b> (Type B) er tilgængelige her?",
+        "de": "Wie viele Stecker vom Typ <b>NEMA 5-20</b> (Type B) sind hier vorhanden?"
+      },
+      "render": {
+        "en": "There are <b class='text-xl'>{socket:nema_5_20}</b> plugs of type <b>NEMA 5-20</b> (Type B) available here",
+        "nl": "Hier zijn <b class='text-xl'>{socket:nema_5_20}</b> stekkers van het type <b>NEMA 5-20</b> (VS 3-pin)",
+        "de": "Hier sind <b class='text-xl'>{socket:nema_5_20}</b> Stecker vom Typ <b>NEMA 5-20</b> (Type B) verfügbar"
+      },
+      "icon": "./assets/layers/charging_station/nema-5-20.svg",
+      "freeform": {
+        "key": "socket:nema_5_20",
+        "type": "pnat",
+        "inline": true
+      },
+      "condition": {
+        "and": [
+          {
+            "or": [
+              "amenity=charging_station",
+              "construction:amenity=charging_station",
+              "disused:amenity=charging_station",
+              "planned:amenity=charging_station"
+            ]
+          },
+          "socket:nema_5_20~.+",
+          "socket:nema_5_20!=0"
+        ]
+      }
+    },
+    {
+      "id": "voltage-socket:nema_5_20",
+      "labels": [
+        "technical"
+      ],
+      "question": {
+        "en": "What voltage do the plugs with <b>NEMA 5-20</b> (Type B) offer?",
+        "nl": "Welke spanning levert de stekker van type <b>NEMA 5-20</b> (VS 3-pin)",
+        "cs": "Jaké napětí mají zástrčky s <b>NEMA 5-20</b> (Type B) ?",
+        "de": "Welche Spannung liefern die <b>NEMA 5-20</b> (Type B)?"
+      },
+      "render": {
+        "en": "<b>NEMA 5-20</b> (Type B) outputs {canonical(socket:nema_5_20:voltage)}",
+        "nl": "<b>NEMA 5-20</b> (VS 3-pin) heeft een spanning van {canonical(socket:nema_5_20:voltage)}",
+        "de": "<b>NEMA 5-20</b> (Type B) liefert {canonical(socket:nema_5_20:voltage)}"
+      },
+      "freeform": {
+        "key": "socket:nema_5_20:voltage",
+        "type": "pfloat",
+        "inline": false
+      },
+      "mappings": [
+        {
+          "if": "socket:nema_5_20:voltage=120 V",
+          "then": {
+            "en": "<b>NEMA 5-20</b> (Type B) outputs 120 volt",
+            "nl": "<b>NEMA 5-20</b> (VS 3-pin) heeft een spanning van 120 volt",
+            "cs": "<b>NEMA 5-20</b> (Type B) výstup 120 voltů",
+            "de": "<b>NEMA 5-20</b> (Type B) liefert 120 Volt"
+          }
+        }
+      ],
+      "condition": {
+        "and": [
+          {
+            "or": [
+              "amenity=charging_station",
+              "construction:amenity=charging_station",
+              "disused:amenity=charging_station",
+              "planned:amenity=charging_station"
+            ]
+          },
+          "socket:nema_5_20~.+",
+          "socket:nema_5_20!=0"
+        ]
+      }
+    },
+    {
+      "id": "current-socket:nema_5_20",
+      "labels": [
+        "technical"
+      ],
+      "question": {
+        "en": "What current do the plugs with <b>NEMA 5-20</b> (Type B) offer?",
+        "nl": "Welke stroom levert de stekker van type <b>NEMA 5-20</b> (VS 3-pin)?",
+        "de": "Welchen Strom bieten die Stecker mit <b>NEMA 5-20</b> (Type B)?"
+      },
+      "render": {
+        "en": "<b>NEMA 5-20</b> (Type B) outputs at most {canonical(socket:nema_5_20:current)}",
+        "nl": "<b>NEMA 5-20</b> (VS 3-pin) levert een stroom van maximaal {canonical(socket:nema_5_20:current)}",
+        "de": "<b>NEMA 5-20</b> (Type B) liefert maximal {canonical(socket:nema_5_20:current)}"
+      },
+      "freeform": {
+        "key": "socket:nema_5_20:current",
+        "type": "pfloat",
+        "inline": false
+      },
+      "mappings": [
+        {
+          "if": "socket:nema_5_20:current=20 A",
+          "then": {
+            "en": "<b>NEMA 5-20</b> (Type B) outputs at most 20 A",
+            "nl": "<b>NEMA 5-20</b> (VS 3-pin) levert een stroom van maximaal 20 A",
+            "de": "<b>NEMA 5-20</b> (Type B) liefert maximal 20 A"
+          }
+        }
+      ],
+      "condition": {
+        "and": [
+          {
+            "or": [
+              "amenity=charging_station",
+              "construction:amenity=charging_station",
+              "disused:amenity=charging_station",
+              "planned:amenity=charging_station"
+            ]
+          },
+          "socket:nema_5_20~.+",
+          "socket:nema_5_20!=0"
+        ]
+      }
+    },
+    {
+      "id": "power-output-socket:nema_5_20",
+      "labels": [
+        "technical"
+      ],
+      "question": {
+        "en": "What power output does a single plug of type <b>NEMA 5-20</b> (Type B) offer?",
+        "nl": "Welk vermogen levert een enkele stekker van type <b>NEMA 5-20</b> (VS 3-pin)?",
+        "de": "Welche Leistung liefert ein einzelner Stecker des Typs <b>NEMA 5-20</b> (Type B)?"
+      },
+      "render": {
+        "en": "<b>NEMA 5-20</b> (Type B) outputs at most {canonical(socket:nema_5_20:output)}",
+        "nl": "<b>NEMA 5-20</b> (VS 3-pin) levert een vermogen van maximaal {canonical(socket:nema_5_20:output)}",
+        "de": "<b>NEMA 5-20</b> (Type B) liefert maximal {canonical(socket:nema_5_20:output)}"
+      },
+      "freeform": {
+        "key": "socket:nema_5_20:output",
+        "type": "pfloat",
+        "inline": false
+      },
+      "mappings": [
+        {
+          "if": "socket:nema_5_20:output=2.4 kW",
+          "then": {
+            "en": "<b>NEMA 5-20</b> (Type B) outputs at most 2.4 kW A",
+            "nl": "<b>NEMA 5-20</b> (VS 3-pin) levert een vermogen van maximaal 2.4 kW A",
+            "de": "<b>NEMA 5-20</b> (Type B) liefert maximal 2.4 kW A"
+          }
+        }
+      ],
+      "condition": {
+        "and": [
+          {
+            "or": [
+              "amenity=charging_station",
+              "construction:amenity=charging_station",
+              "disused:amenity=charging_station",
+              "planned:amenity=charging_station"
+            ]
+          },
+          "socket:nema_5_20~.+",
+          "socket:nema_5_20!=0"
         ]
       }
     },
@@ -84728,6 +85666,7 @@
             "recycling:plastic_bottles=",
             "recycling:plastic_packaging=",
             "recycling:plastic=",
+            "recycling:pmd=",
             "recycling:printer_cartridges=",
             "recycling:scrap_metal=",
             "recycling:shoes=",
@@ -85199,15 +86138,33 @@
           }
         },
         {
-          "if": "recycling:printer_cartridges=yes",
-          "ifnot": "recycling:printer_cartridges=",
+          "if": "recycling:pmd=yes",
+          "ifnot": "recycling:pmd=",
           "then": {
             "en": "Printer cartridges can be recycled here",
             "nl": "Inktpatronen kunnen hier gerecycleerd worden",
-            "de": "Druckerpatronen können hier recycelt werden",
             "ca": "Els cartutxos d'impressora es poden reciclar aquí",
-            "fr": "Les cartouches d'imprimante peuvent être recyclées ici",
-            "cs": "Náplně do tiskáren lze recyklovat zde"
+            "cs": "Náplně do tiskáren lze recyklovat zde",
+            "de": "Druckerpatronen können hier recycelt werden",
+            "fr": "Les cartouches d'imprimante peuvent être recyclées ici"
+          },
+          "icon": {
+            "path": "./assets/layers/recycling/pmd.svg",
+            "class": "medium"
+          }
+        },
+        {
+          "if": "recycling:printer_cartridges=yes",
+          "ifnot": "recycling:printer_cartridges=",
+          "then": {
+            "en": "Scrap metal can be recycled here",
+            "nl": "Oud metaal kan hier gerecycled worden",
+            "de": "Metallschrott kann hier recycelt werden",
+            "ca": "Aquí es pot reciclar ferralla",
+            "fr": "La ferraille peut être recyclée ici",
+            "cs": "Kovový šrot lze zde recyklovat",
+            "es": "Aquí se puede reciclar chatarra",
+            "it": "Rottami metallici"
           },
           "icon": {
             "path": "./assets/layers/recycling/printer_cartridges.svg",
@@ -85218,14 +86175,14 @@
           "if": "recycling:scrap_metal=yes",
           "ifnot": "recycling:scrap_metal=",
           "then": {
-            "en": "Scrap metal can be recycled here",
-            "nl": "Oud metaal kan hier gerecycled worden",
-            "ca": "Aquí es pot reciclar ferralla",
-            "de": "Metallschrott kann hier recycelt werden",
-            "es": "Aquí se puede reciclar chatarra",
-            "it": "Rottami metallici",
-            "fr": "La ferraille peut être recyclée ici",
-            "cs": "Kovový šrot lze zde recyklovat"
+            "en": "Shoes can be recycled here",
+            "nl": "Schoenen kunnen hier gerecycled worden",
+            "ca": "Aquí es poden reciclar sabates",
+            "de": "Schuhe können hier recycelt werden",
+            "es": "El calzado se puede reciclar aquí",
+            "it": "Scarpe",
+            "fr": "Les chaussures peuvent être recyclées ici",
+            "cs": "Boty se zde dají recyklovat"
           },
           "icon": {
             "path": "./assets/layers/recycling/scrap_metal.svg",
@@ -85236,14 +86193,14 @@
           "if": "recycling:shoes=yes",
           "ifnot": "recycling:shoes=",
           "then": {
-            "en": "Shoes can be recycled here",
-            "nl": "Schoenen kunnen hier gerecycled worden",
-            "de": "Schuhe können hier recycelt werden",
+            "en": "Small electrical appliances can be recycled here",
+            "nl": "Kleine elektrische apparaten kunnen hier gerecycled worden",
+            "de": "Elektrokleingeräte können hier recycelt werden",
             "es": "El calzado se puede reciclar aquí",
-            "it": "Scarpe",
-            "ca": "Aquí es poden reciclar sabates",
-            "fr": "Les chaussures peuvent être recyclées ici",
-            "cs": "Boty se zde dají recyklovat"
+            "it": "Piccoli elettrodomestici",
+            "ca": "Aquí es poden reciclar petits electrodomèstics",
+            "fr": "Les petits appareils électriques peuvent être recyclés ici",
+            "cs": "Drobné elektrospotřebiče se zde dají recyklovat"
           },
           "icon": {
             "path": "./assets/layers/recycling/shoes.svg",
@@ -85271,13 +86228,13 @@
           "if": "recycling:small_electrical_appliances=yes",
           "ifnot": "recycling:small_electrical_appliances=",
           "then": {
-            "en": "Small electrical appliances can be recycled here",
-            "nl": "Kleine elektrische apparaten kunnen hier gerecycled worden",
-            "de": "Elektrokleingeräte können hier recycelt werden",
-            "it": "Piccoli elettrodomestici",
-            "ca": "Aquí es poden reciclar petits electrodomèstics",
-            "fr": "Les petits appareils électriques peuvent être recyclés ici",
-            "cs": "Drobné elektrospotřebiče se zde dají recyklovat"
+            "en": "Needles can be recycled here",
+            "nl": "Injectienaalden kunnen hier gerecycled worden",
+            "de": "Nadeln können hier recycelt werden",
+            "it": "Aghi e oggetti appuntiti",
+            "ca": "Aquí es poden reciclar agulles",
+            "fr": "Les aiguilles peuvent être recyclées ici",
+            "cs": "Jehly se zde dají recyklovat"
           },
           "hideInAnswer": true,
           "icon": {
@@ -85289,13 +86246,13 @@
           "if": "recycling:needles=yes",
           "ifnot": "recycling:needles=",
           "then": {
-            "en": "Needles can be recycled here",
-            "nl": "Injectienaalden kunnen hier gerecycled worden",
-            "de": "Nadeln können hier recycelt werden",
-            "it": "Aghi e oggetti appuntiti",
-            "ca": "Aquí es poden reciclar agulles",
-            "fr": "Les aiguilles peuvent être recyclées ici",
-            "cs": "Jehly se zde dají recyklovat"
+            "en": "Residual waste can be recycled here",
+            "nl": "Restafval kan hier gerecycled worden",
+            "de": "Restmüll kann hier recycelt werden",
+            "it": "Secco",
+            "ca": "Ací es pot reciclar el rebuig",
+            "fr": "Les autres déchets peuvent être déposés ici",
+            "cs": "Zbytkový odpad zde lze recyklovat"
           },
           "icon": {
             "path": "./assets/layers/recycling/needles.svg",
@@ -85306,13 +86263,13 @@
           "if": "recycling:waste=yes",
           "ifnot": "recycling:waste=",
           "then": {
-            "en": "Residual waste can be recycled here",
-            "nl": "Restafval kan hier gerecycled worden",
-            "de": "Restmüll kann hier recycelt werden",
+            "en": "Bicycles can be recycled here",
+            "nl": "Fietsen (en fietswrakken) kunnen hier gerecycled worden",
+            "de": "Fahrräder können hier recycelt werden",
             "it": "Secco",
-            "ca": "Ací es pot reciclar el rebuig",
-            "fr": "Les autres déchets peuvent être déposés ici",
-            "cs": "Zbytkový odpad zde lze recyklovat"
+            "ca": "Aquí es poden reciclar bicicletes",
+            "fr": "Les vélos peuvent être recyclés ici",
+            "cs": "Kola se zde dají recyklovat"
           },
           "icon": {
             "path": "./assets/layers/waste_disposal/waste_disposal.svg",
@@ -90312,6 +91269,20 @@
           }
         },
         {
+          "if": "waste=pmd",
+          "then": {
+            "en": "A waste basket for paper",
+            "nl": "Een vuilnisbak voor papier",
+            "ca": "Una paperera per a paper",
+            "cs": "Odpadový koš na papír",
+            "da": "En affaldskurv til papir",
+            "de": "Der Abfalleimer ist für Papier",
+            "fr": "Une poubelle pour papier",
+            "id": "Keranjang sampah untuk kertas",
+            "it": "Un cestino rifiuti per la carta"
+          }
+        },
+        {
           "if": "waste=paper",
           "then": {
             "en": "A waste basket for paper",
@@ -90353,9 +91324,9 @@
           "amenity=waste_basket",
           {
             "or": [
-              "waste=dog_excrement",
-              "waste=trash",
-              "waste="
+              "waste=",
+              "waste~.*dog_excrement.*",
+              "waste~.*trash.*"
             ]
           }
         ]
