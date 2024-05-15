@@ -6751,9 +6751,6 @@
                     },
                     "24": {
                         "then": "Aquí es poden reciclar bicicletes"
-                    },
-                    "25": {
-                        "then": "Aquí es poden reciclar bicicletes"
                     }
                 },
                 "question": "Què es pot reciclar aquí?"

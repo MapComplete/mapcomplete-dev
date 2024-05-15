@@ -3921,9 +3921,6 @@
                     },
                     "19": {
                         "then": "El calzado se puede reciclar aquí"
-                    },
-                    "20": {
-                        "then": "El calzado se puede reciclar aquí"
                     }
                 },
                 "question": "¿Qué se puede reciclar aquí?"

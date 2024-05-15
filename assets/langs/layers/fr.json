@@ -5443,9 +5443,6 @@
                     },
                     "24": {
                         "then": "Les vélos peuvent être recyclés ici"
-                    },
-                    "25": {
-                        "then": "Les vélos peuvent être recyclés ici"
                     }
                 },
                 "question": "Que peut-on recycler ici ?"
