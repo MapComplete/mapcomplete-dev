@@ -22759,28 +22759,12 @@
           "amenity=animal_shelter",
           "amenity=bicycle_library",
           "amenity=bicycle_rental",
-          "amenity=pharmacy",
-          "amenity=school",
-          "amenity=college",
-          "amenity=university",
-          "amenity=veterinary",
-          "amenity=veterinary",
-          "amenity=fast_food",
-          "amenity=restaurant",
-          "amenity=animal_shelter",
-          "amenity=pharmacy",
-          "amenity=ice_cream",
-          "amenity=fast_food",
-          "amenity=restaurant",
           "association=cycling",
           "association=bicycle",
           "club=climbing",
           "club=bicycle",
           "emergency=disaster_response",
-          "healthcare=physiotherapist",
           "leisure=outdoor_seating",
-          "leisure=outdoor_seating",
-          "leisure=sports_centre",
           "ngo=cycling",
           "service:bicycle:rental=yes",
           {
@@ -22812,7 +22796,6 @@
           },
           "club=cycling",
           "healthcare=physiotherapist",
-          "isced:level:2011=early_childhood",
           "leisure=outdoor_seating",
           "leisure=hackerspace",
           "leisure=nature_reserve",
@@ -22833,6 +22816,7 @@
               }
             ]
           },
+          "isced:level:2011=early_childhood",
           "tourism=hotel",
           {
             "and": [
@@ -22840,22 +22824,9 @@
               "protect_class!=98"
             ]
           },
+          "shop=bicycle",
           "tourism=hotel",
           "tower:type=observation",
-          {
-            "and": [
-              "amenity=school",
-              {
-                "or": [
-                  "isced:2011:level~.*bachelor.*",
-                  "isced:2011:level~.*master.*"
-                ]
-              }
-            ]
-          },
-          "leisure=fitness_centre",
-          "leisure=sports_centre",
-          "shop=bicycle",
           {
             "and": [
               "shop=sports",
@@ -22893,9 +22864,11 @@
           "club=climbing",
           "emergency=disaster_response",
           "isced:level:2011=early_childhood",
+          "leisure=dog_park",
           "leisure=fitness_centre",
           "leisure=hackerspace",
           "leisure=nature_reserve",
+          "leisure=outdoor_seating",
           "ngo=cycling",
           "ngo=bicycle",
           "office=government",
@@ -22913,6 +22886,12 @@
               }
             ]
           },
+          {
+            "and": [
+              "dog=unleashed",
+              "leisure=park"
+            ]
+          },
           "tourism=hotel",
           {
             "and": [
@@ -22920,6 +22899,41 @@
               "protect_class!=98"
             ]
           },
+          "amenity=pharmacy",
+          "amenity=school",
+          "amenity=college",
+          "amenity=university",
+          "amenity=veterinary",
+          "amenity=veterinary",
+          "amenity=restaurant",
+          "amenity=animal_shelter",
+          "amenity=pharmacy",
+          "amenity=fast_food",
+          "amenity=restaurant",
+          "healthcare=physiotherapist",
+          "leisure=sports_centre",
+          {
+            "and": [
+              "amenity=school",
+              {
+                "or": [
+                  "isced:2011:level~.*bachelor.*",
+                  "isced:2011:level~.*master.*"
+                ]
+              }
+            ]
+          },
+          "leisure=dog_park",
+          {
+            "and": [
+              "dog=unleashed",
+              "leisure=park"
+            ]
+          },
+          "amenity=fast_food",
+          "amenity=ice_cream",
+          "leisure=fitness_centre",
+          "leisure=sports_centre",
           "tower:type=observation",
           {
             "and": [
@@ -83356,7 +83370,166 @@
       }
     },
     {
+      "question": {
+        "en": "What is the name of this dog park?",
+        "da": "Hvad hedder denne hundeskov?",
+        "de": "Wie lautet der Name dieses Hundeparks?",
+        "es": "¿Cual es el nombre de este parque para perros?",
+        "nl": "Wat is de naam van deze hondenweide?",
+        "ca": "Com s'anomena aquest parc per a gossos?",
+        "cs": "Jak se jmenuje tento psí park?"
+      },
+      "render": {
+        "en": "The name of this dog park is {name}",
+        "de": "Denne hundeskov hedder {name}",
+        "es": "El nombre de este parque para perros es {name}",
+        "nl": "Deze hondenweide heet {name}",
+        "ca": "Aquest parc per a gossos s'anomena {name}",
+        "cs": "Název tohoto psího parku je {name}"
+      },
+      "freeform": {
+        "key": "name",
+        "inline": true
+      },
+      "id": "dogpark_Name",
+      "condition": {
+        "and": [
+          {
+            "and": [
+              {
+                "or": [
+                  "leisure=dog_park",
+                  {
+                    "and": [
+                      "leisure=park",
+                      "dog=unleashed"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "dogpark_opening_hours_24_7",
+      "question": {
+        "en": "What are the opening hours of {title()}?",
+        "fr": "Quelles sont les horaires d'ouverture de {title()} ?",
+        "de": "Wie lauten die Öffnungszeiten von {title()}?",
+        "nl": "Wat zijn de openingstijden van {title()}?",
+        "nb_NO": "Hva er åpningstidene for {title()})",
+        "ru": "Какое время работы у {title()}?",
+        "zh_Hant": "{title()} 的開放時間是什麼？",
+        "it": "Quali sono gli orari di apertura di {title()}?",
+        "pt_BR": "Qual o horário de funcionamento de {title()}?",
+        "pl": "Jakie są godziny otwarcia {title()}?",
+        "sv": "Vilka är öppettiderna för {title()}?",
+        "pt": "Qual é o horário de funcionamento de {title()}?",
+        "hu": "Mikor van nyitva ez: {title()}?",
+        "ca": "Quin és l'horari d'obertura de {title()}?",
+        "ja": "{title()}の営業時間は？",
+        "sl": "Kakšen odpiralni čas ima {title()}?",
+        "fil": "Anong oras nagbubukas ang {title()}?",
+        "es": "¿Cuales son las horas de apertura de {title()}?",
+        "zh_Hans": "{title()} 的开放时间为何？",
+        "da": "Hvad er åbningstiderne for {title()}?",
+        "id": "Kapan jam buka {title()}?",
+        "cs": "Jaká je otevírací doba {title()}?"
+      },
+      "render": {
+        "de": "<h3>Öffnungszeiten</h3>{opening_hours_table(opening_hours)}",
+        "fr": "<h3>Horaires d'ouverture</h3>{opening_hours_table(opening_hours)}",
+        "en": "<h3>Opening hours</h3>{opening_hours_table(opening_hours)}",
+        "nl": "<h3>Openingstijden</h3>{opening_hours_table(opening_hours)}",
+        "nb_NO": "<h3>Åpningstider</h3>{opening_hours_table(opening_hours)}",
+        "ru": "<h3>Часы работы</h3>{opening_hours_table(opening_hours)}",
+        "zh_Hant": "<h3>開放時間</h3>{opening_hours_table(opening_hours)}",
+        "it": "<h3>Orari di apertura</h3>{opening_hours_table(opening_hours)}",
+        "pl": "<h3> Godziny otwarcia</h3>{opening_hours_table(opening_hours)}",
+        "pt_BR": "<h3>Horário de funcionamento</h3>{opening_hours_table(opening_hours)}",
+        "sv": "<h3>Öppettider</h3> {opening_hours_table(opening_hours)}",
+        "pt": "<h3>Horário de funcionamento</h3>{opening_hours_table(opening_hours)}",
+        "eo": "<h3>Malfermitaj horoj</h3>{opening_hours_table(opening_hours)}",
+        "hu": "<h3>Nyitva tartás</h3>{opening_hours_table(opening_hours)}",
+        "ca": "<h3>Horari d'obertura</h3>{opening_hours_table(opening_hours)}",
+        "ja": "<h3>営業時間</h3>{opening_hours_table(opening_hours)}",
+        "sl": "<h3>Odpiralni čas</h3>{opening_hours_table(opening_hours)}",
+        "fil": "<h3>Mga oras na bukas</h3>{opening_hours_table(opening_hours)}",
+        "es": "<h3>Horas de apertura</h3>{opening_hours_table(opening_hours)}",
+        "zh_Hans": "<h3>开放时间</h3> {opening_hours_table(opening_hours)}",
+        "da": "<h3> Åbningstider</h3>{opening_hours_table(opening_hours)}",
+        "id": "<h3>Jam buka</h3>{opening_hours_table(opening_hours)}",
+        "pa_PK": "<h3>کھُلھے گھنٹے</h3>{opening_hours_table(opening_hours)}",
+        "cs": "<h3>Otevírací hodiny</h3>{opening_hours_table(opening_hours)}"
+      },
+      "freeform": {
+        "key": "opening_hours",
+        "type": "opening_hours",
+        "inline": false
+      },
+      "mappings": [
+        {
+          "if": "opening_hours=24/7",
+          "icon": "./assets/layers/questions/open24_7.svg",
+          "then": {
+            "en": "24/7 opened (including holidays)",
+            "de": "durchgehend geöffnet (auch an Feiertagen)",
+            "zh_Hant": "24/7 開放 (包括假日)",
+            "id": "Buka 24 jam (termasuk hari libur)",
+            "hu": "Éjjel-nappal nyitva (munkaszüneti napokon is)",
+            "es": "Abierta 24/7 (incluyendo festivos)",
+            "nl": "24/7 open (ook tijdens feestdagen)",
+            "fr": "Ouvert 24h/24 (jours fériés compris)",
+            "nb_NO": "Døgnåpent (inkludert helligdager)",
+            "cs": "Otevřeno 24/7 (včetně svátků)",
+            "ca": "Obert 24/7 (incloent-hi festius)",
+            "pl": "Otwarte 24/7 (również w święta)"
+          }
+        },
+        {
+          "#": "Just here to be able to handle those ~5000 incorrect 'opening_hours=closed' elements.",
+          "if": "opening_hours=closed",
+          "then": {
+            "en": "Marked as closed for an unspecified time",
+            "nl": "Gesloten voor onbepaalde duur",
+            "de": "Als geschlossen für eine unbestimmte Zeit markiert"
+          },
+          "hideInAnswer": true
+        }
+      ],
+      "condition": {
+        "and": [
+          {
+            "and": [
+              {
+                "or": [
+                  "leisure=dog_park",
+                  {
+                    "and": [
+                      "leisure=park",
+                      "dog=unleashed"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
       "id": "dogpark-fenced",
+      "question": {
+        "en": "It this dog park fenced in?",
+        "da": "Er denne hundeskov indhegnet?",
+        "de": "Ist dieser Hundepark umzäunt?",
+        "es": "¿Este parque para perros está vallado?",
+        "nl": "Is deze hondenweide volledig omheind?",
+        "ca": "Aquest parc de gossos està tancat?",
+        "cs": "Je tento psí park oplocený?"
+      },
       "mappings": [
         {
           "if": "barrier=fence",
@@ -83383,15 +83556,6 @@
           }
         }
       ],
-      "question": {
-        "en": "It this dog park fenced in?",
-        "da": "Er denne hundeskov indhegnet?",
-        "de": "Ist dieser Hundepark umzäunt?",
-        "es": "¿Este parque para perros está vallado?",
-        "nl": "Is deze hondenweide volledig omheind?",
-        "ca": "Aquest parc de gossos està tancat?",
-        "cs": "Je tento psí park oplocený?"
-      },
       "condition": {
         "or": [
           "leisure=dog_park",
@@ -83462,49 +83626,6 @@
             "and": [
               "dog=unleashed",
               "leisure=park"
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "question": {
-        "en": "What is the name of this dog park?",
-        "da": "Hvad hedder denne hundeskov?",
-        "de": "Wie lautet der Name dieses Hundeparks?",
-        "es": "¿Cual es el nombre de este parque para perros?",
-        "nl": "Wat is de naam van deze hondenweide?",
-        "ca": "Com s'anomena aquest parc per a gossos?",
-        "cs": "Jak se jmenuje tento psí park?"
-      },
-      "render": {
-        "en": "The name of this dog park is {name}",
-        "de": "Denne hundeskov hedder {name}",
-        "es": "El nombre de este parque para perros es {name}",
-        "nl": "Deze hondenweide heet {name}",
-        "ca": "Aquest parc per a gossos s'anomena {name}",
-        "cs": "Název tohoto psího parku je {name}"
-      },
-      "freeform": {
-        "key": "name",
-        "inline": true
-      },
-      "id": "dogpark_Name",
-      "condition": {
-        "and": [
-          {
-            "and": [
-              {
-                "or": [
-                  "leisure=dog_park",
-                  {
-                    "and": [
-                      "leisure=park",
-                      "dog=unleashed"
-                    ]
-                  }
-                ]
-              }
             ]
           }
         ]
