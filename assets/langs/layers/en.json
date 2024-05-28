@@ -5306,6 +5306,44 @@
             "render": "Your travelled path"
         }
     },
+    "grave": {
+        "description": "Tombstones (and graves) indicate where a person was buried. On this map, those can be recorded and a link to Wikipedia can be made",
+        "filter": {
+            "0": {
+                "options": {
+                    "0": {
+                        "question": "With or without wikidata"
+                    },
+                    "1": {
+                        "question": "Has a link to Wikidata"
+                    },
+                    "2": {
+                        "question": "Has no link to Wikidata"
+                    }
+                }
+            }
+        },
+        "name": "Gravestones",
+        "presets": {
+            "0": {
+                "description": "A tombstone is a physical object which indicates that one or more persons are buried here. It generally has the name, birth date and death date of the person or persons as inscription.",
+                "title": "a tombstone"
+            }
+        },
+        "tagRenderings": {
+            "buried:wikidata": {
+                "question": "What is the Wikipedia page of the person buried here?",
+                "render": "{wikipedia(buried:wikidata)}"
+            },
+            "name": {
+                "question": "What is the name of the person buried here?",
+                "render": "<b>{name}</b> is buried here"
+            }
+        },
+        "title": {
+            "render": "Tombstone"
+        }
+    },
     "guidepost": {
         "description": "Guideposts (also known as fingerposts or finger posts) are often found along official hiking/cycling/riding/skiing routes to indicate the directions to different destinations",
         "name": "Guideposts",
@@ -6269,6 +6307,7 @@
         "name": "Memorials",
         "presets": {
             "0": {
+                "description": "A memorial is a physical object which remembers a person or event.",
                 "title": "a memorial"
             }
         },
@@ -6325,6 +6364,9 @@
                     },
                     "13": {
                         "then": "This is a memorial tree"
+                    },
+                    "14": {
+                        "then": "This is a gravestone; the person is buried here"
                     }
                 },
                 "question": "What type of memorial is this?",
