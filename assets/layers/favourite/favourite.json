@@ -75128,13 +75128,13 @@
       "id": "Reservation",
       "condition": {
         "and": [
-          "takeaway=only",
           {
             "or": [
               "amenity=fast_food",
               "amenity=restaurant"
             ]
-          }
+          },
+          "takeaway!=only"
         ]
       },
       "question": {
