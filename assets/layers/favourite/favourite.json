@@ -6560,41 +6560,50 @@
         "if": {
           "and": [
             "amenity=vending_machine",
-            "vending~.*bicycle_tube.*",
+            "vending!~(parking_tickets|public_transport_tickets|bottle_return|excrement_bags|elongated_coin)",
             "name~.+"
           ]
         },
         "then": {
-          "en": "Bicycle tube vending machine {name}",
-          "ca": "Màquina expenedora de cambres d'aire de bicicletes {name}",
-          "de": "{name} Fahrradschlauch-Automat",
-          "cs": "Automat na cyklistické pláště{name}",
-          "nl": "Fietsbanden-verkoopautomaat {name}",
-          "pt_BR": "Máquina de venda de câmara de ar para bicicleta {name}",
-          "es": "Máquina expendedora de cámaras de bicicleta {name}",
-          "pt": "Máquina de venda de câmara de ar para bicicleta {name}"
+          "en": "Vending machine {name}",
+          "nl": "Verkoopautomaat {name}",
+          "de": "Verkaufsautomat {name}",
+          "fr": "Distributeur {name}",
+          "ca": "Maquina expenedora {name}",
+          "cs": "Prodejní automat {name}"
         }
       },
       {
         "if": {
           "and": [
             "amenity=vending_machine",
-            "vending~.*bicycle_tube.*"
+            "vending!~(parking_tickets|public_transport_tickets|bottle_return|excrement_bags|elongated_coin)",
+            "brand~.+"
           ]
         },
         "then": {
-          "en": "Bicycle tube vending machine",
-          "nl": "Fietsbanden-verkoopautomaat",
-          "fr": "Distributeur automatique de chambre à air de vélo",
-          "it": "Distributore automatico di camere d’aria per bici",
-          "de": "Fahrradschlauch-Automat",
-          "ru": "Торговый автомат для велосипедистов",
-          "zh_Hant": "自行車內胎自動售貨機",
-          "pt_BR": "Máquina de venda automática de tubos de bicicleta",
-          "pt": "Máquina de venda automática de tubos de bicicleta",
-          "da": "Automat til salg af cykelslanger",
-          "cs": "Automat na cyklistické duše",
-          "ca": "Màquina expenedora de tubs de bicicleta"
+          "en": "Vending machine {brand}",
+          "nl": "Verkoopautomaat {brand}",
+          "de": "Verkaufsautomat {brand}",
+          "fr": "Distributeur {brand}",
+          "ca": "Màquina expenedora {brand}",
+          "cs": "Prodejní automat {brand}"
+        }
+      },
+      {
+        "if": {
+          "and": [
+            "amenity=vending_machine",
+            "vending!~(parking_tickets|public_transport_tickets|bottle_return|excrement_bags|elongated_coin)"
+          ]
+        },
+        "then": {
+          "en": "Vending machine",
+          "nl": "Verkoopautomaat",
+          "de": "Verkaufsautomat",
+          "fr": "Distributeur",
+          "ca": "Màquina expenedora",
+          "cs": "Prodejní automat"
         }
       },
       {
@@ -6634,47 +6643,6 @@
         "then": {
           "en": "Souvenir Banknote Machine",
           "de": "Souvenir-Banknotenautomat"
-        }
-      },
-      {
-        "if": {
-          "and": [
-            "amenity=vending_machine",
-            "vending~.*bicycle_tube.*",
-            "name~.+"
-          ]
-        },
-        "then": {
-          "en": "Bicycle tube vending machine {name}",
-          "ca": "Màquina expenedora de cambres d'aire de bicicletes {name}",
-          "de": "{name} Fahrradschlauch-Automat",
-          "cs": "Automat na cyklistické pláště{name}",
-          "nl": "Fietsbanden-verkoopautomaat {name}",
-          "pt_BR": "Máquina de venda de câmara de ar para bicicleta {name}",
-          "es": "Máquina expendedora de cámaras de bicicleta {name}",
-          "pt": "Máquina de venda de câmara de ar para bicicleta {name}"
-        }
-      },
-      {
-        "if": {
-          "and": [
-            "amenity=vending_machine",
-            "vending~.*bicycle_tube.*"
-          ]
-        },
-        "then": {
-          "en": "Bicycle tube vending machine",
-          "nl": "Fietsbanden-verkoopautomaat",
-          "fr": "Distributeur automatique de chambre à air de vélo",
-          "it": "Distributore automatico di camere d’aria per bici",
-          "de": "Fahrradschlauch-Automat",
-          "ru": "Торговый автомат для велосипедистов",
-          "zh_Hant": "自行車內胎自動售貨機",
-          "pt_BR": "Máquina de venda automática de tubos de bicicleta",
-          "pt": "Máquina de venda automática de tubos de bicicleta",
-          "da": "Automat til salg af cykelslanger",
-          "cs": "Automat na cyklistické duše",
-          "ca": "Màquina expenedora de tubs de bicicleta"
         }
       },
       {
@@ -10582,6 +10550,40 @@
           "es": "Tienda",
           "pa_PK": "دکان",
           "cs": "Obchod"
+        }
+      },
+      {
+        "if": {
+          "and": [
+            "man_made=lighthouse",
+            "name~.+"
+          ]
+        },
+        "then": {
+          "en": "{name}"
+        }
+      },
+      {
+        "if": "man_made=lighthouse",
+        "then": {
+          "en": "lighthouse"
+        }
+      },
+      {
+        "if": {
+          "and": [
+            "man_made=lighthouse",
+            "name~.+"
+          ]
+        },
+        "then": {
+          "en": "{name}"
+        }
+      },
+      {
+        "if": "man_made=lighthouse",
+        "then": {
+          "en": "lighthouse"
         }
       },
       {
@@ -12763,13 +12765,16 @@
           "amenity=love_hotel",
           "amenity=parcel_locker",
           "amenity=parking",
+          "amenity=parking_space",
           "amenity=pharmacy",
           "amenity=post_box",
           "amenity=post_office",
           "amenity=public_bookcase",
           "amenity=reception_desk",
           "amenity=recycling",
+          "amenity=school",
           "amenity=shelter",
+          "amenity=shower",
           "amenity=college",
           "amenity=university",
           "association=cycling",
@@ -12817,6 +12822,7 @@
           "emergency=fire_hydrant",
           "emergency=mountain_rescue",
           "generator:source=wind",
+          "healthcare=physiotherapist",
           "healthcare=physiotherapist",
           "highway=cycleway",
           "highway=residential",
@@ -12963,7 +12969,9 @@
           "highway=living_street",
           "highway=elevator",
           "highway=crossing",
+          "highway=speed_display",
           "highway=steps",
+          "highway=street_lamp",
           "historic=memorial",
           "historic=tomb",
           "historic=tomb",
@@ -13002,11 +13010,17 @@
           "leisure=hackerspace",
           "leisure=bird_hide",
           "leisure=nature_reserve",
+          "leisure=picnic_table",
           "leisure=bird_hide",
           "leisure=fitness_centre",
           "leisure=fitness_station",
           "leisure=hackerspace",
           "leisure=nature_reserve",
+          "leisure=outdoor_seating",
+          "leisure=picnic_table",
+          "leisure=pitch",
+          "man_made=lighthouse",
+          "man_made=lighthouse",
           "memorial=ghost_bike",
           "memorial=ghost_bike",
           "memorial=ghost_bike",
@@ -13020,6 +13034,7 @@
           "planned:amenity=charging_station",
           "planned:amenity=charging_station",
           "planned:amenity=charging_station",
+          "post_office=post_partner",
           "post_office=post_partner",
           "service:bicycle:cleaning=yes",
           "service:bicycle:cleaning=diy",
@@ -13064,7 +13079,6 @@
               "protect_class!=98"
             ]
           },
-          "leisure=picnic_table",
           "tourism=map",
           "tourism=hotel",
           "tourism=artwork",
@@ -13134,7 +13148,6 @@
               "highway=path"
             ]
           },
-          "indoor=door",
           "leisure=dog_park",
           {
             "and": [
@@ -13143,6 +13156,7 @@
             ]
           },
           "highway=elevator",
+          "indoor=door",
           "tourism=hotel",
           "tourism=map",
           {
@@ -13151,9 +13165,6 @@
               "protect_class!=98"
             ]
           },
-          "highway=speed_camera",
-          "highway=street_lamp",
-          "leisure=outdoor_seating",
           "tower:type=observation",
           {
             "and": [
@@ -13161,13 +13172,6 @@
               "amenity=vending_machine"
             ]
           },
-          "amenity=parking_space",
-          "amenity=school",
-          "amenity=shower",
-          "healthcare=physiotherapist",
-          "leisure=picnic_table",
-          "leisure=sports_centre",
-          "post_office=post_partner",
           "surface:colour=rainbow",
           {
             "and": [
@@ -13175,8 +13179,8 @@
               "highway=footway"
             ]
           },
-          "highway=speed_display",
-          "leisure=pitch",
+          "highway=speed_camera",
+          "leisure=sports_centre",
           {
             "and": [
               "amenity=school",
@@ -13202,6 +13206,36 @@
           "amenity=post_box",
           "amenity=post_office",
           "amenity=parcel_locker",
+          "barrier=wall",
+          "cyclestreet=yes",
+          "generator:source=wind",
+          "highway=bus_stop",
+          "highway=crossing",
+          "leisure=dog_park",
+          "leisure=picnic_table",
+          "natural=tree",
+          "toilets=yes",
+          "tourism=viewpoint",
+          {
+            "and": [
+              "dog=unleashed",
+              "leisure=park"
+            ]
+          },
+          "post_office=post_partner",
+          {
+            "and": [
+              "vending=parcel_pickup;parcel_mail_in",
+              "amenity=vending_machine"
+            ]
+          },
+          "surface:colour=rainbow",
+          {
+            "and": [
+              "footway=crossing",
+              "highway=footway"
+            ]
+          },
           "amenity=toilets",
           "amenity=fast_food",
           "amenity=restaurant",
@@ -13215,15 +13249,10 @@
           "amenity=waste_disposal",
           "amenity=waste_basket",
           "barrier=wall",
-          "barrier=wall",
-          "cyclestreet=yes",
           "cycleway=lane",
           "cycleway=shared_lane",
           "cycleway=track",
           "emergency=mountain_rescue",
-          "generator:source=wind",
-          "highway=bus_stop",
-          "highway=crossing",
           "highway=cycleway",
           "highway=residential",
           "highway=tertiary",
@@ -13247,41 +13276,16 @@
           "amenity=ice_cream",
           "amenity=trolley_bay",
           "highway=street_lamp",
+          "highway=speed_camera",
+          "highway=bus_stop",
           "information=guidepost",
           "information=map",
           "information=board",
-          "leisure=dog_park",
-          "leisure=picnic_table",
           "leisure=pitch",
           "leisure=pitch",
           "leisure=fitness_centre",
           "leisure=fitness_station",
           "leisure=sports_centre",
-          "natural=tree",
-          "surface:colour=rainbow",
-          "toilets=yes",
-          "tourism=viewpoint",
-          {
-            "and": [
-              "dog=unleashed",
-              "leisure=park"
-            ]
-          },
-          "post_office=post_partner",
-          {
-            "and": [
-              "vending=parcel_pickup;parcel_mail_in",
-              "amenity=vending_machine"
-            ]
-          },
-          {
-            "and": [
-              "footway=crossing",
-              "highway=footway"
-            ]
-          },
-          "highway=speed_camera",
-          "highway=bus_stop",
           "natural=tree",
           "toilets=yes",
           "tourism=map",
@@ -13343,12 +13347,6 @@
           },
           {
             "and": [
-              "amenity=vending_machine",
-              "vending~.*bicycle_tube.*"
-            ]
-          },
-          {
-            "and": [
               {
                 "or": [
                   "amenity=drinking_water",
@@ -13359,6 +13357,12 @@
               "man_made!=reservoir_covered",
               "access!=permissive",
               "access!=private"
+            ]
+          },
+          {
+            "and": [
+              "amenity=vending_machine",
+              "vending!~(parking_tickets|public_transport_tickets|bottle_return|excrement_bags|elongated_coin)"
             ]
           },
           {
@@ -13463,12 +13467,6 @@
               "aerialway~.+",
               "aerialway!=pylon",
               "aerialway!=station"
-            ]
-          },
-          {
-            "and": [
-              "amenity=vending_machine",
-              "vending~.*bicycle_tube.*"
             ]
           },
           {
@@ -13835,13 +13833,16 @@
           "amenity=love_hotel",
           "amenity=parcel_locker",
           "amenity=parking",
+          "amenity=parking_space",
           "amenity=pharmacy",
           "amenity=post_box",
           "amenity=post_office",
           "amenity=public_bookcase",
           "amenity=reception_desk",
           "amenity=recycling",
+          "amenity=school",
           "amenity=shelter",
+          "amenity=shower",
           "amenity=college",
           "amenity=university",
           "association=cycling",
@@ -13889,6 +13890,7 @@
           "emergency=fire_hydrant",
           "emergency=mountain_rescue",
           "generator:source=wind",
+          "healthcare=physiotherapist",
           "healthcare=physiotherapist",
           "highway=cycleway",
           "highway=residential",
@@ -14035,7 +14037,9 @@
           "highway=living_street",
           "highway=elevator",
           "highway=crossing",
+          "highway=speed_display",
           "highway=steps",
+          "highway=street_lamp",
           "historic=memorial",
           "historic=tomb",
           "historic=tomb",
@@ -14074,11 +14078,17 @@
           "leisure=hackerspace",
           "leisure=bird_hide",
           "leisure=nature_reserve",
+          "leisure=picnic_table",
           "leisure=bird_hide",
           "leisure=fitness_centre",
           "leisure=fitness_station",
           "leisure=hackerspace",
           "leisure=nature_reserve",
+          "leisure=outdoor_seating",
+          "leisure=picnic_table",
+          "leisure=pitch",
+          "man_made=lighthouse",
+          "man_made=lighthouse",
           "memorial=ghost_bike",
           "memorial=ghost_bike",
           "memorial=ghost_bike",
@@ -14092,6 +14102,7 @@
           "planned:amenity=charging_station",
           "planned:amenity=charging_station",
           "planned:amenity=charging_station",
+          "post_office=post_partner",
           "post_office=post_partner",
           "service:bicycle:cleaning=yes",
           "service:bicycle:cleaning=diy",
@@ -14136,7 +14147,6 @@
               "protect_class!=98"
             ]
           },
-          "leisure=picnic_table",
           "tourism=map",
           "tourism=hotel",
           "tourism=artwork",
@@ -14206,7 +14216,6 @@
               "highway=path"
             ]
           },
-          "indoor=door",
           "leisure=dog_park",
           {
             "and": [
@@ -14215,6 +14224,7 @@
             ]
           },
           "highway=elevator",
+          "indoor=door",
           "tourism=hotel",
           "tourism=map",
           {
@@ -14223,9 +14233,6 @@
               "protect_class!=98"
             ]
           },
-          "highway=speed_camera",
-          "highway=street_lamp",
-          "leisure=outdoor_seating",
           "tower:type=observation",
           {
             "and": [
@@ -14233,13 +14240,6 @@
               "amenity=vending_machine"
             ]
           },
-          "amenity=parking_space",
-          "amenity=school",
-          "amenity=shower",
-          "healthcare=physiotherapist",
-          "leisure=picnic_table",
-          "leisure=sports_centre",
-          "post_office=post_partner",
           "surface:colour=rainbow",
           {
             "and": [
@@ -14247,8 +14247,8 @@
               "highway=footway"
             ]
           },
-          "highway=speed_display",
-          "leisure=pitch",
+          "highway=speed_camera",
+          "leisure=sports_centre",
           {
             "and": [
               "amenity=school",
@@ -14274,6 +14274,36 @@
           "amenity=post_box",
           "amenity=post_office",
           "amenity=parcel_locker",
+          "barrier=wall",
+          "cyclestreet=yes",
+          "generator:source=wind",
+          "highway=bus_stop",
+          "highway=crossing",
+          "leisure=dog_park",
+          "leisure=picnic_table",
+          "natural=tree",
+          "toilets=yes",
+          "tourism=viewpoint",
+          {
+            "and": [
+              "dog=unleashed",
+              "leisure=park"
+            ]
+          },
+          "post_office=post_partner",
+          {
+            "and": [
+              "vending=parcel_pickup;parcel_mail_in",
+              "amenity=vending_machine"
+            ]
+          },
+          "surface:colour=rainbow",
+          {
+            "and": [
+              "footway=crossing",
+              "highway=footway"
+            ]
+          },
           "amenity=toilets",
           "amenity=fast_food",
           "amenity=restaurant",
@@ -14287,15 +14317,10 @@
           "amenity=waste_disposal",
           "amenity=waste_basket",
           "barrier=wall",
-          "barrier=wall",
-          "cyclestreet=yes",
           "cycleway=lane",
           "cycleway=shared_lane",
           "cycleway=track",
           "emergency=mountain_rescue",
-          "generator:source=wind",
-          "highway=bus_stop",
-          "highway=crossing",
           "highway=cycleway",
           "highway=residential",
           "highway=tertiary",
@@ -14319,41 +14344,16 @@
           "amenity=ice_cream",
           "amenity=trolley_bay",
           "highway=street_lamp",
+          "highway=speed_camera",
+          "highway=bus_stop",
           "information=guidepost",
           "information=map",
           "information=board",
-          "leisure=dog_park",
-          "leisure=picnic_table",
           "leisure=pitch",
           "leisure=pitch",
           "leisure=fitness_centre",
           "leisure=fitness_station",
           "leisure=sports_centre",
-          "natural=tree",
-          "surface:colour=rainbow",
-          "toilets=yes",
-          "tourism=viewpoint",
-          {
-            "and": [
-              "dog=unleashed",
-              "leisure=park"
-            ]
-          },
-          "post_office=post_partner",
-          {
-            "and": [
-              "vending=parcel_pickup;parcel_mail_in",
-              "amenity=vending_machine"
-            ]
-          },
-          {
-            "and": [
-              "footway=crossing",
-              "highway=footway"
-            ]
-          },
-          "highway=speed_camera",
-          "highway=bus_stop",
           "natural=tree",
           "toilets=yes",
           "tourism=map",
@@ -14415,12 +14415,6 @@
           },
           {
             "and": [
-              "amenity=vending_machine",
-              "vending~.*bicycle_tube.*"
-            ]
-          },
-          {
-            "and": [
               {
                 "or": [
                   "amenity=drinking_water",
@@ -14431,6 +14425,12 @@
               "man_made!=reservoir_covered",
               "access!=permissive",
               "access!=private"
+            ]
+          },
+          {
+            "and": [
+              "amenity=vending_machine",
+              "vending!~(parking_tickets|public_transport_tickets|bottle_return|excrement_bags|elongated_coin)"
             ]
           },
           {
@@ -14535,12 +14535,6 @@
               "aerialway~.+",
               "aerialway!=pylon",
               "aerialway!=station"
-            ]
-          },
-          {
-            "and": [
-              "amenity=vending_machine",
-              "vending~.*bicycle_tube.*"
             ]
           },
           {
@@ -14913,13 +14907,16 @@
           "amenity=love_hotel",
           "amenity=parcel_locker",
           "amenity=parking",
+          "amenity=parking_space",
           "amenity=pharmacy",
           "amenity=post_box",
           "amenity=post_office",
           "amenity=public_bookcase",
           "amenity=reception_desk",
           "amenity=recycling",
+          "amenity=school",
           "amenity=shelter",
+          "amenity=shower",
           "amenity=college",
           "amenity=university",
           "association=cycling",
@@ -14967,6 +14964,7 @@
           "emergency=fire_hydrant",
           "emergency=mountain_rescue",
           "generator:source=wind",
+          "healthcare=physiotherapist",
           "healthcare=physiotherapist",
           "highway=cycleway",
           "highway=residential",
@@ -15113,7 +15111,9 @@
           "highway=living_street",
           "highway=elevator",
           "highway=crossing",
+          "highway=speed_display",
           "highway=steps",
+          "highway=street_lamp",
           "historic=memorial",
           "historic=tomb",
           "historic=tomb",
@@ -15152,11 +15152,17 @@
           "leisure=hackerspace",
           "leisure=bird_hide",
           "leisure=nature_reserve",
+          "leisure=picnic_table",
           "leisure=bird_hide",
           "leisure=fitness_centre",
           "leisure=fitness_station",
           "leisure=hackerspace",
           "leisure=nature_reserve",
+          "leisure=outdoor_seating",
+          "leisure=picnic_table",
+          "leisure=pitch",
+          "man_made=lighthouse",
+          "man_made=lighthouse",
           "memorial=ghost_bike",
           "memorial=ghost_bike",
           "memorial=ghost_bike",
@@ -15170,6 +15176,7 @@
           "planned:amenity=charging_station",
           "planned:amenity=charging_station",
           "planned:amenity=charging_station",
+          "post_office=post_partner",
           "post_office=post_partner",
           "service:bicycle:cleaning=yes",
           "service:bicycle:cleaning=diy",
@@ -15214,7 +15221,6 @@
               "protect_class!=98"
             ]
           },
-          "leisure=picnic_table",
           "tourism=map",
           "tourism=hotel",
           "tourism=artwork",
@@ -15284,7 +15290,6 @@
               "highway=path"
             ]
           },
-          "indoor=door",
           "leisure=dog_park",
           {
             "and": [
@@ -15293,6 +15298,7 @@
             ]
           },
           "highway=elevator",
+          "indoor=door",
           "tourism=hotel",
           "tourism=map",
           {
@@ -15301,9 +15307,6 @@
               "protect_class!=98"
             ]
           },
-          "highway=speed_camera",
-          "highway=street_lamp",
-          "leisure=outdoor_seating",
           "tower:type=observation",
           {
             "and": [
@@ -15311,13 +15314,6 @@
               "amenity=vending_machine"
             ]
           },
-          "amenity=parking_space",
-          "amenity=school",
-          "amenity=shower",
-          "healthcare=physiotherapist",
-          "leisure=picnic_table",
-          "leisure=sports_centre",
-          "post_office=post_partner",
           "surface:colour=rainbow",
           {
             "and": [
@@ -15325,8 +15321,8 @@
               "highway=footway"
             ]
           },
-          "highway=speed_display",
-          "leisure=pitch",
+          "highway=speed_camera",
+          "leisure=sports_centre",
           {
             "and": [
               "amenity=school",
@@ -15352,6 +15348,36 @@
           "amenity=post_box",
           "amenity=post_office",
           "amenity=parcel_locker",
+          "barrier=wall",
+          "cyclestreet=yes",
+          "generator:source=wind",
+          "highway=bus_stop",
+          "highway=crossing",
+          "leisure=dog_park",
+          "leisure=picnic_table",
+          "natural=tree",
+          "toilets=yes",
+          "tourism=viewpoint",
+          {
+            "and": [
+              "dog=unleashed",
+              "leisure=park"
+            ]
+          },
+          "post_office=post_partner",
+          {
+            "and": [
+              "vending=parcel_pickup;parcel_mail_in",
+              "amenity=vending_machine"
+            ]
+          },
+          "surface:colour=rainbow",
+          {
+            "and": [
+              "footway=crossing",
+              "highway=footway"
+            ]
+          },
           "amenity=toilets",
           "amenity=fast_food",
           "amenity=restaurant",
@@ -15365,15 +15391,10 @@
           "amenity=waste_disposal",
           "amenity=waste_basket",
           "barrier=wall",
-          "barrier=wall",
-          "cyclestreet=yes",
           "cycleway=lane",
           "cycleway=shared_lane",
           "cycleway=track",
           "emergency=mountain_rescue",
-          "generator:source=wind",
-          "highway=bus_stop",
-          "highway=crossing",
           "highway=cycleway",
           "highway=residential",
           "highway=tertiary",
@@ -15397,41 +15418,16 @@
           "amenity=ice_cream",
           "amenity=trolley_bay",
           "highway=street_lamp",
+          "highway=speed_camera",
+          "highway=bus_stop",
           "information=guidepost",
           "information=map",
           "information=board",
-          "leisure=dog_park",
-          "leisure=picnic_table",
           "leisure=pitch",
           "leisure=pitch",
           "leisure=fitness_centre",
           "leisure=fitness_station",
           "leisure=sports_centre",
-          "natural=tree",
-          "surface:colour=rainbow",
-          "toilets=yes",
-          "tourism=viewpoint",
-          {
-            "and": [
-              "dog=unleashed",
-              "leisure=park"
-            ]
-          },
-          "post_office=post_partner",
-          {
-            "and": [
-              "vending=parcel_pickup;parcel_mail_in",
-              "amenity=vending_machine"
-            ]
-          },
-          {
-            "and": [
-              "footway=crossing",
-              "highway=footway"
-            ]
-          },
-          "highway=speed_camera",
-          "highway=bus_stop",
           "natural=tree",
           "toilets=yes",
           "tourism=map",
@@ -15493,12 +15489,6 @@
           },
           {
             "and": [
-              "amenity=vending_machine",
-              "vending~.*bicycle_tube.*"
-            ]
-          },
-          {
-            "and": [
               {
                 "or": [
                   "amenity=drinking_water",
@@ -15509,6 +15499,12 @@
               "man_made!=reservoir_covered",
               "access!=permissive",
               "access!=private"
+            ]
+          },
+          {
+            "and": [
+              "amenity=vending_machine",
+              "vending!~(parking_tickets|public_transport_tickets|bottle_return|excrement_bags|elongated_coin)"
             ]
           },
           {
@@ -15613,12 +15609,6 @@
               "aerialway~.+",
               "aerialway!=pylon",
               "aerialway!=station"
-            ]
-          },
-          {
-            "and": [
-              "amenity=vending_machine",
-              "vending~.*bicycle_tube.*"
             ]
           },
           {
@@ -17817,6 +17807,9 @@
       "condition": {
         "or": [
           "leisure=nature_reserve",
+          "leisure=nature_reserve",
+          "man_made=lighthouse",
+          "man_made=lighthouse",
           "tourism=artwork",
           "tourism=artwork",
           {
@@ -17825,7 +17818,6 @@
               "protect_class!=98"
             ]
           },
-          "leisure=nature_reserve",
           "tourism=artwork",
           "tower:type=observation",
           {
@@ -18983,9 +18975,9 @@
         {
           "if": "inscription=",
           "then": {
-            "en": "This bench <span class='subtle'>(probably)</span> does not not have an inscription",
+            "en": "This bench <span class='subtle'>probably</span> does not not have an inscription",
             "nl": "Deze bank heeft <span class='subtle'>(waarschijnlijk)</span> geen inscriptie",
-            "de": "Diese Bank hat <span class='subtle'>(wahrscheinlich)</span> keine Inschrift",
+            "de": "Diese Bank hat <span class='subtle'>wahrscheinlich</span> keine Inschrift",
             "fr": "Ce banc n'a <span class='subtle'>(probablement)</span> pas d'inscription",
             "es": "Este banco <span class='subtle'>(probablemente)</span> no tiene inscripción",
             "ca": "Aquest banc <span class='subtle'>(probablement)</span> no té cap inscripció",
@@ -20485,6 +20477,12 @@
               {
                 "and": [
                   "amenity=vending_machine",
+                  "vending!~(parking_tickets|public_transport_tickets|bottle_return|excrement_bags|elongated_coin)"
+                ]
+              },
+              {
+                "and": [
+                  "amenity=vending_machine",
                   "vending~.*elongated_coin.*"
                 ]
               },
@@ -20820,6 +20818,12 @@
                   "construction:amenity=charging_station",
                   "disused:amenity=charging_station",
                   "planned:amenity=charging_station"
+                ]
+              },
+              {
+                "and": [
+                  "amenity=vending_machine",
+                  "vending!~(parking_tickets|public_transport_tickets|bottle_return|excrement_bags|elongated_coin)"
                 ]
               },
               {
@@ -22876,88 +22880,6 @@
           "amenity=animal_shelter",
           "amenity=bicycle_library",
           "amenity=bicycle_rental",
-          "association=cycling",
-          "association=bicycle",
-          "club=climbing",
-          "club=bicycle",
-          "emergency=disaster_response",
-          "leisure=outdoor_seating",
-          "ngo=cycling",
-          "service:bicycle:rental=yes",
-          {
-            "and": [
-              "sport=climbing",
-              {
-                "or": [
-                  "club~.+",
-                  "office~.+"
-                ]
-              }
-            ]
-          },
-          "ngo=bicycle",
-          "shop=bicycle",
-          {
-            "and": [
-              "shop=sports",
-              {
-                "or": [
-                  "sport=bicycle",
-                  "sport=cycling",
-                  "sport="
-                ]
-              },
-              "service:bicycle:retail!=no",
-              "service:bicycle:repair!=no"
-            ]
-          },
-          "club=cycling",
-          "healthcare=physiotherapist",
-          "leisure=outdoor_seating",
-          "leisure=hackerspace",
-          "leisure=nature_reserve",
-          "office=government",
-          "service:bicycle:rental=yes",
-          "service:bicycle:rental=yes",
-          "sport=cycling",
-          "theme=bicycle",
-          "theme=cycling",
-          {
-            "and": [
-              "amenity=school",
-              {
-                "or": [
-                  "isced:2011:level~.*bachelor.*",
-                  "isced:2011:level~.*master.*"
-                ]
-              }
-            ]
-          },
-          "isced:level:2011=early_childhood",
-          "tourism=hotel",
-          {
-            "and": [
-              "boundary=protected_area",
-              "protect_class!=98"
-            ]
-          },
-          "shop=bicycle",
-          "tourism=hotel",
-          "tower:type=observation",
-          {
-            "and": [
-              "shop=sports",
-              {
-                "or": [
-                  "sport=bicycle",
-                  "sport=cycling",
-                  "sport="
-                ]
-              },
-              "service:bicycle:retail!=no",
-              "service:bicycle:repair!=no"
-            ]
-          },
           "amenity=bar",
           "amenity=pub",
           "amenity=cafe",
@@ -22974,24 +22896,109 @@
           "amenity=childcare",
           "amenity=kindergarten",
           "amenity=love_hotel",
+          "amenity=pharmacy",
+          "amenity=school",
           "association=cycling",
           "association=bicycle",
+          "association=cycling",
+          "association=bicycle",
+          "club=climbing",
+          "club=bicycle",
           "club=bicycle",
           "club=cycling",
           "club=climbing",
           "emergency=disaster_response",
+          "emergency=disaster_response",
+          "healthcare=physiotherapist",
+          "healthcare=physiotherapist",
           "isced:level:2011=early_childhood",
+          "leisure=outdoor_seating",
+          "leisure=outdoor_seating",
+          "leisure=hackerspace",
+          "leisure=nature_reserve",
           "leisure=dog_park",
           "leisure=fitness_centre",
           "leisure=hackerspace",
           "leisure=nature_reserve",
           "leisure=outdoor_seating",
           "ngo=cycling",
+          "ngo=cycling",
           "ngo=bicycle",
           "office=government",
+          "office=government",
+          "service:bicycle:rental=yes",
+          {
+            "and": [
+              "sport=climbing",
+              {
+                "or": [
+                  "club~.+",
+                  "office~.+"
+                ]
+              }
+            ]
+          },
+          "ngo=bicycle",
+          "service:bicycle:rental=yes",
+          "shop=bicycle",
+          {
+            "and": [
+              "shop=sports",
+              {
+                "or": [
+                  "sport=bicycle",
+                  "sport=cycling",
+                  "sport="
+                ]
+              },
+              "service:bicycle:retail!=no",
+              "service:bicycle:repair!=no"
+            ]
+          },
+          "club=cycling",
+          "service:bicycle:rental=yes",
+          "shop=bicycle",
+          "sport=cycling",
           "sport=cycling",
           "theme=bicycle",
           "theme=cycling",
+          {
+            "and": [
+              "amenity=school",
+              {
+                "or": [
+                  "isced:2011:level~.*bachelor.*",
+                  "isced:2011:level~.*master.*"
+                ]
+              }
+            ]
+          },
+          "isced:level:2011=early_childhood",
+          "theme=bicycle",
+          "theme=cycling",
+          "tourism=hotel",
+          {
+            "and": [
+              "boundary=protected_area",
+              "protect_class!=98"
+            ]
+          },
+          "tourism=hotel",
+          "tower:type=observation",
+          {
+            "and": [
+              "shop=sports",
+              {
+                "or": [
+                  "sport=bicycle",
+                  "sport=cycling",
+                  "sport="
+                ]
+              },
+              "service:bicycle:retail!=no",
+              "service:bicycle:repair!=no"
+            ]
+          },
           {
             "and": [
               "sport=climbing",
@@ -23016,18 +23023,14 @@
               "protect_class!=98"
             ]
           },
-          "amenity=pharmacy",
-          "amenity=school",
           "amenity=college",
           "amenity=university",
           "amenity=veterinary",
           "amenity=veterinary",
-          "amenity=restaurant",
-          "amenity=animal_shelter",
-          "amenity=pharmacy",
           "amenity=fast_food",
+          "amenity=animal_shelter",
+          "amenity=ice_cream",
           "amenity=restaurant",
-          "healthcare=physiotherapist",
           "leisure=sports_centre",
           {
             "and": [
@@ -23040,6 +23043,8 @@
               }
             ]
           },
+          "amenity=restaurant",
+          "amenity=fast_food",
           "leisure=dog_park",
           {
             "and": [
@@ -23047,8 +23052,7 @@
               "leisure=park"
             ]
           },
-          "amenity=fast_food",
-          "amenity=ice_cream",
+          "amenity=pharmacy",
           "leisure=fitness_centre",
           "leisure=sports_centre",
           "tower:type=observation",
@@ -23062,6 +23066,12 @@
                 ]
               },
               "shop!=mall"
+            ]
+          },
+          {
+            "and": [
+              "amenity=vending_machine",
+              "vending!~(parking_tickets|public_transport_tickets|bottle_return|excrement_bags|elongated_coin)"
             ]
           },
           {
@@ -31529,7 +31539,8 @@
       "freeform": {
         "key": "brand",
         "placeholder": {
-          "en": "Name of the network"
+          "en": "Name of the network",
+          "de": "Name des Netzwerks"
         },
         "addExtraTags": [
           "nobrand="
@@ -66375,7 +66386,7 @@
           {
             "and": [
               "amenity=vending_machine",
-              "vending~.*bicycle_tube.*"
+              "vending!~(parking_tickets|public_transport_tickets|bottle_return|excrement_bags|elongated_coin)"
             ]
           },
           {
@@ -66448,12 +66459,6 @@
             "and": [
               "vending=parking_tickets",
               "amenity=vending_machine"
-            ]
-          },
-          {
-            "and": [
-              "amenity=vending_machine",
-              "vending~.*bicycle_tube.*"
             ]
           },
           {
@@ -71431,362 +71436,6 @@
       ]
     },
     {
-      "question": {
-        "en": "Is this vending machine still operational?",
-        "nl": "Is deze verkoopsautomaat nog steeds werkende?",
-        "fr": "Cette machine est-elle encore opérationelle ?",
-        "it": "Questo distributore automatico funziona ancora?",
-        "ru": "Этот торговый автомат все еще работает?",
-        "de": "Ist dieser Automat in Betrieb?",
-        "zh_Hant": "這個自動販賣機仍有運作嗎？",
-        "pt_BR": "Esta máquina de venda automática ainda está operacional?",
-        "pt": "Esta máquina de venda automática ainda está operacional?",
-        "es": "¿Todavía funciona esta máquina expendedora?",
-        "da": "Er denne salgsautomat stadig i drift?",
-        "cs": "Je tento automat stále v provozu?",
-        "ca": "Aquesta màquina expenedora encara funciona?"
-      },
-      "render": {
-        "en": "The operational status is <i>{operational_status}</i>",
-        "nl": "Deze verkoopsautomaat is <i>{operational_status}</i>",
-        "fr": "L'état opérationnel est <i>{operational_status}</i>",
-        "it": "Lo stato operativo è <i>{operational_status}</i>",
-        "de": "Der Betriebszustand ist <i>{operational_status}</i>",
-        "ru": "Рабочий статус: <i> {operational_status}</i>",
-        "zh_Hant": "運作狀態是 <i>{operational_status}</i>",
-        "pt_BR": "O estado operacional é: <i>{operational_status}</i>",
-        "pt": "O estado operacional é: <i>{operational_status}</i>",
-        "es": "El estado operacional es <i>{operational_status}</i>",
-        "da": "Driftsstatus er <i>{operational_status}</i>",
-        "cs": "Provozní stav je <i>{operational_status}</i>",
-        "ca": "L'estat operatiu és <i>{operational_status}</i>"
-      },
-      "freeform": {
-        "key": "operational_status",
-        "inline": true
-      },
-      "mappings": [
-        {
-          "if": "operational_status=",
-          "then": {
-            "en": "This vending machine works",
-            "nl": "Deze verkoopsautomaat werkt",
-            "fr": "Le distributeur automatique fonctionne",
-            "hu": "Ez az automata működik",
-            "it": "Il distributore automatico funziona",
-            "ru": "Этот торговый автомат работает",
-            "zh_Hans": "这个借还机正常工作",
-            "de": "Dieser Automat ist in Betrieb",
-            "zh_Hant": "這個自動販賣機仍運作",
-            "pt_BR": "Esta máquina de venda automática funciona",
-            "pt": "Esta máquina de venda automática funciona",
-            "da": "Denne salgsautomat virker",
-            "es": "Esta máquina expendedora funciona",
-            "cs": "Tento prodejní automat funguje",
-            "ca": "Aquesta màquina expenedora funciona"
-          }
-        },
-        {
-          "if": "operational_status=broken",
-          "then": {
-            "en": "This vending machine is broken",
-            "nl": "Deze verkoopsautomaat is kapot",
-            "fr": "Le distributeur automatique est en panne",
-            "hu": "Ez az automata elromlott",
-            "it": "Il distributore automatico è guasto",
-            "ru": "Этот торговый автомат сломан",
-            "zh_Hans": "这个借还机已经损坏",
-            "de": "Dieser Automat ist kaputt",
-            "zh_Hant": "這個自動販賣機沒有運作了",
-            "pt_BR": "Esta máquina de venda automática está quebrada",
-            "pt": "Esta máquina de venda automática está quebrada",
-            "es": "Esta máquina exprendedora está rota",
-            "da": "Denne salgsautomat er i stykker",
-            "cs": "Tento prodejní automat je rozbitý",
-            "ca": "Aquesta màquina expenedora està trencada"
-          }
-        },
-        {
-          "if": "operational_status=closed",
-          "then": {
-            "en": "This vending machine is closed",
-            "nl": "Deze verkoopsautomaat is uitgeschakeld",
-            "fr": "Le distributeur automatique est fermé",
-            "hu": "Ez az automata zárva van",
-            "it": "Il distributore automatico è spento",
-            "ru": "Этот торговый автомат закрыт",
-            "zh_Hans": "这个借还机被关闭了",
-            "de": "Dieser Automat ist geschlossen",
-            "zh_Hant": "這個自動販賣機已經關閉了",
-            "pt_BR": "Esta máquina de venda automática está fechada",
-            "pt": "Esta máquina de venda automática está fechada",
-            "es": "Esta máquina exprendedora está cerrada",
-            "da": "Denne salgsautomat er lukket",
-            "cs": "Tento prodejní automat je uzavřen",
-            "ca": "Aquesta màquina expenedora està tancada"
-          }
-        }
-      ],
-      "id": "bicycle_tube_vending_machine_Still in use?",
-      "condition": {
-        "and": [
-          {
-            "and": [
-              "amenity=vending_machine",
-              "vending~.*bicycle_tube.*"
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "question": {
-        "en": "How much does a bicycle tube cost?",
-        "ca": "Quant costa una cambra d'aire de bicicleta?",
-        "de": "Wie viel kostet ein Fahrradschlauch?",
-        "cs": "Kolik stojí duše na kolo?",
-        "nl": "Hoeveel kost een fietsband?",
-        "pt_BR": "Quanto custa uma câmara de ar para bicicleta?",
-        "es": "¿Cuánto cuesta una cámara para la bicicleta?",
-        "pt": "Quanto custa uma câmara de ar para bicicleta?"
-      },
-      "render": {
-        "en": "A bicycle tube costs {charge}",
-        "ca": "Una cambra d'aire de bicicleta costa {charge}",
-        "de": "Ein Fahrradschlauch kostet {charge}",
-        "cs": "Cena jedné duše {charge}",
-        "nl": "Een fietsband kost {charge}",
-        "pt_BR": "Uma câmara de ar para bicicleta custa {charge}",
-        "es": "Una cámara para bicicletas cuesta {charge}",
-        "pt": "Uma câmara de ar para bicicleta custa {charge}"
-      },
-      "freeform": {
-        "key": "charge",
-        "inline": true
-      },
-      "id": "bicycle_tube_vending_machine-charge",
-      "condition": {
-        "and": [
-          "amenity=vending_machine",
-          "vending~.*bicycle_tube.*"
-        ]
-      }
-    },
-    {
-      "question": {
-        "en": "Which brand of tubes are sold here?",
-        "ca": "Quines marques de cambres d'aire es venen aquí?",
-        "de": "Welche Fahrradschläuche werden hier verkauft?",
-        "cs": "Jaká značka duší je zde prodávána?",
-        "nl": "Welk merk banden wordt hier verkocht?",
-        "pt_BR": "Quais marcas de câmara de ar são vendidas aqui?",
-        "es": "¿Qué cámaras se venden aquí?",
-        "pt": "Quais marcas de câmara de ar são vendidas aqui?"
-      },
-      "freeform": {
-        "key": "brand",
-        "inline": true
-      },
-      "render": {
-        "en": "{brand} tubes are sold here",
-        "ca": "Aquí es venen cambres d'aire {brand}",
-        "de": "Hier werden Fahrradschläuche von {brand} verkauft",
-        "cs": "{brand} duše jsou zde prodávány",
-        "nl": "{brand} banden worden hier verkocht",
-        "pt_BR": "câmaras de ar {brand} são vendidas aqui",
-        "es": "Las cámaras {brand} se venden aquí",
-        "pt": "câmaras de ar {brand} são vendidas aqui"
-      },
-      "mappings": [
-        {
-          "if": "brand=Continental",
-          "then": {
-            "en": "Continental tubes are sold here",
-            "ca": "Aquí es venen cambres d'aire Continental",
-            "de": "Hier werden Fahrradschläuche von Continental verkauft",
-            "cs": "Continental duše jsou zde prodávány",
-            "nl": "Continental banden worden hier verkocht",
-            "pt_BR": "Câmaras de ar Continental são vendidas aqui",
-            "es": "Las cámaras Continental se venden aquí",
-            "pt": "Câmaras de ar Continental são vendidas aqui"
-          }
-        },
-        {
-          "if": "brand=Schwalbe",
-          "then": {
-            "en": "Schwalbe tubes are sold here",
-            "ca": "Aquí es venen cambres d'aire Schwalbe",
-            "de": "Hier werden Fahrradschläuche von Schwalbe verkauft",
-            "cs": "Schwalbe duše jsou zde prodávány",
-            "nl": "Schwalbe banden worden hier verkocht",
-            "pt_BR": "Câmaras de ar Schwalbe são vendidas aqui",
-            "es": "Las cámaras Schwalbe se venden aquí",
-            "pt": "Câmaras de ar Schwalbe são vendidas aqui"
-          }
-        }
-      ],
-      "multiAnswer": true,
-      "id": "bicycle_tube_vending_machine-brand",
-      "condition": {
-        "and": [
-          "amenity=vending_machine",
-          "vending~.*bicycle_tube.*"
-        ]
-      }
-    },
-    {
-      "question": {
-        "en": "Who maintains this vending machine?",
-        "ca": "Qui manté aquesta màquina expenedora?",
-        "de": "Wer betreibt den Automaten?",
-        "cs": "Kdo se stará o tento automat?",
-        "nl": "Wie onderhoudt deze verkoopautomaat?",
-        "pt_BR": "Quem mantém essa máquina de venda?",
-        "es": "¿Quién mantiene esta máquina expendedora?",
-        "pt": "Quem mantém esta máquina de venda?"
-      },
-      "render": "This vending machine is maintained by {operator}",
-      "mappings": [
-        {
-          "if": "operator=Schwalbe",
-          "then": {
-            "en": "Maintained by Schwalbe",
-            "ca": "Mantés per Schwalbe",
-            "de": "Betrieben von Schwalbe",
-            "cs": "Udržuje Schwalbe",
-            "nl": "Onderhouden door Schwalbe",
-            "pt_BR": "Mantido pela Schwalbe",
-            "es": "Mantenido por Schwalbe",
-            "pt": "Mantido pela Schwalbe"
-          }
-        },
-        {
-          "if": "operator=Continental",
-          "then": {
-            "en": "Maintained by Continental",
-            "ca": "Mantés per Continental",
-            "de": "Betrieben von Continental",
-            "cs": "Udržuje Continental",
-            "nl": "Onderhouden door Continental",
-            "pt_BR": "Mantido pela Continental",
-            "es": "Mantenido por Continental",
-            "pt": "Mantido pela Continental"
-          }
-        }
-      ],
-      "freeform": {
-        "key": "operator",
-        "inline": true
-      },
-      "id": "bicycle_tube_vending_machine-operator",
-      "condition": {
-        "and": [
-          "amenity=vending_machine",
-          "vending~.*bicycle_tube.*"
-        ]
-      }
-    },
-    {
-      "id": "other-items-vending",
-      "question": {
-        "en": "Are other biycle accessories sold here?",
-        "ca": "Es venen altres accessoris per a bicicletes aquí?",
-        "de": "Wird weiteres Fahrradzubehör verkauft?",
-        "cs": "Prodávají se zde další doplňky na kolo?",
-        "nl": "Worden hier andere fietsaccessoires verkocht?",
-        "pt_BR": "Outros acessórios para bicicleta são vendidos aqui?",
-        "es": "¿Se venden aquí otros accesorios para bicicletas?",
-        "pt": "Outros acessórios para bicicleta são vendidos aqui?"
-      },
-      "mappings": [
-        {
-          "if": "vending=bicycle_tube",
-          "then": {
-            "en": "Bicycle inner tubes are sold here",
-            "nl": "Fietsbinnenbanden worden hier verkocht",
-            "ca": "Aquí es venen cambres d'aire de bicicletes",
-            "de": "Hier werden Fahrradschläuche verkauft",
-            "cs": "Zde se prodávají cyklistické duše",
-            "pt_BR": "Câmaras de ar para bicicletas são vendidas aqui",
-            "es": "Aquí se venden cámaras de aire para bicicletas",
-            "pt": "Câmaras de ar para bicicletas são vendidas aqui"
-          }
-        },
-        {
-          "if": "vending=bicycle_light",
-          "then": {
-            "en": "Bicycle lights are sold here",
-            "nl": "Fietslampjes worden hier verkocht",
-            "ca": "Aquí es venen llums per a bicicletes",
-            "de": "Hier werden Fahrradlampen verkauft",
-            "cs": "Zde se prodávají světla na jízdní kola",
-            "pt_BR": "Luzes para bicicleta são vendidas aqui",
-            "es": "Las luces para bicicletas se venden aquí",
-            "pt": "Luzes para bicicleta são vendidas aqui"
-          }
-        },
-        {
-          "if": "vending=gloves",
-          "then": {
-            "en": "Gloves are sold here",
-            "nl": "Handschoenen worden hier verkocht",
-            "ca": "Aquí es venen guants",
-            "de": "Hier werden Fahrradhandschuhe verkauft",
-            "cs": "Prodávají se zde rukavice",
-            "pt_BR": "Luvas são vendidas aqui",
-            "es": "Los guantes se venden aquí",
-            "pt": "Luvas são vendidas aqui"
-          }
-        },
-        {
-          "if": "vending=bicycle_repair_kit",
-          "then": {
-            "en": "Bicycle repair kits are sold here",
-            "nl": "Fietsreparatiesets worden hier verkocht",
-            "ca": "Aquí es venen kits de reparació de bicicletes",
-            "de": "Hier werden Fahrrad-Reparatursets verkauft",
-            "cs": "Zde se prodávají sady na opravu jízdních kol",
-            "pt_BR": "Kits para reparo de bicicleta são vendidos aqui",
-            "es": "Los kits de reparación de bicicletas se venden aquí",
-            "pt": "Kits para reparo de bicicleta são vendidos aqui"
-          }
-        },
-        {
-          "if": "vending=bicycle_pump",
-          "then": {
-            "en": "Bicycle pumps are sold here",
-            "nl": "Fietspompen worden hier verkocht",
-            "ca": "Aquí es venen bombes de bicicletes",
-            "de": "Hier werden Fahrradpumpen verkauft",
-            "cs": "Prodávají se zde pumpy na kolo",
-            "pt_BR": "Bombas de ar para bicicleta são vendidas aqui",
-            "es": "Las bombas para bicicletas se venden aquí",
-            "pt": "Bombas de ar para bicicleta são vendidas aqui"
-          }
-        },
-        {
-          "if": "vending=bicycle_lock",
-          "then": {
-            "en": "Bicycle locks are sold here",
-            "nl": "Fietssloten worden hier verkocht",
-            "ca": "Aquí es venen cadenats per a bicicletes",
-            "de": "Hier werden Fahrradschlösser verkauft",
-            "cs": "Prodávají se zde zámky na kola",
-            "pt_BR": "Cadeados para bicicleta são vendidos aqui",
-            "es": "Aquí se venden candados para bicicletas",
-            "pt": "Cadeados para bicicleta são vendidos aqui"
-          }
-        }
-      ],
-      "multiAnswer": true,
-      "condition": {
-        "and": [
-          "amenity=vending_machine",
-          "vending~.*bicycle_tube.*"
-        ]
-      }
-    },
-    {
       "id": "bike_themed_object_opening_hours",
       "question": {
         "en": "What are the opening hours of {title()}?",
@@ -71951,6 +71600,1388 @@
         }
       ],
       "id": "bike_cleaning-charge"
+    },
+    {
+      "id": "vending",
+      "question": {
+        "en": "What does this vending machine sell?",
+        "nl": "Wat verkoopt deze verkoopautomaat?",
+        "de": "Was wird in diesem Automaten verkauft?",
+        "fr": "Que vent ce distributeur ?",
+        "ca": "Que ven aquesta màquina expenedora?",
+        "cs": "Co tento automat prodává?"
+      },
+      "freeform": {
+        "key": "vending",
+        "addExtraTags": [
+          "fixme=Freeform input used, value may need to be checked"
+        ],
+        "inline": true
+      },
+      "render": {
+        "en": "This vending machine sells {vending}",
+        "nl": "Deze verkoopautomaat verkoopt {vending}",
+        "de": "Dieser Automat verkauft {vending}",
+        "fr": "Ce distributeur vent {vending}",
+        "ca": "Aquesta màquina expenedora ven {vending}",
+        "cs": "Tento automat prodává {vending}"
+      },
+      "mappings": [
+        {
+          "if": "vending=drinks",
+          "then": {
+            "en": "Drinks are sold",
+            "nl": "Dranken worden verkocht",
+            "de": "Getränke werden verkauft",
+            "fr": "Vent des boissons",
+            "ca": "Es venen begudes",
+            "cs": "Prodává nápoje"
+          },
+          "icon": "./assets/layers/id_presets/temaki-bottles.svg"
+        },
+        {
+          "if": "vending=sweets",
+          "then": {
+            "en": "Sweets are sold",
+            "nl": "Snoep wordt verkocht",
+            "de": "Süßigkeiten werden verkauft",
+            "fr": "Vent des confiseries",
+            "ca": "Es venen llaminadures",
+            "cs": "Prodává sladkosti"
+          },
+          "icon": "./assets/layers/id_presets/maki-confectionery.svg"
+        },
+        {
+          "if": "vending=food",
+          "then": {
+            "en": "Food is sold",
+            "nl": "Eten wordt verkocht",
+            "de": "Lebensmittel werden verkauft",
+            "fr": "Vent de la nourriture",
+            "ca": "Es ven menjar",
+            "cs": "Prodává jídlo"
+          },
+          "icon": "./assets/layers/vending_machine/utensils.svg"
+        },
+        {
+          "if": "vending=cigarettes",
+          "then": {
+            "en": "Cigarettes are sold",
+            "nl": "Sigaretten worden verkocht",
+            "de": "Zigaretten werden verkauft",
+            "fr": "Vent des cigarettes",
+            "ca": "Es ven tabaco",
+            "cs": "Prodává cigarety"
+          },
+          "icon": "./assets/layers/vending_machine/smoking.svg"
+        },
+        {
+          "if": "vending=condoms",
+          "then": {
+            "en": "Condoms are sold",
+            "nl": "Condooms worden verkocht",
+            "de": "Kondome werden verkauft",
+            "fr": "Vent des préservatifs",
+            "ca": "Es venen preservatius",
+            "cs": "Prodává kondomy"
+          },
+          "icon": "./assets/layers/vending_machine/condom.svg"
+        },
+        {
+          "if": "vending=coffee",
+          "then": {
+            "en": "Coffee is sold",
+            "nl": "Koffie wordt verkocht",
+            "de": "Kaffee wird verkauft",
+            "fr": "Vent du café",
+            "ca": "Es ven cafè",
+            "cs": "Prodává kafe"
+          },
+          "icon": "./assets/layers/vending_machine/mug-saucer.svg"
+        },
+        {
+          "if": "vending=water",
+          "then": {
+            "en": "Drinking water is sold",
+            "nl": "Drinkwater wordt verkocht",
+            "de": "Trinkwasser wird verkauft",
+            "fr": "Vent de l'eau",
+            "ca": "Es ven aigua",
+            "cs": "Prodává pitnou vodu"
+          },
+          "icon": "./assets/layers/id_presets/temaki-water_bottle.svg"
+        },
+        {
+          "if": "vending=newspapers",
+          "then": {
+            "en": "Newspapers are sold",
+            "nl": "Kranten worden verkocht",
+            "de": "Zeitungen werden verkauft",
+            "fr": "Vent des journaux",
+            "ca": "Es venen diaris",
+            "cs": "Prodává noviny"
+          },
+          "icon": "./assets/layers/id_presets/fas-newspaper.svg"
+        },
+        {
+          "if": "vending=bicycle_tube",
+          "then": {
+            "en": "Bicycle inner tubes are sold",
+            "nl": "Binnenbanden voor fietsen worden verkocht",
+            "de": "Fahrradschläuche werden verkauft",
+            "fr": "Vent des chambres à air pour vélo",
+            "ca": "Es venen càmeres interiors de bicicletes",
+            "cs": "Prodává duše na kola",
+            "pt_BR": "Câmaras de ar para bicicletas são vendidas aqui",
+            "es": "Aquí se venden cámaras de aire para bicicletas",
+            "pt": "Câmaras de ar para bicicletas são vendidas aqui"
+          }
+        },
+        {
+          "if": "vending=milk",
+          "then": {
+            "en": "Milk is sold",
+            "nl": "Melk wordt verkocht",
+            "de": "Milch wird verkauft",
+            "fr": "Vent du lait",
+            "ca": "Es ven llet",
+            "cs": "Prodává mléko"
+          },
+          "icon": "./assets/layers/vending_machine/cow.svg"
+        },
+        {
+          "if": "vending=bread",
+          "then": {
+            "en": "Bread is sold",
+            "nl": "Brood wordt verkocht",
+            "de": "Brot wird verkauft",
+            "fr": "Vent du pain",
+            "ca": "Es ven pa",
+            "cs": "Prodává chléb"
+          },
+          "icon": "./assets/layers/id_presets/maki-bakery.svg"
+        },
+        {
+          "if": "vending=eggs",
+          "then": {
+            "en": "Eggs are sold",
+            "nl": "Eieren worden verkocht",
+            "de": "Eier werden verkauft",
+            "fr": "Vent des œufs",
+            "ca": "Es venen ous",
+            "cs": "Prodává vejce"
+          },
+          "icon": "./assets/layers/vending_machine/egg.svg"
+        },
+        {
+          "if": "vending=cheese",
+          "then": {
+            "en": "Cheese is sold",
+            "nl": "Kaas wordt verkocht",
+            "de": "Käse wird verkauft",
+            "fr": "Vent du fromage",
+            "ca": "Es ven formatge",
+            "cs": "Prodává sýr"
+          },
+          "icon": "./assets/layers/id_presets/fas-cheese.svg"
+        },
+        {
+          "if": "vending=honey",
+          "then": {
+            "en": "Honey is sold",
+            "nl": "Honing wordt verkocht",
+            "de": "Honig wird verkauft",
+            "fr": "Vent du miel",
+            "ca": "Es ven mel",
+            "cs": "Prodává med"
+          },
+          "icon": "./assets/layers/vending_machine/honey.svg"
+        },
+        {
+          "if": "vending=potatoes",
+          "then": {
+            "en": "Potatoes are sold",
+            "nl": "Aardappelen worden verkocht",
+            "de": "Kartoffeln werden verkauft",
+            "fr": "Vent des pommes de terre",
+            "ca": "Es venen papes",
+            "cs": "Prodává brambory"
+          },
+          "icon": "./assets/layers/vending_machine/potato.svg"
+        },
+        {
+          "if": "vending=meat",
+          "then": {
+            "en": "Meat is sold",
+            "nl": "Vlees wordt verkocht",
+            "ca": "Es venen productes carnis",
+            "de": "Fleisch wird verkauft",
+            "cs": "Prodává maso"
+          },
+          "icon": "./assets/layers/id_presets/temaki-meat.svg"
+        },
+        {
+          "if": "vending=fruit",
+          "then": {
+            "en": "Fruit is sold",
+            "nl": "Fruit wordt verkocht",
+            "de": "Obst wird verkauft",
+            "cs": "Prodává ovoce",
+            "ca": "Es ven fruita"
+          },
+          "icon": "./assets/layers/vending_machine/fruits.svg"
+        },
+        {
+          "if": "vending=strawberries",
+          "then": {
+            "en": "Strawberries are sold",
+            "nl": "Aardbeien worden verkocht",
+            "de": "Erdbeeren werden verkauft",
+            "cs": "Prodává jahody",
+            "ca": "Es venen maduixes"
+          },
+          "icon": "./assets/layers/vending_machine/strawberry.svg"
+        },
+        {
+          "if": "vending=flowers",
+          "then": {
+            "en": "Flowers are sold",
+            "nl": "Bloemen worden verkocht",
+            "de": "Blumen werden verkauft",
+            "fr": "Vent des fleurs",
+            "ca": "Es venen flors",
+            "cs": "Prodává květiny"
+          },
+          "icon": "./assets/layers/id_presets/maki-florist.svg"
+        },
+        {
+          "if": "vending=parking_tickets",
+          "then": {
+            "en": "Parking tickets are sold",
+            "nl": "Parkeerkaarten worden verkocht",
+            "de": "Parkscheine werden verkauft",
+            "ca": "Es venen tiquets d'aparcament",
+            "cs": "Prodává parkovací lístky"
+          },
+          "icon": "./assets/layers/parking_ticket_machine/parking_tickets.svg"
+        },
+        {
+          "if": "vending=elongated_coin",
+          "then": {
+            "en": "Pressed pennies are sold",
+            "ca": "Es venen cèntims premsats",
+            "de": "Souvenirmünzen werden verkauft",
+            "cs": "Prodává pamětní mince/lisované"
+          },
+          "icon": "./assets/themes/elongated_coin/penny.svg"
+        },
+        {
+          "if": "vending=public_transport_tickets",
+          "then": {
+            "en": "Public transport tickets are sold",
+            "nl": "Openbaar vervoerkaartjes worden verkocht",
+            "de": "Fahrscheine werden verkauft",
+            "ca": "Es venen bitllets de transport públic",
+            "cs": "Prodává lístky na MHD"
+          },
+          "icon": "./assets/themes/stations/public_transport_tickets.svg"
+        },
+        {
+          "if": "vending=bicycle_light",
+          "then": {
+            "en": "Bicycle lights are sold",
+            "nl": "Fietslampjes worden verkocht",
+            "de": "Fahrradlampen werden verkauft",
+            "cs": "Prodává světla na kolo",
+            "ca": "Es venen llums per a bicicletes",
+            "pt_BR": "Luzes para bicicleta são vendidas aqui",
+            "es": "Las luces para bicicletas se venden aquí",
+            "pt": "Luzes para bicicleta são vendidas aqui"
+          }
+        },
+        {
+          "if": "vending=gloves",
+          "then": {
+            "en": "Gloves are sold",
+            "nl": "Handschoenen worden verkocht",
+            "de": "Fahrradhandschuhe werden verkauft",
+            "cs": "Prodává rukavice",
+            "ca": "Es venen guants",
+            "pt_BR": "Luvas são vendidas aqui",
+            "es": "Los guantes se venden aquí",
+            "pt": "Luvas são vendidas aqui"
+          }
+        },
+        {
+          "if": "vending=bicycle_repair_kit",
+          "then": {
+            "en": "Bicycle repair kits are sold",
+            "nl": "Fietsreparatiesets worden verkocht",
+            "de": "Fahrrad-Reparaturset werden verkauft",
+            "cs": "Prodává sady na opravu jízdních kol",
+            "ca": "Es venen kits de reparació de bicicletes",
+            "pt_BR": "Kits para reparo de bicicleta são vendidos aqui",
+            "es": "Los kits de reparación de bicicletas se venden aquí",
+            "pt": "Kits para reparo de bicicleta são vendidos aqui"
+          }
+        },
+        {
+          "if": "vending=bicycle_pump",
+          "then": {
+            "en": "Bicycle pumps are sold",
+            "nl": "Fietspompen worden verkocht",
+            "de": "Fahrradpumpen werden verkauft",
+            "cs": "Prodává pumpy na kolo",
+            "ca": "Es venen bombes de bicicletes",
+            "pt_BR": "Bombas de ar para bicicleta são vendidas aqui",
+            "es": "Las bombas para bicicletas se venden aquí",
+            "pt": "Bombas de ar para bicicleta são vendidas aqui"
+          }
+        },
+        {
+          "if": "vending=bicycle_lock",
+          "then": {
+            "en": "Bicycle locks are sold",
+            "nl": "Fietssloten worden verkocht",
+            "de": "Fahrradschlösser werden verkauft",
+            "cs": "Prodává zámky na kolo",
+            "ca": "Es venen cadenats per a bicicletes",
+            "pt_BR": "Cadeados para bicicleta são vendidos aqui",
+            "es": "Aquí se venden candados para bicicletas",
+            "pt": "Cadeados para bicicleta são vendidos aqui"
+          }
+        }
+      ],
+      "multiAnswer": true,
+      "condition": {
+        "and": [
+          "amenity=vending_machine",
+          "vending!~(parking_tickets|public_transport_tickets|bottle_return|excrement_bags|elongated_coin)"
+        ]
+      }
+    },
+    {
+      "question": {
+        "en": "Which brand of tubes are sold here?",
+        "ca": "Quines marques de cambres d'aire es venen aquí?",
+        "de": "Welche Fahrradschläuche werden hier verkauft?",
+        "cs": "Jaká značka duší je zde prodávána?",
+        "nl": "Welk merk banden wordt hier verkocht?",
+        "pt_BR": "Quais marcas de câmara de ar são vendidas aqui?",
+        "es": "¿Qué cámaras se venden aquí?",
+        "pt": "Quais marcas de câmara de ar são vendidas aqui?"
+      },
+      "condition": {
+        "and": [
+          "amenity=vending_machine",
+          "vending~.*bicycle_tube.*",
+          "vending!~(parking_tickets|public_transport_tickets|bottle_return|excrement_bags|elongated_coin)"
+        ]
+      },
+      "freeform": {
+        "key": "brand",
+        "inline": true
+      },
+      "render": {
+        "en": "{brand} tubes are sold here",
+        "ca": "Aquí es venen cambres d'aire {brand}",
+        "de": "Hier werden Fahrradschläuche von {brand} verkauft",
+        "cs": "{brand} duše jsou zde prodávány",
+        "nl": "{brand} banden worden hier verkocht",
+        "pt_BR": "câmaras de ar {brand} são vendidas aqui",
+        "es": "Las cámaras {brand} se venden aquí",
+        "pt": "câmaras de ar {brand} são vendidas aqui"
+      },
+      "mappings": [
+        {
+          "if": "brand=Continental",
+          "then": {
+            "en": "Continental tubes are sold here",
+            "ca": "Aquí es venen cambres d'aire Continental",
+            "de": "Hier werden Fahrradschläuche von Continental verkauft",
+            "cs": "Continental duše jsou zde prodávány",
+            "nl": "Continental banden worden hier verkocht",
+            "pt_BR": "Câmaras de ar Continental são vendidas aqui",
+            "es": "Las cámaras Continental se venden aquí",
+            "pt": "Câmaras de ar Continental são vendidas aqui"
+          }
+        },
+        {
+          "if": "brand=Schwalbe",
+          "then": {
+            "en": "Schwalbe tubes are sold here",
+            "ca": "Aquí es venen cambres d'aire Schwalbe",
+            "de": "Hier werden Fahrradschläuche von Schwalbe verkauft",
+            "cs": "Schwalbe duše jsou zde prodávány",
+            "nl": "Schwalbe banden worden hier verkocht",
+            "pt_BR": "Câmaras de ar Schwalbe são vendidas aqui",
+            "es": "Las cámaras Schwalbe se venden aquí",
+            "pt": "Câmaras de ar Schwalbe são vendidas aqui"
+          }
+        }
+      ],
+      "multiAnswer": true,
+      "id": "bicycle_tube_vending_machine-brand"
+    },
+    {
+      "id": "vending_machine_opening_hours_24_7",
+      "question": {
+        "en": "What are the opening hours of {title()}?",
+        "fr": "Quelles sont les horaires d'ouverture de {title()} ?",
+        "de": "Wie lauten die Öffnungszeiten von {title()}?",
+        "nl": "Wat zijn de openingstijden van {title()}?",
+        "nb_NO": "Hva er åpningstidene for {title()})",
+        "ru": "Какое время работы у {title()}?",
+        "zh_Hant": "{title()} 的開放時間是什麼？",
+        "it": "Quali sono gli orari di apertura di {title()}?",
+        "pt_BR": "Qual o horário de funcionamento de {title()}?",
+        "pl": "Jakie są godziny otwarcia {title()}?",
+        "sv": "Vilka är öppettiderna för {title()}?",
+        "pt": "Qual é o horário de funcionamento de {title()}?",
+        "hu": "Mikor van nyitva ez: {title()}?",
+        "ca": "Quin és l'horari d'obertura de {title()}?",
+        "ja": "{title()}の営業時間は？",
+        "sl": "Kakšen odpiralni čas ima {title()}?",
+        "fil": "Anong oras nagbubukas ang {title()}?",
+        "es": "¿Cuales son las horas de apertura de {title()}?",
+        "zh_Hans": "{title()} 的开放时间为何？",
+        "da": "Hvad er åbningstiderne for {title()}?",
+        "id": "Kapan jam buka {title()}?",
+        "cs": "Jaká je otevírací doba {title()}?"
+      },
+      "render": {
+        "de": "<h3>Öffnungszeiten</h3>{opening_hours_table(opening_hours)}",
+        "fr": "<h3>Horaires d'ouverture</h3>{opening_hours_table(opening_hours)}",
+        "en": "<h3>Opening hours</h3>{opening_hours_table(opening_hours)}",
+        "nl": "<h3>Openingstijden</h3>{opening_hours_table(opening_hours)}",
+        "nb_NO": "<h3>Åpningstider</h3>{opening_hours_table(opening_hours)}",
+        "ru": "<h3>Часы работы</h3>{opening_hours_table(opening_hours)}",
+        "zh_Hant": "<h3>開放時間</h3>{opening_hours_table(opening_hours)}",
+        "it": "<h3>Orari di apertura</h3>{opening_hours_table(opening_hours)}",
+        "pl": "<h3> Godziny otwarcia</h3>{opening_hours_table(opening_hours)}",
+        "pt_BR": "<h3>Horário de funcionamento</h3>{opening_hours_table(opening_hours)}",
+        "sv": "<h3>Öppettider</h3> {opening_hours_table(opening_hours)}",
+        "pt": "<h3>Horário de funcionamento</h3>{opening_hours_table(opening_hours)}",
+        "eo": "<h3>Malfermitaj horoj</h3>{opening_hours_table(opening_hours)}",
+        "hu": "<h3>Nyitva tartás</h3>{opening_hours_table(opening_hours)}",
+        "ca": "<h3>Horari d'obertura</h3>{opening_hours_table(opening_hours)}",
+        "ja": "<h3>営業時間</h3>{opening_hours_table(opening_hours)}",
+        "sl": "<h3>Odpiralni čas</h3>{opening_hours_table(opening_hours)}",
+        "fil": "<h3>Mga oras na bukas</h3>{opening_hours_table(opening_hours)}",
+        "es": "<h3>Horas de apertura</h3>{opening_hours_table(opening_hours)}",
+        "zh_Hans": "<h3>开放时间</h3> {opening_hours_table(opening_hours)}",
+        "da": "<h3> Åbningstider</h3>{opening_hours_table(opening_hours)}",
+        "id": "<h3>Jam buka</h3>{opening_hours_table(opening_hours)}",
+        "pa_PK": "<h3>کھُلھے گھنٹے</h3>{opening_hours_table(opening_hours)}",
+        "cs": "<h3>Otevírací hodiny</h3>{opening_hours_table(opening_hours)}"
+      },
+      "freeform": {
+        "key": "opening_hours",
+        "type": "opening_hours",
+        "inline": false
+      },
+      "mappings": [
+        {
+          "if": "opening_hours=24/7",
+          "icon": "./assets/layers/questions/open24_7.svg",
+          "then": {
+            "en": "24/7 opened (including holidays)",
+            "de": "durchgehend geöffnet (auch an Feiertagen)",
+            "zh_Hant": "24/7 開放 (包括假日)",
+            "id": "Buka 24 jam (termasuk hari libur)",
+            "hu": "Éjjel-nappal nyitva (munkaszüneti napokon is)",
+            "es": "Abierta 24/7 (incluyendo festivos)",
+            "nl": "24/7 open (ook tijdens feestdagen)",
+            "fr": "Ouvert 24h/24 (jours fériés compris)",
+            "nb_NO": "Døgnåpent (inkludert helligdager)",
+            "cs": "Otevřeno 24/7 (včetně svátků)",
+            "ca": "Obert 24/7 (incloent-hi festius)",
+            "pl": "Otwarte 24/7 (również w święta)"
+          }
+        },
+        {
+          "#": "Just here to be able to handle those ~5000 incorrect 'opening_hours=closed' elements.",
+          "if": "opening_hours=closed",
+          "then": {
+            "en": "Marked as closed for an unspecified time",
+            "nl": "Gesloten voor onbepaalde duur",
+            "de": "Als geschlossen für eine unbestimmte Zeit markiert"
+          },
+          "hideInAnswer": true
+        }
+      ],
+      "condition": {
+        "and": [
+          {
+            "and": [
+              "amenity=vending_machine",
+              "vending!~(parking_tickets|public_transport_tickets|bottle_return|excrement_bags|elongated_coin)"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "denominations-coins",
+      "condition": {
+        "and": [
+          {
+            "or": [
+              "payment:cash=yes",
+              "payment:coins=yes"
+            ]
+          },
+          {
+            "or": [
+              "_currency~.*EUR.*",
+              "_currency~.*CHF.*"
+            ]
+          },
+          "amenity=vending_machine",
+          {
+            "or": [
+              "vending!~(parking_tickets|public_transport_tickets|bottle_return|excrement_bags|elongated_coin)",
+              "vending~.*elongated_coin.*",
+              "vending~.*souvenir_coins.*",
+              "vending~.*souvenir_notes.*",
+              "vending=parking_tickets",
+              "vending~.*elongated_coin.*",
+              "vending=parking_tickets",
+              "vending~.*souvenir_coins.*",
+              "vending~.*souvenir_notes.*",
+              "vending=public_transport_tickets",
+              "vending!~(parking_tickets|public_transport_tickets|bottle_return|excrement_bags|elongated_coin)",
+              "vending!~(parking_tickets|public_transport_tickets|bottle_return|excrement_bags|elongated_coin)",
+              "vending=parking_tickets",
+              "vending~.*elongated_coin.*",
+              "vending=public_transport_tickets"
+            ]
+          }
+        ]
+      },
+      "question": {
+        "en": "What coins can you use to pay here?",
+        "de": "Mit welchen Münzen kann man hier bezahlen?",
+        "nl": "Met welke munten kan je hier betalen?",
+        "fr": "Quelles pièces peut-on utiliser pour payer ici ?",
+        "pl": "Jakimi monetami można tutaj zapłacić?",
+        "ca": "Quines monedes es poden utilitzar per a pagar aquí?",
+        "es": "¿Qué monedas se pueden usar aquí para pagar?",
+        "nb_NO": "Hvilke mynter kan brukes til betaling her?",
+        "cs": "Jakými mincemi zde lze platit?"
+      },
+      "multiAnswer": true,
+      "mappings": [
+        {
+          "if": "payment:coins:denominations=0.01 EUR",
+          "icon": "./assets/layers/questions/denominations/eur/1cent.svg",
+          "then": {
+            "en": "1 cent coins are accepted",
+            "de": "1-Cent-Münzen werden akzeptiert",
+            "nl": "Munten van 1 cent worden geaccepteerd",
+            "nb_NO": "1-cent mynter aksepteres",
+            "fr": "Les pièces d'1 cent sont acceptées",
+            "pl": "Akceptowane są monety 1 centowe",
+            "ca": "S'accepten monedes de 1 cèntim",
+            "es": "Se aceptan monedas de 1 céntimo",
+            "cs": "Jsou přijímány mince v hodnotě 1 centu",
+            "id": "1 koin sen diterima"
+          },
+          "hideInAnswer": "_currency!~.*EUR.*"
+        },
+        {
+          "if": "payment:coins:denominations=0.02 EUR",
+          "icon": "./assets/layers/questions/denominations/eur/2cent.svg",
+          "then": {
+            "en": "2 cent coins are accepted",
+            "de": "2-Cent-Münzen werden akzeptiert",
+            "nl": "Munten van 2 cent worden geaccepteerd",
+            "nb_NO": "2-cent mynter aksepteres",
+            "fr": "Les pièces de 2 cents sont acceptées",
+            "pl": "Akceptowane są monety 2 centowe",
+            "ca": "S'accepten monedes de 2 cèntims",
+            "es": "Se aceptan monedas de 2 céntimos",
+            "cs": "Jsou přijímány mince v hodnotě 2 centů",
+            "id": "Koin 2 sen diterima"
+          },
+          "hideInAnswer": "_currency!~.*EUR.*"
+        },
+        {
+          "if": "payment:coins:denominations=0.05 EUR",
+          "icon": "./assets/layers/questions/denominations/eur/5cent.svg",
+          "then": {
+            "en": "5 cent coins are accepted",
+            "de": "5-Cent-Münzen werden akzeptiert",
+            "nl": "Munten van 5 cent worden geaccepteerd",
+            "nb_NO": "5-cent mynter aksepteres",
+            "fr": "Les pièces de 5 cents sont acceptées",
+            "pl": "Akceptowane są monety 5 centowe",
+            "ca": "S'accepten monedes de 5 cèntims",
+            "es": "Se aceptan monedas de 5 céntimos",
+            "cs": "Jsou přijímány mince v hodnotě 5 centů",
+            "id": "Koin 5 sen diterima"
+          },
+          "hideInAnswer": "_currency!~.*EUR.*"
+        },
+        {
+          "if": "payment:coins:denominations=0.10 EUR",
+          "icon": "./assets/layers/questions/denominations/eur/10cent.svg",
+          "then": {
+            "en": "10 cent coins are accepted",
+            "de": "10-Cent-Münzen werden akzeptiert",
+            "nl": "Munten van 10 cent worden geaccepteerd",
+            "nb_NO": "10-cent mynter aksepteres",
+            "fr": "Les pièces de 10 cents sont acceptées",
+            "pl": "Akceptowane są monety 10-centowe",
+            "ca": "S'accepten monedes de 10 cèntims",
+            "es": "Se aceptan monedas de 10 céntimos",
+            "cs": "Jsou přijímány mince v hodnotě 10 centů",
+            "id": "Koin 10 sen diterima"
+          },
+          "hideInAnswer": "_currency!~.*EUR.*"
+        },
+        {
+          "if": "payment:coins:denominations=0.20 EUR",
+          "icon": "./assets/layers/questions/denominations/eur/20cent.svg",
+          "then": {
+            "en": "20 cent coins are accepted",
+            "de": "20-Cent-Münzen werden akzeptiert",
+            "nl": "Munten van 20 cent worden geaccepteerd",
+            "nb_NO": "20-cent mynter aksepteres",
+            "fr": "Les pièces de 20 cents sont acceptées",
+            "pl": "Akceptowane są monety 20-centowe",
+            "ca": "S'accepten monedes de 20 cèntims",
+            "es": "Se aceptan monedas de 20 céntimos",
+            "cs": "Jsou přijímány mince v hodnotě 20 centů",
+            "id": "Koin 20 sen diterima"
+          },
+          "hideInAnswer": "_currency!~.*EUR.*"
+        },
+        {
+          "if": "payment:coins:denominations=0.50 EUR",
+          "icon": "./assets/layers/questions/denominations/eur/50cent.svg",
+          "then": {
+            "en": "50 cent coins are accepted",
+            "de": "50-Cent-Münzen werden akzeptiert",
+            "nl": "Munten van 50 cent worden geaccepteerd",
+            "nb_NO": "50-cent mynter aksepteres",
+            "fr": "Les pièces de 50 cents sont acceptées",
+            "pl": "Akceptowane są monety 50-centowe",
+            "ca": "S'accepten monedes de 50 cèntims",
+            "es": "Se aceptan monedas de 50 céntimos",
+            "cs": "Jsou přijímány mince v hodnotě 50 centů",
+            "id": "Koin 50 sen diterima"
+          },
+          "hideInAnswer": "_currency!~.*EUR.*"
+        },
+        {
+          "if": "payment:coins:denominations=1 EUR",
+          "icon": "./assets/layers/questions/denominations/eur/1euro.svg",
+          "then": {
+            "en": "1 euro coins are accepted",
+            "de": "1-Euro-Münzen werden akzeptiert",
+            "nl": "Munten van 1 euro worden geaccepteerd",
+            "nb_NO": "1-euro mynter aksepteres",
+            "fr": "Les pièces de 1 euro sont acceptées",
+            "pl": "Akceptowane są monety 1 euro",
+            "ca": "S'accepten monedes de 1 euro",
+            "es": "Se aceptan monedas de 1 euro",
+            "cs": "Jsou přijímány mince v hodnotě 1 eura"
+          },
+          "hideInAnswer": "_currency!~.*EUR.*"
+        },
+        {
+          "if": "payment:coins:denominations=2 EUR",
+          "icon": "./assets/layers/questions/denominations/eur/2euro.svg",
+          "then": {
+            "en": "2 euro coins are accepted",
+            "de": "2-Euro-Münzen werden akzeptiert",
+            "nl": "Munten van 2 euro worden geaccepteerd",
+            "nb_NO": "2-euro mynter aksepteres",
+            "fr": "Les pièces de 2 euros sont acceptées",
+            "pl": "Akceptowane są monety 2 euro",
+            "ca": "S'accepten monedes de 2 euros",
+            "es": "Se aceptan monedas de 2 euros",
+            "cs": "Jsou přijímány mince v hodnotě 2 euro"
+          },
+          "hideInAnswer": "_currency!~.*EUR.*"
+        },
+        {
+          "if": "payment:coins:denominations=0.05 CHF",
+          "icon": "./assets/layers/questions/denominations/chf/5rp-2019-800px.png",
+          "then": {
+            "en": "5 centimes coins are accepted",
+            "nl": "Munten van 5 rappen worden geaccepteerd",
+            "ca": "S'accepten monedes de 5 cèntims",
+            "de": "5-Centime-Münzen werden akzeptiert"
+          },
+          "hideInAnswer": "_currency!~.*CHF.*"
+        },
+        {
+          "if": "payment:coins:denominations=0.10 CHF",
+          "icon": "./assets/layers/questions/denominations/chf/10rp-2019-800px.png",
+          "then": {
+            "en": "10 centimes coins are accepted",
+            "nl": "Munten van 10 rappen worden geaccepteerd",
+            "ca": "S'accepten monedes de 10 cèntims",
+            "de": "10-Centime-Münzen werden akzeptiert"
+          },
+          "hideInAnswer": "_currency!~.*CHF.*"
+        },
+        {
+          "if": "payment:coins:denominations=0.20 CHF",
+          "icon": "./assets/layers/questions/denominations/chf/20rp-2019-800px.png",
+          "then": {
+            "en": "20 centimes coins are accepted",
+            "nl": "Munten van 20 rappen worden geaccepteerd",
+            "ca": "S'accepten monedes de 20 cèntims",
+            "de": "20-Centime-Münzen werden akzeptiert"
+          },
+          "hideInAnswer": "_currency!~.*CHF.*"
+        },
+        {
+          "if": "payment:coins:denominations=0.50 CHF",
+          "icon": "./assets/layers/questions/denominations/chf/50rp-2019-800px.png",
+          "then": {
+            "en": "½ franc coins are accepted",
+            "nl": "Munten van ½ frank worden geaccepteerd",
+            "ca": "S'accepten monedes de ½ franc",
+            "de": "½-Schweizer Franken-Münzen werden akzeptiert"
+          },
+          "hideInAnswer": "_currency!~.*CHF.*"
+        },
+        {
+          "if": "payment:coins:denominations=1 CHF",
+          "icon": "./assets/layers/questions/denominations/chf/1fr-2019-800px.png",
+          "then": {
+            "en": "1 franc coins are accepted",
+            "nl": "Munten van 1 frank worden geaccepteerd",
+            "ca": "S'accepten monedes d'1 franc",
+            "de": "1-Schweizer Franken-Münzen werden akzeptiert"
+          },
+          "hideInAnswer": "_currency!~.*CHF.*"
+        },
+        {
+          "if": "payment:coins:denominations=2 CHF",
+          "icon": "./assets/layers/questions/denominations/chf/2fr-2019-800px.png",
+          "then": {
+            "en": "2 francs coins are accepted",
+            "nl": "Munten van 2 frank worden geaccepteerd",
+            "ca": "S'accepten monedes de 2 francs",
+            "de": "2-Schweizer Franken-Münzen werden akzeptiert"
+          },
+          "hideInAnswer": "_currency!~.*CHF.*"
+        },
+        {
+          "if": "payment:coins:denominations=5 CHF",
+          "icon": "./assets/layers/questions/denominations/chf/5fr-2019-800px.png",
+          "then": {
+            "en": "5 francs coins are accepted",
+            "nl": "Munten van 5 frank worden geaccepteerd",
+            "ca": "S'accepten monedes de 5 francs",
+            "de": "5-Schweizer Franken-Münzen werden akzeptiert"
+          },
+          "hideInAnswer": "_currency!~.*CHF.*"
+        }
+      ]
+    },
+    {
+      "id": "denominations-notes",
+      "condition": {
+        "and": [
+          {
+            "or": [
+              "payment:cash=yes",
+              "payment:notes=yes"
+            ]
+          },
+          {
+            "or": [
+              "_currency~.*EUR.*",
+              "_currency~.*CHF.*"
+            ]
+          },
+          "amenity=vending_machine",
+          {
+            "or": [
+              "vending!~(parking_tickets|public_transport_tickets|bottle_return|excrement_bags|elongated_coin)",
+              "vending=parking_tickets",
+              "vending=parking_tickets",
+              "vending=public_transport_tickets",
+              "vending!~(parking_tickets|public_transport_tickets|bottle_return|excrement_bags|elongated_coin)",
+              "vending!~(parking_tickets|public_transport_tickets|bottle_return|excrement_bags|elongated_coin)",
+              "vending=parking_tickets",
+              "vending=public_transport_tickets"
+            ]
+          }
+        ]
+      },
+      "question": {
+        "en": "what notes can you use to pay here?",
+        "nl": "Met welke bankbiljetten kan je hier betalen?",
+        "de": "Mit welchen Banknoten kann man hier bezahlen?",
+        "es": "¿con qué billetes se puede pagar aquí?",
+        "pl": "Jakimi banknotami można tu zapłacić?",
+        "cs": "Jakými bankovkami zde lze platit?",
+        "ca": "Amb quins bitllets pot pagar aquí?",
+        "fr": "quels billets pouvez vous utiliser pour payer ici ?"
+      },
+      "multiAnswer": true,
+      "mappings": [
+        {
+          "if": "payment:notes:denominations=5 EUR",
+          "icon": "./assets/layers/questions/denominations/eur/5euro.svg",
+          "then": {
+            "en": "5 euro notes are accepted",
+            "nl": "Biljetten van 5 euro worden geaccepteerd",
+            "de": "5-Euro-Scheine werden angenommen",
+            "es": "Se aceptan billetes de 5 euros",
+            "pl": "Banknoty 5 euro są akceptowane",
+            "cs": "Jsou přijímány bankovky v hodnotě 5 euro",
+            "ca": "S'accepten billets de 5 euros",
+            "fr": "Les billets de 5 euros ne sont pas acceptés"
+          },
+          "hideInAnswer": "_currency!~.*EUR.*"
+        },
+        {
+          "if": "payment:notes:denominations=10 EUR",
+          "icon": "./assets/layers/questions/denominations/eur/10euro.svg",
+          "then": {
+            "en": "10 euro notes are accepted",
+            "nl": "Biljetten van 10 euro worden geaccepteerd",
+            "de": "10-Euro-Scheine werden angenommen",
+            "es": "Se aceptan billetes de 10 euros",
+            "pl": "Banknoty 10 euro są akceptowane",
+            "cs": "Jsou přijímány bankovky v hodnotě 10 euro",
+            "ca": "S'accepten bitllets de 10 euros",
+            "fr": "Les billets de 10 euros sont acceptés"
+          },
+          "hideInAnswer": "_currency!~.*EUR.*"
+        },
+        {
+          "if": "payment:notes:denominations=20 EUR",
+          "icon": "./assets/layers/questions/denominations/eur/20euro.svg",
+          "then": {
+            "en": "20 euro notes are accepted",
+            "nl": "Biljetten van 20 euro worden geaccepteerd",
+            "de": "20-Euro-Scheine werden angenommen",
+            "es": "Se aceptan billetes de 20 euros",
+            "pl": "Banknoty 20 euro są akceptowane",
+            "cs": "Jsou přijímány bankovky v hodnotě 20 euro",
+            "ca": "S'accepten bitllets de 20 euros",
+            "fr": "Les billets de 20 euros sont acceptés"
+          },
+          "hideInAnswer": "_currency!~.*EUR.*"
+        },
+        {
+          "if": "payment:notes:denominations=50 EUR",
+          "icon": "./assets/layers/questions/denominations/eur/50euro.svg",
+          "then": {
+            "en": "50 euro notes are accepted",
+            "nl": "Biljetten van 50 euro worden geaccepteerd",
+            "de": "50-Euro-Scheine werden angenommen",
+            "es": "Se aceptan billetes de 50 euros",
+            "pl": "Banknoty 50 euro są akceptowane",
+            "cs": "Jsou přijímány bankovky v hodnotě 50 euro",
+            "ca": "S'accepten bitllets de 50 euros",
+            "fr": "Les billets de 50 euros sont acceptés"
+          },
+          "hideInAnswer": "_currency!~.*EUR.*"
+        },
+        {
+          "if": "payment:notes:denominations=100 EUR",
+          "icon": "./assets/layers/questions/denominations/eur/100euro.svg",
+          "then": {
+            "en": "100 euro notes are accepted",
+            "nl": "Biljetten van 100 euro worden geaccepteerd",
+            "de": "100-Euro-Scheine werden angenommen",
+            "es": "Se aceptan billetes de 100 euros",
+            "pl": "Banknoty 100 euro są akceptowane",
+            "cs": "Jsou přijímány bankovky v hodnotě 100 euro",
+            "ca": "S'accepten bitllets de 100 euros",
+            "fr": "Les billets de 100 euros sont acceptés"
+          },
+          "hideInAnswer": "_currency!~.*EUR.*"
+        },
+        {
+          "if": "payment:notes:denominations=200 EUR",
+          "icon": "./assets/layers/questions/denominations/eur/200euro.svg",
+          "then": {
+            "en": "200 euro notes are accepted",
+            "nl": "Biljetten van 200 euro worden geaccepteerd",
+            "de": "200-Euro-Scheine werden angenommen",
+            "es": "Se aceptan billetes de 200 euros",
+            "pl": "Banknoty 200 euro są akceptowane",
+            "cs": "Jsou přijímány bankovky v hodnotě 200 euro",
+            "ca": "S'accepten bitllets de 200 euros",
+            "fr": "Les billets de 200 euros sont acceptés"
+          },
+          "hideInAnswer": "_currency!~.*EUR.*"
+        },
+        {
+          "if": "payment:notes:denominations=500 EUR",
+          "icon": "./assets/layers/questions/denominations/eur/500euro.svg",
+          "then": {
+            "en": "500 euro notes are accepted",
+            "nl": "Biljetten van 500 euro worden geaccepteerd",
+            "de": "500-Euro-Scheine werden angenommen",
+            "es": "Se aceptan billetes de 500 euros",
+            "pl": "Banknoty 500 euro są akceptowane",
+            "cs": "Jsou přijímány bankovky v hodnotě 500 euro",
+            "ca": "S'accepten bitllets de 500 euros",
+            "fr": "Les billets de 500 euros sont acceptés"
+          },
+          "hideInAnswer": "_currency!~.*EUR.*"
+        },
+        {
+          "if": "payment:notes:denominations=10 CHF",
+          "icon": "./assets/layers/questions/denominations/chf/10chf.svg",
+          "then": {
+            "en": "10 francs notes are accepted",
+            "nl": "Biljetten van 10 frank worden geaccepteerd",
+            "ca": "S'accepten bitllets de 10 francs",
+            "de": "10-Schweizer Franken-Scheine werden akzeptiert"
+          },
+          "hideInAnswer": "_currency!~.*CHF.*"
+        },
+        {
+          "if": "payment:notes:denominations=20 CHF",
+          "icon": "./assets/layers/questions/denominations/chf/20chf.svg",
+          "then": {
+            "en": "20 francs notes are accepted",
+            "nl": "Biljetten van 20 frank worden geaccepteerd",
+            "ca": "S'accepten bitllets de 20 francs",
+            "de": "20-Schweizer Franken-Scheine werden akzeptiert"
+          },
+          "hideInAnswer": "_currency!~.*CHF.*"
+        },
+        {
+          "if": "payment:notes:denominations=50 CHF",
+          "icon": "./assets/layers/questions/denominations/chf/50chf.svg",
+          "then": {
+            "en": "50 francs notes are accepted",
+            "nl": "Biljetten van 50 frank worden geaccepteerd",
+            "ca": "S'accepten bitllets de 50 francs",
+            "de": "50-Schweizer Franken-Scheine werden akzeptiert"
+          },
+          "hideInAnswer": "_currency!~.*CHF.*"
+        },
+        {
+          "if": "payment:notes:denominations=100 CHF",
+          "icon": "./assets/layers/questions/denominations/chf/100chf.svg",
+          "then": {
+            "en": "100 francs notes are accepted",
+            "nl": "Biljetten van 100 frank worden geaccepteerd",
+            "ca": "S'accepten bitllets de 100 francs",
+            "de": "100-Schweizer Franken-Scheine werden akzeptiert"
+          },
+          "hideInAnswer": "_currency!~.*CHF.*"
+        },
+        {
+          "if": "payment:notes:denominations=200 CHF",
+          "icon": "./assets/layers/questions/denominations/chf/200chf.svg",
+          "then": {
+            "en": "200 francs notes are accepted",
+            "nl": "Biljetten van 200 frank worden geaccepteerd",
+            "ca": "S'accepten bitllets de 200 francs",
+            "de": "200-Schweizer Franken-Scheine werden akzeptiert"
+          },
+          "hideInAnswer": "_currency!~.*CHF.*"
+        },
+        {
+          "if": "payment:notes:denominations=1000 CHF",
+          "icon": "./assets/layers/questions/denominations/chf/1000chf.svg",
+          "then": {
+            "en": "1000 francs notes are accepted",
+            "nl": "Biljetten van 1000 frank worden geaccepteerd",
+            "ca": "S'accepten bitllets de 1000 francs",
+            "de": "1000-Schweizer Franken-Scheine werden akzeptiert"
+          },
+          "hideInAnswer": "_currency!~.*CHF.*"
+        }
+      ]
+    },
+    {
+      "id": "vending_machine_operator",
+      "question": {
+        "en": "Who operates this vending machine?",
+        "nl": "Wie beheert deze verkoopautomaat?",
+        "de": "Wer betreibt diesen Verkaufsautomaten?",
+        "fr": "Qui exploite ce distributeur ?",
+        "ca": "Qui opera aquesta màquina expenedora?",
+        "cs": "Kdo provozuje tento automat?"
+      },
+      "freeform": {
+        "key": "operator",
+        "placeholder": {
+          "en": "Name of operator",
+          "nl": "Naam van beheerder",
+          "de": "Name des Betreibers",
+          "fr": "Nom de l'exploitant",
+          "ca": "Nom de l'operadora",
+          "cs": "Jméno provozovatele"
+        },
+        "inline": true
+      },
+      "render": {
+        "en": "This vending machine is operated by {operator}",
+        "nl": "Deze verkoopautomaat wordt beheerd door {operator}",
+        "de": "Dieser Verkaufsautomat wird betrieben von {operator}",
+        "fr": "Ce distributeur est exploité par {operator}",
+        "ca": "{operator} gestiona aquesta màquina expenedora",
+        "cs": "Tento prodejní automat provozuje {operator}"
+      },
+      "condition": {
+        "and": [
+          {
+            "and": [
+              "amenity=vending_machine",
+              "vending!~(parking_tickets|public_transport_tickets|bottle_return|excrement_bags|elongated_coin)"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "indoor",
+      "question": {
+        "en": "Is this vending machine indoors?",
+        "nl": "Is deze verkoopautomaat binnen?",
+        "de": "Ist der Automat in einem Gebäude untergebracht?",
+        "fr": "Est-ce que ce distributeur est en intérieur ?",
+        "ca": "Aquesta màquina expenedora està a l'exterior?",
+        "cs": "Je tento automat uvnitř?"
+      },
+      "mappings": [
+        {
+          "if": "indoor=",
+          "then": {
+            "en": "This vending machine is outdoors",
+            "nl": "Deze verkoopautomaat is buiten",
+            "de": "Der Automat befindet sich im Freien",
+            "fr": "Ce distributeur est à l'extérieur",
+            "ca": "Aquesta màquina expenedora està a l'exterior",
+            "cs": "Tento prodejní automat je venku"
+          },
+          "hideInAnswer": true
+        },
+        {
+          "if": "indoor=yes",
+          "then": {
+            "en": "This vending machine is indoors",
+            "nl": "Deze verkoopautomaat is binnen",
+            "de": "Der Automat befindet sich im Innenbereich",
+            "fr": "Ce distributeur est à l'intérieur",
+            "ca": "Aquesta màquina expenedora està a l'interior",
+            "cs": "Tento prodejní automat je uvnitř"
+          }
+        },
+        {
+          "if": "indoor=no",
+          "then": {
+            "en": "This vending machine is outdoors",
+            "nl": "Deze verkoopautomaat is buiten",
+            "de": "Dieser Automat befindet sich im Freien",
+            "fr": "Ce distributeur est à l'extérieur",
+            "ca": "Aquesta màquina expenedora està a l'exterior",
+            "cs": "Tento prodejní automat je venku"
+          }
+        }
+      ],
+      "condition": {
+        "and": [
+          "amenity=vending_machine",
+          "vending!~(parking_tickets|public_transport_tickets|bottle_return|excrement_bags|elongated_coin)"
+        ]
+      }
+    },
+    {
+      "id": "vending_machine_phone",
+      "labels": [
+        "contact"
+      ],
+      "question": {
+        "en": "What is the phone number of the operator of this vending machine?",
+        "nl": "Wat is het telefoonnummer van {title()}?",
+        "fr": "Quel est le numéro de téléphone de {title()} ?",
+        "de": "Wie lautet die Telefonnummer des Automatenbetreibers?",
+        "nb_NO": "Hva er telefonnummeret til {title()}?",
+        "ru": "Какой номер телефона у {title()}?",
+        "sv": "Vad är telefonnumret till {title()}?",
+        "zh_Hant": "{title()} 的電話號碼是什麼？",
+        "it": "Qual è il numero di telefono di {title()}?",
+        "pt_BR": "Qual o número de telefone de {title()}?",
+        "id": "Berapa nomor telepon dari {title()}?",
+        "pl": "Jaki jest numer telefonu do {title()}?",
+        "pt": "Qual é o número de telefone de {title()}?",
+        "eo": "Kio estas la telefonnumero de {title()}?",
+        "hu": "Mi a telefonszáma ennek: {title()}?",
+        "ca": "Quin és el número de telèfon de l'operador d'aquesta màquina expenedora?",
+        "ja": "{title()}の電話番号は？",
+        "sl": "Kakšno telefonsko številko ima {title()}?",
+        "fil": "Ano ang telepono ng {title()}?",
+        "es": "¿Cuál es el número de teléfono de {title()}?",
+        "zh_Hans": "{title()} 的电话号码为何？",
+        "da": "Hvad er telefonnummeret til {title()}?",
+        "cs": "Jaké je telefonní číslo na provozovatele tohoto automatu?"
+      },
+      "render": {
+        "*": "<a href='tel:{phone}'>{phone}</a>"
+      },
+      "icon": "./assets/layers/questions/phone.svg",
+      "mappings": [
+        {
+          "if": "contact:phone~*",
+          "then": "<a href='tel:{contact:phone}'>{contact:phone}</a>",
+          "hideInAnswer": true,
+          "icon": "./assets/layers/questions/phone.svg"
+        }
+      ],
+      "freeform": {
+        "key": "phone",
+        "type": "phone",
+        "addExtraTags": [
+          "contact:phone="
+        ]
+      },
+      "editButtonAriaLabel": {
+        "en": "Edit phone number",
+        "nl": "Pas telefoonnummer aan",
+        "de": "Telefonnummer bearbeiten"
+      },
+      "questionHint": {
+        "en": "This is the number you can call in case of problems with the vending machine",
+        "ca": "Aquest és el número al qual podeu trucar en cas de problemes amb la màquina expenedora",
+        "de": "Die ist die Telefonnummer, die bei Problemen mit dem Automaten kontaktiert werden kann",
+        "cs": "Toto je číslo, na které můžete zavolat v případě problémů s automatem"
+      },
+      "condition": {
+        "and": [
+          {
+            "and": [
+              "amenity=vending_machine",
+              "vending!~(parking_tickets|public_transport_tickets|bottle_return|excrement_bags|elongated_coin)"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "charge_bicycle_tube",
+      "question": {
+        "en": "How much does a a bicycle tube cost?",
+        "ca": "Quant costa una cambra d'aire de bicicleta?",
+        "de": "Wie viel kostet ein Fahrradschlauch?",
+        "cs": "Kolik stojí duše na kolo?",
+        "nl": "Hoeveel kost een fietsband?",
+        "pt_BR": "Quanto custa uma câmara de ar para bicicleta?",
+        "es": "¿Cuánto cuesta una cámara para la bicicleta?",
+        "pt": "Quanto custa uma câmara de ar para bicicleta?"
+      },
+      "render": {
+        "en": "a bicycle tube costs {charge:bicycle_tube}",
+        "ca": "una cambra d'aire de bicicleta costa {charge:bicycle_tube}",
+        "de": "ein Fahrradschlauch kostet {charge:bicycle_tube}",
+        "cs": "duše na kolo {charge:bicycle_tube}",
+        "nl": "een fietsband kost {charge:bicycle_tube}",
+        "pt_BR": "uma câmara de ar para bicicleta custa {charge:bicycle_tube}",
+        "es": "una cámara para la bicicleta cuesta {charge:bicycle_tube}",
+        "pt": "uma câmara de ar para bicicleta custa {charge:bicycle_tube}"
+      },
+      "freeform": {
+        "key": "charge",
+        "type": "currency",
+        "inline": true,
+        "postfixDistinguished": "bicycle_tube"
+      },
+      "condition": {
+        "and": [
+          "amenity=vending_machine",
+          "vending~.*bicycle_tube.*",
+          "vending!~(parking_tickets|public_transport_tickets|bottle_return|excrement_bags|elongated_coin)"
+        ]
+      }
+    },
+    {
+      "id": "charge_bicycle_light",
+      "question": {
+        "en": "How much does a bicycle light cost?",
+        "ca": "Quant costa bicycle light?",
+        "de": "Wie viel kostet bicycle light?",
+        "cs": "Kolik stojí bicycle light?",
+        "nl": "Hoeveel kost een fietslichtje?",
+        "pt_BR": "Quanto custa bicycle light?",
+        "es": "¿Cuánto cuesta bicycle light?",
+        "pt": "Quanto custa bicycle light?"
+      },
+      "render": {
+        "en": "bicycle light costs {charge:bicycle_light}",
+        "ca": "bicycle light costa {charge:bicycle_light}",
+        "de": "bicycle light kostet {charge:bicycle_light}",
+        "cs": "bicycle light {charge:bicycle_light}",
+        "nl": "een fietslichtje kost {charge:bicycle_light}",
+        "pt_BR": "bicycle light custa {charge:bicycle_light}",
+        "es": "bicycle light cuesta {charge:bicycle_light}",
+        "pt": "bicycle light custa {charge:bicycle_light}"
+      },
+      "freeform": {
+        "key": "charge",
+        "type": "currency",
+        "inline": true,
+        "postfixDistinguished": "bicycle_light"
+      },
+      "condition": {
+        "and": [
+          "amenity=vending_machine",
+          "vending~.*bicycle_light.*",
+          "vending!~(parking_tickets|public_transport_tickets|bottle_return|excrement_bags|elongated_coin)"
+        ]
+      }
+    },
+    {
+      "id": "charge_condom",
+      "question": {
+        "en": "How much does a a condom cost?",
+        "ca": "Quant costa a condom?",
+        "de": "Wie viel kostet a condom?",
+        "cs": "Kolik stojí a condom?",
+        "nl": "Hoeveel kost een condoom?",
+        "pt_BR": "Quanto custa a condom?",
+        "es": "¿Cuánto cuesta a condom?",
+        "pt": "Quanto custa a condom?"
+      },
+      "render": {
+        "en": "a condom costs {charge:condom}",
+        "ca": "a condom costa {charge:condom}",
+        "de": "a condom kostet {charge:condom}",
+        "cs": "a condom {charge:condom}",
+        "nl": "een condoom kost {charge:condom}",
+        "pt_BR": "a condom custa {charge:condom}",
+        "es": "a condom cuesta {charge:condom}",
+        "pt": "a condom custa {charge:condom}"
+      },
+      "freeform": {
+        "key": "charge",
+        "type": "currency",
+        "inline": true,
+        "postfixDistinguished": "condom"
+      },
+      "condition": {
+        "and": [
+          "amenity=vending_machine",
+          "vending~.*condom.*",
+          "vending!~(parking_tickets|public_transport_tickets|bottle_return|excrement_bags|elongated_coin)"
+        ]
+      }
+    },
+    {
+      "id": "vending_machine_operational_status",
+      "question": {
+        "en": "Is this vending machine still operational?",
+        "nl": "Is deze verkoopsautomaat nog steeds werkende?",
+        "fr": "Cette machine est-elle encore opérationelle ?",
+        "it": "Questo distributore automatico funziona ancora?",
+        "ru": "Этот торговый автомат все еще работает?",
+        "de": "Ist dieser Automat in Betrieb?",
+        "zh_Hant": "這個自動販賣機仍有運作嗎？",
+        "pt_BR": "Esta máquina de venda automática ainda está operacional?",
+        "pt": "Esta máquina de venda automática ainda está operacional?",
+        "es": "¿Todavía funciona esta máquina expendedora?",
+        "da": "Er denne salgsautomat stadig i drift?",
+        "cs": "Je tento automat stále v provozu?",
+        "ca": "Aquesta màquina expenedora encara funciona?"
+      },
+      "mappings": [
+        {
+          "if": "operational_status=",
+          "then": {
+            "en": "This vending machine works",
+            "nl": "Deze verkoopsautomaat werkt",
+            "fr": "Le distributeur automatique fonctionne",
+            "hu": "Ez az automata működik",
+            "it": "Il distributore automatico funziona",
+            "ru": "Этот торговый автомат работает",
+            "zh_Hans": "这个借还机正常工作",
+            "de": "Dieser Automat ist in Betrieb",
+            "zh_Hant": "這個自動販賣機仍運作",
+            "pt_BR": "Esta máquina de venda automática funciona",
+            "pt": "Esta máquina de venda automática funciona",
+            "da": "Denne salgsautomat virker",
+            "es": "Esta máquina expendedora funciona",
+            "cs": "Tento prodejní automat funguje",
+            "ca": "Aquesta màquina expenedora funciona"
+          }
+        },
+        {
+          "if": "operational_status=broken",
+          "then": {
+            "en": "This vending machine is broken",
+            "nl": "Deze verkoopsautomaat is kapot",
+            "fr": "Le distributeur automatique est en panne",
+            "hu": "Ez az automata elromlott",
+            "it": "Il distributore automatico è guasto",
+            "ru": "Этот торговый автомат сломан",
+            "zh_Hans": "这个借还机已经损坏",
+            "de": "Dieser Automat ist kaputt",
+            "zh_Hant": "這個自動販賣機沒有運作了",
+            "pt_BR": "Esta máquina de venda automática está quebrada",
+            "pt": "Esta máquina de venda automática está quebrada",
+            "es": "Esta máquina exprendedora está rota",
+            "da": "Denne salgsautomat er i stykker",
+            "cs": "Tento prodejní automat je rozbitý",
+            "ca": "Aquesta màquina expenedora està trencada"
+          }
+        },
+        {
+          "if": "operational_status=closed",
+          "then": {
+            "en": "This vending machine is closed",
+            "nl": "Deze verkoopsautomaat is uitgeschakeld",
+            "fr": "Le distributeur automatique est fermé",
+            "hu": "Ez az automata zárva van",
+            "it": "Il distributore automatico è spento",
+            "ru": "Этот торговый автомат закрыт",
+            "zh_Hans": "这个借还机被关闭了",
+            "de": "Dieser Automat ist geschlossen",
+            "zh_Hant": "這個自動販賣機已經關閉了",
+            "pt_BR": "Esta máquina de venda automática está fechada",
+            "pt": "Esta máquina de venda automática está fechada",
+            "es": "Esta máquina exprendedora está cerrada",
+            "da": "Denne salgsautomat er lukket",
+            "cs": "Tento prodejní automat je uzavřen",
+            "ca": "Aquesta màquina expenedora està tancada"
+          }
+        },
+        {
+          "if": "operational_status~*",
+          "hideInAnswer": true,
+          "then": {
+            "en": "The operational status is <i>{operational_status}</i>",
+            "nl": "Deze verkoopsautomaat is <i>{operational_status}</i>",
+            "fr": "L'état opérationnel est <i>{operational_status}</i>",
+            "it": "Lo stato operativo è <i>{operational_status}</i>",
+            "de": "Der Betriebszustand ist <i>{operational_status}</i>",
+            "ru": "Рабочий статус: <i> {operational_status}</i>",
+            "zh_Hant": "運作狀態是 <i>{operational_status}</i>",
+            "pt_BR": "O estado operacional é: <i>{operational_status}</i>",
+            "pt": "O estado operacional é: <i>{operational_status}</i>",
+            "es": "El estado operacional es <i>{operational_status}</i>",
+            "da": "Driftsstatus er <i>{operational_status}</i>",
+            "cs": "Provozní stav je <i>{operational_status}</i>",
+            "ca": "L'estat operatiu és <i>{operational_status}</i>"
+          }
+        }
+      ],
+      "condition": {
+        "and": [
+          {
+            "and": [
+              "amenity=vending_machine",
+              "vending!~(parking_tickets|public_transport_tickets|bottle_return|excrement_bags|elongated_coin)"
+            ]
+          }
+        ]
+      }
     },
     {
       "id": "hospital_name",
@@ -73463,270 +74494,7 @@
       }
     },
     {
-      "id": "denominations-coins",
-      "condition": {
-        "and": [
-          {
-            "or": [
-              "payment:cash=yes",
-              "payment:coins=yes"
-            ]
-          },
-          {
-            "or": [
-              "_currency~.*EUR.*",
-              "_currency~.*CHF.*"
-            ]
-          },
-          "amenity=vending_machine",
-          {
-            "or": [
-              "vending~.*elongated_coin.*",
-              "vending~.*souvenir_coins.*",
-              "vending~.*souvenir_notes.*",
-              "vending=parking_tickets",
-              "vending~.*elongated_coin.*",
-              "vending=parking_tickets",
-              "vending~.*souvenir_coins.*",
-              "vending~.*souvenir_notes.*",
-              "vending=public_transport_tickets",
-              "vending!~(parking_tickets|public_transport_tickets|bottle_return|excrement_bags|elongated_coin)",
-              "vending!~(parking_tickets|public_transport_tickets|bottle_return|excrement_bags|elongated_coin)",
-              "vending=parking_tickets",
-              "vending~.*elongated_coin.*",
-              "vending=public_transport_tickets"
-            ]
-          }
-        ]
-      },
-      "question": {
-        "en": "What coins can you use to pay here?",
-        "de": "Mit welchen Münzen kann man hier bezahlen?",
-        "nl": "Met welke munten kan je hier betalen?",
-        "fr": "Quelles pièces peut-on utiliser pour payer ici ?",
-        "pl": "Jakimi monetami można tutaj zapłacić?",
-        "ca": "Quines monedes es poden utilitzar per a pagar aquí?",
-        "es": "¿Qué monedas se pueden usar aquí para pagar?",
-        "nb_NO": "Hvilke mynter kan brukes til betaling her?",
-        "cs": "Jakými mincemi zde lze platit?"
-      },
-      "multiAnswer": true,
-      "mappings": [
-        {
-          "if": "payment:coins:denominations=0.01 EUR",
-          "icon": "./assets/layers/questions/denominations/eur/1cent.svg",
-          "then": {
-            "en": "1 cent coins are accepted",
-            "de": "1-Cent-Münzen werden akzeptiert",
-            "nl": "Munten van 1 cent worden geaccepteerd",
-            "nb_NO": "1-cent mynter aksepteres",
-            "fr": "Les pièces d'1 cent sont acceptées",
-            "pl": "Akceptowane są monety 1 centowe",
-            "ca": "S'accepten monedes de 1 cèntim",
-            "es": "Se aceptan monedas de 1 céntimo",
-            "cs": "Jsou přijímány mince v hodnotě 1 centu",
-            "id": "1 koin sen diterima"
-          },
-          "hideInAnswer": "_currency!~.*EUR.*"
-        },
-        {
-          "if": "payment:coins:denominations=0.02 EUR",
-          "icon": "./assets/layers/questions/denominations/eur/2cent.svg",
-          "then": {
-            "en": "2 cent coins are accepted",
-            "de": "2-Cent-Münzen werden akzeptiert",
-            "nl": "Munten van 2 cent worden geaccepteerd",
-            "nb_NO": "2-cent mynter aksepteres",
-            "fr": "Les pièces de 2 cents sont acceptées",
-            "pl": "Akceptowane są monety 2 centowe",
-            "ca": "S'accepten monedes de 2 cèntims",
-            "es": "Se aceptan monedas de 2 céntimos",
-            "cs": "Jsou přijímány mince v hodnotě 2 centů",
-            "id": "Koin 2 sen diterima"
-          },
-          "hideInAnswer": "_currency!~.*EUR.*"
-        },
-        {
-          "if": "payment:coins:denominations=0.05 EUR",
-          "icon": "./assets/layers/questions/denominations/eur/5cent.svg",
-          "then": {
-            "en": "5 cent coins are accepted",
-            "de": "5-Cent-Münzen werden akzeptiert",
-            "nl": "Munten van 5 cent worden geaccepteerd",
-            "nb_NO": "5-cent mynter aksepteres",
-            "fr": "Les pièces de 5 cents sont acceptées",
-            "pl": "Akceptowane są monety 5 centowe",
-            "ca": "S'accepten monedes de 5 cèntims",
-            "es": "Se aceptan monedas de 5 céntimos",
-            "cs": "Jsou přijímány mince v hodnotě 5 centů",
-            "id": "Koin 5 sen diterima"
-          },
-          "hideInAnswer": "_currency!~.*EUR.*"
-        },
-        {
-          "if": "payment:coins:denominations=0.10 EUR",
-          "icon": "./assets/layers/questions/denominations/eur/10cent.svg",
-          "then": {
-            "en": "10 cent coins are accepted",
-            "de": "10-Cent-Münzen werden akzeptiert",
-            "nl": "Munten van 10 cent worden geaccepteerd",
-            "nb_NO": "10-cent mynter aksepteres",
-            "fr": "Les pièces de 10 cents sont acceptées",
-            "pl": "Akceptowane są monety 10-centowe",
-            "ca": "S'accepten monedes de 10 cèntims",
-            "es": "Se aceptan monedas de 10 céntimos",
-            "cs": "Jsou přijímány mince v hodnotě 10 centů",
-            "id": "Koin 10 sen diterima"
-          },
-          "hideInAnswer": "_currency!~.*EUR.*"
-        },
-        {
-          "if": "payment:coins:denominations=0.20 EUR",
-          "icon": "./assets/layers/questions/denominations/eur/20cent.svg",
-          "then": {
-            "en": "20 cent coins are accepted",
-            "de": "20-Cent-Münzen werden akzeptiert",
-            "nl": "Munten van 20 cent worden geaccepteerd",
-            "nb_NO": "20-cent mynter aksepteres",
-            "fr": "Les pièces de 20 cents sont acceptées",
-            "pl": "Akceptowane są monety 20-centowe",
-            "ca": "S'accepten monedes de 20 cèntims",
-            "es": "Se aceptan monedas de 20 céntimos",
-            "cs": "Jsou přijímány mince v hodnotě 20 centů",
-            "id": "Koin 20 sen diterima"
-          },
-          "hideInAnswer": "_currency!~.*EUR.*"
-        },
-        {
-          "if": "payment:coins:denominations=0.50 EUR",
-          "icon": "./assets/layers/questions/denominations/eur/50cent.svg",
-          "then": {
-            "en": "50 cent coins are accepted",
-            "de": "50-Cent-Münzen werden akzeptiert",
-            "nl": "Munten van 50 cent worden geaccepteerd",
-            "nb_NO": "50-cent mynter aksepteres",
-            "fr": "Les pièces de 50 cents sont acceptées",
-            "pl": "Akceptowane są monety 50-centowe",
-            "ca": "S'accepten monedes de 50 cèntims",
-            "es": "Se aceptan monedas de 50 céntimos",
-            "cs": "Jsou přijímány mince v hodnotě 50 centů",
-            "id": "Koin 50 sen diterima"
-          },
-          "hideInAnswer": "_currency!~.*EUR.*"
-        },
-        {
-          "if": "payment:coins:denominations=1 EUR",
-          "icon": "./assets/layers/questions/denominations/eur/1euro.svg",
-          "then": {
-            "en": "1 euro coins are accepted",
-            "de": "1-Euro-Münzen werden akzeptiert",
-            "nl": "Munten van 1 euro worden geaccepteerd",
-            "nb_NO": "1-euro mynter aksepteres",
-            "fr": "Les pièces de 1 euro sont acceptées",
-            "pl": "Akceptowane są monety 1 euro",
-            "ca": "S'accepten monedes de 1 euro",
-            "es": "Se aceptan monedas de 1 euro",
-            "cs": "Jsou přijímány mince v hodnotě 1 eura"
-          },
-          "hideInAnswer": "_currency!~.*EUR.*"
-        },
-        {
-          "if": "payment:coins:denominations=2 EUR",
-          "icon": "./assets/layers/questions/denominations/eur/2euro.svg",
-          "then": {
-            "en": "2 euro coins are accepted",
-            "de": "2-Euro-Münzen werden akzeptiert",
-            "nl": "Munten van 2 euro worden geaccepteerd",
-            "nb_NO": "2-euro mynter aksepteres",
-            "fr": "Les pièces de 2 euros sont acceptées",
-            "pl": "Akceptowane są monety 2 euro",
-            "ca": "S'accepten monedes de 2 euros",
-            "es": "Se aceptan monedas de 2 euros",
-            "cs": "Jsou přijímány mince v hodnotě 2 euro"
-          },
-          "hideInAnswer": "_currency!~.*EUR.*"
-        },
-        {
-          "if": "payment:coins:denominations=0.05 CHF",
-          "icon": "./assets/layers/questions/denominations/chf/5rp-2019-800px.png",
-          "then": {
-            "en": "5 centimes coins are accepted",
-            "nl": "Munten van 5 rappen worden geaccepteerd",
-            "ca": "S'accepten monedes de 5 cèntims",
-            "de": "5-Centime-Münzen werden akzeptiert"
-          },
-          "hideInAnswer": "_currency!~.*CHF.*"
-        },
-        {
-          "if": "payment:coins:denominations=0.10 CHF",
-          "icon": "./assets/layers/questions/denominations/chf/10rp-2019-800px.png",
-          "then": {
-            "en": "10 centimes coins are accepted",
-            "nl": "Munten van 10 rappen worden geaccepteerd",
-            "ca": "S'accepten monedes de 10 cèntims",
-            "de": "10-Centime-Münzen werden akzeptiert"
-          },
-          "hideInAnswer": "_currency!~.*CHF.*"
-        },
-        {
-          "if": "payment:coins:denominations=0.20 CHF",
-          "icon": "./assets/layers/questions/denominations/chf/20rp-2019-800px.png",
-          "then": {
-            "en": "20 centimes coins are accepted",
-            "nl": "Munten van 20 rappen worden geaccepteerd",
-            "ca": "S'accepten monedes de 20 cèntims",
-            "de": "20-Centime-Münzen werden akzeptiert"
-          },
-          "hideInAnswer": "_currency!~.*CHF.*"
-        },
-        {
-          "if": "payment:coins:denominations=0.50 CHF",
-          "icon": "./assets/layers/questions/denominations/chf/50rp-2019-800px.png",
-          "then": {
-            "en": "½ franc coins are accepted",
-            "nl": "Munten van ½ frank worden geaccepteerd",
-            "ca": "S'accepten monedes de ½ franc",
-            "de": "½-Schweizer Franken-Münzen werden akzeptiert"
-          },
-          "hideInAnswer": "_currency!~.*CHF.*"
-        },
-        {
-          "if": "payment:coins:denominations=1 CHF",
-          "icon": "./assets/layers/questions/denominations/chf/1fr-2019-800px.png",
-          "then": {
-            "en": "1 franc coins are accepted",
-            "nl": "Munten van 1 frank worden geaccepteerd",
-            "ca": "S'accepten monedes d'1 franc",
-            "de": "1-Schweizer Franken-Münzen werden akzeptiert"
-          },
-          "hideInAnswer": "_currency!~.*CHF.*"
-        },
-        {
-          "if": "payment:coins:denominations=2 CHF",
-          "icon": "./assets/layers/questions/denominations/chf/2fr-2019-800px.png",
-          "then": {
-            "en": "2 francs coins are accepted",
-            "nl": "Munten van 2 frank worden geaccepteerd",
-            "ca": "S'accepten monedes de 2 francs",
-            "de": "2-Schweizer Franken-Münzen werden akzeptiert"
-          },
-          "hideInAnswer": "_currency!~.*CHF.*"
-        },
-        {
-          "if": "payment:coins:denominations=5 CHF",
-          "icon": "./assets/layers/questions/denominations/chf/5fr-2019-800px.png",
-          "then": {
-            "en": "5 francs coins are accepted",
-            "nl": "Munten van 5 frank worden geaccepteerd",
-            "ca": "S'accepten monedes de 5 francs",
-            "de": "5-Schweizer Franken-Münzen werden akzeptiert"
-          },
-          "hideInAnswer": "_currency!~.*CHF.*"
-        }
-      ]
-    },
-    {
-      "id": "indoor",
+      "id": "elongated_coin_indoor",
       "question": {
         "en": "Is the penny press indoors?",
         "de": "Befindet sich der Prägeautomat im Inneren?",
@@ -73758,8 +74526,12 @@
       ],
       "condition": {
         "and": [
-          "amenity=vending_machine",
-          "vending~.*elongated_coin.*"
+          {
+            "and": [
+              "amenity=vending_machine",
+              "vending~.*elongated_coin.*"
+            ]
+          }
         ]
       }
     },
@@ -79826,6 +80598,26 @@
       }
     },
     {
+      "render": {
+        "en": "The height of this lighthouse is {height} metres."
+      },
+      "question": {
+        "en": "What is the height of this lighthouse, in metres?"
+      },
+      "freeform": {
+        "key": "height",
+        "type": "pfloat",
+        "inline": true
+      },
+      "id": "lighthouse-height",
+      "condition": {
+        "or": [
+          "man_made=lighthouse",
+          "man_made=lighthouse"
+        ]
+      }
+    },
+    {
       "id": "map_type",
       "question": {
         "en": "What type of map is shown?",
@@ -82856,221 +83648,6 @@
           }
         ]
       }
-    },
-    {
-      "id": "denominations-notes",
-      "condition": {
-        "and": [
-          {
-            "or": [
-              "payment:cash=yes",
-              "payment:notes=yes"
-            ]
-          },
-          {
-            "or": [
-              "_currency~.*EUR.*",
-              "_currency~.*CHF.*"
-            ]
-          },
-          "amenity=vending_machine",
-          {
-            "or": [
-              "vending=parking_tickets",
-              "vending=parking_tickets",
-              "vending=public_transport_tickets",
-              "vending!~(parking_tickets|public_transport_tickets|bottle_return|excrement_bags|elongated_coin)",
-              "vending!~(parking_tickets|public_transport_tickets|bottle_return|excrement_bags|elongated_coin)",
-              "vending=parking_tickets",
-              "vending=public_transport_tickets"
-            ]
-          }
-        ]
-      },
-      "question": {
-        "en": "what notes can you use to pay here?",
-        "nl": "Met welke bankbiljetten kan je hier betalen?",
-        "de": "Mit welchen Banknoten kann man hier bezahlen?",
-        "es": "¿con qué billetes se puede pagar aquí?",
-        "pl": "Jakimi banknotami można tu zapłacić?",
-        "cs": "Jakými bankovkami zde lze platit?",
-        "ca": "Amb quins bitllets pot pagar aquí?",
-        "fr": "quels billets pouvez vous utiliser pour payer ici ?"
-      },
-      "multiAnswer": true,
-      "mappings": [
-        {
-          "if": "payment:notes:denominations=5 EUR",
-          "icon": "./assets/layers/questions/denominations/eur/5euro.svg",
-          "then": {
-            "en": "5 euro notes are accepted",
-            "nl": "Biljetten van 5 euro worden geaccepteerd",
-            "de": "5-Euro-Scheine werden angenommen",
-            "es": "Se aceptan billetes de 5 euros",
-            "pl": "Banknoty 5 euro są akceptowane",
-            "cs": "Jsou přijímány bankovky v hodnotě 5 euro",
-            "ca": "S'accepten billets de 5 euros",
-            "fr": "Les billets de 5 euros ne sont pas acceptés"
-          },
-          "hideInAnswer": "_currency!~.*EUR.*"
-        },
-        {
-          "if": "payment:notes:denominations=10 EUR",
-          "icon": "./assets/layers/questions/denominations/eur/10euro.svg",
-          "then": {
-            "en": "10 euro notes are accepted",
-            "nl": "Biljetten van 10 euro worden geaccepteerd",
-            "de": "10-Euro-Scheine werden angenommen",
-            "es": "Se aceptan billetes de 10 euros",
-            "pl": "Banknoty 10 euro są akceptowane",
-            "cs": "Jsou přijímány bankovky v hodnotě 10 euro",
-            "ca": "S'accepten bitllets de 10 euros",
-            "fr": "Les billets de 10 euros sont acceptés"
-          },
-          "hideInAnswer": "_currency!~.*EUR.*"
-        },
-        {
-          "if": "payment:notes:denominations=20 EUR",
-          "icon": "./assets/layers/questions/denominations/eur/20euro.svg",
-          "then": {
-            "en": "20 euro notes are accepted",
-            "nl": "Biljetten van 20 euro worden geaccepteerd",
-            "de": "20-Euro-Scheine werden angenommen",
-            "es": "Se aceptan billetes de 20 euros",
-            "pl": "Banknoty 20 euro są akceptowane",
-            "cs": "Jsou přijímány bankovky v hodnotě 20 euro",
-            "ca": "S'accepten bitllets de 20 euros",
-            "fr": "Les billets de 20 euros sont acceptés"
-          },
-          "hideInAnswer": "_currency!~.*EUR.*"
-        },
-        {
-          "if": "payment:notes:denominations=50 EUR",
-          "icon": "./assets/layers/questions/denominations/eur/50euro.svg",
-          "then": {
-            "en": "50 euro notes are accepted",
-            "nl": "Biljetten van 50 euro worden geaccepteerd",
-            "de": "50-Euro-Scheine werden angenommen",
-            "es": "Se aceptan billetes de 50 euros",
-            "pl": "Banknoty 50 euro są akceptowane",
-            "cs": "Jsou přijímány bankovky v hodnotě 50 euro",
-            "ca": "S'accepten bitllets de 50 euros",
-            "fr": "Les billets de 50 euros sont acceptés"
-          },
-          "hideInAnswer": "_currency!~.*EUR.*"
-        },
-        {
-          "if": "payment:notes:denominations=100 EUR",
-          "icon": "./assets/layers/questions/denominations/eur/100euro.svg",
-          "then": {
-            "en": "100 euro notes are accepted",
-            "nl": "Biljetten van 100 euro worden geaccepteerd",
-            "de": "100-Euro-Scheine werden angenommen",
-            "es": "Se aceptan billetes de 100 euros",
-            "pl": "Banknoty 100 euro są akceptowane",
-            "cs": "Jsou přijímány bankovky v hodnotě 100 euro",
-            "ca": "S'accepten bitllets de 100 euros",
-            "fr": "Les billets de 100 euros sont acceptés"
-          },
-          "hideInAnswer": "_currency!~.*EUR.*"
-        },
-        {
-          "if": "payment:notes:denominations=200 EUR",
-          "icon": "./assets/layers/questions/denominations/eur/200euro.svg",
-          "then": {
-            "en": "200 euro notes are accepted",
-            "nl": "Biljetten van 200 euro worden geaccepteerd",
-            "de": "200-Euro-Scheine werden angenommen",
-            "es": "Se aceptan billetes de 200 euros",
-            "pl": "Banknoty 200 euro są akceptowane",
-            "cs": "Jsou přijímány bankovky v hodnotě 200 euro",
-            "ca": "S'accepten bitllets de 200 euros",
-            "fr": "Les billets de 200 euros sont acceptés"
-          },
-          "hideInAnswer": "_currency!~.*EUR.*"
-        },
-        {
-          "if": "payment:notes:denominations=500 EUR",
-          "icon": "./assets/layers/questions/denominations/eur/500euro.svg",
-          "then": {
-            "en": "500 euro notes are accepted",
-            "nl": "Biljetten van 500 euro worden geaccepteerd",
-            "de": "500-Euro-Scheine werden angenommen",
-            "es": "Se aceptan billetes de 500 euros",
-            "pl": "Banknoty 500 euro są akceptowane",
-            "cs": "Jsou přijímány bankovky v hodnotě 500 euro",
-            "ca": "S'accepten bitllets de 500 euros",
-            "fr": "Les billets de 500 euros sont acceptés"
-          },
-          "hideInAnswer": "_currency!~.*EUR.*"
-        },
-        {
-          "if": "payment:notes:denominations=10 CHF",
-          "icon": "./assets/layers/questions/denominations/chf/10chf.svg",
-          "then": {
-            "en": "10 francs notes are accepted",
-            "nl": "Biljetten van 10 frank worden geaccepteerd",
-            "ca": "S'accepten bitllets de 10 francs",
-            "de": "10-Schweizer Franken-Scheine werden akzeptiert"
-          },
-          "hideInAnswer": "_currency!~.*CHF.*"
-        },
-        {
-          "if": "payment:notes:denominations=20 CHF",
-          "icon": "./assets/layers/questions/denominations/chf/20chf.svg",
-          "then": {
-            "en": "20 francs notes are accepted",
-            "nl": "Biljetten van 20 frank worden geaccepteerd",
-            "ca": "S'accepten bitllets de 20 francs",
-            "de": "20-Schweizer Franken-Scheine werden akzeptiert"
-          },
-          "hideInAnswer": "_currency!~.*CHF.*"
-        },
-        {
-          "if": "payment:notes:denominations=50 CHF",
-          "icon": "./assets/layers/questions/denominations/chf/50chf.svg",
-          "then": {
-            "en": "50 francs notes are accepted",
-            "nl": "Biljetten van 50 frank worden geaccepteerd",
-            "ca": "S'accepten bitllets de 50 francs",
-            "de": "50-Schweizer Franken-Scheine werden akzeptiert"
-          },
-          "hideInAnswer": "_currency!~.*CHF.*"
-        },
-        {
-          "if": "payment:notes:denominations=100 CHF",
-          "icon": "./assets/layers/questions/denominations/chf/100chf.svg",
-          "then": {
-            "en": "100 francs notes are accepted",
-            "nl": "Biljetten van 100 frank worden geaccepteerd",
-            "ca": "S'accepten bitllets de 100 francs",
-            "de": "100-Schweizer Franken-Scheine werden akzeptiert"
-          },
-          "hideInAnswer": "_currency!~.*CHF.*"
-        },
-        {
-          "if": "payment:notes:denominations=200 CHF",
-          "icon": "./assets/layers/questions/denominations/chf/200chf.svg",
-          "then": {
-            "en": "200 francs notes are accepted",
-            "nl": "Biljetten van 200 frank worden geaccepteerd",
-            "ca": "S'accepten bitllets de 200 francs",
-            "de": "200-Schweizer Franken-Scheine werden akzeptiert"
-          },
-          "hideInAnswer": "_currency!~.*CHF.*"
-        },
-        {
-          "if": "payment:notes:denominations=1000 CHF",
-          "icon": "./assets/layers/questions/denominations/chf/1000chf.svg",
-          "then": {
-            "en": "1000 francs notes are accepted",
-            "nl": "Biljetten van 1000 frank worden geaccepteerd",
-            "ca": "S'accepten bitllets de 1000 francs",
-            "de": "1000-Schweizer Franken-Scheine werden akzeptiert"
-          },
-          "hideInAnswer": "_currency!~.*CHF.*"
-        }
-      ]
     },
     {
       "id": "parking_ticket_machine_ref",
@@ -90783,614 +91360,6 @@
           {
             "and": [
               "amenity=trolley_bay"
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "vending",
-      "question": {
-        "en": "What does this vending machine sell?",
-        "nl": "Wat verkoopt deze verkoopautomaat?",
-        "de": "Was wird in diesem Automaten verkauft?",
-        "fr": "Que vent ce distributeur ?",
-        "ca": "Que ven aquesta màquina expenedora?",
-        "cs": "Co tento automat prodává?"
-      },
-      "freeform": {
-        "key": "vending",
-        "addExtraTags": [
-          "fixme=Freeform input used, value may need to be checked"
-        ],
-        "inline": true
-      },
-      "render": {
-        "en": "This vending machine sells {vending}",
-        "nl": "Deze verkoopautomaat verkoopt {vending}",
-        "de": "Dieser Automat verkauft {vending}",
-        "fr": "Ce distributeur vent {vending}",
-        "ca": "Aquesta màquina expenedora ven {vending}",
-        "cs": "Tento automat prodává {vending}"
-      },
-      "mappings": [
-        {
-          "if": "vending=drinks",
-          "then": {
-            "en": "Drinks are sold",
-            "nl": "Dranken worden verkocht",
-            "de": "Getränke werden verkauft",
-            "fr": "Vent des boissons",
-            "ca": "Es venen begudes",
-            "cs": "Prodává nápoje"
-          },
-          "icon": "./assets/layers/id_presets/temaki-bottles.svg"
-        },
-        {
-          "if": "vending=sweets",
-          "then": {
-            "en": "Sweets are sold",
-            "nl": "Snoep wordt verkocht",
-            "de": "Süßigkeiten werden verkauft",
-            "fr": "Vent des confiseries",
-            "ca": "Es venen llaminadures",
-            "cs": "Prodává sladkosti"
-          },
-          "icon": "./assets/layers/id_presets/maki-confectionery.svg"
-        },
-        {
-          "if": "vending=food",
-          "then": {
-            "en": "Food is sold",
-            "nl": "Eten wordt verkocht",
-            "de": "Lebensmittel werden verkauft",
-            "fr": "Vent de la nourriture",
-            "ca": "Es ven menjar",
-            "cs": "Prodává jídlo"
-          },
-          "icon": "./assets/layers/vending_machine/utensils.svg"
-        },
-        {
-          "if": "vending=cigarettes",
-          "then": {
-            "en": "Cigarettes are sold",
-            "nl": "Sigaretten worden verkocht",
-            "de": "Zigaretten werden verkauft",
-            "fr": "Vent des cigarettes",
-            "ca": "Es ven tabaco",
-            "cs": "Prodává cigarety"
-          },
-          "icon": "./assets/layers/vending_machine/smoking.svg"
-        },
-        {
-          "if": "vending=condoms",
-          "then": {
-            "en": "Condoms are sold",
-            "nl": "Condooms worden verkocht",
-            "de": "Kondome werden verkauft",
-            "fr": "Vent des préservatifs",
-            "ca": "Es venen preservatius",
-            "cs": "Prodává kondomy"
-          },
-          "icon": "./assets/layers/vending_machine/condom.svg"
-        },
-        {
-          "if": "vending=coffee",
-          "then": {
-            "en": "Coffee is sold",
-            "nl": "Koffie wordt verkocht",
-            "de": "Kaffee wird verkauft",
-            "fr": "Vent du café",
-            "ca": "Es ven cafè",
-            "cs": "Prodává kafe"
-          },
-          "icon": "./assets/layers/vending_machine/mug-saucer.svg"
-        },
-        {
-          "if": "vending=water",
-          "then": {
-            "en": "Drinking water is sold",
-            "nl": "Drinkwater wordt verkocht",
-            "de": "Trinkwasser wird verkauft",
-            "fr": "Vent de l'eau",
-            "ca": "Es ven aigua",
-            "cs": "Prodává pitnou vodu"
-          },
-          "icon": "./assets/layers/id_presets/temaki-water_bottle.svg"
-        },
-        {
-          "if": "vending=newspapers",
-          "then": {
-            "en": "Newspapers are sold",
-            "nl": "Kranten worden verkocht",
-            "de": "Zeitungen werden verkauft",
-            "fr": "Vent des journaux",
-            "ca": "Es venen diaris",
-            "cs": "Prodává noviny"
-          },
-          "icon": "./assets/layers/id_presets/fas-newspaper.svg"
-        },
-        {
-          "if": "vending=bicycle_tube",
-          "then": {
-            "en": "Bicycle inner tubes are sold",
-            "nl": "Binnenbanden voor fietsen worden verkocht",
-            "de": "Fahrradschläuche werden verkauft",
-            "fr": "Vent des chambres à air pour vélo",
-            "ca": "Es venen càmeres interiors de bicicletes",
-            "cs": "Prodává duše na kola"
-          }
-        },
-        {
-          "if": "vending=milk",
-          "then": {
-            "en": "Milk is sold",
-            "nl": "Melk wordt verkocht",
-            "de": "Milch wird verkauft",
-            "fr": "Vent du lait",
-            "ca": "Es ven llet",
-            "cs": "Prodává mléko"
-          },
-          "icon": "./assets/layers/vending_machine/cow.svg"
-        },
-        {
-          "if": "vending=bread",
-          "then": {
-            "en": "Bread is sold",
-            "nl": "Brood wordt verkocht",
-            "de": "Brot wird verkauft",
-            "fr": "Vent du pain",
-            "ca": "Es ven pa",
-            "cs": "Prodává chléb"
-          },
-          "icon": "./assets/layers/id_presets/maki-bakery.svg"
-        },
-        {
-          "if": "vending=eggs",
-          "then": {
-            "en": "Eggs are sold",
-            "nl": "Eieren worden verkocht",
-            "de": "Eier werden verkauft",
-            "fr": "Vent des œufs",
-            "ca": "Es venen ous",
-            "cs": "Prodává vejce"
-          },
-          "icon": "./assets/layers/vending_machine/egg.svg"
-        },
-        {
-          "if": "vending=cheese",
-          "then": {
-            "en": "Cheese is sold",
-            "nl": "Kaas wordt verkocht",
-            "de": "Käse wird verkauft",
-            "fr": "Vent du fromage",
-            "ca": "Es ven formatge",
-            "cs": "Prodává sýr"
-          },
-          "icon": "./assets/layers/id_presets/fas-cheese.svg"
-        },
-        {
-          "if": "vending=honey",
-          "then": {
-            "en": "Honey is sold",
-            "nl": "Honing wordt verkocht",
-            "de": "Honig wird verkauft",
-            "fr": "Vent du miel",
-            "ca": "Es ven mel",
-            "cs": "Prodává med"
-          },
-          "icon": "./assets/layers/vending_machine/honey.svg"
-        },
-        {
-          "if": "vending=potatoes",
-          "then": {
-            "en": "Potatoes are sold",
-            "nl": "Aardappelen worden verkocht",
-            "de": "Kartoffeln werden verkauft",
-            "fr": "Vent des pommes de terre",
-            "ca": "Es venen papes",
-            "cs": "Prodává brambory"
-          },
-          "icon": "./assets/layers/vending_machine/potato.svg"
-        },
-        {
-          "if": "vending=meat",
-          "then": {
-            "en": "Meat is sold",
-            "nl": "Vlees wordt verkocht",
-            "ca": "Es venen productes carnis",
-            "de": "Fleisch wird verkauft",
-            "cs": "Prodává maso"
-          },
-          "icon": "./assets/layers/id_presets/temaki-meat.svg"
-        },
-        {
-          "if": "vending=fruit",
-          "then": {
-            "en": "Fruit is sold",
-            "nl": "Fruit wordt verkocht",
-            "de": "Obst wird verkauft",
-            "cs": "Prodává ovoce",
-            "ca": "Es ven fruita"
-          },
-          "icon": "./assets/layers/vending_machine/fruits.svg"
-        },
-        {
-          "if": "vending=strawberries",
-          "then": {
-            "en": "Strawberries are sold",
-            "nl": "Aardbeien worden verkocht",
-            "de": "Erdbeeren werden verkauft",
-            "cs": "Prodává jahody",
-            "ca": "Es venen maduixes"
-          },
-          "icon": "./assets/layers/vending_machine/strawberry.svg"
-        },
-        {
-          "if": "vending=flowers",
-          "then": {
-            "en": "Flowers are sold",
-            "nl": "Bloemen worden verkocht",
-            "de": "Blumen werden verkauft",
-            "fr": "Vent des fleurs",
-            "ca": "Es venen flors",
-            "cs": "Prodává květiny"
-          },
-          "icon": "./assets/layers/id_presets/maki-florist.svg"
-        },
-        {
-          "if": "vending=parking_tickets",
-          "then": {
-            "en": "Parking tickets are sold",
-            "nl": "Parkeerkaarten worden verkocht",
-            "de": "Parkscheine werden verkauft",
-            "ca": "Es venen tiquets d'aparcament",
-            "cs": "Prodává parkovací lístky"
-          },
-          "icon": "./assets/layers/parking_ticket_machine/parking_tickets.svg"
-        },
-        {
-          "if": "vending=elongated_coin",
-          "then": {
-            "en": "Pressed pennies are sold",
-            "ca": "Es venen cèntims premsats",
-            "de": "Souvenirmünzen werden verkauft",
-            "cs": "Prodává pamětní mince/lisované"
-          },
-          "icon": "./assets/themes/elongated_coin/penny.svg"
-        },
-        {
-          "if": "vending=public_transport_tickets",
-          "then": {
-            "en": "Public transport tickets are sold",
-            "nl": "Openbaar vervoerkaartjes worden verkocht",
-            "de": "Fahrscheine werden verkauft",
-            "ca": "Es venen bitllets de transport públic",
-            "cs": "Prodává lístky na MHD"
-          },
-          "icon": "./assets/themes/stations/public_transport_tickets.svg"
-        },
-        {
-          "if": "vending=bicycle_light",
-          "then": {
-            "en": "Bicycle lights are sold",
-            "nl": "Fietslampjes worden verkocht",
-            "de": "Fahrradlampen werden verkauft",
-            "cs": "Prodává světla na kolo",
-            "ca": "Es venen llums per a bicicletes"
-          }
-        },
-        {
-          "if": "vending=gloves",
-          "then": {
-            "en": "Gloves are sold",
-            "nl": "Handschoenen worden verkocht",
-            "de": "Fahrradhandschuhe werden verkauft",
-            "cs": "Prodává rukavice",
-            "ca": "Es venen guants"
-          }
-        },
-        {
-          "if": "vending=bicycle_repair_kit",
-          "then": {
-            "en": "Bicycle repair kits are sold",
-            "nl": "Fietsreparatiesets worden verkocht",
-            "de": "Fahrrad-Reparaturset werden verkauft",
-            "cs": "Prodává sady na opravu jízdních kol",
-            "ca": "Es venen kits de reparació de bicicletes"
-          }
-        },
-        {
-          "if": "vending=bicycle_pump",
-          "then": {
-            "en": "Bicycle pumps are sold",
-            "nl": "Fietspompen worden verkocht",
-            "de": "Fahrradpumpen werden verkauft",
-            "cs": "Prodává pumpy na kolo",
-            "ca": "Es venen bombes de bicicletes"
-          }
-        },
-        {
-          "if": "vending=bicycle_lock",
-          "then": {
-            "en": "Bicycle locks are sold",
-            "nl": "Fietssloten worden verkocht",
-            "de": "Fahrradschlösser werden verkauft",
-            "cs": "Prodává zámky na kolo",
-            "ca": "Es venen cadenats per a bicicletes"
-          }
-        }
-      ],
-      "multiAnswer": true,
-      "condition": {
-        "and": [
-          "amenity=vending_machine",
-          "vending!~(parking_tickets|public_transport_tickets|bottle_return|excrement_bags|elongated_coin)"
-        ]
-      }
-    },
-    {
-      "id": "vending_machine_opening_hours_24_7",
-      "question": {
-        "en": "What are the opening hours of {title()}?",
-        "fr": "Quelles sont les horaires d'ouverture de {title()} ?",
-        "de": "Wie lauten die Öffnungszeiten von {title()}?",
-        "nl": "Wat zijn de openingstijden van {title()}?",
-        "nb_NO": "Hva er åpningstidene for {title()})",
-        "ru": "Какое время работы у {title()}?",
-        "zh_Hant": "{title()} 的開放時間是什麼？",
-        "it": "Quali sono gli orari di apertura di {title()}?",
-        "pt_BR": "Qual o horário de funcionamento de {title()}?",
-        "pl": "Jakie są godziny otwarcia {title()}?",
-        "sv": "Vilka är öppettiderna för {title()}?",
-        "pt": "Qual é o horário de funcionamento de {title()}?",
-        "hu": "Mikor van nyitva ez: {title()}?",
-        "ca": "Quin és l'horari d'obertura de {title()}?",
-        "ja": "{title()}の営業時間は？",
-        "sl": "Kakšen odpiralni čas ima {title()}?",
-        "fil": "Anong oras nagbubukas ang {title()}?",
-        "es": "¿Cuales son las horas de apertura de {title()}?",
-        "zh_Hans": "{title()} 的开放时间为何？",
-        "da": "Hvad er åbningstiderne for {title()}?",
-        "id": "Kapan jam buka {title()}?",
-        "cs": "Jaká je otevírací doba {title()}?"
-      },
-      "render": {
-        "de": "<h3>Öffnungszeiten</h3>{opening_hours_table(opening_hours)}",
-        "fr": "<h3>Horaires d'ouverture</h3>{opening_hours_table(opening_hours)}",
-        "en": "<h3>Opening hours</h3>{opening_hours_table(opening_hours)}",
-        "nl": "<h3>Openingstijden</h3>{opening_hours_table(opening_hours)}",
-        "nb_NO": "<h3>Åpningstider</h3>{opening_hours_table(opening_hours)}",
-        "ru": "<h3>Часы работы</h3>{opening_hours_table(opening_hours)}",
-        "zh_Hant": "<h3>開放時間</h3>{opening_hours_table(opening_hours)}",
-        "it": "<h3>Orari di apertura</h3>{opening_hours_table(opening_hours)}",
-        "pl": "<h3> Godziny otwarcia</h3>{opening_hours_table(opening_hours)}",
-        "pt_BR": "<h3>Horário de funcionamento</h3>{opening_hours_table(opening_hours)}",
-        "sv": "<h3>Öppettider</h3> {opening_hours_table(opening_hours)}",
-        "pt": "<h3>Horário de funcionamento</h3>{opening_hours_table(opening_hours)}",
-        "eo": "<h3>Malfermitaj horoj</h3>{opening_hours_table(opening_hours)}",
-        "hu": "<h3>Nyitva tartás</h3>{opening_hours_table(opening_hours)}",
-        "ca": "<h3>Horari d'obertura</h3>{opening_hours_table(opening_hours)}",
-        "ja": "<h3>営業時間</h3>{opening_hours_table(opening_hours)}",
-        "sl": "<h3>Odpiralni čas</h3>{opening_hours_table(opening_hours)}",
-        "fil": "<h3>Mga oras na bukas</h3>{opening_hours_table(opening_hours)}",
-        "es": "<h3>Horas de apertura</h3>{opening_hours_table(opening_hours)}",
-        "zh_Hans": "<h3>开放时间</h3> {opening_hours_table(opening_hours)}",
-        "da": "<h3> Åbningstider</h3>{opening_hours_table(opening_hours)}",
-        "id": "<h3>Jam buka</h3>{opening_hours_table(opening_hours)}",
-        "pa_PK": "<h3>کھُلھے گھنٹے</h3>{opening_hours_table(opening_hours)}",
-        "cs": "<h3>Otevírací hodiny</h3>{opening_hours_table(opening_hours)}"
-      },
-      "freeform": {
-        "key": "opening_hours",
-        "type": "opening_hours",
-        "inline": false
-      },
-      "mappings": [
-        {
-          "if": "opening_hours=24/7",
-          "icon": "./assets/layers/questions/open24_7.svg",
-          "then": {
-            "en": "24/7 opened (including holidays)",
-            "de": "durchgehend geöffnet (auch an Feiertagen)",
-            "zh_Hant": "24/7 開放 (包括假日)",
-            "id": "Buka 24 jam (termasuk hari libur)",
-            "hu": "Éjjel-nappal nyitva (munkaszüneti napokon is)",
-            "es": "Abierta 24/7 (incluyendo festivos)",
-            "nl": "24/7 open (ook tijdens feestdagen)",
-            "fr": "Ouvert 24h/24 (jours fériés compris)",
-            "nb_NO": "Døgnåpent (inkludert helligdager)",
-            "cs": "Otevřeno 24/7 (včetně svátků)",
-            "ca": "Obert 24/7 (incloent-hi festius)",
-            "pl": "Otwarte 24/7 (również w święta)"
-          }
-        },
-        {
-          "#": "Just here to be able to handle those ~5000 incorrect 'opening_hours=closed' elements.",
-          "if": "opening_hours=closed",
-          "then": {
-            "en": "Marked as closed for an unspecified time",
-            "nl": "Gesloten voor onbepaalde duur",
-            "de": "Als geschlossen für eine unbestimmte Zeit markiert"
-          },
-          "hideInAnswer": true
-        }
-      ],
-      "condition": {
-        "and": [
-          {
-            "and": [
-              "amenity=vending_machine",
-              "vending!~(parking_tickets|public_transport_tickets|bottle_return|excrement_bags|elongated_coin)"
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "vending_machine_operator",
-      "question": {
-        "en": "Who operates this vending machine?",
-        "nl": "Wie beheert deze verkoopautomaat?",
-        "de": "Wer betreibt diesen Verkaufsautomaten?",
-        "fr": "Qui exploite ce distributeur ?",
-        "ca": "Qui opera aquesta màquina expenedora?",
-        "cs": "Kdo provozuje tento automat?"
-      },
-      "freeform": {
-        "key": "operator",
-        "placeholder": {
-          "en": "Name of operator",
-          "nl": "Naam van beheerder",
-          "de": "Name des Betreibers",
-          "fr": "Nom de l'exploitant",
-          "ca": "Nom de l'operadora",
-          "cs": "Jméno provozovatele"
-        },
-        "inline": true
-      },
-      "render": {
-        "en": "This vending machine is operated by {operator}",
-        "nl": "Deze verkoopautomaat wordt beheerd door {operator}",
-        "de": "Dieser Verkaufsautomat wird betrieben von {operator}",
-        "fr": "Ce distributeur est exploité par {operator}",
-        "ca": "{operator} gestiona aquesta màquina expenedora",
-        "cs": "Tento prodejní automat provozuje {operator}"
-      },
-      "condition": {
-        "and": [
-          {
-            "and": [
-              "amenity=vending_machine",
-              "vending!~(parking_tickets|public_transport_tickets|bottle_return|excrement_bags|elongated_coin)"
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "vending_machine_indoor",
-      "question": {
-        "en": "Is this vending machine indoors?",
-        "nl": "Is deze verkoopautomaat binnen?",
-        "de": "Ist der Automat in einem Gebäude untergebracht?",
-        "fr": "Est-ce que ce distributeur est en intérieur ?",
-        "ca": "Aquesta màquina expenedora està a l'exterior?",
-        "cs": "Je tento automat uvnitř?"
-      },
-      "mappings": [
-        {
-          "if": "indoor=",
-          "then": {
-            "en": "This vending machine is outdoors",
-            "nl": "Deze verkoopautomaat is buiten",
-            "de": "Der Automat befindet sich im Freien",
-            "fr": "Ce distributeur est à l'extérieur",
-            "ca": "Aquesta màquina expenedora està a l'exterior",
-            "cs": "Tento prodejní automat je venku"
-          },
-          "hideInAnswer": true
-        },
-        {
-          "if": "indoor=yes",
-          "then": {
-            "en": "This vending machine is indoors",
-            "nl": "Deze verkoopautomaat is binnen",
-            "de": "Der Automat befindet sich im Innenbereich",
-            "fr": "Ce distributeur est à l'intérieur",
-            "ca": "Aquesta màquina expenedora està a l'interior",
-            "cs": "Tento prodejní automat je uvnitř"
-          }
-        },
-        {
-          "if": "indoor=no",
-          "then": {
-            "en": "This vending machine is outdoors",
-            "nl": "Deze verkoopautomaat is buiten",
-            "de": "Dieser Automat befindet sich im Freien",
-            "fr": "Ce distributeur est à l'extérieur",
-            "ca": "Aquesta màquina expenedora està a l'exterior",
-            "cs": "Tento prodejní automat je venku"
-          }
-        }
-      ],
-      "condition": {
-        "and": [
-          {
-            "and": [
-              "amenity=vending_machine",
-              "vending!~(parking_tickets|public_transport_tickets|bottle_return|excrement_bags|elongated_coin)"
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "vending_machine_phone",
-      "labels": [
-        "contact"
-      ],
-      "question": {
-        "en": "What is the phone number of the operator of this vending machine?",
-        "nl": "Wat is het telefoonnummer van {title()}?",
-        "fr": "Quel est le numéro de téléphone de {title()} ?",
-        "de": "Wie lautet die Telefonnummer des Automatenbetreibers?",
-        "nb_NO": "Hva er telefonnummeret til {title()}?",
-        "ru": "Какой номер телефона у {title()}?",
-        "sv": "Vad är telefonnumret till {title()}?",
-        "zh_Hant": "{title()} 的電話號碼是什麼？",
-        "it": "Qual è il numero di telefono di {title()}?",
-        "pt_BR": "Qual o número de telefone de {title()}?",
-        "id": "Berapa nomor telepon dari {title()}?",
-        "pl": "Jaki jest numer telefonu do {title()}?",
-        "pt": "Qual é o número de telefone de {title()}?",
-        "eo": "Kio estas la telefonnumero de {title()}?",
-        "hu": "Mi a telefonszáma ennek: {title()}?",
-        "ca": "Quin és el número de telèfon de l'operador d'aquesta màquina expenedora?",
-        "ja": "{title()}の電話番号は？",
-        "sl": "Kakšno telefonsko številko ima {title()}?",
-        "fil": "Ano ang telepono ng {title()}?",
-        "es": "¿Cuál es el número de teléfono de {title()}?",
-        "zh_Hans": "{title()} 的电话号码为何？",
-        "da": "Hvad er telefonnummeret til {title()}?",
-        "cs": "Jaké je telefonní číslo na provozovatele tohoto automatu?"
-      },
-      "render": {
-        "*": "<a href='tel:{phone}'>{phone}</a>"
-      },
-      "icon": "./assets/layers/questions/phone.svg",
-      "mappings": [
-        {
-          "if": "contact:phone~*",
-          "then": "<a href='tel:{contact:phone}'>{contact:phone}</a>",
-          "hideInAnswer": true,
-          "icon": "./assets/layers/questions/phone.svg"
-        }
-      ],
-      "freeform": {
-        "key": "phone",
-        "type": "phone",
-        "addExtraTags": [
-          "contact:phone="
-        ]
-      },
-      "editButtonAriaLabel": {
-        "en": "Edit phone number",
-        "nl": "Pas telefoonnummer aan",
-        "de": "Telefonnummer bearbeiten"
-      },
-      "questionHint": {
-        "en": "This is the number you can call in case of problems with the vending machine",
-        "ca": "Aquest és el número al qual podeu trucar en cas de problemes amb la màquina expenedora",
-        "de": "Die ist die Telefonnummer, die bei Problemen mit dem Automaten kontaktiert werden kann",
-        "cs": "Toto je číslo, na které můžete zavolat v případě problémů s automatem"
-      },
-      "condition": {
-        "and": [
-          {
-            "and": [
-              "amenity=vending_machine",
-              "vending!~(parking_tickets|public_transport_tickets|bottle_return|excrement_bags|elongated_coin)"
             ]
           }
         ]
