@@ -2705,6 +2705,28 @@
           "class": "subtle font-small"
         }
       }
+    },
+    {
+      "id": "nothing_known",
+      "labels": [
+        "added_by_default"
+      ],
+      "condition": {
+        "and": [
+          "_backend~*",
+          "_last_edit:passed_time>=300"
+        ]
+      },
+      "render": {
+        "special": {
+          "type": "if_nothing_known",
+          "text": {
+            "en": "Nothing is known about this place. Help by filling out the questions",
+            "nl": "Er is nog niets geweten. Help mee door de vragen te beantwoorden"
+          },
+          "cssClasses": "subtle m-4 italic flex items-center justify-center"
+        }
+      }
     }
   ]
 }
