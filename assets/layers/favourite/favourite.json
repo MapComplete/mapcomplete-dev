@@ -40934,6 +40934,7 @@
       },
       "freeform": {
         "key": "maxstay",
+        "type": "pfloat",
         "inline": false
       },
       "render": {
@@ -82046,6 +82047,7 @@
       },
       "freeform": {
         "key": "width",
+        "type": "pfloat",
         "inline": false
       },
       "condition": {
