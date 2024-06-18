@@ -847,10 +847,6 @@ video {
   float: left;
 }
 
-.m-8 {
-  margin: 2rem;
-}
-
 .m-4 {
   margin: 1rem;
 }
@@ -861,6 +857,10 @@ video {
 
 .m-0 {
   margin: 0px;
+}
+
+.m-8 {
+  margin: 2rem;
 }
 
 .m-2 {
@@ -2372,6 +2372,11 @@ video {
   border-radius: 0.125rem;
 }
 
+.rounded-b {
+  border-bottom-right-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+}
+
 .rounded-b-lg {
   border-bottom-right-radius: 0.5rem;
   border-bottom-left-radius: 0.5rem;
@@ -2440,11 +2445,6 @@ video {
 .rounded-t {
   border-top-left-radius: 0.25rem;
   border-top-right-radius: 0.25rem;
-}
-
-.rounded-b {
-  border-bottom-right-radius: 0.25rem;
-  border-bottom-left-radius: 0.25rem;
 }
 
 .rounded-tl {
@@ -3750,6 +3750,11 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
 .text-gray-900 {
   --tw-text-opacity: 1;
   color: rgb(17 24 39 / var(--tw-text-opacity));
@@ -3908,11 +3913,6 @@ video {
 .text-red-600 {
   --tw-text-opacity: 1;
   color: rgb(220 38 38 / var(--tw-text-opacity));
-}
-
-.text-black {
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .text-purple-600 {
@@ -4390,6 +4390,8 @@ video {
     * The main colour scheme of mapcomplete is configured here.
     * For a custom styling, set 'customCss' in your layoutConfig and overwrite some of these.
     */
+  /* No support for dark mode yet, we disable it to prevent some elements to suddenly toggle */
+  color-scheme: only light;
   /* Main color of the application: the background and text colours */
   --background-color: white;
   /* Main text colour. Also styles some elements, such as the 'close popup'-button or 'back-arrow' (in mobile) */
@@ -4479,7 +4481,8 @@ h1 {
 h2 {
   font-size: x-large;
   margin-top: 0.5em;
-  margin-bottom: 0.3em;
+  margin-bottom: 0;
+  /*Disable margin bottom to play nicely with accordeons from flowbite*/
   font-weight: bold;
 }
 
@@ -4561,6 +4564,11 @@ button, .button {
   border-radius: 15px;
   background: var(--background-color);
   transition: all 200ms;
+}
+
+.group > button {
+  padding-right: 1rem !important;
+  /*Flowbite workaround */
 }
 
 button.w-full {
@@ -7150,8 +7158,8 @@ svg.apply-fill path {
     margin-right: 0.25rem;
   }
 
-  .sm\:mr-4 {
-    margin-right: 1rem;
+  .sm\:mr-2 {
+    margin-right: 0.5rem;
   }
 
   .sm\:mb-0 {
