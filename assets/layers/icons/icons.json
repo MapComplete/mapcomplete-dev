@@ -288,10 +288,12 @@
             "en": "Open on openstreetmap.org",
             "nl": "Bekijk op openstreetmap.org",
             "de": "Auf openstreetmap.org öffnen",
-            "pl": "Otwórz na openstreetmap.org"
+            "pl": "Otwórz na openstreetmap.org",
+            "da": "Åbn på openstreetmap.org"
           }
         }
       },
+      "metacondition": "_loggedIn=true",
       "mappings": [
         {
           "if": "id~.*/-.*",
@@ -309,7 +311,8 @@
                 "en": "Open on openstreetmap.org",
                 "nl": "Bekijk op openstreetmap.org",
                 "de": "Auf openstreetmap.org öffnen",
-                "pl": "Otwórz na openstreetmap.org"
+                "pl": "Otwórz na openstreetmap.org",
+                "da": "Åbn på openstreetmap.org"
               }
             }
           }
