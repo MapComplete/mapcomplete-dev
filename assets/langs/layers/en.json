@@ -1120,6 +1120,9 @@
                     },
                     "7": {
                         "then": "Bike helmets can be rented here"
+                    },
+                    "8": {
+                        "then": "Cargo bikes can be rented here"
                     }
                 },
                 "question": "What kind of bicycles and accessories are rented here?",

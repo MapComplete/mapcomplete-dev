@@ -836,6 +836,9 @@
                     },
                     "7": {
                         "then": "Fietshelmen kunnen hier gehuurd worden"
+                    },
+                    "8": {
+                        "then": "Bakfietsen kunnen hier gehuurd worden"
                     }
                 },
                 "question": "Wat voor soort fietsen en fietstoebehoren worden hier verhuurd?",
