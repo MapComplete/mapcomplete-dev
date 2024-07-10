@@ -1,11 +1,11 @@
 {
-  "name": "Fireplaces and BBQ",
-  "short_name": "Fireplaces and BBQ",
+  "name": "Fireplaces and barbeques",
+  "short_name": "Fireplaces and barbeques",
   "start_url": "fireplace.html",
   "lang": "en",
   "display": "standalone",
   "background_color": "#fff",
-  "description": "Stelle im Freien zum Feuermachen oder ein ortsfest installierter Grill an einer offizielle Stelle.",
+  "description": "Outdoor place to make a fire or a fixed barbecue in an official place.",
   "orientation": "portrait-primary, landscape-primary",
   "icons": [
     {
