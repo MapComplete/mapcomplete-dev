@@ -93680,7 +93680,7 @@
         {
           "if": {
             "and": [
-              "vending=dog_excrement_bag",
+              "vending=excrement_bags",
               "not:vending="
             ]
           },
@@ -93699,7 +93699,7 @@
         {
           "if": {
             "and": [
-              "not:vending=dog_excrement_bag",
+              "not:vending=excrement_bags",
               "vending="
             ]
           },
