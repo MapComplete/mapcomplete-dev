@@ -76852,6 +76852,7 @@
         "helperArgs": [
           "name",
           {
+            "multiple": "yes",
             "notInstanceOf": [
               "Q79007",
               "Q22698"
