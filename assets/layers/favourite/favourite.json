@@ -23581,6 +23581,47 @@
       }
     },
     {
+      "mappings": [
+        {
+          "if": "armrest=yes",
+          "then": {
+            "en": "This bench does have one or more armrests",
+            "de": "Diese Sitzbank hat eine oder mehrere Armlehnen",
+            "nl": "Deze bank heeft armleuningen",
+            "_context": "layers:bench.tagRenderings.bench-armrest.mappings.0.then"
+          }
+        },
+        {
+          "if": "armrest=no",
+          "then": {
+            "en": "This bench does <b>not</b> have any armrests",
+            "de": "Diese Sitzbank hat <b>keine</b> Armlehnen",
+            "nl": "Deze bank heeft <b>geen</b> armleuningen",
+            "_context": "layers:bench.tagRenderings.bench-armrest.mappings.1.then"
+          }
+        }
+      ],
+      "question": {
+        "en": "Does this bench have one or more armrests?",
+        "de": "Hat diese Sitzbank eine oder mehrere Armlehnen?",
+        "nl": "Heeft deze bank armleuningen?",
+        "_context": "layers:bench.tagRenderings.bench-armrest.question"
+      },
+      "id": "bench-armrest",
+      "labels": [
+        "bench-questions"
+      ],
+      "condition": {
+        "or": [
+          "amenity=bench",
+          "amenity=bench",
+          "amenity=bench",
+          "amenity=bench",
+          "amenity=bench"
+        ]
+      }
+    },
+    {
       "render": {
         "en": "This bench has {seats} seats",
         "de": "Diese Sitzbank hat {seats} Sitzplätze",
@@ -46070,6 +46111,233 @@
       }
     },
     {
+      "id": "bouldering",
+      "question": {
+        "de": "Kann hier gebouldert werden?",
+        "en": "Is bouldering possible here?",
+        "nl": "Is het mogelijk om hier te bolderen?",
+        "ja": "ここでボルダリングはできますか?",
+        "nb_NO": "Er buldring mulig her?",
+        "fr": "L’escalade de bloc est-elle possible ici ?",
+        "it": "È possibile praticare ‘bouldering’ qua?",
+        "ca": "És possible fer escalda en bloc aquí?",
+        "cs": "Je zde možný bouldering?",
+        "_context": "layers:climbing.tagRenderings.bouldering.question"
+      },
+      "mappings": [
+        {
+          "if": "climbing:boulder=yes",
+          "then": {
+            "de": "Hier kann gebouldert werden",
+            "en": "Bouldering is possible here",
+            "nl": "Bolderen kan hier",
+            "ja": "ボルダリングはここで可能です",
+            "nb_NO": "Buldring er mulig her",
+            "fr": "L’escalade de bloc est possible",
+            "it": "L’arrampicata su massi è possibile qua",
+            "ca": "Aquí és possible l'escalada en bloc",
+            "cs": "Bouldering je zde možný",
+            "_context": "layers:climbing.tagRenderings.bouldering.mappings.0.then"
+          }
+        },
+        {
+          "if": "climbing:boulder=no",
+          "then": {
+            "de": "Hier kann nicht gebouldert werden",
+            "en": "Bouldering is not possible here",
+            "nl": "Bolderen kan hier niet",
+            "ja": "ここではボルダリングはできません",
+            "nb_NO": "Buldring er ikke mulig her",
+            "fr": "L’escalade de bloc n’est pas possible",
+            "it": "L’arrampicata su massi non è possibile qua",
+            "ca": "Aquí no és possible l'escalada en bloc",
+            "cs": "Bouldering zde není možný",
+            "_context": "layers:climbing.tagRenderings.bouldering.mappings.1.then"
+          }
+        },
+        {
+          "if": "climbing:boulder=limited",
+          "then": {
+            "de": "Bouldern ist hier nur an wenigen Routen möglich",
+            "en": "Bouldering is possible, although there are only a few problems",
+            "nl": "Bolderen kan hier, maar er zijn niet zoveel problemen",
+            "ja": "ボルダリングは可能ですが、少しのルートしかありません",
+            "fr": "L’escalade de bloc est possible, mais il n’y a que quelques problèmes",
+            "it": "L’arrampicata su massi è possibile anche se su poche vie",
+            "ca": "L'escalada en bloc és possible, tot i que només hi ha unes poques rutes",
+            "cs": "Bouldering je možný, i když je zde jen několik problémů",
+            "_context": "layers:climbing.tagRenderings.bouldering.mappings.2.then"
+          }
+        },
+        {
+          "if": "climbing:boulder~*",
+          "then": {
+            "de": "Hier gibt es {climbing:boulder} Boulder-Routen",
+            "en": "There are {climbing:boulder} boulder problems",
+            "nl": "Er zijn hier {climbing:boulder} bolderproblemen",
+            "ja": "{climbing:boulder} ボルダールートがある",
+            "fr": "Il y a {climbing:boulder} problèmes de bloc",
+            "it": "Sono presenti {climbing:boulder} vie di arrampicata su massi",
+            "ca": "Hi han {climbing:boulder} problemes d'escalada en bloc",
+            "cs": "Existují {climbing:boulder} boulderové problémy",
+            "_context": "layers:climbing.tagRenderings.bouldering.mappings.3.then"
+          },
+          "hideInAnswer": true
+        }
+      ],
+      "condition": {
+        "and": [
+          "sport=climbing",
+          {
+            "or": [
+              "leisure=sports_centre",
+              {
+                "and": [
+                  "climbing!~route",
+                  "climbing!=route_top",
+                  "climbing!=route_bottom",
+                  "leisure!~sports_centre"
+                ]
+              },
+              {
+                "and": [
+                  "climbing!~route",
+                  "climbing!=route_top",
+                  "climbing!=route_bottom",
+                  "leisure!~sports_centre"
+                ]
+              },
+              "leisure=sports_centre"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "sportclimbing",
+      "question": {
+        "de": "Ist hier Sportklettern möglich (feste Ankerpunkte)?",
+        "en": "Is sport climbing possible here on fixed anchors?",
+        "nl": "Is het mogelijk om hier te sportklimmen/voorklimmen op reeds aangebrachte haken?",
+        "ja": "ここでは固定アンカー式のスポーツクライミングはできますか?",
+        "it": "È possibile arrampicarsi qua con ancoraggi fissi?",
+        "cs": "Je zde možné sportovní lezení na fixní kotvy?",
+        "_context": "layers:climbing.tagRenderings.sportclimbing.question"
+      },
+      "mappings": [
+        {
+          "if": "climbing:sport=yes",
+          "then": {
+            "de": "Sportklettern ist hier möglich",
+            "en": "Sport climbing is possible here",
+            "nl": "Sportklimmen/voorklimmen kan hier",
+            "ru": "Здесь можно заняться спортивным скалолазанием",
+            "ja": "ここでスポーツクライミングができます",
+            "it": "L’arrampicata sportiva è possibile qua",
+            "hu": "Itt lehetőség van sportmászásra",
+            "fr": "De l’escalade est possible ici",
+            "cs": "Sportovní lezení je zde možné",
+            "_context": "layers:climbing.tagRenderings.sportclimbing.mappings.0.then"
+          }
+        },
+        {
+          "if": "climbing:sport=no",
+          "then": {
+            "de": "Sportklettern ist hier nicht möglich",
+            "en": "Sport climbing is not possible here",
+            "nl": "Sportklimmen/voorklimmen kan hier niet",
+            "ru": "Спортивное скалолазание здесь невозможно",
+            "ja": "ここではスポーツクライミングはできません",
+            "it": "L’arrampicata sportiva non è possibile qua",
+            "hu": "Itt nincs lehetőség sportmászásra",
+            "fr": "L’escalade est impossible ici",
+            "cs": "Sportovní lezení zde není možné",
+            "_context": "layers:climbing.tagRenderings.sportclimbing.mappings.1.then"
+          }
+        },
+        {
+          "if": "climbing:sport~*",
+          "then": {
+            "de": "Hier gibt es {climbing:sport} Sportkletter-Routen",
+            "en": "There are {climbing:sport} sport climbing routes",
+            "nl": "Er zijn hier {climbing:sport} sportklimroutes/voorklimroutes",
+            "ja": "スポーツクライミングの {climbing:sport} ルートがある",
+            "it": "Sono presenti {climbing:sport} vie di arrampicata sportiva",
+            "cs": "Existují {climbing:sport} sportovních lezeckých cest",
+            "_context": "layers:climbing.tagRenderings.sportclimbing.mappings.2.then"
+          },
+          "hideInAnswer": true
+        }
+      ],
+      "condition": {
+        "and": [
+          "sport=climbing",
+          "leisure=sports_centre"
+        ]
+      }
+    },
+    {
+      "id": "toprope",
+      "question": {
+        "de": "Ist Toprope-Klettern hier möglich?",
+        "en": "Is toprope climbing possible here?",
+        "nl": "Is het mogelijk om hier te toprope-klimmen?",
+        "ja": "ここでtoprope登坂はできますか?",
+        "fr": "Est-il possible d’escalader à la moulinette ?",
+        "it": "È possibile arrampicarsi con la corda dall’alto qua?",
+        "cs": "Je zde možné lezení po laně?",
+        "_context": "layers:climbing.tagRenderings.toprope.question"
+      },
+      "mappings": [
+        {
+          "if": "climbing:toprope=yes",
+          "then": {
+            "de": "Toprope-Klettern ist hier möglich",
+            "en": "Toprope climbing is possible here",
+            "nl": "Toprope-klimmen kan hier",
+            "ja": "ここでToprope登坂ができます",
+            "fr": "L’escalade à la moulinette est possible",
+            "it": "È possibile arrampicarsi con moulinette qua",
+            "cs": "Lezení po laně je zde možné",
+            "_context": "layers:climbing.tagRenderings.toprope.mappings.0.then"
+          }
+        },
+        {
+          "if": "climbing:toprope=no",
+          "then": {
+            "de": "Toprope-Climbing ist hier nicht möglich",
+            "en": "Toprope climbing is not possible here",
+            "nl": "Toprope-klimmen kan hier niet",
+            "ja": "ここではToprope登坂はできません",
+            "fr": "L’escalade à la moulinette n’est pas possible",
+            "it": "Non è possibile arrampicarsi con moulinette qua",
+            "cs": "Lezení po laně zde není možné",
+            "_context": "layers:climbing.tagRenderings.toprope.mappings.1.then"
+          }
+        },
+        {
+          "if": "climbing:toprope~*",
+          "then": {
+            "de": "Hier gibt es {climbing:toprope} Toprope-Routen",
+            "en": "There are {climbing:toprope} toprope routes",
+            "nl": "Er zijn hier {climbing:toprope} toprope routes",
+            "ja": "{climbing:toprope} 登坂ルートがある",
+            "fr": "{climbing:toprope} voies sont équipées de moulinettes",
+            "it": "Sono presenti {climbing:toprope} vie con moulinette",
+            "cs": "Je zde {climbing:toprope} tras pro lezení na laně",
+            "_context": "layers:climbing.tagRenderings.toprope.mappings.2.then"
+          },
+          "hideInAnswer": true
+        }
+      ],
+      "condition": {
+        "and": [
+          "sport=climbing",
+          "leisure=sports_centre"
+        ]
+      }
+    },
+    {
       "id": "shoe_rental",
       "question": {
         "en": "Can one rent climbing shoes here?",
@@ -46428,233 +46696,6 @@
       ]
     },
     {
-      "id": "bouldering",
-      "question": {
-        "de": "Kann hier gebouldert werden?",
-        "en": "Is bouldering possible here?",
-        "nl": "Is het mogelijk om hier te bolderen?",
-        "ja": "ここでボルダリングはできますか?",
-        "nb_NO": "Er buldring mulig her?",
-        "fr": "L’escalade de bloc est-elle possible ici ?",
-        "it": "È possibile praticare ‘bouldering’ qua?",
-        "ca": "És possible fer escalda en bloc aquí?",
-        "cs": "Je zde možný bouldering?",
-        "_context": "layers:climbing.tagRenderings.bouldering.question"
-      },
-      "mappings": [
-        {
-          "if": "climbing:boulder=yes",
-          "then": {
-            "de": "Hier kann gebouldert werden",
-            "en": "Bouldering is possible here",
-            "nl": "Bolderen kan hier",
-            "ja": "ボルダリングはここで可能です",
-            "nb_NO": "Buldring er mulig her",
-            "fr": "L’escalade de bloc est possible",
-            "it": "L’arrampicata su massi è possibile qua",
-            "ca": "Aquí és possible l'escalada en bloc",
-            "cs": "Bouldering je zde možný",
-            "_context": "layers:climbing.tagRenderings.bouldering.mappings.0.then"
-          }
-        },
-        {
-          "if": "climbing:boulder=no",
-          "then": {
-            "de": "Hier kann nicht gebouldert werden",
-            "en": "Bouldering is not possible here",
-            "nl": "Bolderen kan hier niet",
-            "ja": "ここではボルダリングはできません",
-            "nb_NO": "Buldring er ikke mulig her",
-            "fr": "L’escalade de bloc n’est pas possible",
-            "it": "L’arrampicata su massi non è possibile qua",
-            "ca": "Aquí no és possible l'escalada en bloc",
-            "cs": "Bouldering zde není možný",
-            "_context": "layers:climbing.tagRenderings.bouldering.mappings.1.then"
-          }
-        },
-        {
-          "if": "climbing:boulder=limited",
-          "then": {
-            "de": "Bouldern ist hier nur an wenigen Routen möglich",
-            "en": "Bouldering is possible, although there are only a few problems",
-            "nl": "Bolderen kan hier, maar er zijn niet zoveel problemen",
-            "ja": "ボルダリングは可能ですが、少しのルートしかありません",
-            "fr": "L’escalade de bloc est possible, mais il n’y a que quelques problèmes",
-            "it": "L’arrampicata su massi è possibile anche se su poche vie",
-            "ca": "L'escalada en bloc és possible, tot i que només hi ha unes poques rutes",
-            "cs": "Bouldering je možný, i když je zde jen několik problémů",
-            "_context": "layers:climbing.tagRenderings.bouldering.mappings.2.then"
-          }
-        },
-        {
-          "if": "climbing:boulder~*",
-          "then": {
-            "de": "Hier gibt es {climbing:boulder} Boulder-Routen",
-            "en": "There are {climbing:boulder} boulder problems",
-            "nl": "Er zijn hier {climbing:boulder} bolderproblemen",
-            "ja": "{climbing:boulder} ボルダールートがある",
-            "fr": "Il y a {climbing:boulder} problèmes de bloc",
-            "it": "Sono presenti {climbing:boulder} vie di arrampicata su massi",
-            "ca": "Hi han {climbing:boulder} problemes d'escalada en bloc",
-            "cs": "Existují {climbing:boulder} boulderové problémy",
-            "_context": "layers:climbing.tagRenderings.bouldering.mappings.3.then"
-          },
-          "hideInAnswer": true
-        }
-      ],
-      "condition": {
-        "and": [
-          "sport=climbing",
-          {
-            "or": [
-              "leisure=sports_centre",
-              {
-                "and": [
-                  "climbing!~route",
-                  "climbing!=route_top",
-                  "climbing!=route_bottom",
-                  "leisure!~sports_centre"
-                ]
-              },
-              {
-                "and": [
-                  "climbing!~route",
-                  "climbing!=route_top",
-                  "climbing!=route_bottom",
-                  "leisure!~sports_centre"
-                ]
-              },
-              "leisure=sports_centre"
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "sportclimbing",
-      "question": {
-        "de": "Ist hier Sportklettern möglich (feste Ankerpunkte)?",
-        "en": "Is sport climbing possible here on fixed anchors?",
-        "nl": "Is het mogelijk om hier te sportklimmen/voorklimmen op reeds aangebrachte haken?",
-        "ja": "ここでは固定アンカー式のスポーツクライミングはできますか?",
-        "it": "È possibile arrampicarsi qua con ancoraggi fissi?",
-        "cs": "Je zde možné sportovní lezení na fixní kotvy?",
-        "_context": "layers:climbing.tagRenderings.sportclimbing.question"
-      },
-      "mappings": [
-        {
-          "if": "climbing:sport=yes",
-          "then": {
-            "de": "Sportklettern ist hier möglich",
-            "en": "Sport climbing is possible here",
-            "nl": "Sportklimmen/voorklimmen kan hier",
-            "ru": "Здесь можно заняться спортивным скалолазанием",
-            "ja": "ここでスポーツクライミングができます",
-            "it": "L’arrampicata sportiva è possibile qua",
-            "hu": "Itt lehetőség van sportmászásra",
-            "fr": "De l’escalade est possible ici",
-            "cs": "Sportovní lezení je zde možné",
-            "_context": "layers:climbing.tagRenderings.sportclimbing.mappings.0.then"
-          }
-        },
-        {
-          "if": "climbing:sport=no",
-          "then": {
-            "de": "Sportklettern ist hier nicht möglich",
-            "en": "Sport climbing is not possible here",
-            "nl": "Sportklimmen/voorklimmen kan hier niet",
-            "ru": "Спортивное скалолазание здесь невозможно",
-            "ja": "ここではスポーツクライミングはできません",
-            "it": "L’arrampicata sportiva non è possibile qua",
-            "hu": "Itt nincs lehetőség sportmászásra",
-            "fr": "L’escalade est impossible ici",
-            "cs": "Sportovní lezení zde není možné",
-            "_context": "layers:climbing.tagRenderings.sportclimbing.mappings.1.then"
-          }
-        },
-        {
-          "if": "climbing:sport~*",
-          "then": {
-            "de": "Hier gibt es {climbing:sport} Sportkletter-Routen",
-            "en": "There are {climbing:sport} sport climbing routes",
-            "nl": "Er zijn hier {climbing:sport} sportklimroutes/voorklimroutes",
-            "ja": "スポーツクライミングの {climbing:sport} ルートがある",
-            "it": "Sono presenti {climbing:sport} vie di arrampicata sportiva",
-            "cs": "Existují {climbing:sport} sportovních lezeckých cest",
-            "_context": "layers:climbing.tagRenderings.sportclimbing.mappings.2.then"
-          },
-          "hideInAnswer": true
-        }
-      ],
-      "condition": {
-        "and": [
-          "sport=climbing",
-          "leisure=sports_centre"
-        ]
-      }
-    },
-    {
-      "id": "toprope",
-      "question": {
-        "de": "Ist Toprope-Klettern hier möglich?",
-        "en": "Is toprope climbing possible here?",
-        "nl": "Is het mogelijk om hier te toprope-klimmen?",
-        "ja": "ここでtoprope登坂はできますか?",
-        "fr": "Est-il possible d’escalader à la moulinette ?",
-        "it": "È possibile arrampicarsi con la corda dall’alto qua?",
-        "cs": "Je zde možné lezení po laně?",
-        "_context": "layers:climbing.tagRenderings.toprope.question"
-      },
-      "mappings": [
-        {
-          "if": "climbing:toprope=yes",
-          "then": {
-            "de": "Toprope-Klettern ist hier möglich",
-            "en": "Toprope climbing is possible here",
-            "nl": "Toprope-klimmen kan hier",
-            "ja": "ここでToprope登坂ができます",
-            "fr": "L’escalade à la moulinette est possible",
-            "it": "È possibile arrampicarsi con moulinette qua",
-            "cs": "Lezení po laně je zde možné",
-            "_context": "layers:climbing.tagRenderings.toprope.mappings.0.then"
-          }
-        },
-        {
-          "if": "climbing:toprope=no",
-          "then": {
-            "de": "Toprope-Climbing ist hier nicht möglich",
-            "en": "Toprope climbing is not possible here",
-            "nl": "Toprope-klimmen kan hier niet",
-            "ja": "ここではToprope登坂はできません",
-            "fr": "L’escalade à la moulinette n’est pas possible",
-            "it": "Non è possibile arrampicarsi con moulinette qua",
-            "cs": "Lezení po laně zde není možné",
-            "_context": "layers:climbing.tagRenderings.toprope.mappings.1.then"
-          }
-        },
-        {
-          "if": "climbing:toprope~*",
-          "then": {
-            "de": "Hier gibt es {climbing:toprope} Toprope-Routen",
-            "en": "There are {climbing:toprope} toprope routes",
-            "nl": "Er zijn hier {climbing:toprope} toprope routes",
-            "ja": "{climbing:toprope} 登坂ルートがある",
-            "fr": "{climbing:toprope} voies sont équipées de moulinettes",
-            "it": "Sono presenti {climbing:toprope} vie con moulinette",
-            "cs": "Je zde {climbing:toprope} tras pro lezení na laně",
-            "_context": "layers:climbing.tagRenderings.toprope.mappings.2.then"
-          },
-          "hideInAnswer": true
-        }
-      ],
-      "condition": {
-        "and": [
-          "sport=climbing",
-          "leisure=sports_centre"
-        ]
-      }
-    },
-    {
       "id": "average_length",
       "render": {
         "de": "Die Routen sind durchschnittlich <b>{canonical(climbing:length)}</b> lang",
@@ -46852,6 +46893,48 @@
             "cs": "K dispozici jsou {climbing:speed} rychlostní lezecké stěny"
           },
           "hideInAnswer": true
+        }
+      ],
+      "condition": {
+        "and": [
+          "sport=climbing",
+          "leisure=sports_centre"
+        ]
+      }
+    },
+    {
+      "id": "shower",
+      "question": {
+        "en": "Does this facility offer showers?"
+      },
+      "mappings": [
+        {
+          "if": "shower=hot",
+          "icon": "./assets/layers/shower/shower.svg",
+          "then": {
+            "en": "This facility does have showers with warm water"
+          }
+        },
+        {
+          "if": "shower=cold",
+          "icon": "./assets/layers/shower/shower.svg",
+          "then": {
+            "en": "This facility does have showers, but the water is not heated"
+          }
+        },
+        {
+          "if": "shower=yes",
+          "icon": "./assets/layers/shower/shower.svg",
+          "then": {
+            "en": "This facility does have showers"
+          }
+        },
+        {
+          "if": "shower=no",
+          "icon": "invalid;./assets/layers/shower/shower.svg",
+          "then": {
+            "en": "This facility does not offer a shower"
+          }
         }
       ],
       "condition": {
