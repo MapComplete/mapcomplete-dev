@@ -217,6 +217,29 @@
       "icon": "./assets/svg/mastodon.svg"
     },
     {
+      "id": "facebook",
+      "description": "Shows and asks for the facebook handle",
+      "question": {
+        "en": "What is the facebook page of of {title()}?"
+      },
+      "freeform": {
+        "key": "contact:facebook",
+        "type": "url"
+      },
+      "render": {
+        "special": {
+          "type": "link",
+          "href": "{contact:facebook}",
+          "text": {
+            "en": "Facebook page"
+          }
+        },
+        "after": {
+          "en": "<div class='subtle text-sm'>Facebook is known to harm mental health, manipulate public opinion and cause hate. Try to use healthier alternatives</div>"
+        }
+      }
+    },
+    {
       "id": "osmlink",
       "render": {
         "*": "<a href='https://openstreetmap.org/{id}' target='_blank' rel='noopener'F><img src='./assets/svg/osm-logo-us.svg'/></a>"
@@ -806,7 +829,7 @@
       "id": "opening_hours_by_appointment",
       "builtin": "opening_hours",
       "override": {
-        "mappings": [
+        "+mappings": [
           {
             "if": "opening_hours=\"by appointment\"",
             "then": {
@@ -2796,8 +2819,7 @@
       "id": "seasonal",
       "question": {
         "en": "Is {title()} available all around the year?",
-        "nl": "Is {title()} heel het jaar beschikbaar?",
-        "de": "Ist {title()} rund um das Jahr nutzbar?"
+        "nl": "Is {title()} heel het jaar beschikbaar?"
       },
       "mappings": [
         {
@@ -2862,6 +2884,12 @@
           }
         }
       ]
+    },
+    {
+      "id": "preset_description",
+      "render": {
+        "*": "{preset_description()}"
+      }
     }
   ]
 }

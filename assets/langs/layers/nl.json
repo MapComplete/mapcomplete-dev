@@ -4441,13 +4441,11 @@
         "name": "Witte Fietsen",
         "presets": {
             "0": {
+                "description": "Een <b>Witte Fiets</b> (of Spookfiets) is een aandenken aan een fietser die bij een verkeersongeval om het leven kwam. Het gaat over een witgeschilderde fiets die geplaatst werd in de buurt van het ongeval.",
                 "title": "een witte fiets"
             }
         },
         "tagRenderings": {
-            "ghost-bike-explanation": {
-                "render": "Een <b>Witte Fiets</b> (of Spookfiets) is een aandenken aan een fietser die bij een verkeersongeval om het leven kwam. Het gaat over een witgeschilderde fiets die geplaatst werd in de buurt van het ongeval."
-            },
             "ghost_bike-inscription": {
                 "question": "Wat is het opschrift op deze witte fiets?",
                 "render": "<i>{inscription}</i>"
@@ -6217,16 +6215,6 @@
                 "question": "Kan je hier pakketten versturen?",
                 "render": "Je kan pakketten versturen met deze bedrijven: {post_office:parcel_from}"
             },
-            "parcel-pickup": {
-                "mappings": {
-                    "0": {
-                        "then": "Je kunt hier gemiste pakjes ophalen"
-                    }
-                }
-            },
-            "parcel-to": {
-                "question": "Kun je deze plaats gebruiken als afhaalpunt?"
-            },
             "partner-brand": {
                 "mappings": {
                     "0": {
@@ -6632,7 +6620,7 @@
             },
             "opening_hours_by_appointment": {
                 "override": {
-                    "mappings": {
+                    "+mappings": {
                         "0": {
                             "then": "Alleen op afspraak"
                         },

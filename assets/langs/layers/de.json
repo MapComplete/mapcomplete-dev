@@ -1197,9 +1197,6 @@
                     },
                     "7": {
                         "then": "Fahrradhelme können ausgeliehen werden"
-                    },
-                    "8": {
-                        "then": "Lastenräder können hier gemietet werden"
                     }
                 },
                 "question": "Welche Fahrräder und welches Zubehör kann hier geliehen werden?",
@@ -4718,11 +4715,6 @@
                     }
                 },
                 "question": "Was ist der erlaubte Zugang?"
-            },
-            "seasonal": {
-                "override": {
-                    "question": "Ist diese Feuerstelle rund um das Jahr nutzbar?"
-                }
             }
         },
         "title": {
@@ -5253,13 +5245,11 @@
         "name": "Geisterräder",
         "presets": {
             "0": {
+                "description": "Ein <b>Geisterrad</b> ist ein Denkmal für einen Radfahrer, der bei einem Verkehrsunfall ums Leben kam, in Form eines weißen Fahrrades, das dauerhaft in der Nähe des Unfallortes aufgestellt wird.",
                 "title": "ein Geisterrad"
             }
         },
         "tagRenderings": {
-            "ghost-bike-explanation": {
-                "render": "Ein <b>Geisterrad</b> ist ein Denkmal für einen Radfahrer, der bei einem Verkehrsunfall ums Leben kam, in Form eines weißen Fahrrades, das dauerhaft in der Nähe des Unfallortes aufgestellt wird."
-            },
             "ghost_bike-inscription": {
                 "question": "Wie lautet die Inschrift auf diesem Geisterrad?",
                 "render": "<i>{inscription}</i>"
@@ -8089,7 +8079,7 @@
             },
             "opening_hours_by_appointment": {
                 "override": {
-                    "mappings": {
+                    "+mappings": {
                         "0": {
                             "then": "Nur nach Vereinbarung"
                         },
@@ -8166,8 +8156,7 @@
                     "2": {
                         "then": "Im Winter nicht in Betrieb"
                     }
-                },
-                "question": "Ist {title()} rund um das Jahr nutzbar?"
+                }
             },
             "service:electricity": {
                 "mappings": {
@@ -8724,39 +8713,6 @@
                     }
                 },
                 "question": "Welche Geschlechter können sich an dieser Schule anmelden?"
-            },
-            "pedagogy": {
-                "mappings": {
-                    "0": {
-                        "then": "Diese Schule benutzt keine spezifische Pädagogik"
-                    },
-                    "1": {
-                        "then": "Diese Schule nutzt die Montessori Methode der Bildung"
-                    },
-                    "2": {
-                        "then": "Diese Schule ist mit der Freinet Modern School Movement verbunden"
-                    },
-                    "3": {
-                        "then": "Diese Schule nutzt das Lehrkonzept von Jenaplan"
-                    },
-                    "4": {
-                        "then": "Diese Schule nutzt die Steiner/Waldorfer Bildungsphilosophie"
-                    },
-                    "5": {
-                        "then": "Diese Schule nutzt das Dalton Plan Lehrkonzept"
-                    },
-                    "6": {
-                        "then": "Diese Schule nutzt Outdoor-Lernen"
-                    },
-                    "7": {
-                        "then": "Diese Schule nutzt den Reggio Emilia-Ansatz"
-                    },
-                    "8": {
-                        "then": "Diese Schule nutzt das Sudbury-System"
-                    }
-                },
-                "question": "Welche Bildungstheorie wird auf dieser Schule angewendet?",
-                "render": "Diese Schule benutzt {pedagogy}"
             },
             "school-language": {
                 "render": {
