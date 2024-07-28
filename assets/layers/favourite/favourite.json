@@ -26509,7 +26509,8 @@
             "en": "You can pick up missed parcels here",
             "de": "Hier können Sie verpasste Pakete abholen",
             "ca": "Podeu recollir els paquets perduts aquí",
-            "cs": "Zmeškané zásilky si můžete vyzvednout zde"
+            "cs": "Zmeškané zásilky si můžete vyzvednout zde",
+            "nl": "Je kunt hier gemiste pakjes ophalen"
           }
         },
         {
@@ -26543,7 +26544,8 @@
       "question": {
         "en": "Can you send parcels to here for pickup?",
         "de": "Können Sie Pakete zur Abholung hierher schicken?",
-        "ca": "Pots enviar paquets aquí per a arreplegar-los?"
+        "ca": "Pots enviar paquets aquí per a arreplegar-los?",
+        "nl": "Kun je deze plaats gebruiken als afhaalpunt?"
       },
       "freeform": {
         "key": "post_office:parcel_to",
@@ -31269,7 +31271,8 @@
           "if": "rental=cargo_bike",
           "then": {
             "en": "Cargo bikes can be rented here",
-            "nl": "Bakfietsen kunnen hier gehuurd worden"
+            "nl": "Bakfietsen kunnen hier gehuurd worden",
+            "de": "Lastenräder können hier gemietet werden"
           }
         }
       ],
@@ -73389,35 +73392,40 @@
     {
       "id": "shower",
       "question": {
-        "en": "Does this facility offer showers?"
+        "en": "Does this facility offer showers?",
+        "de": "Gibt es in dieser Einrichtung Duschen?"
       },
       "mappings": [
         {
           "if": "shower=hot",
           "icon": "./assets/layers/shower/shower.svg",
           "then": {
-            "en": "This facility does have showers with warm water"
+            "en": "This facility does have showers with warm water",
+            "de": "Diese Einrichtung verfügt über Duschen mit warmem Wasser"
           }
         },
         {
           "if": "shower=cold",
           "icon": "./assets/layers/shower/shower.svg",
           "then": {
-            "en": "This facility does have showers, but the water is not heated"
+            "en": "This facility does have showers, but the water is not heated",
+            "de": "Diese Einrichtung verfügt zwar über Duschen, aber das Wasser ist nicht beheizt"
           }
         },
         {
           "if": "shower=yes",
           "icon": "./assets/layers/shower/shower.svg",
           "then": {
-            "en": "This facility does have showers"
+            "en": "This facility does have showers",
+            "de": "Diese Einrichtung hat Duschen"
           }
         },
         {
           "if": "shower=no",
           "icon": "invalid;./assets/layers/shower/shower.svg",
           "then": {
-            "en": "This facility does not offer a shower"
+            "en": "This facility does not offer a shower",
+            "de": "Diese Einrichtung hat keine Duschen"
           }
         }
       ],
@@ -81160,66 +81168,77 @@
     {
       "id": "pedagogy",
       "question": {
-        "en": "What educational theory is applied on this school?"
+        "en": "What educational theory is applied on this school?",
+        "de": "Welche Bildungstheorie wird auf dieser Schule angewendet?"
       },
       "mappings": [
         {
           "if": "pedagogy=mainstream",
           "then": {
-            "en": "This school does not use a specific pedagogy"
+            "en": "This school does not use a specific pedagogy",
+            "de": "Diese Schule benutzt keine spezifische Pädagogik"
           }
         },
         {
           "if": "pedagogy=montessori",
           "then": {
-            "en": "This school uses the Montessori method of education"
+            "en": "This school uses the Montessori method of education",
+            "de": "Diese Schule nutzt die Montessori Methode der Bildung"
           }
         },
         {
           "if": "pedagogy=freinet",
           "then": {
-            "en": "This school is associated with the Freinet Modern School Movement"
+            "en": "This school is associated with the Freinet Modern School Movement",
+            "de": "Diese Schule ist mit der Freinet Modern School Movement verbunden"
           }
         },
         {
           "if": "pedagogy=jenaplan",
           "then": {
-            "en": "This school uses the Jenaplan teaching concept"
+            "en": "This school uses the Jenaplan teaching concept",
+            "de": "Diese Schule nutzt das Lehrkonzept von Jenaplan"
           }
         },
         {
           "if": "pedagogy=waldorf",
           "then": {
-            "en": "This school uses the Steiner/Waldorf educational philosophy"
+            "en": "This school uses the Steiner/Waldorf educational philosophy",
+            "de": "Diese Schule nutzt die Steiner/Waldorfer Bildungsphilosophie"
           }
         },
         {
           "if": "pedagogy=dalton",
           "then": {
-            "en": "This school uses the Dalton plan teaching concept"
+            "en": "This school uses the Dalton plan teaching concept",
+            "de": "Diese Schule nutzt das Dalton Plan Lehrkonzept"
           }
         },
         {
           "if": "pedagogy=outdoor",
           "then": {
-            "en": "This school uses outdoor learning"
+            "en": "This school uses outdoor learning",
+            "de": "Diese Schule nutzt Outdoor-Lernen"
           }
         },
         {
           "if": "pedagogy=reggio_emilia",
           "then": {
-            "en": "This school uses the Reggio Emilia approach"
+            "en": "This school uses the Reggio Emilia approach",
+            "de": "Diese Schule nutzt den Reggio Emilia-Ansatz"
           }
         },
         {
           "if": "pedagogy=sudbury",
           "then": {
-            "en": "This school uses the Sudbury system"
+            "en": "This school uses the Sudbury system",
+            "de": "Diese Schule nutzt das Sudbury-System"
           }
         }
       ],
       "render": {
-        "en": "This school uses {pedagogy}"
+        "en": "This school uses {pedagogy}",
+        "de": "Diese Schule benutzt {pedagogy}"
       },
       "freeform": {
         "key": "pedagogy",
@@ -83133,7 +83152,8 @@
       "id": "firepit_seasonal",
       "question": {
         "en": "Is the firepit available all around the year?",
-        "nl": "Is deze kampvuurplaats heel het jaar door beschikbaar?"
+        "nl": "Is deze kampvuurplaats heel het jaar door beschikbaar?",
+        "de": "Ist diese Feuerstelle rund um das Jahr nutzbar?"
       },
       "mappings": [
         {

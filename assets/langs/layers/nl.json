@@ -6215,6 +6215,16 @@
                 "question": "Kan je hier pakketten versturen?",
                 "render": "Je kan pakketten versturen met deze bedrijven: {post_office:parcel_from}"
             },
+            "parcel-pickup": {
+                "mappings": {
+                    "0": {
+                        "then": "Je kunt hier gemiste pakjes ophalen"
+                    }
+                }
+            },
+            "parcel-to": {
+                "question": "Kun je deze plaats gebruiken als afhaalpunt?"
+            },
             "partner-brand": {
                 "mappings": {
                     "0": {
