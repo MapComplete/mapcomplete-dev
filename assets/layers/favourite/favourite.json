@@ -46975,18 +46975,6 @@
           }
         },
         {
-          "if": "shop=vacant",
-          "then": {
-            "en": "Vacant Shop",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.0.then"
-          },
-          "searchTerms": {},
-          "icon": {
-            "path": "./assets/layers/id_presets/maki-shop.svg",
-            "class": "medium"
-          }
-        },
-        {
           "if": "shop=agrarian",
           "then": {
             "en": "Farm Supply Shop",
@@ -47009,7 +46997,7 @@
             "pt": "Loja de produtos agrícolas",
             "ru": "Сельскохозяйственный магазин",
             "sv": "Jordbruksaffär",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.1.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.0.then"
           },
           "searchTerms": {
             "en": [
@@ -47176,7 +47164,7 @@
               "jordbruksutrustning",
               "lantmannaföreningen"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.1.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.0.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/fas-tractor.svg",
@@ -47207,7 +47195,7 @@
             "ru": "Алкогольный магазин",
             "sl": "Trgovina z alkoholnimi pijačami",
             "sv": "Vin-och-spritaffär",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.2.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.1.then"
           },
           "searchTerms": {
             "en": [
@@ -47335,7 +47323,7 @@
               "vin",
               "sprit"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.2.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.1.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/fas-wine-bottle.svg",
@@ -47364,7 +47352,7 @@
             "pt": "Loja de animé",
             "ru": "Магазин аниме / манги",
             "sv": "Anime/Manga-affär",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.3.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.2.then"
           },
           "searchTerms": {
             "en": [
@@ -47468,7 +47456,7 @@
               "figurer",
               "dakimakura"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.3.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.2.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/fas-dragon.svg",
@@ -47495,7 +47483,7 @@
             "pt": "Loja de antiguidades",
             "ru": "Антиквариат",
             "sv": "Antikaffär",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.4.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.3.then"
           },
           "searchTerms": {
             "ca": [
@@ -47505,6 +47493,14 @@
               "història",
               "vell",
               "antic"
+            ],
+            "cs": [
+              "starožitnost",
+              "starožitnosti",
+              "antikvář",
+              "antikvity",
+              "antikvita",
+              "antikvariát"
             ],
             "de": [
               "antiquitätengeschäft",
@@ -47570,6 +47566,10 @@
               "relíquia",
               "relíquias"
             ],
+            "ru": [
+              "антикварный магазин",
+              "лавка древностей"
+            ],
             "sv": [
               "antikaffär",
               "antikshop",
@@ -47577,7 +47577,7 @@
               "antikvitetsaffär",
               "antikvariat"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.4.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.3.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/temaki-furniture.svg",
@@ -47607,7 +47607,7 @@
             "ru": "Магазин бытовой техники",
             "sl": "Splošna tehnična trgovina",
             "sv": "Vitvaror",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.5.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.4.then"
           },
           "searchTerms": {
             "en": [
@@ -47871,7 +47871,7 @@
               "mikrovågsugn",
               "köksfläkt"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.5.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.4.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/temaki-laundry.svg",
@@ -47901,7 +47901,7 @@
             "ru": "Магазин произведений искусства",
             "sl": "Trgovina z umetninami",
             "sv": "Konstaffär",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.6.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.5.then"
           },
           "searchTerms": {
             "en": [
@@ -48019,7 +48019,7 @@
               "kulturer",
               "konstutställning"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.6.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.5.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/maki-shop.svg",
@@ -48050,7 +48050,7 @@
             "ru": "Магазин детских товаров",
             "sl": "Trgovina za otroke",
             "sv": "Babyprodukter",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.7.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.6.then"
           },
           "searchTerms": {
             "ca": [
@@ -48183,7 +48183,7 @@
               "spjälsängar",
               "babyprodukter"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.7.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.6.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/fas-baby-carriage.svg",
@@ -48214,7 +48214,7 @@
             "ru": "Магазин сумок и саквояжа",
             "sl": "Trgovina za prtljago",
             "sv": "Väskaffär",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.8.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.7.then"
           },
           "searchTerms": {
             "en": [
@@ -48346,7 +48346,7 @@
               "handväska",
               "plånbok"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.8.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.7.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/fas-suitcase-rolling.svg",
@@ -48378,7 +48378,7 @@
             "ru": "Булочная",
             "sl": "Pekarna",
             "sv": "Bageri",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.9.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.8.then"
           },
           "searchTerms": {
             "en": [
@@ -48498,7 +48498,7 @@
               "bullar",
               "bagare"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.9.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.8.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/maki-bakery.svg",
@@ -48529,7 +48529,7 @@
             "ru": "Магазин продающий мебель для ванных комнат",
             "sl": "Trgovina s kopalniško opremo",
             "sv": "Badrumsinredning",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.10.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.9.then"
           },
           "searchTerms": {
             "cs": [
@@ -48621,7 +48621,7 @@
               "badrumsinredning",
               "badrum"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.10.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.9.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/fas-bath.svg",
@@ -48652,7 +48652,7 @@
             "ru": "Салон красоты",
             "sl": "Lepotilni salon",
             "sv": "Skönhetssalong",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.11.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.10.then"
           },
           "searchTerms": {
             "en": [
@@ -48800,7 +48800,7 @@
               "naglar",
               "salong"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.11.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.10.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/temaki-lipstick.svg",
@@ -48831,7 +48831,7 @@
             "ru": "Магазин матрасов и постельных принадлежностей",
             "sl": "Trgovina s posteljnino in žimnicami",
             "sv": "Sängaffär",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.12.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.11.then"
           },
           "searchTerms": {
             "en": [
@@ -48974,7 +48974,7 @@
               "påslakan",
               "lakan"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.12.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.11.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/maki-lodging.svg",
@@ -49005,7 +49005,7 @@
             "ru": "Магазин по продаже алкогольных и безалкогольных напитков",
             "sl": "Trgovina s pijačami",
             "sv": "Dryckaffär",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.13.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.12.then"
           },
           "searchTerms": {
             "en": [
@@ -49101,7 +49101,7 @@
               "dricka",
               "läskedryck"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.13.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.12.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/temaki-bottles.svg",
@@ -49132,7 +49132,7 @@
             "ru": "Веломагазин",
             "sl": "Kolesarska trgovina",
             "sv": "Cykelaffär",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.14.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.13.then"
           },
           "searchTerms": {
             "en": [
@@ -49258,9 +49258,10 @@
               "cykelaffär",
               "cykel",
               "cykelreparatör",
-              "cykelförsäljning"
+              "cykelförsäljning",
+              "cykelbutik"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.14.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.13.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/maki-bicycle.svg",
@@ -49289,7 +49290,7 @@
             "pt": "Loja de barcos",
             "ru": "Магазин лодок",
             "sv": "Båtaffär",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.15.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.14.then"
           },
           "searchTerms": {
             "en": [
@@ -49426,7 +49427,7 @@
               "båt",
               "båttillbehör"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.15.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.14.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/temaki-boat.svg",
@@ -49457,7 +49458,7 @@
             "ru": "Букмекерская контора",
             "sl": "Stavnica",
             "sv": "Vadslagning",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.16.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.15.then"
           },
           "searchTerms": {
             "en": [
@@ -49535,6 +49536,9 @@
               "馬券売り場",
               "車券売り場",
               "舟券売り場",
+              "場外販売所",
+              "場外発売場",
+              "ブックメーカー",
               "ギャンブル",
               "アダルト"
             ],
@@ -49576,7 +49580,7 @@
               "stryktipset",
               "måltipset"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.16.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.15.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/temaki-money_hand.svg",
@@ -49605,11 +49609,14 @@
             "pt": "Livraria",
             "ru": "Книжный магазин",
             "sv": "Bokhandel",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.17.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.16.then"
           },
           "searchTerms": {
             "en": [
               "hobby"
+            ],
+            "cs": [
+              "koníček"
             ],
             "da": [
               "antikvariat",
@@ -49668,12 +49675,15 @@
               "livros",
               "livreiro"
             ],
+            "ru": [
+              "книжный магазин"
+            ],
             "sv": [
               "bokhandel",
               "bokförsäljning",
               "antikvariat"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.17.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.16.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/fas-book.svg",
@@ -49700,7 +49710,7 @@
             "pt": "Loja de material de fermentação",
             "ru": "Магазин пивоваренного оборудования",
             "sv": "Affär för hembryggningstillbehör",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.18.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.17.then"
           },
           "searchTerms": {
             "en": [
@@ -49788,7 +49798,7 @@
               "ölbryggning",
               "öltillverkning"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.18.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.17.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/temaki-storage_fermenter.svg",
@@ -49819,7 +49829,7 @@
             "ru": "Мясной",
             "sl": "Mesar",
             "sv": "Slaktare",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.19.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.18.then"
           },
           "searchTerms": {
             "en": [
@@ -49933,7 +49943,7 @@
               "styckare",
               "chark"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.19.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.18.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/temaki-cleaver.svg",
@@ -49959,8 +49969,9 @@
             "nl": "Winkel voor camerabenodigdheden",
             "pl": "Sklep z aparatami fotograficznymi i kamerami",
             "pt": "Loja de equipamento fotográfico",
+            "ru": "Магазин фотооборудования",
             "sv": "Affär för kameratillbehör",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.20.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.19.then"
           },
           "searchTerms": {
             "en": [
@@ -50056,7 +50067,7 @@
               "foto",
               "fotografering"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.20.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.19.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/fas-camera-retro.svg",
@@ -50087,7 +50098,7 @@
             "ru": "Свечной магазин",
             "sl": "Svečarstvo",
             "sv": "Ljusaffär",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.21.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.20.then"
           },
           "searchTerms": {
             "en": [
@@ -50184,7 +50195,7 @@
               "stearinljus",
               "ljusstakar"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.21.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.20.searchTerms"
           }
         },
         {
@@ -50208,7 +50219,7 @@
             "pt": "Loja de canábis",
             "ru": "Магазин марихуаны",
             "sv": "Cannabisaffär",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.22.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.21.then"
           },
           "searchTerms": {
             "en": [
@@ -50315,7 +50326,7 @@
               "reefer",
               "weed"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.22.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.21.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/fas-cannabis.svg",
@@ -50346,7 +50357,7 @@
             "ru": "Автодилер",
             "sl": "Avtomobilski salon",
             "sv": "Bilhandlare",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.23.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.22.then"
           },
           "searchTerms": {
             "en": [
@@ -50459,7 +50470,7 @@
               "bilreparatör",
               "biltillbehör"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.23.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.22.searchTerms"
           }
         },
         {
@@ -50471,7 +50482,7 @@
             "da": "Bilreservedelsforhandler",
             "de": "Autoteilehandel",
             "eo": "Aŭtomobil-parta vendejo",
-            "es": "Tienda de componentes de automóvil",
+            "es": "Tienda de repuestos de automóvil",
             "fi": "Varaosamyymälä",
             "fr": "Magasin de pièces automobiles",
             "gl": "Tenda de recambios de automóbiles",
@@ -50486,7 +50497,7 @@
             "ru": "Автозапчасти",
             "sl": "Avtomobilski deli",
             "sv": "Biltillbehör",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.24.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.23.then"
           },
           "searchTerms": {
             "en": [
@@ -50548,7 +50559,7 @@
               "alkatrész"
             ],
             "it": [
-              "negozio autoricambi"
+              "autoricambi"
             ],
             "ja": [
               "自動車部品店",
@@ -50599,7 +50610,7 @@
               "bilreservdelar",
               "motor"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.24.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.23.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/fas-car-battery.svg",
@@ -50630,7 +50641,7 @@
             "ru": "Автомастерская",
             "sl": "Avtoservis",
             "sv": "Bilverkstad",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.25.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.24.then"
           },
           "searchTerms": {
             "en": [
@@ -50740,7 +50751,11 @@
               "autójavító"
             ],
             "it": [
-              "officina"
+              "officina",
+              "meccanico",
+              "elettrauto",
+              "riparazioni",
+              "revisioni"
             ],
             "ja": [
               "自動車修理工場",
@@ -50794,7 +50809,7 @@
               "bilreparatör",
               "motor"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.25.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.24.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/maki-car-repair.svg",
@@ -50822,7 +50837,7 @@
             "pt": "Vendedor de caravanas",
             "ru": "Продажа домов на колёсах",
             "sv": "Husvagnsförsäljare",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.26.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.25.then"
           },
           "searchTerms": {
             "en": [
@@ -50922,7 +50937,7 @@
               "husbil",
               "tältvagn"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.26.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.25.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/temaki-camper_trailer.svg",
@@ -50953,7 +50968,7 @@
             "ru": "Магазин ковров",
             "sl": "Trgovina s preprogrami",
             "sv": "Mattaffär",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.27.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.26.then"
           },
           "searchTerms": {
             "en": [
@@ -51041,7 +51056,7 @@
               "mattor",
               "matta"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.27.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.26.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/fas-tape.svg",
@@ -51066,7 +51081,7 @@
             "pl": "Catalog Shop",
             "pt": "Loja de catálogo",
             "sv": "Katalogaffär",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.28.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.27.then"
           },
           "searchTerms": {
             "de": [
@@ -51116,7 +51131,7 @@
               "katalogaffär",
               "katalog"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.28.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.27.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/maki-shop.svg",
@@ -51145,7 +51160,7 @@
             "pt": "Loja solidária",
             "ru": "Благотворительный магазин",
             "sv": "Second hand-butik",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.29.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.28.then"
           },
           "searchTerms": {
             "en": [
@@ -51235,7 +51250,7 @@
               "myrorna",
               "andrahandsbutik"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.29.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.28.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/maki-shop.svg",
@@ -51266,7 +51281,7 @@
             "ru": "Магазин сыров",
             "sl": "Trgovina s siri",
             "sv": "Ostaffär",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.30.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.29.then"
           },
           "searchTerms": {
             "cs": [
@@ -51355,7 +51370,7 @@
               "ostar",
               "ostbutik"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.30.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.29.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/fas-cheese.svg",
@@ -51386,7 +51401,7 @@
             "ru": "Бытовая химия",
             "sl": "Lekarna",
             "sv": "Kemiaffär (hygien,  kosmetika & städ)",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.31.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.30.then"
           },
           "searchTerms": {
             "en": [
@@ -51534,7 +51549,7 @@
               "rengöring",
               "rengöringsmedel"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.31.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.30.searchTerms"
           }
         },
         {
@@ -51561,7 +51576,7 @@
             "ru": "Магазин шоколада",
             "sl": "Čokoladnica",
             "sv": "Chokladaffär",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.32.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.31.then"
           },
           "searchTerms": {
             "en": [
@@ -51659,7 +51674,7 @@
               "praliner",
               "konfekt"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.32.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.31.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/maki-confectionery.svg",
@@ -51690,7 +51705,7 @@
             "ru": "Магазин одежды",
             "sl": "Trgovina z oblekami",
             "sv": "Klädaffär",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.33.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.32.then"
           },
           "searchTerms": {
             "en": [
@@ -51873,7 +51888,7 @@
               "klädbutik",
               "ekipering"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.33.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.32.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/maki-clothing-store.svg",
@@ -51903,7 +51918,7 @@
             "ru": "Магазин кофе",
             "sl": "Trgovina s kavo",
             "sv": "Kaffeaffär",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.34.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.33.then"
           },
           "searchTerms": {
             "ca": [
@@ -52000,7 +52015,7 @@
               "bryggkaffe",
               "kaffe"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.34.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.33.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/temaki-coffee.svg",
@@ -52027,7 +52042,7 @@
             "pt": "Loja de colecionismo",
             "ru": "Коллекционный магазин",
             "sv": "Affär med samlarobjekt",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.35.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.34.then"
           },
           "searchTerms": {
             "en": [
@@ -52193,7 +52208,7 @@
               "filateli",
               "frimärken'"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.35.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.34.searchTerms"
           }
         },
         {
@@ -52220,7 +52235,7 @@
             "ru": "Компьютерный магазин",
             "sl": "Računalniška trgovina",
             "sv": "Datorbutik",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.36.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.35.then"
           },
           "searchTerms": {
             "en": [
@@ -52328,7 +52343,7 @@
               "datorprogram",
               "datorförsäljning"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.36.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.35.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/fas-laptop.svg",
@@ -52360,7 +52375,7 @@
             "ru": "Кондитерская",
             "sl": "Trgovina s slaščicami",
             "sv": "Godisaffär",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.37.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.36.then"
           },
           "searchTerms": {
             "en": [
@@ -52508,7 +52523,7 @@
               "choklad",
               "sötsaker"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.37.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.36.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/maki-confectionery.svg",
@@ -52539,7 +52554,7 @@
             "ru": "Магазин у дома",
             "sl": "Minimarket",
             "sv": "Närbutik",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.38.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.37.then"
           },
           "searchTerms": {
             "en": [
@@ -52664,7 +52679,7 @@
               "livsmedel",
               "mataffär"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.38.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.37.searchTerms"
           }
         },
         {
@@ -52691,7 +52706,7 @@
             "ru": "Магазин копирования, печати",
             "sl": "Fotokopirnica",
             "sv": "Tryckeri",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.39.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.38.then"
           },
           "searchTerms": {
             "en": [
@@ -52762,7 +52777,8 @@
               "stampa"
             ],
             "ja": [
-              "コピー店"
+              "コピー店",
+              "印刷"
             ],
             "nl": [
               "kopieshop",
@@ -52796,7 +52812,7 @@
               "tryckeri",
               "kopiering"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.39.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.38.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/fas-print.svg",
@@ -52827,7 +52843,7 @@
             "ru": "Магазин косметики",
             "sl": "Kozmetična trgovina",
             "sv": "Sminkaffär",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.40.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.39.then"
           },
           "searchTerms": {
             "en": [
@@ -52930,7 +52946,7 @@
               "kosmetika",
               "kosmetikaffär"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.40.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.39.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/temaki-lipstick.svg",
@@ -52950,8 +52966,9 @@
             "nl": "Plattelandswinkel",
             "pl": "Sklep z artykułami wiejskimi",
             "pt": "Loja para proprietários rurais",
+            "ru": "Магазин сельских товаров",
             "sv": "Butik med landsbygdsförnödenheter",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.41.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.40.then"
           },
           "searchTerms": {
             "de": [
@@ -53010,7 +53027,7 @@
               "bonde",
               "bönder"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.41.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.40.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/fas-hat-cowboy-side.svg",
@@ -53039,7 +53056,7 @@
             "pt": "Loja de acessórios para artes manuais",
             "ru": "Магазин художественных принадлежностей",
             "sv": "Konst- & hantverksbutik",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.42.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.41.then"
           },
           "searchTerms": {
             "en": [
@@ -53166,7 +53183,7 @@
               "hantverk",
               "slöjd"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.42.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.41.searchTerms"
           }
         },
         {
@@ -53193,7 +53210,7 @@
             "ru": "Магазин штор и драпировок",
             "sl": "Trgovina z zavesami",
             "sv": "Gardinaffär",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.43.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.42.then"
           },
           "searchTerms": {
             "en": [
@@ -53302,7 +53319,7 @@
               "drapera",
               "fönster"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.43.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.42.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/temaki-curtains.svg",
@@ -53333,7 +53350,7 @@
             "ru": "Магазин молочных продуктов",
             "sl": "Mlekarna",
             "sv": "Mejeriaffär",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.44.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.43.then"
           },
           "searchTerms": {
             "en": [
@@ -53456,7 +53473,7 @@
               "ägg",
               "ost"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.44.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.43.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/fas-cheese.svg",
@@ -53467,6 +53484,7 @@
           "if": "shop=deli",
           "then": {
             "en": "Delicatessen",
+            "ca": "Delicadeses",
             "cs": "Lahůdkářství",
             "da": "Delikatesse",
             "de": "Feinkostladen",
@@ -53481,7 +53499,7 @@
             "pt": "Loja gourmet",
             "ru": "Деликатесы",
             "sv": "Delikatessaffär",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.45.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.44.then"
           },
           "searchTerms": {
             "en": [
@@ -53551,6 +53569,10 @@
               "origem protegida",
               "iguarias"
             ],
+            "ru": [
+              "деликатесы",
+              "кулинария"
+            ],
             "sv": [
               "delikatessaffär",
               "delikatess",
@@ -53560,7 +53582,7 @@
               "kött",
               "smörgås"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.45.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.44.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/fas-jar.svg",
@@ -53591,7 +53613,7 @@
             "ru": "Универсальный магазин (с отделами)",
             "sl": "Veleblagovnica",
             "sv": "Varuhus",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.46.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.45.then"
           },
           "searchTerms": {
             "cs": [
@@ -53681,7 +53703,7 @@
               "varuhus",
               "affärshus"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.46.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.45.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/maki-shop.svg",
@@ -53712,7 +53734,7 @@
             "ru": "Строительный магазин",
             "sl": "Orodjarna",
             "sv": "Byggmarknad",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.47.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.46.then"
           },
           "searchTerms": {
             "en": [
@@ -53855,7 +53877,7 @@
               "inredning",
               "byggmaterial"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.47.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.46.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/temaki-tools.svg",
@@ -53884,7 +53906,7 @@
             "pt": "Loja de portas",
             "ru": "Магазин дверей",
             "sv": "Affär med dörrar",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.48.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.47.then"
           },
           "searchTerms": {
             "ca": [
@@ -53960,7 +53982,7 @@
               "dörreparation",
               "dörrepatör"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.48.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.47.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/fas-door-open.svg",
@@ -53991,7 +54013,7 @@
             "ru": "Химчистка",
             "sl": "Čistilnica",
             "sv": "Kemtvätt",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.49.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.48.then"
           },
           "searchTerms": {
             "ca": [
@@ -54068,7 +54090,7 @@
               "kemtvättar",
               "kemisk tvätt"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.49.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.48.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/temaki-clothes_hanger.svg",
@@ -54097,7 +54119,7 @@
             "pt": "Loja de cigarros eletrónicos",
             "ru": "Магазин электронных сигарет",
             "sv": "Affär för elektroniska cigaretter",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.50.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.49.then"
           },
           "searchTerms": {
             "en": [
@@ -54201,7 +54223,7 @@
               "elektrisk cigarett",
               "elcigarett"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.50.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.49.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/maki-shop.svg",
@@ -54229,7 +54251,7 @@
             "pt": "Loja de material elétrico",
             "ru": "Магазин электротоваров",
             "sv": "Affär med elutrustning",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.51.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.50.then"
           },
           "searchTerms": {
             "en": [
@@ -54366,7 +54388,7 @@
               "amatur",
               "kraft"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.51.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.50.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/temaki-power.svg",
@@ -54397,7 +54419,7 @@
             "ru": "Магазин бытовой электроники",
             "sl": "Elektronska trgovina",
             "sv": "Elektronikbutik",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.52.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.51.then"
           },
           "searchTerms": {
             "en": [
@@ -54566,7 +54588,7 @@
               "apparater",
               "ljud"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.52.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.51.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/fas-plug.svg",
@@ -54596,7 +54618,7 @@
             "ru": "Секс-шоп",
             "sl": "Erotična trgovina",
             "sv": "Sexshop",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.53.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.52.then"
           },
           "searchTerms": {
             "en": [
@@ -54718,7 +54740,7 @@
               "pornografi",
               "porrtidningar"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.53.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.52.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/maki-shop.svg",
@@ -54749,7 +54771,7 @@
             "ru": "Магазин тканей",
             "sl": "Trgovina z metrskim blagom",
             "sv": "Tygaffär",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.54.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.53.then"
           },
           "searchTerms": {
             "en": [
@@ -54825,7 +54847,8 @@
             ],
             "nl": [
               "kledij",
-              "naaien"
+              "naaien",
+              "textiel"
             ],
             "pl": [
               "sklep z tkaninami",
@@ -54847,7 +54870,7 @@
               "sömnad",
               "sy"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.54.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.53.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/fas-tape.svg",
@@ -54877,7 +54900,7 @@
             "ru": "Магазин свежих продуктов",
             "sl": "Prodaja domačih pridelkov",
             "sv": "Gårdsbutik",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.55.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.54.then"
           },
           "searchTerms": {
             "en": [
@@ -55019,7 +55042,7 @@
               "närproducerat",
               "egenproducerat"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.55.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.54.searchTerms"
           }
         },
         {
@@ -55044,7 +55067,7 @@
             "pt": "Loja de acessórios de moda",
             "ru": "Магазин модных аксессуаров",
             "sv": "Affär för modeaccessoarer",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.56.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.55.then"
           },
           "searchTerms": {
             "en": [
@@ -55218,7 +55241,7 @@
               "modeaccessoarer",
               "accessoarer"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.56.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.55.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/temaki-fashion_accessories.svg",
@@ -55247,7 +55270,7 @@
             "pt": "Loja de lareiras",
             "ru": "Продажа каминов",
             "sv": "Kaminbutik",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.57.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.56.then"
           },
           "searchTerms": {
             "en": [
@@ -55353,7 +55376,7 @@
               "kakelugn",
               "gaskamin"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.57.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.56.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/temaki-fireplace.svg",
@@ -55382,7 +55405,7 @@
             "pt": "Loja de artigos de pesca",
             "ru": "Рыболовный магазин",
             "sv": "Fiskeaffär",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.58.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.57.then"
           },
           "searchTerms": {
             "en": [
@@ -55523,7 +55546,7 @@
               "fisk",
               "fiskare"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.58.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.57.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/temaki-ice_fishing.svg",
@@ -55549,7 +55572,7 @@
             "pl": "Sklep z posadzkami",
             "pt": "Loja de material de pavimentação",
             "sv": "Affär för golv",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.59.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.58.then"
           },
           "searchTerms": {
             "en": [
@@ -55638,7 +55661,7 @@
               "klinkergolv",
               "golvläggning"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.59.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.58.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/temaki-tools.svg",
@@ -55669,7 +55692,7 @@
             "ru": "Цветочный магазин",
             "sl": "Cvetličarna",
             "sv": "Florist",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.60.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.59.then"
           },
           "searchTerms": {
             "en": [
@@ -55762,7 +55785,7 @@
               "blomsterbindare",
               "blomsterhandlare"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.60.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.59.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/maki-florist.svg",
@@ -55792,7 +55815,7 @@
             "pt": "Loja de molduras",
             "ru": "Магазин рамок для фотографий и картин",
             "sv": "Ramaffär",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.61.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.60.then"
           },
           "searchTerms": {
             "en": [
@@ -55900,7 +55923,7 @@
               "ramar",
               "inramning"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.61.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.60.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/fas-vector-square.svg",
@@ -55927,7 +55950,7 @@
             "pt": "Loja de comida congelada",
             "ru": "Магазин замороженных продуктов",
             "sv": "Affär för fryst mat",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.62.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.61.then"
           },
           "searchTerms": {
             "cs": [
@@ -56019,7 +56042,7 @@
               "mat",
               "lunch"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.62.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.61.searchTerms"
           }
         },
         {
@@ -56043,7 +56066,7 @@
             "pl": "Sklep z paliwem",
             "pt": "Loja de combustíveis",
             "sv": "Bränsleaffär",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.63.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.62.then"
           },
           "searchTerms": {
             "ca": [
@@ -56198,7 +56221,7 @@
               "lpg",
               "fotogen"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.63.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.62.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/temaki-propane_tank.svg",
@@ -56229,7 +56252,7 @@
             "ru": "Бюро похоронных услуг",
             "sl": "Pogrebne storitve",
             "sv": "Begravningsbyrå",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.64.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.63.then"
           },
           "searchTerms": {
             "en": [
@@ -56242,7 +56265,6 @@
               "mortuori"
             ],
             "cs": [
-              "pohřební služba",
               "pohřebák",
               "hřbitovní služby",
               "hřbitovní služba",
@@ -56348,7 +56370,7 @@
               "gravsten",
               "gravstenar"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.64.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.63.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/maki-cemetery.svg",
@@ -56379,7 +56401,7 @@
             "ru": "Мебельный магазин",
             "sl": "Trgovina s pohištvom",
             "sv": "Möbelaffär",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.65.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.64.then"
           },
           "searchTerms": {
             "en": [
@@ -56498,7 +56520,7 @@
               "bord",
               "hylla"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.65.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.64.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/fas-couch.svg",
@@ -56525,7 +56547,7 @@
             "pt": "Loja de jogos de tabuleiro",
             "ru": "Магазин настольных игр",
             "sv": "Affär för brädspel",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.66.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.65.then"
           },
           "searchTerms": {
             "en": [
@@ -56667,7 +56689,7 @@
               "strategispel",
               "spel"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.66.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.65.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/fas-dice.svg",
@@ -56698,7 +56720,7 @@
             "ru": "Садовые принадлежности",
             "sl": "Vrtni center",
             "sv": "Trädgårdscenter",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.67.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.66.then"
           },
           "searchTerms": {
             "en": [
@@ -56813,7 +56835,7 @@
               "landskap",
               "kompost"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.67.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.66.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/maki-garden-centre.svg",
@@ -56843,7 +56865,7 @@
             "ru": "Магазин газовых баллонов",
             "sl": "Trgovina s plinskimi jeklenkami",
             "sv": "Gasbutik",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.68.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.67.then"
           },
           "searchTerms": {
             "en": [
@@ -57002,7 +57024,7 @@
               "gasflaskor",
               "gasolflaskor"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.68.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.67.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/temaki-propane_tank.svg",
@@ -57030,7 +57052,7 @@
             "pl": "Sklep wielobranżowy",
             "pt": "Mercearia",
             "sv": "Generell affär",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.69.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.68.then"
           },
           "searchTerms": {
             "en": [
@@ -57109,7 +57131,7 @@
               "generell affär",
               "byaffär"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.69.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.68.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/maki-shop.svg",
@@ -57140,7 +57162,7 @@
             "ru": "Магазин сувениров",
             "sl": "Prodajalna daril",
             "sv": "Presentbutik",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.70.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.69.then"
           },
           "searchTerms": {
             "en": [
@@ -57261,7 +57283,7 @@
               "souvenir",
               "souvenirer"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.70.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.69.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/maki-gift.svg",
@@ -57293,7 +57315,7 @@
             "ru": "Магазин овощей и фруктов",
             "sl": "Sadje in zelenjava",
             "sv": "Grönsakshandlare",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.71.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.70.then"
           },
           "searchTerms": {
             "en": [
@@ -57453,7 +57475,7 @@
               "frukthandel",
               "vegetabiliskt"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.71.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.70.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/fas-carrot.svg",
@@ -57485,7 +57507,7 @@
             "ru": "Парикмахерская",
             "sl": "Frizer",
             "sv": "Hårfrisör",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.72.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.71.then"
           },
           "searchTerms": {
             "en": [
@@ -57620,7 +57642,7 @@
               "hårkreatör",
               "hårkonstnär"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.72.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.71.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/temaki-beauty_salon.svg",
@@ -57649,7 +57671,7 @@
             "pt": "Loja de acessórios de cabeleireiro",
             "ru": "Парикмахерские принадлежности",
             "sv": "Affär för hårprodukter",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.73.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.72.then"
           },
           "searchTerms": {
             "en": [
@@ -57761,7 +57783,7 @@
               "skönhetsmedel",
               "konstgjorda naglar"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.73.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.72.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/temaki-hair_care.svg",
@@ -57792,7 +57814,7 @@
             "ru": "Хозяйственный магазин",
             "sl": "Železnina",
             "sv": "Järnaffär",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.74.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.73.then"
           },
           "searchTerms": {
             "en": [
@@ -57927,7 +57949,7 @@
               "nycklar",
               "nyckeltillverkning"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.74.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.73.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/temaki-tools.svg",
@@ -57950,8 +57972,9 @@
             "nl": "Natuurvoedingswinkel",
             "pl": "Sklep ze zdrową żywnością",
             "pt": "Loja de comida saudável",
+            "ru": "Магазин здорового питания",
             "sv": "Hälsokostbutik",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.75.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.74.then"
           },
           "searchTerms": {
             "en": [
@@ -58085,7 +58108,7 @@
               "köttersättning",
               "mjölkersättning"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.75.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.74.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/maki-shop.svg",
@@ -58116,7 +58139,7 @@
             "ru": "Магазин по продаже слуховых аппаратов",
             "sl": "Trgovina s slušnimi pripomočki",
             "sv": "Hörapparater",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.76.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.75.then"
           },
           "searchTerms": {
             "cs": [
@@ -58182,7 +58205,18 @@
             ],
             "it": [
               "apparecchi acustici",
-              "negozio di apparecchi acustici"
+              "negozio di apparecchi acustici",
+              "udito",
+              "perdita dell'udito",
+              "sordo",
+              "sordità",
+              "suono",
+              "suoni",
+              "rumore",
+              "rumori",
+              "sentire",
+              "audiometrico",
+              "orecchi"
             ],
             "ja": [
               "補聴器店"
@@ -58214,7 +58248,7 @@
               "hörhjälpmedel",
               "hörsel"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.76.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.75.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/temaki-hearing_aid.svg",
@@ -58244,7 +58278,7 @@
             "ru": "Магазин трав и лекарственных растений",
             "sl": "Zeliščarstvo",
             "sv": "Medicinalväxter",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.77.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.76.then"
           },
           "searchTerms": {
             "en": [
@@ -58353,7 +58387,7 @@
               "örter",
               "läkande örter"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.77.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.76.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/fas-leaf.svg",
@@ -58384,7 +58418,7 @@
             "ru": "Магазин по продаже Hi-Fi",
             "sl": "Trgovina z avdio opremo",
             "sv": "HiFi-butik",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.78.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.77.then"
           },
           "searchTerms": {
             "en": [
@@ -58497,7 +58531,7 @@
               "stereoanläggning",
               "video"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.78.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.77.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/temaki-speaker.svg",
@@ -58509,18 +58543,25 @@
           "then": {
             "en": "Honey Store",
             "cs": "Obchod s medem",
+            "da": "Honningbutik",
             "de": "Honiggeschäft",
             "es": "Tienda de miel",
             "fr": "Magasin de miel",
             "he": "חנות דבש",
+            "it": "Negozio di miele",
             "ja": "蜂蜜販売店",
             "nl": "Honingwinkel",
             "pl": "Sklep z miodem",
             "pt": "Loja de mel",
+            "ru": "Магазин мёда",
             "sv": "Honungsaffär",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.79.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.78.then"
           },
           "searchTerms": {
+            "da": [
+              "honningbutik",
+              "honningsalg"
+            ],
             "de": [
               "honig",
               "biene",
@@ -58562,7 +58603,7 @@
               "honungsbutik",
               "honungsaffär"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.79.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.78.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/maki-shop.svg",
@@ -58588,7 +58629,7 @@
             "pl": "Sklep z pościelą/ręcznikami",
             "pt": "Loja de têxteis para o lar",
             "sv": "Affär för hushållstextilier",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.80.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.79.then"
           },
           "searchTerms": {
             "en": [
@@ -58788,7 +58829,7 @@
               "sängtextilier",
               "hushållstextilier"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.80.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.79.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/temaki-cloth.svg",
@@ -58817,7 +58858,7 @@
             "pt": "Loja de artigos para o lar",
             "ru": "Магазин товаров для дома",
             "sv": "Husgeråd",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.81.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.80.then"
           },
           "searchTerms": {
             "en": [
@@ -58941,7 +58982,7 @@
               "hem",
               "hushåll"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.81.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.80.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/fas-blender.svg",
@@ -58970,7 +59011,7 @@
             "pt": "Loja de artigos de caça",
             "ru": "Охотничий магазин",
             "sv": "Jaktbutik",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.82.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.81.then"
           },
           "searchTerms": {
             "en": [
@@ -59105,7 +59146,7 @@
               "jaktvapen",
               "jaktgevär"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.82.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.81.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/temaki-bow_and_arrow.svg",
@@ -59135,7 +59176,7 @@
             "pt": "Loja de decoração de interiores",
             "ru": "Магазин предметов интерьера",
             "sv": "Inredningsaffär",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.83.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.82.then"
           },
           "searchTerms": {
             "ca": [
@@ -59255,7 +59296,7 @@
               "inredning",
               "dekoration"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.83.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.82.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/maki-shop.svg",
@@ -59285,7 +59326,7 @@
             "pt": "Ourivesaria",
             "ru": "Ювелирный магазин",
             "sv": "Juvelerare",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.84.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.83.then"
           },
           "searchTerms": {
             "en": [
@@ -59469,6 +59510,9 @@
               "joalheiro",
               "joalheira"
             ],
+            "ru": [
+              "ювелирный магазин"
+            ],
             "sv": [
               "juvelerare",
               "smycken",
@@ -59486,7 +59530,7 @@
               "pärlor",
               "armband"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.84.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.83.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/maki-jewelry-store.svg",
@@ -59517,7 +59561,7 @@
             "ru": "Магазин в виде киоска",
             "sl": "Kiosk",
             "sv": "Kiosk",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.85.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.84.then"
           },
           "searchTerms": {
             "en": [
@@ -59641,7 +59685,7 @@
               "glass",
               "korv"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.85.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.84.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/fas-store.svg",
@@ -59671,7 +59715,7 @@
             "pt": "Loja de cozinhas",
             "ru": "Магазин кухонь",
             "sv": "Köksinredning",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.86.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.85.then"
           },
           "searchTerms": {
             "en": [
@@ -59758,7 +59802,7 @@
               "köksskåp",
               "skåpluckor"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.86.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.85.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/temaki-kitchen_sink.svg",
@@ -59789,7 +59833,7 @@
             "ru": "Прачечная",
             "sl": "Pralnica",
             "sv": "Tvättinrättning",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.87.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.86.then"
           },
           "searchTerms": {
             "cs": [
@@ -59875,7 +59919,7 @@
               "tvättautomat",
               "tvätt"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.87.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.86.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/temaki-laundry.svg",
@@ -59906,7 +59950,7 @@
             "ru": "Магазин кожаных изделий",
             "sl": "Usnjarna",
             "sv": "Läderaffär",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.88.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.87.then"
           },
           "searchTerms": {
             "ca": [
@@ -60004,7 +60048,7 @@
               "läderjackor",
               "läderkläder"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.88.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.87.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/temaki-handbag.svg",
@@ -60032,7 +60076,7 @@
             "pt": "Loja de iluminação",
             "ru": "Магазин светильников",
             "sv": "Belysningsbutik",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.89.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.88.then"
           },
           "searchTerms": {
             "en": [
@@ -60161,7 +60205,7 @@
               "led",
               "glödlampor"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.89.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.88.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/temaki-desk_lamp.svg",
@@ -60193,7 +60237,7 @@
             "ru": "Изготовление ключей",
             "sl": "Ključavničar",
             "sv": "Låssmed",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.90.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.89.then"
           },
           "searchTerms": {
             "en": [
@@ -60316,7 +60360,7 @@
               "dyrkning",
               "låsdyrkning"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.90.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.89.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/fas-key.svg",
@@ -60347,7 +60391,7 @@
             "ru": "Продажа лотерейных билетов",
             "sl": "Loterijska prodajalna",
             "sv": "Lotteri",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.91.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.90.then"
           },
           "searchTerms": {
             "en": [
@@ -60453,7 +60497,7 @@
               "lottförsäljningen",
               "lottstånd"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.91.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.90.searchTerms"
           }
         },
         {
@@ -60480,7 +60524,7 @@
             "ru": "Торговый центр",
             "sl": "Trgovski center",
             "sv": "Köpcenter",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.92.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.91.then"
           },
           "searchTerms": {
             "en": [
@@ -60572,11 +60616,7 @@
               "köpcentrum",
               "köpcenter"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.92.searchTerms"
-          },
-          "icon": {
-            "path": "./assets/layers/id_presets/maki-shop.svg",
-            "class": "medium"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.91.searchTerms"
           }
         },
         {
@@ -60602,7 +60642,7 @@
             "pt": "Centro de massagens",
             "ru": "Массажный салон",
             "sv": "Massage",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.93.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.92.then"
           },
           "searchTerms": {
             "cs": [
@@ -60699,7 +60739,7 @@
               "massagebehandling",
               "thaimassage"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.93.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.92.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/temaki-spa.svg",
@@ -60731,7 +60771,7 @@
             "ru": "Медицинские принадлежности",
             "sl": "Trgovina z medicinskimi primpomočki",
             "sv": "Medicinsk utrustning",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.94.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.93.then"
           },
           "searchTerms": {
             "cs": [
@@ -60833,7 +60873,7 @@
               "hjälpmedel",
               "rullstol"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.94.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.93.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/fas-crutch.svg",
@@ -60846,6 +60886,7 @@
             "en": "Military Surplus Store",
             "ca": "Botiga d'excedents militars",
             "cs": "Armádní výprodej",
+            "da": "Militær overskudslager",
             "de": "Militärkleidungsabverkauf",
             "eo": "Ne-plu-necesa-armea-ekipaĵo vendejo",
             "es": "Tienda de excedentes militares",
@@ -60861,7 +60902,7 @@
             "pt": "Loja de excedentes militares",
             "ru": "Армейский магазин",
             "sv": "Affär med militäröverskott",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.95.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.94.then"
           },
           "searchTerms": {
             "en": [
@@ -60988,7 +61029,7 @@
               "militärkläder",
               "militärutrustning"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.95.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.94.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/temaki-military.svg",
@@ -61019,7 +61060,7 @@
             "ru": "Магазин мобильных телефонов и аксессуаров",
             "sl": "Trgovina z mobilnimi telefoni",
             "sv": "Mobiltelefoner",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.96.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.95.then"
           },
           "searchTerms": {
             "cs": [
@@ -61121,7 +61162,7 @@
               "telefonbutik",
               "mobiltelefonbutik"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.96.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.95.searchTerms"
           }
         },
         {
@@ -61144,7 +61185,7 @@
             "pt": "Loja de modelismo",
             "ru": "Магазин для моделирования",
             "sv": "Affär för byggmodeller",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.97.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.96.then"
           },
           "searchTerms": {
             "en": [
@@ -61261,7 +61302,7 @@
               "modellbåtar",
               "modellbygge"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.97.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.96.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/maki-shop.svg",
@@ -61292,7 +61333,7 @@
             "ru": "Ростовщик",
             "sl": "Posojilnica",
             "sv": "Långivare",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.98.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.97.then"
           },
           "searchTerms": {
             "en": [
@@ -61401,7 +61442,7 @@
               "telefonlån",
               "pantbank"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.98.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.97.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/temaki-money_hand.svg",
@@ -61432,7 +61473,7 @@
             "ru": "Магазин мотоциклов",
             "sl": "Trgovina z motorji",
             "sv": "Återförsäljare av motorcyklar",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.99.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.98.then"
           },
           "searchTerms": {
             "en": [
@@ -61526,7 +61567,7 @@
               "motorcykelbutik",
               "motorcykeltillbehör"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.99.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.98.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/fas-motorcycle.svg",
@@ -61555,7 +61596,7 @@
             "pt": "Oficina de motas",
             "ru": "Мотомастерская",
             "sv": "Motorcykelverkstad",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.100.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.99.then"
           },
           "searchTerms": {
             "en": [
@@ -61685,7 +61726,7 @@
               "reparatör",
               "motorcykelreparatör"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.100.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.99.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/temaki-motorcycle_repair.svg",
@@ -61716,7 +61757,7 @@
             "ru": "Музыкальный магазин",
             "sl": "Trgovina z glasbo",
             "sv": "Musikaffär",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.101.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.100.then"
           },
           "searchTerms": {
             "en": [
@@ -61837,7 +61878,7 @@
               "skivaffär",
               "skivbutik"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.101.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.100.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/fas-compact-disc.svg",
@@ -61868,7 +61909,7 @@
             "ru": "Магазин музыкальных инструментов",
             "sl": "Trgovina z glasbenimi inštrumenti",
             "sv": "Musikinstrument",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.102.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.101.then"
           },
           "searchTerms": {
             "en": [
@@ -61984,7 +62025,7 @@
               "instrument",
               "noter"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.102.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.101.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/fas-guitar.svg",
@@ -62012,7 +62053,7 @@
             "pt": "Loja de jornais / revistas",
             "ru": "Газетный киоск",
             "sv": "Tidningsaffär",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.103.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.102.then"
           },
           "searchTerms": {
             "ca": [
@@ -62077,6 +62118,12 @@
               "revista",
               "newsagent"
             ],
+            "ru": [
+              "киоск",
+              "печатная продукция",
+              "газеты",
+              "журналы"
+            ],
             "sv": [
               "tidningsaffär",
               "pressbyrå",
@@ -62088,7 +62135,7 @@
               "magasin",
               "tidskrifter"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.103.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.102.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/fas-newspaper.svg",
@@ -62118,7 +62165,7 @@
             "ru": "Магазин пищевых добавок",
             "sl": "Trgovina s prehrambenimi dodatki",
             "sv": "Hälsokost",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.104.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.103.then"
           },
           "searchTerms": {
             "en": [
@@ -62217,7 +62264,7 @@
               "mineraler",
               "hälsoörter"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.104.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.103.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/fas-pills.svg",
@@ -62235,12 +62282,14 @@
             "fi": "Pähkinäkauppa",
             "fr": "Magasin de noix",
             "he": "חנות פיצוחים",
+            "it": "Negozio di noci",
             "ja": "ナッツ店",
+            "nl": "Notenwinkel",
             "pl": "Sklep z bakaliami",
             "pt": "Loja de frutos secos",
             "ru": "Магазин орехов",
             "sv": "Nötbutik",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.105.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.104.then"
           },
           "searchTerms": {
             "en": [
@@ -62328,6 +62377,10 @@
               "木の実",
               "ナッツ"
             ],
+            "nl": [
+              "noten",
+              "winkel"
+            ],
             "pl": [
               "sklep z bakaliami",
               "sklep z orzechami",
@@ -62383,7 +62436,7 @@
               "frön",
               "valnötter"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.105.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.104.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/maki-shop.svg",
@@ -62414,7 +62467,7 @@
             "ru": "Оптика",
             "sl": "Optik",
             "sv": "Optiker",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.106.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.105.then"
           },
           "searchTerms": {
             "en": [
@@ -62536,7 +62589,7 @@
               "linser",
               "ögon"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.106.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.105.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/maki-optician.svg",
@@ -62567,7 +62620,7 @@
             "ru": "Магазин снаряжения для активного отдыха",
             "sl": "Trgovina za dejavosti na prostem",
             "sv": "Friluftsaffär",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.107.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.106.then"
           },
           "searchTerms": {
             "en": [
@@ -62703,7 +62756,7 @@
               "friluftsliv",
               "uteliv"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.107.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.106.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/temaki-compass.svg",
@@ -62715,6 +62768,7 @@
           "then": {
             "en": "Online Retailer Outpost",
             "cs": "Výdejna e-shopu",
+            "da": "Udlevering for onlineforhandlere",
             "de": "Abholstelle eines Onlinehändlers",
             "eo": "Ricevejo de aĉetaĵoj (per interreto)",
             "es": "Puesto de venta minorista online",
@@ -62730,7 +62784,7 @@
             "pt": "Posto de retalhista online",
             "ru": "Пункт выдачи интернет-магазина",
             "sv": "Utlämning av online-beställningar",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.108.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.107.then"
           },
           "searchTerms": {
             "en": [
@@ -62742,6 +62796,11 @@
               "online",
               "vyzvednutí",
               "vyzvednout"
+            ],
+            "da": [
+              "udpost for onlineforhandlere",
+              "online",
+              "afhentning"
             ],
             "de": [
               "online",
@@ -62810,7 +62869,7 @@
               "paketutlämning",
               "posten"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.108.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.107.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/maki-shop.svg",
@@ -62841,7 +62900,7 @@
             "ru": "Магазин красочных изделий",
             "sl": "Trgovina z barvami",
             "sv": "Färgbutik",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.109.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.108.then"
           },
           "searchTerms": {
             "cs": [
@@ -62931,7 +62990,7 @@
               "målarfärg",
               "målning"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.109.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.108.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/fas-paint-roller.svg",
@@ -62957,7 +63016,7 @@
             "pt": "Loja de acessórios para festas",
             "ru": "Магазин для вечеринок",
             "sv": "Partybutik",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.110.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.109.then"
           },
           "searchTerms": {
             "en": [
@@ -63083,7 +63142,7 @@
               "utklädning",
               "småpresenter"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.110.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.109.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/temaki-balloon.svg",
@@ -63099,10 +63158,14 @@
             "es": "Fábrica de pastas",
             "fr": "Magasin de pâtes",
             "he": "חנות פסטה",
+            "it": "Negozio di pasta",
             "ja": "パスタショップ",
+            "nl": "Pastawinkel",
             "pl": "Sklep z makaronami",
             "pt": "Loja de massas",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.111.then"
+            "ru": "Магазин макаронных изделий",
+            "sv": "Pastabutik",
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.110.then"
           },
           "searchTerms": {
             "en": [
@@ -63136,6 +63199,10 @@
               "ラビオリ",
               "スパゲティ"
             ],
+            "nl": [
+              "pasta",
+              "winkel"
+            ],
             "pl": [
               "sklep z makaronami",
               "makarony",
@@ -63161,7 +63228,16 @@
               "lasagnette",
               "aletria"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.111.searchTerms"
+            "sv": [
+              "pasta",
+              "pastabutik",
+              "pastaaffär",
+              "färsk pasta",
+              "ravioli",
+              "spaghetti",
+              "makaroner"
+            ],
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.110.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/fas-plate-wheat.svg",
@@ -63191,7 +63267,7 @@
             "ru": "Пироги",
             "sl": "Slaščičarna",
             "sv": "Konditori",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.112.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.111.then"
           },
           "searchTerms": {
             "en": [
@@ -63310,7 +63386,7 @@
               "sockerbagare",
               "servering"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.112.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.111.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/maki-bakery.svg",
@@ -63328,13 +63404,14 @@
             "fr": "Prêteur sur gages",
             "he": "בית משכון",
             "hu": "Zálogház",
+            "it": "Banco dei pegni",
             "ja": "質屋",
             "nl": "Pandjeshuis",
             "pl": "Lombard",
             "pt": "Loja de penhoras",
             "ru": "Ломбард",
             "sv": "Pantbank",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.113.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.112.then"
           },
           "searchTerms": {
             "de": [
@@ -63371,6 +63448,10 @@
               "サービス",
               "質草"
             ],
+            "nl": [
+              "pandhuis",
+              "lommerd"
+            ],
             "pl": [
               "lombard"
             ],
@@ -63380,6 +63461,10 @@
               "penhoras",
               "penhorar"
             ],
+            "ru": [
+              "залоговая касса",
+              "ломбардный касса"
+            ],
             "sv": [
               "pantbank",
               "pantbanken",
@@ -63388,7 +63473,7 @@
               "varubelåning",
               "pant"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.113.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.112.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/temaki-money_hand.svg",
@@ -63418,7 +63503,7 @@
             "ru": "Парфюмерия",
             "sl": "Parfumerija",
             "sv": "Parfymbutik",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.114.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.113.then"
           },
           "searchTerms": {
             "en": [
@@ -63515,7 +63600,7 @@
               "kosmetika",
               "smink"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.114.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.113.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/temaki-perfume.svg",
@@ -63546,7 +63631,7 @@
             "ru": "Зоомагазин",
             "sl": "Trgovina za domače živali",
             "sv": "Djurbutik",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.115.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.114.then"
           },
           "searchTerms": {
             "en": [
@@ -63669,7 +63754,7 @@
               "akvarium",
               "fisk"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.115.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.114.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/fas-cat.svg",
@@ -63688,12 +63773,14 @@
             "fr": "Salon de toilettage",
             "he": "מספרת חיות",
             "hu": "Kisállatfodrász",
+            "it": "Tolettatura per animali",
             "ja": "ペット美容室",
+            "nl": "Huisdiertrimmer",
             "pl": "Salon fryzjerski dla zwierząt",
             "pt": "Salão de banhos e tosquias",
             "ru": "Парикмахерская для животных",
             "sv": "Pälsvård för husdjur",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.116.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.115.then"
           },
           "searchTerms": {
             "en": [
@@ -63752,6 +63839,11 @@
               "猫",
               "動物"
             ],
+            "nl": [
+              "trimmen",
+              "knippen",
+              "huisider"
+            ],
             "pl": [
               "salon fryzjerski dla zwierząt",
               "salon groomerski",
@@ -63790,7 +63882,7 @@
               "kattskötsel",
               "hundskötsel"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.116.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.115.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/temaki-pet_grooming.svg",
@@ -63822,7 +63914,7 @@
             "ru": "Фототовары",
             "sl": "Foto trgovina",
             "sv": "Fotoaffär",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.117.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.116.then"
           },
           "searchTerms": {
             "en": [
@@ -63959,7 +64051,7 @@
               "konvertering",
               "film"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.117.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.116.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/fas-camera-retro.svg",
@@ -63988,7 +64080,7 @@
             "pt": "Loja de cerâmica",
             "ru": "Магазин керамики",
             "sv": "Keramikaffär",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.118.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.117.then"
           },
           "searchTerms": {
             "en": [
@@ -64064,7 +64156,7 @@
               "krukor",
               "vaser"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.118.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.117.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/temaki-vase.svg",
@@ -64092,7 +64184,7 @@
             "pt": "Loja de tinteiros de impressora",
             "ru": "Магазин чернил для принтера",
             "sv": "Butik för skrivarbläck",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.119.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.118.then"
           },
           "searchTerms": {
             "en": [
@@ -64183,7 +64275,7 @@
               "kopiator",
               "fax"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.119.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.118.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/fas-print.svg",
@@ -64210,7 +64302,7 @@
             "pt": "Vidente",
             "ru": "Предсказатель",
             "sv": "Medium / Psykisk",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.120.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.119.then"
           },
           "searchTerms": {
             "en": [
@@ -64346,7 +64438,7 @@
               "ockult",
               "spiritist"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.120.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.119.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/temaki-psychic.svg",
@@ -64376,7 +64468,7 @@
             "pt": "Loja de pirotecnia",
             "ru": "Магазин фейерверков",
             "sv": "Fyrverkerier",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.121.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.120.then"
           },
           "searchTerms": {
             "en": [
@@ -64492,7 +64584,7 @@
               "nyårsraketer",
               "pyroteknik"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.121.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.120.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/temaki-rocket_firework.svg",
@@ -64523,7 +64615,7 @@
             "ru": "Магазин радиодеталей",
             "sl": "Trgovina z elektroniko",
             "sv": "Radio/Elektronikbutik",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.122.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.121.then"
           },
           "searchTerms": {
             "en": [
@@ -64634,7 +64726,7 @@
               "radiotillbehör",
               "elektronikkomponenter"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.122.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.121.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/fas-microchip.svg",
@@ -64664,7 +64756,7 @@
             "pt": "Loja de artigos religiosos",
             "ru": "Религиозная лавка",
             "sv": "Religiös butik",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.123.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.122.then"
           },
           "searchTerms": {
             "cs": [
@@ -64764,7 +64856,7 @@
               "psalmböcker",
               "kyrkobutik"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.123.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.122.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/maki-shop.svg",
@@ -64793,7 +64885,7 @@
             "pt": "Loja de aluguer de material em geral",
             "ru": "Аренда",
             "sv": "Hyrbutik",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.124.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.123.then"
           },
           "searchTerms": {
             "ca": [
@@ -64874,7 +64966,7 @@
               "uthyrning",
               "låna"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.124.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.123.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/fas-dolly.svg",
@@ -64900,7 +64992,7 @@
             "pl": "Naprawy (nieokreślone)",
             "pt": "Loja de reparações",
             "sv": "Reparatör",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.125.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.124.then"
           },
           "searchTerms": {
             "en": [
@@ -64994,7 +65086,7 @@
               "reparera",
               "renovera"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.125.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.124.searchTerms"
           }
         },
         {
@@ -65006,13 +65098,21 @@
             "es": "Tienda de arroz",
             "fr": "Magasin de riz",
             "he": "חנות אורז",
+            "it": "Negozio di riso",
             "ja": "米穀店",
+            "nl": "Rijstwinkel",
             "pl": "Sklep z ryżem",
             "pt": "Loja de arroz",
+            "ru": "Магазин риса",
             "sv": "Risaffär",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.126.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.125.then"
           },
           "searchTerms": {
+            "cs": [
+              "prodej rýže",
+              "rýžový obchod",
+              "rýže"
+            ],
             "de": [
               "reishandel",
               "reishändler",
@@ -65030,6 +65130,10 @@
             "ja": [
               "米屋"
             ],
+            "nl": [
+              "rijst",
+              "winkel"
+            ],
             "pl": [
               "sklep z ryżem",
               "ryż"
@@ -65045,7 +65149,7 @@
               "risbutik",
               "ris"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.126.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.125.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/fas-bowl-rice.svg",
@@ -65076,7 +65180,7 @@
             "ru": "Магазин подводного снаряжения",
             "sl": "Trgovina s potapljaško opremo",
             "sv": "Dykarbutik",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.127.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.126.then"
           },
           "searchTerms": {
             "en": [
@@ -65190,7 +65294,7 @@
               "dykarbutik",
               "dykutrustning"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.127.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.126.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/temaki-scuba_diving.svg",
@@ -65221,7 +65325,7 @@
             "ru": "Магазин морепродуктов",
             "sl": "Ribarnica",
             "sv": "Fiskaffär",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.128.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.127.then"
           },
           "searchTerms": {
             "ca": [
@@ -65350,7 +65454,7 @@
               "ostron",
               "musslor"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.128.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.127.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/temaki-fish_cleaning.svg",
@@ -65376,7 +65480,7 @@
             "pt": "Loja de produtos em segunda mão",
             "ru": "Комиссионный магазин",
             "sv": "Second hand",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.129.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.128.then"
           },
           "searchTerms": {
             "en": [
@@ -65434,6 +65538,10 @@
               "中古販売店",
               "リサイクルショップ"
             ],
+            "nl": [
+              "kringloopwinkel",
+              "tweedehand"
+            ],
             "pl": [
               "sklep z rzeczami używanymi",
               "second hand",
@@ -65459,7 +65567,7 @@
               "loppmarknad",
               "secondhand"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.129.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.128.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/maki-shop.svg",
@@ -65477,7 +65585,7 @@
             "eo": "Kudrilar-vendejo",
             "es": "Tienda de suministros de costura",
             "fi": "Ompelutarvikeliike",
-            "fr": "Magasin de couture",
+            "fr": "Mercerie",
             "gl": "Tenda de artigos de costura",
             "he": "חנות ציוד תפירה",
             "hu": "Varrásfelszerelés bolt",
@@ -65488,7 +65596,7 @@
             "pt": "Retrosaria",
             "ru": "Швейные принадлежности",
             "sv": "Sybutik",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.130.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.129.then"
           },
           "searchTerms": {
             "en": [
@@ -65629,7 +65737,7 @@
               "garn",
               "symaskin"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.130.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.129.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/temaki-needle_and_spool.svg",
@@ -65658,7 +65766,7 @@
             "pt": "Reparador de sapatos",
             "ru": "Ремонт обуви",
             "sv": "Skomakare",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.131.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.130.then"
           },
           "searchTerms": {
             "en": [
@@ -65753,7 +65861,7 @@
               "skoreparatör",
               "skoreparation"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.131.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.130.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/temaki-hammer_shoe.svg",
@@ -65785,7 +65893,7 @@
             "ru": "Обувь",
             "sl": "Trgovina s čevlji",
             "sv": "Skoaffär",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.132.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.131.then"
           },
           "searchTerms": {
             "en": [
@@ -65904,7 +66012,7 @@
               "skor",
               "skobutik"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.132.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.131.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/maki-shoe.svg",
@@ -65933,7 +66041,7 @@
             "pt": "Loja de especiarias",
             "ru": "Магазин специй",
             "sv": "Affär för kryddor",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.133.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.132.then"
           },
           "searchTerms": {
             "en": [
@@ -66116,7 +66224,7 @@
               "gurkmeja",
               "wasabi"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.133.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.132.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/temaki-spice_bottle.svg",
@@ -66147,7 +66255,7 @@
             "ru": "Спорттовары",
             "sl": "Športna trgovina",
             "sv": "Sportaffär",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.134.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.133.then"
           },
           "searchTerms": {
             "en": [
@@ -66262,7 +66370,7 @@
               "träningsskor",
               "löpskor"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.134.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.133.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/fas-futbol.svg",
@@ -66294,7 +66402,7 @@
             "ru": "Канцелярские товары",
             "sl": "Papirnica",
             "sv": "Pappershandel",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.135.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.134.then"
           },
           "searchTerms": {
             "en": [
@@ -66416,7 +66524,7 @@
               "kontorsmaterial",
               "kort"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.135.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.134.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/fas-paperclip.svg",
@@ -66446,7 +66554,7 @@
             "ru": "Аренда складских помещений",
             "sl": "Najem shrambnih prostorov",
             "sv": "Hyrlager",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.136.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.135.then"
           },
           "searchTerms": {
             "en": [
@@ -66580,7 +66688,7 @@
               "bilförvaring",
               "husvagnsförvaring"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.136.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.135.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/temaki-storage_rental.svg",
@@ -66611,7 +66719,7 @@
             "ru": "Супермаркет",
             "sl": "Supermarket",
             "sv": "Mataffär",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.137.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.136.then"
           },
           "searchTerms": {
             "en": [
@@ -66754,7 +66862,7 @@
               "mat",
               "stormarknad"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.137.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.136.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/maki-grocery.svg",
@@ -66780,8 +66888,9 @@
             "nl": "Winkel voor zwembadbenodigdheden",
             "pl": "Sklep z akcesoriami do basenów",
             "pt": "Loja de acessórios para piscinas",
+            "ru": "Магазин товаров для бассейна",
             "sv": "Butik för pooltillbehör",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.138.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.137.then"
           },
           "searchTerms": {
             "en": [
@@ -66893,7 +67002,7 @@
               "basäng",
               "jacussy"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.138.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.137.searchTerms"
           }
         },
         {
@@ -66920,7 +67029,7 @@
             "ru": "Портной",
             "sl": "Krojač",
             "sv": "Skräddare",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.139.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.138.then"
           },
           "searchTerms": {
             "en": [
@@ -67039,7 +67148,7 @@
               "kostym",
               "klänning"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.139.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.138.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/temaki-needle_and_spool.svg",
@@ -67070,7 +67179,7 @@
             "ru": "Тату салон",
             "sl": "Salon za tetovažo",
             "sv": "Tatueringsstudio",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.140.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.139.then"
           },
           "searchTerms": {
             "en": [
@@ -67156,7 +67265,7 @@
               "tatuerare",
               "tatuering"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.140.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.139.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/temaki-tattoo_machine.svg",
@@ -67187,7 +67296,7 @@
             "ru": "Чайный магазин",
             "sl": "Čajnica",
             "sv": "Te-butik",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.141.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.140.then"
           },
           "searchTerms": {
             "cs": [
@@ -67275,7 +67384,7 @@
               "thé",
               "teblad"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.141.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.140.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/maki-teahouse.svg",
@@ -67301,7 +67410,7 @@
             "pl": "Salon dostawcy usług telekomunikacyjnych",
             "pt": "Loja de telecomunicações",
             "sv": "Telekombutik",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.142.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.141.then"
           },
           "searchTerms": {
             "en": [
@@ -67402,7 +67511,7 @@
               "tele",
               "internet"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.142.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.141.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/maki-telephone.svg",
@@ -67433,7 +67542,7 @@
             "ru": "Билетная касса",
             "sl": "Prodajalna vstopnic",
             "sv": "Biljettförsäljning",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.143.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.142.then"
           },
           "searchTerms": {
             "en": [
@@ -67547,7 +67656,7 @@
               "biljettlucka",
               "biljettåterförsäljare"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.143.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.142.searchTerms"
           }
         },
         {
@@ -67572,7 +67681,7 @@
             "pt": "Loja de azulejos",
             "ru": "Магазин плитки",
             "sv": "Kakelbutik",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.144.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.143.then"
           },
           "searchTerms": {
             "ca": [
@@ -67581,6 +67690,14 @@
               "ceràmica",
               "paret",
               "taulell"
+            ],
+            "cs": [
+              "obklady",
+              "dlažby",
+              "kachličky",
+              "kachle",
+              "obklad",
+              "dlažba"
             ],
             "da": [
               "flise",
@@ -67666,7 +67783,7 @@
               "plattsättare",
               "kakelplatta"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.144.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.143.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/temaki-tiling.svg",
@@ -67697,7 +67814,7 @@
             "ru": "Табачный магазин",
             "sl": "Tobačna trgovina",
             "sv": "Tobaksbutik",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.145.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.144.then"
           },
           "searchTerms": {
             "en": [
@@ -67832,7 +67949,7 @@
               "cigarrer",
               "röktillbehör"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.145.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.144.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/temaki-pipe.svg",
@@ -67861,7 +67978,7 @@
             "pt": "Aluguer de ferramentas",
             "ru": "Аренда инструмента",
             "sv": "Verktygsuthyrning",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.146.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.145.then"
           },
           "searchTerms": {
             "de": [
@@ -67920,7 +68037,7 @@
               "uthyrning",
               "hyrning"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.146.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.145.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/temaki-tools.svg",
@@ -67951,7 +68068,7 @@
             "ru": "Игрушки",
             "sl": "Trgovina igrač",
             "sv": "Leksaksaffär",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.147.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.146.then"
           },
           "searchTerms": {
             "en": [
@@ -68041,7 +68158,7 @@
               "leksaker",
               "barnsaker"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.147.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.146.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/fas-rocket.svg",
@@ -68068,7 +68185,7 @@
             "pt": "Loja de materiais de construção",
             "ru": "Оптовая база",
             "sv": "Proffshandel",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.148.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.147.then"
           },
           "searchTerms": {
             "da": [
@@ -68211,7 +68328,7 @@
               "kakel",
               "fönster"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.148.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.147.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/temaki-tools.svg",
@@ -68242,7 +68359,7 @@
             "ru": "Бюро путешествий",
             "sl": "Turistična agencija",
             "sv": "Resebyrå",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.149.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.148.then"
           },
           "searchTerms": {
             "en": [
@@ -68350,7 +68467,7 @@
               "charterflyg",
               "charterresa"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.149.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.148.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/fas-suitcase.svg",
@@ -68378,7 +68495,7 @@
             "pt": "Loja de troféus",
             "ru": "Магазин наград",
             "sv": "Affär för troféer",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.150.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.149.then"
           },
           "searchTerms": {
             "en": [
@@ -68508,7 +68625,7 @@
               "plackat",
               "trofébutik"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.150.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.149.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/fas-trophy.svg",
@@ -68539,7 +68656,7 @@
             "ru": "Шины",
             "sl": "Prodaja pnevmatik",
             "sv": "Däckfirma",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.151.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.150.then"
           },
           "searchTerms": {
             "cs": [
@@ -68633,7 +68750,7 @@
               "fälg",
               "balansering"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.151.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.150.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/temaki-tire.svg",
@@ -68664,7 +68781,7 @@
             "ru": "Магазин по продаже пылесосов",
             "sl": "Trgovina s sesalci",
             "sv": "Dammsugarbutik",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.152.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.151.then"
           },
           "searchTerms": {
             "cs": [
@@ -68747,7 +68864,7 @@
               "dammsugarpåsar",
               "dammsugartillbehör"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.152.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.151.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/temaki-vacuum.svg",
@@ -68774,7 +68891,7 @@
             "pt": "Loja de variedades",
             "ru": "Товары по одной цене",
             "sv": "Fyndbutik",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.153.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.152.then"
           },
           "searchTerms": {
             "en": [
@@ -68863,7 +68980,7 @@
               "överskott",
               "överskottsaffär"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.153.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.152.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/maki-shop.svg",
@@ -68894,7 +69011,7 @@
             "ru": "Видеомагазин",
             "sl": "Videoteka",
             "sv": "Videobutik",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.154.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.153.then"
           },
           "searchTerms": {
             "en": [
@@ -69004,7 +69121,7 @@
               "dvd",
               "vhs"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.154.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.153.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/temaki-movie_rental.svg",
@@ -69035,7 +69152,7 @@
             "ru": "Магазин видеоигр",
             "sl": "Trgovina z video igrami",
             "sv": "TV-spel",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.155.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.154.then"
           },
           "searchTerms": {
             "en": [
@@ -69145,7 +69262,7 @@
               "dataspel",
               "tvspel"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.155.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.154.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/maki-gaming.svg",
@@ -69165,7 +69282,7 @@
             "fi": "Kellokauppa",
             "fr": "Magasin de montres",
             "gl": "Reloxaría",
-            "he": "שען",
+            "he": "חנות שעונים",
             "hu": "Órabolt (karóra)",
             "it": "Negozio di orologi",
             "ja": "腕時計店",
@@ -69175,7 +69292,7 @@
             "ru": "Магазин часов",
             "sl": "Trgovina z urami",
             "sv": "Klockaffär",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.156.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.155.then"
           },
           "searchTerms": {
             "ca": [
@@ -69289,7 +69406,7 @@
               "klocka",
               "klockor"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.156.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.155.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/maki-watch.svg",
@@ -69318,7 +69435,7 @@
             "pt": "Loja de água potável",
             "ru": "Магазин питьевой воды",
             "sv": "Affär för dricksvatten",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.157.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.156.then"
           },
           "searchTerms": {
             "ca": [
@@ -69402,7 +69519,7 @@
               "dricksvatten",
               "vatten"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.157.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.156.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/temaki-water_bottle.svg",
@@ -69432,7 +69549,7 @@
             "pt": "Loja de desportos aquáticos",
             "ru": "Водный спорт/ Спорттовары",
             "sv": "Vattensport/simning",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.158.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.157.then"
           },
           "searchTerms": {
             "ca": [
@@ -69560,7 +69677,7 @@
               "simning",
               "badkläder"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.158.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.157.searchTerms"
           }
         },
         {
@@ -69587,7 +69704,7 @@
             "ru": "Оружейный магазин",
             "sl": "Trgovina z orožjem",
             "sv": "Vapenaffär",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.159.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.158.then"
           },
           "searchTerms": {
             "en": [
@@ -69714,7 +69831,7 @@
               "knivar",
               "pistol"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.159.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.158.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/temaki-dagger.svg",
@@ -69741,7 +69858,7 @@
             "pt": "Loja grossista",
             "ru": "Оптовый магазин",
             "sv": "Grosistaffär",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.160.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.159.then"
           },
           "searchTerms": {
             "en": [
@@ -69817,7 +69934,7 @@
               "lagerklubb",
               "grossistklubb"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.160.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.159.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/maki-warehouse.svg",
@@ -69845,7 +69962,7 @@
             "pt": "Loja de perucas",
             "ru": "Магазин париков",
             "sv": "Affär för peruker",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.161.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.160.then"
           },
           "searchTerms": {
             "en": [
@@ -69946,7 +70063,7 @@
               "löshår",
               "tupé"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.161.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.160.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/maki-shop.svg",
@@ -69977,7 +70094,7 @@
             "ru": "Магазин жалюзей",
             "sl": "Trgovina z okenskimi senčili",
             "sv": "Persienner",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.162.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.161.then"
           },
           "searchTerms": {
             "cs": [
@@ -70078,7 +70195,7 @@
               "rullgardin",
               "spjäljalusi"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.162.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.161.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/temaki-window.svg",
@@ -70109,7 +70226,7 @@
             "ru": "Винный магазин",
             "sl": "Vinoteka",
             "sv": "Vinaffär",
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.163.then"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.162.then"
           },
           "searchTerms": {
             "ca": [
@@ -70229,7 +70346,7 @@
               "vin",
               "vinförsäljning"
             ],
-            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.163.searchTerms"
+            "_context": "layers:id_presets.tagRenderings.shop_types.mappings.162.searchTerms"
           },
           "icon": {
             "path": "./assets/layers/id_presets/maki-alcohol-shop.svg",
