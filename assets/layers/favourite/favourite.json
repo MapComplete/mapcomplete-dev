@@ -37742,6 +37742,7 @@
       "mappings": [
         {
           "if": "internet_access=wlan",
+          "icon": "wifi",
           "then": {
             "en": "This place offers wireless internet access",
             "nl": "Deze plaats biedt draadloze internettoegang aan",
@@ -37759,6 +37760,7 @@
         },
         {
           "if": "internet_access=no",
+          "icon": "wifi;cross_bottom_right:red",
           "then": {
             "en": "This place <b>does not</b> offer internet access",
             "nl": "Deze plaats biedt <b>geen</b> internettoegang aan",
@@ -37794,6 +37796,7 @@
         },
         {
           "if": "internet_access=terminal",
+          "icon": "computer",
           "then": {
             "en": "This place offers internet access via a terminal or computer",
             "nl": "Deze plaats biedt internettoegang via een terminal of computer aan",
@@ -71504,64 +71507,44 @@
           "shop=bicycle",
           {
             "and": [
+              "shop=sports",
               {
                 "or": [
-                  "shop=bicycle_repair",
-                  "^(service:bicycle:.+)$~~yes",
-                  "service:bicycle:pump~.+"
+                  "sport=bicycle",
+                  "sport=cycling",
+                  "sport="
                 ]
               },
               {
                 "or": [
-                  "service:bicycle:repair=yes",
-                  {
-                    "and": [
-                      "shop=sports",
-                      {
-                        "or": [
-                          "sport=bicycle",
-                          "sport=cycling",
-                          "sport="
-                        ]
-                      },
-                      "service:bicycle:retail!=no",
-                      "service:bicycle:repair!=no"
-                    ]
-                  }
+                  "shop=bicycle_repair",
+                  "service:bicycle:pump~.+"
                 ]
-              }
+              },
+              "service:bicycle:retail!=no",
+              "service:bicycle:repair!=no"
             ]
           },
           "service:bicycle:retail=yes",
           "shop=bicycle",
           {
             "and": [
+              "shop=sports",
               {
                 "or": [
-                  "shop=bicycle_repair",
-                  "^(service:bicycle:.+)$~~yes",
-                  "service:bicycle:pump~.+"
+                  "sport=bicycle",
+                  "sport=cycling",
+                  "sport="
                 ]
               },
               {
                 "or": [
-                  "service:bicycle:repair=yes",
-                  {
-                    "and": [
-                      "shop=sports",
-                      {
-                        "or": [
-                          "sport=bicycle",
-                          "sport=cycling",
-                          "sport="
-                        ]
-                      },
-                      "service:bicycle:retail!=no",
-                      "service:bicycle:repair!=no"
-                    ]
-                  }
+                  "shop=bicycle_repair",
+                  "service:bicycle:pump~.+"
                 ]
-              }
+              },
+              "service:bicycle:retail!=no",
+              "service:bicycle:repair!=no"
             ]
           },
           {
@@ -71576,12 +71559,7 @@
                           "craft=key_cutter"
                         ]
                       },
-                      {
-                        "or": [
-                          "^(service:bicycle:.+)$~~yes",
-                          "service:bicycle:pump~.+"
-                        ]
-                      }
+                      "service:bicycle:pump~.+"
                     ]
                   },
                   "shop~.+"
@@ -71589,7 +71567,9 @@
               },
               "shop!=mall"
             ]
-          }
+          },
+          "^(service:bicycle:.+)$~~yes",
+          "^(service:bicycle:.+)$~~yes"
         ]
       },
       "mappings": [
@@ -71798,65 +71778,43 @@
           "shop=bicycle",
           {
             "and": [
+              "shop=sports",
               {
                 "or": [
-                  "shop=bicycle_repair",
-                  "^(service:bicycle:.*)$~~yes|only",
-                  "service:bicycle:cleaning~.+"
+                  "sport=bicycle",
+                  "sport=cycling",
+                  "sport="
                 ]
               },
               {
                 "or": [
-                  "service:bicycle:repair=yes",
-                  "service:bicycle:retail=yes",
-                  {
-                    "and": [
-                      "shop=sports",
-                      {
-                        "or": [
-                          "sport=bicycle",
-                          "sport=cycling",
-                          "sport="
-                        ]
-                      },
-                      "service:bicycle:retail!=no",
-                      "service:bicycle:repair!=no"
-                    ]
-                  }
+                  "shop=bicycle_repair",
+                  "service:bicycle:cleaning~.+"
                 ]
-              }
+              },
+              "service:bicycle:retail!=no",
+              "service:bicycle:repair!=no"
             ]
           },
           "shop=bicycle",
           {
             "and": [
+              "shop=sports",
               {
                 "or": [
-                  "shop=bicycle_repair",
-                  "^(service:bicycle:.*)$~~yes|only",
-                  "service:bicycle:cleaning~.+"
+                  "sport=bicycle",
+                  "sport=cycling",
+                  "sport="
                 ]
               },
               {
                 "or": [
-                  "service:bicycle:repair=yes",
-                  "service:bicycle:retail=yes",
-                  {
-                    "and": [
-                      "shop=sports",
-                      {
-                        "or": [
-                          "sport=bicycle",
-                          "sport=cycling",
-                          "sport="
-                        ]
-                      },
-                      "service:bicycle:retail!=no",
-                      "service:bicycle:repair!=no"
-                    ]
-                  }
+                  "shop=bicycle_repair",
+                  "service:bicycle:cleaning~.+"
                 ]
-              }
+              },
+              "service:bicycle:retail!=no",
+              "service:bicycle:repair!=no"
             ]
           },
           {
@@ -71871,12 +71829,7 @@
                           "craft=key_cutter"
                         ]
                       },
-                      {
-                        "or": [
-                          "^(service:bicycle:.*)$~~yes|only",
-                          "service:bicycle:cleaning~.+"
-                        ]
-                      }
+                      "service:bicycle:cleaning~.+"
                     ]
                   },
                   "shop~.+"
@@ -71884,7 +71837,9 @@
               },
               "shop!=mall"
             ]
-          }
+          },
+          "^(service:bicycle:.*)$~~yes|only",
+          "^(service:bicycle:.*)$~~yes|only"
         ]
       },
       "question": {
@@ -82935,6 +82890,7 @@
       "mappings": [
         {
           "if": "diet:vegetarian=no",
+          "icon": "./assets/layers/food/Vegetarian-mark.svg;cross_bottom_right:red",
           "then": {
             "en": "No vegetarian options are available",
             "nl": "Geen vegetarische opties beschikbaar",
@@ -82961,6 +82917,7 @@
         },
         {
           "if": "diet:vegetarian=yes",
+          "icon": "./assets/layers/food/Vegetarian-mark.svg",
           "then": {
             "en": "Vegetarian options are available",
             "nl": "Vegetarische opties zijn beschikbaar",
@@ -82974,6 +82931,7 @@
         },
         {
           "if": "diet:vegetarian=only",
+          "icon": "./assets/layers/food/Vegetarian-mark.svg",
           "then": {
             "en": "All dishes are vegetarian",
             "nl": "Enkel vegetarische opties zijn beschikbaar",
