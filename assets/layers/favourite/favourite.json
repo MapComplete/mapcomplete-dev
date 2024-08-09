@@ -23110,24 +23110,24 @@
         "pt_BR": "Há um website com mais informações sobre essa arte?"
       },
       "render": {
-        "ca": "{link(Més informació a aquesta pàgina web,&LBRACEwebsite&RBRACE,,,)}",
-        "cs": "{link(Více informací na této webové stránce,&LBRACEwebsite&RBRACE,,,)}",
-        "da": "{link(Yderligere oplysninger på  dette websted,&LBRACEwebsite&RBRACE,,,)}",
-        "de": "{link(Weitere Informationen auf dieser Webseite,&LBRACEwebsite&RBRACE,,,)}",
-        "en": "{link(More information on this website,&LBRACEwebsite&RBRACE,,,)}",
-        "es": "{link(Más información en este sitio web,&LBRACEwebsite&RBRACE,,,)}",
-        "fr": "{link(Plus d'info sûr ce site web,&LBRACEwebsite&RBRACE,,,)}",
-        "hu": "{link(További információ ezen a weboldalon,&LBRACEwebsite&RBRACE,,,)}",
-        "id": "{link(Info lanjut tersedia di laman web ini,&LBRACEwebsite&RBRACE,,,)}",
-        "it": "{link(Ulteriori informazioni su questo sito web,&LBRACEwebsite&RBRACE,,,)}",
-        "ja": "{link(Webサイトに詳細情報がある,&LBRACEwebsite&RBRACE,,,)}",
-        "nb_NO": "{link(Mer info er å finne på denne nettsiden,&LBRACEwebsite&RBRACE,,,)}",
-        "nl": "{link(Meer informatie op deze website,&LBRACEwebsite&RBRACE,,,)}",
-        "pl": "{link(Więcej informacji na tej stronie,&LBRACEwebsite&RBRACE,,,)}",
-        "pt": "{link(Mais informações neste site,&LBRACEwebsite&RBRACE,,,)}",
-        "pt_BR": "{link(Mais informações nesse website,&LBRACEwebsite&RBRACE,,,)}",
-        "ru": "{link(Больше информации на этом сайте,&LBRACEwebsite&RBRACE,,,)}",
-        "zh_Hant": "{link(這個網站有更多資訊,&LBRACEwebsite&RBRACE,,,)}"
+        "ca": "{link(Més informació a aquesta pàgina web,&LBRACEwebsite&RBRACE,,,,)}",
+        "cs": "{link(Více informací na této webové stránce,&LBRACEwebsite&RBRACE,,,,)}",
+        "da": "{link(Yderligere oplysninger på  dette websted,&LBRACEwebsite&RBRACE,,,,)}",
+        "de": "{link(Weitere Informationen auf dieser Webseite,&LBRACEwebsite&RBRACE,,,,)}",
+        "en": "{link(More information on this website,&LBRACEwebsite&RBRACE,,,,)}",
+        "es": "{link(Más información en este sitio web,&LBRACEwebsite&RBRACE,,,,)}",
+        "fr": "{link(Plus d'info sûr ce site web,&LBRACEwebsite&RBRACE,,,,)}",
+        "hu": "{link(További információ ezen a weboldalon,&LBRACEwebsite&RBRACE,,,,)}",
+        "id": "{link(Info lanjut tersedia di laman web ini,&LBRACEwebsite&RBRACE,,,,)}",
+        "it": "{link(Ulteriori informazioni su questo sito web,&LBRACEwebsite&RBRACE,,,,)}",
+        "ja": "{link(Webサイトに詳細情報がある,&LBRACEwebsite&RBRACE,,,,)}",
+        "nb_NO": "{link(Mer info er å finne på denne nettsiden,&LBRACEwebsite&RBRACE,,,,)}",
+        "nl": "{link(Meer informatie op deze website,&LBRACEwebsite&RBRACE,,,,)}",
+        "pl": "{link(Więcej informacji na tej stronie,&LBRACEwebsite&RBRACE,,,,)}",
+        "pt": "{link(Mais informações neste site,&LBRACEwebsite&RBRACE,,,,)}",
+        "pt_BR": "{link(Mais informações nesse website,&LBRACEwebsite&RBRACE,,,,)}",
+        "ru": "{link(Больше информации на этом сайте,&LBRACEwebsite&RBRACE,,,,)}",
+        "zh_Hant": "{link(這個網站有更多資訊,&LBRACEwebsite&RBRACE,,,,)}"
       },
       "freeform": {
         "key": "website",
@@ -36977,15 +36977,15 @@
     },
     {
       "render": {
-        "ca": "{link(Més informació al web,&LBRACEwebsite&RBRACE,,,)}",
-        "cs": "{link(Více informací na webových stránkách,&LBRACEwebsite&RBRACE,,,)}",
-        "de": "{link(Weitere Informationen auf der Webseite,&LBRACEwebsite&RBRACE,,,)}",
-        "en": "{link(More info on the website,&LBRACEwebsite&RBRACE,,,)}",
-        "fr": "{link(Plus d'infos sur le site web,&LBRACEwebsite&RBRACE,,,)}",
-        "hu": "{link(További információ ezen a weboldalon,&LBRACEwebsite&RBRACE,,,)}",
-        "it": "{link(Maggiori informazioni sul sito web,&LBRACEwebsite&RBRACE,,,)}",
-        "nl": "{link(Meer info op de website,&LBRACEwebsite&RBRACE,,,)}",
-        "ru": "{link(Более подробная информация на сайте,&LBRACEwebsite&RBRACE,,,)}"
+        "ca": "{link(Més informació al web,&LBRACEwebsite&RBRACE,,,,)}",
+        "cs": "{link(Více informací na webových stránkách,&LBRACEwebsite&RBRACE,,,,)}",
+        "de": "{link(Weitere Informationen auf der Webseite,&LBRACEwebsite&RBRACE,,,,)}",
+        "en": "{link(More info on the website,&LBRACEwebsite&RBRACE,,,,)}",
+        "fr": "{link(Plus d'infos sur le site web,&LBRACEwebsite&RBRACE,,,,)}",
+        "hu": "{link(További információ ezen a weboldalon,&LBRACEwebsite&RBRACE,,,,)}",
+        "it": "{link(Maggiori informazioni sul sito web,&LBRACEwebsite&RBRACE,,,,)}",
+        "nl": "{link(Meer info op de website,&LBRACEwebsite&RBRACE,,,,)}",
+        "ru": "{link(Более подробная информация на сайте,&LBRACEwebsite&RBRACE,,,,)}"
       },
       "question": {
         "en": "Is there a website with more information about this public bookcase?",
@@ -46496,7 +46496,7 @@
         "inline": false
       },
       "render": {
-        "en": "{link(Facebook page,&LBRACEcontact:facebook&RBRACE,,,)}<div class='subtle text-sm'>Facebook is known to harm mental health, manipulate public opinion and cause hate. Try to use healthier alternatives</div>"
+        "en": "{link(Facebook page,&LBRACEcontact:facebook&RBRACE,,,,)}<div class='subtle text-sm'>Facebook is known to harm mental health, manipulate public opinion and cause hate. Try to use healthier alternatives</div>"
       },
       "condition": {
         "or": [
@@ -82738,7 +82738,7 @@
         "en": "On what webpage is the menu published?"
       },
       "render": {
-        "en": "{link(Consult the menu,&LBRACEwebsite:menu&RBRACE,,,)}"
+        "en": "{link(Consult the menu,&LBRACEwebsite:menu&RBRACE,,,,)}"
       },
       "freeform": {
         "key": "website:menu",
@@ -83795,15 +83795,15 @@
         "cs": "Na jakém webu lze najít více informací o kole ducha nebo nehodě?"
       },
       "render": {
-        "ca": "{link(Més informació disponible,&LBRACEsource&RBRACE,,,)}",
-        "cs": "{link(Více informací k dispozici,&LBRACEsource&RBRACE,,,)}",
-        "de": "{link(Mehr Informationen,&LBRACEsource&RBRACE,,,)}",
-        "en": "{link(More info available,&LBRACEsource&RBRACE,,,)}",
-        "fr": "{link(Plus d'informations sont disponibles,&LBRACEsource&RBRACE,,,)}",
-        "id": "{link(Informasi lanjut tersedia,&LBRACEsource&RBRACE,,,)}",
-        "it": "{link(Sono disponibili ulteriori informazioni,&LBRACEsource&RBRACE,,,)}",
-        "nl": "{link(Meer informatie,&LBRACEsource&RBRACE,,,)}",
-        "ru": "{link(Доступна более подробная информация,&LBRACEsource&RBRACE,,,)}"
+        "ca": "{link(Més informació disponible,&LBRACEsource&RBRACE,,,,)}",
+        "cs": "{link(Více informací k dispozici,&LBRACEsource&RBRACE,,,,)}",
+        "de": "{link(Mehr Informationen,&LBRACEsource&RBRACE,,,,)}",
+        "en": "{link(More info available,&LBRACEsource&RBRACE,,,,)}",
+        "fr": "{link(Plus d'informations sont disponibles,&LBRACEsource&RBRACE,,,,)}",
+        "id": "{link(Informasi lanjut tersedia,&LBRACEsource&RBRACE,,,,)}",
+        "it": "{link(Sono disponibili ulteriori informazioni,&LBRACEsource&RBRACE,,,,)}",
+        "nl": "{link(Meer informatie,&LBRACEsource&RBRACE,,,,)}",
+        "ru": "{link(Доступна более подробная информация,&LBRACEsource&RBRACE,,,,)}"
       },
       "freeform": {
         "type": "url",
@@ -98971,20 +98971,20 @@
         "in_favourite"
       ],
       "render": {
-        "de": "{link(<img textmode='📞' alt='phone' src='./assets/layers/questions/phone.svg'/>,tel:&LBRACEphone&RBRACE,,,Telefon)}",
-        "en": "{link(<img textmode='📞' alt='phone' src='./assets/layers/questions/phone.svg'/>,tel:&LBRACEphone&RBRACE,,,phone)}",
-        "nl": "{link(<img textmode='📞' alt='phone' src='./assets/layers/questions/phone.svg'/>,tel:&LBRACEphone&RBRACE,,,Telefoneer)}",
-        "pl": "{link(<img textmode='📞' alt='phone' src='./assets/layers/questions/phone.svg'/>,tel:&LBRACEphone&RBRACE,,,telefon)}"
+        "de": "{link(<img textmode='📞' alt='phone' src='./assets/layers/questions/phone.svg'/>,tel:&LBRACEphone&RBRACE,,,Telefon,)}",
+        "en": "{link(<img textmode='📞' alt='phone' src='./assets/layers/questions/phone.svg'/>,tel:&LBRACEphone&RBRACE,,,phone,)}",
+        "nl": "{link(<img textmode='📞' alt='phone' src='./assets/layers/questions/phone.svg'/>,tel:&LBRACEphone&RBRACE,,,Telefoneer,)}",
+        "pl": "{link(<img textmode='📞' alt='phone' src='./assets/layers/questions/phone.svg'/>,tel:&LBRACEphone&RBRACE,,,telefon,)}"
       },
       "mappings": [
         {
           "#": "ignore-image-in-then",
           "if": "contact:phone~*",
           "then": {
-            "de": "{link(<img textmode='📞' alt='phone' src='./assets/layers/questions/phone.svg'/>,tel:&LBRACEcontact:phone&RBRACE,,,Telefon)}",
-            "en": "{link(<img textmode='📞' alt='phone' src='./assets/layers/questions/phone.svg'/>,tel:&LBRACEcontact:phone&RBRACE,,,phone)}",
-            "nl": "{link(<img textmode='📞' alt='phone' src='./assets/layers/questions/phone.svg'/>,tel:&LBRACEcontact:phone&RBRACE,,,Telefoneer)}",
-            "pl": "{link(<img textmode='📞' alt='phone' src='./assets/layers/questions/phone.svg'/>,tel:&LBRACEcontact:phone&RBRACE,,,telefon)}"
+            "de": "{link(<img textmode='📞' alt='phone' src='./assets/layers/questions/phone.svg'/>,tel:&LBRACEcontact:phone&RBRACE,,,Telefon,)}",
+            "en": "{link(<img textmode='📞' alt='phone' src='./assets/layers/questions/phone.svg'/>,tel:&LBRACEcontact:phone&RBRACE,,,phone,)}",
+            "nl": "{link(<img textmode='📞' alt='phone' src='./assets/layers/questions/phone.svg'/>,tel:&LBRACEcontact:phone&RBRACE,,,Telefoneer,)}",
+            "pl": "{link(<img textmode='📞' alt='phone' src='./assets/layers/questions/phone.svg'/>,tel:&LBRACEcontact:phone&RBRACE,,,telefon,)}"
           }
         }
       ],
@@ -99158,11 +99158,11 @@
         "defaults"
       ],
       "render": {
-        "da": "{link(<img alt='on osm' textmode='🗺️' src='./assets/svg/osm-logo-us.svg'/>,https://openstreetmap.org/&LBRACEid&RBRACE,,,Åbn på openstreetmap.org)}",
-        "de": "{link(<img alt='on osm' textmode='🗺️' src='./assets/svg/osm-logo-us.svg'/>,https://openstreetmap.org/&LBRACEid&RBRACE,,,Auf openstreetmap.org öffnen)}",
-        "en": "{link(<img alt='on osm' textmode='🗺️' src='./assets/svg/osm-logo-us.svg'/>,https://openstreetmap.org/&LBRACEid&RBRACE,,,Open on openstreetmap.org)}",
-        "nl": "{link(<img alt='on osm' textmode='🗺️' src='./assets/svg/osm-logo-us.svg'/>,https://openstreetmap.org/&LBRACEid&RBRACE,,,Bekijk op openstreetmap.org)}",
-        "pl": "{link(<img alt='on osm' textmode='🗺️' src='./assets/svg/osm-logo-us.svg'/>,https://openstreetmap.org/&LBRACEid&RBRACE,,,Otwórz na openstreetmap.org)}"
+        "da": "{link(<img alt='on osm' textmode='🗺️' src='./assets/svg/osm-logo-us.svg'/>,https://openstreetmap.org/&LBRACEid&RBRACE,,,Åbn på openstreetmap.org,)}",
+        "de": "{link(<img alt='on osm' textmode='🗺️' src='./assets/svg/osm-logo-us.svg'/>,https://openstreetmap.org/&LBRACEid&RBRACE,,,Auf openstreetmap.org öffnen,)}",
+        "en": "{link(<img alt='on osm' textmode='🗺️' src='./assets/svg/osm-logo-us.svg'/>,https://openstreetmap.org/&LBRACEid&RBRACE,,,Open on openstreetmap.org,)}",
+        "nl": "{link(<img alt='on osm' textmode='🗺️' src='./assets/svg/osm-logo-us.svg'/>,https://openstreetmap.org/&LBRACEid&RBRACE,,,Bekijk op openstreetmap.org,)}",
+        "pl": "{link(<img alt='on osm' textmode='🗺️' src='./assets/svg/osm-logo-us.svg'/>,https://openstreetmap.org/&LBRACEid&RBRACE,,,Otwórz na openstreetmap.org,)}"
       },
       "metacondition": "_loggedIn=true",
       "mappings": [
@@ -99174,11 +99174,11 @@
           "#": "ignore-image-in-then",
           "if": "_backend~*",
           "then": {
-            "da": "{link(<img alt='on osm' textmode='🗺️' src='./assets/svg/osm-logo-us.svg'/>,&LBRACE_backend&RBRACE/&LBRACEid&RBRACE,,,Åbn på openstreetmap.org)}",
-            "de": "{link(<img alt='on osm' textmode='🗺️' src='./assets/svg/osm-logo-us.svg'/>,&LBRACE_backend&RBRACE/&LBRACEid&RBRACE,,,Auf openstreetmap.org öffnen)}",
-            "en": "{link(<img alt='on osm' textmode='🗺️' src='./assets/svg/osm-logo-us.svg'/>,&LBRACE_backend&RBRACE/&LBRACEid&RBRACE,,,Open on openstreetmap.org)}",
-            "nl": "{link(<img alt='on osm' textmode='🗺️' src='./assets/svg/osm-logo-us.svg'/>,&LBRACE_backend&RBRACE/&LBRACEid&RBRACE,,,Bekijk op openstreetmap.org)}",
-            "pl": "{link(<img alt='on osm' textmode='🗺️' src='./assets/svg/osm-logo-us.svg'/>,&LBRACE_backend&RBRACE/&LBRACEid&RBRACE,,,Otwórz na openstreetmap.org)}"
+            "da": "{link(<img alt='on osm' textmode='🗺️' src='./assets/svg/osm-logo-us.svg'/>,&LBRACE_backend&RBRACE/&LBRACEid&RBRACE,,,Åbn på openstreetmap.org,)}",
+            "de": "{link(<img alt='on osm' textmode='🗺️' src='./assets/svg/osm-logo-us.svg'/>,&LBRACE_backend&RBRACE/&LBRACEid&RBRACE,,,Auf openstreetmap.org öffnen,)}",
+            "en": "{link(<img alt='on osm' textmode='🗺️' src='./assets/svg/osm-logo-us.svg'/>,&LBRACE_backend&RBRACE/&LBRACEid&RBRACE,,,Open on openstreetmap.org,)}",
+            "nl": "{link(<img alt='on osm' textmode='🗺️' src='./assets/svg/osm-logo-us.svg'/>,&LBRACE_backend&RBRACE/&LBRACEid&RBRACE,,,Bekijk op openstreetmap.org,)}",
+            "pl": "{link(<img alt='on osm' textmode='🗺️' src='./assets/svg/osm-logo-us.svg'/>,&LBRACE_backend&RBRACE/&LBRACEid&RBRACE,,,Otwórz na openstreetmap.org,)}"
           }
         }
       ],
